@@ -1,0 +1,305 @@
+{
+	"groups": [
+		{
+			"keys": "egret_icon_png,description_json,gameEui_json,bg_game_png,bg_bottom_bar_png,icon_microphone_png,image_default_avatar_png,bg_player_sprite_png,icon_talk_png,bg_chat_textinput_png,poker_json,btn_call_png,btn_check_png,btn_fold_png,btn_raise_png,btn_raise_confirm_png,icon_raise_progress_selector_png,image_raise_slider_track_png,icon_raise_slider_arrow_png,image_raise_slider_dashboard_png,bg_raise_shadow_png,image_loading_track_png,image_loading_thumb_png,image_loading_shadow_png,btn_phone_login_png,btn_start_game_png,btn_next_step_png,bg_login_input_png,btn_login_confirm_png,icon_loading_circle_png,icon_loading_spade_png,bg_custom_alert_png,btn_alert_confirm_png,btn_game_dropdown_png,btn_room_start_game_png,icon_scoreboard_chip_png,image_border_yellow_png,addchips_mp3,allin_mp3,bet_mp3,btn_click_mp3,check_mp3,chiptoplayers_mp3,chiptopool_mp3,fapai3_mp3,fapai_mp3,fold_mp3,g_alarm_mp3,movechips_mp3,notice_mp3,user_enter_mp3,uiclick_mp3,btn_login_by_visitor_png,btn_check_disabled_png,btn_call_disabled_png,btn_all_in_png",
+			"name": "preload"
+		},
+		{
+			"keys": "bg_loading_png,icon_texas_holdem_logo_png",
+			"name": "loading"
+		}
+	],
+	"resources": [
+		{
+			"url": "assets/egret_icon.png",
+			"type": "image",
+			"name": "egret_icon_png"
+		},
+		{
+			"url": "config/description.json",
+			"type": "json",
+			"name": "description_json"
+		},
+		{
+			"url": "gameEui.json",
+			"type": "json",
+			"name": "gameEui_json"
+		},
+		{
+			"url": "assets/Game/bg_game.png",
+			"type": "image",
+			"name": "bg_game_png"
+		},
+		{
+			"url": "assets/Game/bg_bottom_bar.png",
+			"type": "image",
+			"name": "bg_bottom_bar_png"
+		},
+		{
+			"url": "assets/Game/icon_microphone.png",
+			"type": "image",
+			"name": "icon_microphone_png"
+		},
+		{
+			"url": "assets/Game/image_default_avatar.png",
+			"type": "image",
+			"name": "image_default_avatar_png"
+		},
+		{
+			"url": "assets/Game/bg_player_sprite.png",
+			"type": "image",
+			"name": "bg_player_sprite_png"
+		},
+		{
+			"url": "assets/Game/icon_talk.png",
+			"type": "image",
+			"name": "icon_talk_png"
+		},
+		{
+			"url": "assets/Common/bg_chat_textinput.png",
+			"type": "image",
+			"name": "bg_chat_textinput_png"
+		},
+		{
+			"url": "assets/Poker/poker.json",
+			"type": "sheet",
+			"name": "poker_json",
+			"subkeys": "poker_2c_png,poker_2d_png,poker_2h_png,poker_2s_png,poker_3c_png,poker_3d_png,poker_3h_png,poker_3s_png,poker_4c_png,poker_4d_png,poker_4h_png,poker_4s_png,poker_5c_png,poker_5d_png,poker_5h_png,poker_5s_png,poker_6c_png,poker_6d_png,poker_6h_png,poker_6s_png,poker_7c_png,poker_7d_png,poker_7h_png,poker_7s_png,poker_8c_png,poker_8d_png,poker_8h_png,poker_8s_png,poker_9c_png,poker_9d_png,poker_9h_png,poker_9s_png,poker_tc_png,poker_td_png,poker_th_png,poker_ts_png,poker_ac_png,poker_ad_png,poker_ah_png,poker_as_png,poker_back_png,poker_jc_png,poker_jd_png,poker_jh_png,poker_js_png,poker_kc_png,poker_kd_png,poker_kh_png,poker_ks_png,poker_qc_png,poker_qd_png,poker_qh_png,poker_qs_png"
+		},
+		{
+			"url": "assets/Game/btn_call.png",
+			"type": "image",
+			"name": "btn_call_png"
+		},
+		{
+			"url": "assets/Game/btn_check.png",
+			"type": "image",
+			"name": "btn_check_png"
+		},
+		{
+			"url": "assets/Game/btn_fold.png",
+			"type": "image",
+			"name": "btn_fold_png"
+		},
+		{
+			"url": "assets/Game/btn_raise.png",
+			"type": "image",
+			"name": "btn_raise_png"
+		},
+		{
+			"url": "assets/Game/btn_raise_confirm.png",
+			"type": "image",
+			"name": "btn_raise_confirm_png"
+		},
+		{
+			"url": "assets/Game/icon_raise_progress_selector.png",
+			"type": "image",
+			"name": "icon_raise_progress_selector_png"
+		},
+		{
+			"url": "assets/Game/image_raise_slider_track.png",
+			"type": "image",
+			"name": "image_raise_slider_track_png"
+		},
+		{
+			"url": "assets/Game/icon_raise_slider_arrow.png",
+			"type": "image",
+			"name": "icon_raise_slider_arrow_png"
+		},
+		{
+			"url": "assets/Game/image_raise_slider_dashboard.png",
+			"type": "image",
+			"name": "image_raise_slider_dashboard_png"
+		},
+		{
+			"url": "assets/Loading/bg_loading.png",
+			"type": "image",
+			"name": "bg_loading_png"
+		},
+		{
+			"url": "assets/Loading/icon_texas_holdem_logo.png",
+			"type": "image",
+			"name": "icon_texas_holdem_logo_png"
+		},
+		{
+			"name": "bg_raise_shadow_png",
+			"type": "image",
+			"url": "assets/Game/bg_raise_shadow.png"
+		},
+		{
+			"name": "image_loading_track_png",
+			"type": "image",
+			"url": "assets/Loading/image_loading_track.png"
+		},
+		{
+			"name": "image_loading_thumb_png",
+			"type": "image",
+			"url": "assets/Loading/image_loading_thumb.png"
+		},
+		{
+			"name": "image_loading_shadow_png",
+			"type": "image",
+			"url": "assets/Loading/image_loading_shadow.png"
+		},
+		{
+			"name": "btn_phone_login_png",
+			"type": "image",
+			"url": "assets/Loading/btn_phone_login.png"
+		},
+		{
+			"name": "btn_start_game_png",
+			"type": "image",
+			"url": "assets/Loading/btn_start_game.png"
+		},
+		{
+			"name": "btn_next_step_png",
+			"type": "image",
+			"url": "assets/Loading/btn_next_step.png"
+		},
+		{
+			"name": "bg_login_input_png",
+			"type": "image",
+			"url": "assets/Loading/bg_login_input.png"
+		},
+		{
+			"name": "btn_login_confirm_png",
+			"type": "image",
+			"url": "assets/Loading/btn_login_confirm.png"
+		},
+		{
+			"name": "icon_loading_circle_png",
+			"type": "image",
+			"url": "assets/Common/icon_loading_circle.png"
+		},
+		{
+			"name": "icon_loading_spade_png",
+			"type": "image",
+			"url": "assets/Common/icon_loading_spade.png"
+		},
+		{
+			"name": "bg_custom_alert_png",
+			"type": "image",
+			"url": "assets/Common/bg_custom_alert.png"
+		},
+		{
+			"name": "btn_alert_confirm_png",
+			"type": "image",
+			"url": "assets/Common/btn_alert_confirm.png"
+		},
+		{
+			"name": "btn_game_dropdown_png",
+			"type": "image",
+			"url": "assets/Game/btn_game_dropdown.png"
+		},
+		{
+			"name": "btn_room_start_game_png",
+			"type": "image",
+			"url": "assets/Game/btn_room_start_game.png"
+		},
+		{
+			"name": "icon_scoreboard_chip_png",
+			"type": "image",
+			"url": "assets/Game/icon_scoreboard_chip.png"
+		},
+		{
+			"name": "image_border_yellow_png",
+			"type": "image",
+			"url": "assets/Game/image_border_yellow.png"
+		},
+		{
+			"name": "addchips_mp3",
+			"type": "sound",
+			"url": "assets/Game/sound/addchips.mp3"
+		},
+		{
+			"name": "allin_mp3",
+			"type": "sound",
+			"url": "assets/Game/sound/allin.mp3"
+		},
+		{
+			"name": "bet_mp3",
+			"type": "sound",
+			"url": "assets/Game/sound/bet.mp3"
+		},
+		{
+			"name": "btn_click_mp3",
+			"type": "sound",
+			"url": "assets/Game/sound/btn_click.mp3"
+		},
+		{
+			"name": "check_mp3",
+			"type": "sound",
+			"url": "assets/Game/sound/check.mp3"
+		},
+		{
+			"name": "chiptoplayers_mp3",
+			"type": "sound",
+			"url": "assets/Game/sound/chiptoplayers.mp3"
+		},
+		{
+			"name": "chiptopool_mp3",
+			"type": "sound",
+			"url": "assets/Game/sound/chiptopool.mp3"
+		},
+		{
+			"name": "fapai3_mp3",
+			"type": "sound",
+			"url": "assets/Game/sound/fapai3.mp3"
+		},
+		{
+			"name": "fapai_mp3",
+			"type": "sound",
+			"url": "assets/Game/sound/fapai.mp3"
+		},
+		{
+			"name": "fold_mp3",
+			"type": "sound",
+			"url": "assets/Game/sound/fold.mp3"
+		},
+		{
+			"name": "g_alarm_mp3",
+			"type": "sound",
+			"url": "assets/Game/sound/g_alarm.mp3"
+		},
+		{
+			"name": "movechips_mp3",
+			"type": "sound",
+			"url": "assets/Game/sound/movechips.mp3"
+		},
+		{
+			"name": "notice_mp3",
+			"type": "sound",
+			"url": "assets/Game/sound/notice.mp3"
+		},
+		{
+			"name": "user_enter_mp3",
+			"type": "sound",
+			"url": "assets/Game/sound/user_enter.mp3"
+		},
+		{
+			"name": "uiclick_mp3",
+			"type": "sound",
+			"url": "assets/uiclick.mp3"
+		},
+		{
+			"name": "btn_login_by_visitor_png",
+			"type": "image",
+			"url": "assets/Loading/btn_login_by_visitor.png"
+		},
+		{
+			"name": "btn_check_disabled_png",
+			"type": "image",
+			"url": "assets/Game/btn_check_disabled.png"
+		},
+		{
+			"name": "btn_call_disabled_png",
+			"type": "image",
+			"url": "assets/Game/btn_call_disabled.png"
+		},
+		{
+			"name": "btn_all_in_png",
+			"type": "image",
+			"url": "assets/Game/btn_all_in.png"
+		}
+	]
+}
