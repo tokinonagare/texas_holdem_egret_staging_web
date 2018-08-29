@@ -12,18 +12,18 @@
 		"resource/eui_skins/GameSkins/View/PlayGameButtonGroupSkin.exml",
 		"resource/eui_skins/GameSkins/View/RaiseSelectorSkin.exml",
 		"resource/eui_skins/GameSkins/GameSkin.exml",
-		"resource/eui_skins/LaunchSkins/InputPhoneNumberSkin.exml",
-		"resource/eui_skins/LaunchSkins/InputPinSkin.exml",
-		"resource/eui_skins/LaunchSkins/TimerButtonSkin.exml",
-		"resource/eui_skins/LaunchSkins/InputVerificationCodeSkin.exml",
-		"resource/eui_skins/LaunchSkins/LaunchSkin.exml",
-		"resource/eui_skins/LoadingSkins/LoadingSkin.exml",
 		"resource/eui_skins/GameSkins/View/CardItemSkin.exml",
 		"resource/eui_skins/GameSkins/View/ChatSkin.exml",
 		"resource/eui_skins/GameSkins/View/MarkSkin.exml",
 		"resource/eui_skins/GameSkins/View/PlayerSkin.exml",
 		"resource/eui_skins/GameSkins/View/PotItemSkin.exml",
-		"resource/eui_skins/GameSkins/View/ScoreboardSkin.exml"
+		"resource/eui_skins/GameSkins/View/ScoreboardSkin.exml",
+		"resource/eui_skins/LaunchSkins/InputPhoneNumberSkin.exml",
+		"resource/eui_skins/LaunchSkins/InputPinSkin.exml",
+		"resource/eui_skins/LaunchSkins/TimerButtonSkin.exml",
+		"resource/eui_skins/LaunchSkins/InputVerificationCodeSkin.exml",
+		"resource/eui_skins/LaunchSkins/LaunchSkin.exml",
+		"resource/eui_skins/LoadingSkins/LoadingSkin.exml"
 	],
 	"path": "resource/default.thm.json"
 }

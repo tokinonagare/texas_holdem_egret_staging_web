@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "egret_icon_png,description_json,gameEui_json,bg_game_png,bg_bottom_bar_png,icon_microphone_png,image_default_avatar_png,bg_player_sprite_png,icon_talk_png,bg_chat_textinput_png,poker_json,btn_call_png,btn_check_png,btn_fold_png,btn_raise_png,btn_raise_confirm_png,icon_raise_progress_selector_png,image_raise_slider_track_png,icon_raise_slider_arrow_png,image_raise_slider_dashboard_png,bg_raise_shadow_png,image_loading_track_png,image_loading_thumb_png,image_loading_shadow_png,btn_phone_login_png,btn_start_game_png,btn_next_step_png,bg_login_input_png,btn_login_confirm_png,icon_loading_circle_png,icon_loading_spade_png,bg_custom_alert_png,btn_alert_confirm_png,btn_game_dropdown_png,btn_room_start_game_png,icon_scoreboard_chip_png,image_border_yellow_png,addchips_mp3,allin_mp3,bet_mp3,btn_click_mp3,check_mp3,chiptoplayers_mp3,chiptopool_mp3,fapai3_mp3,fapai_mp3,fold_mp3,g_alarm_mp3,movechips_mp3,notice_mp3,user_enter_mp3,uiclick_mp3,btn_login_by_visitor_png,btn_check_disabled_png,btn_call_disabled_png,btn_all_in_png,btn_close_png",
+			"keys": "egret_icon_png,description_json,gameEui_json,bg_game_png,bg_bottom_bar_png,icon_microphone_png,image_default_avatar_png,bg_player_sprite_png,icon_talk_png,bg_chat_textinput_png,poker_json,btn_call_png,btn_check_png,btn_fold_png,btn_raise_png,btn_raise_confirm_png,icon_raise_progress_selector_png,image_raise_slider_track_png,icon_raise_slider_arrow_png,image_raise_slider_dashboard_png,bg_raise_shadow_png,image_loading_track_png,image_loading_thumb_png,image_loading_shadow_png,btn_phone_login_png,btn_start_game_png,btn_next_step_png,bg_login_input_png,btn_login_confirm_png,icon_loading_circle_png,icon_loading_spade_png,bg_custom_alert_png,btn_alert_confirm_png,btn_game_dropdown_png,btn_room_start_game_png,icon_scoreboard_chip_png,image_border_yellow_png,addchips_mp3,allin_mp3,bet_mp3,btn_click_mp3,check_mp3,chiptoplayers_mp3,chiptopool_mp3,fapai3_mp3,fapai_mp3,fold_mp3,g_alarm_mp3,movechips_mp3,notice_mp3,user_enter_mp3,uiclick_mp3,btn_login_by_visitor_png,btn_check_disabled_png,btn_call_disabled_png,btn_all_in_png,btn_close_png,coin_particle_json,coin_particle_png",
 			"name": "preload"
 		},
 		{
@@ -305,6 +305,16 @@
 			"name": "btn_close_png",
 			"type": "image",
 			"url": "assets/Common/btn_close.png"
+		},
+		{
+			"name": "coin_particle_json",
+			"type": "json",
+			"url": "assets/Game/particle/coin_particle.json"
+		},
+		{
+			"name": "coin_particle_png",
+			"type": "image",
+			"url": "assets/Game/particle/coin_particle.png"
 		}
 	]
 }

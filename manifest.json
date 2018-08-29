@@ -1,20 +1,21 @@
 {
 	"initial": [
-		"js/egret.min_3271047f.js",
-		"js/egret.web.min_8fd2b4de.js",
-		"js/eui.min_22447123.js",
-		"js/assetsmanager.min_74d9c0de.js",
+		"js/egret.min_df45737.js",
+		"js/egret.web.min_febf20a9.js",
+		"js/eui.min_506ce9f.js",
+		"js/assetsmanager.min_15cac774.js",
 		"js/tween.min_6c5a88f9.js",
 		"js/game.min_45aa06f6.js",
 		"js/socket.min_8b4cb752.js",
 		"js/experimental.min_31954293.js",
 		"js/promise.min_83a6a5d.js",
+		"js/particle.min_27fe451d.js",
 		"js/centrifuge.min_67b596b1.js",
 		"js/uuid.min_56860d1c.js",
 		"js/decimal.min_857aef33.js"
 	],
 	"game": [
-		"js/default.thm_1ec2919b.js",
-		"js/main.min_5e801aa.js"
+		"js/default.thm_2ec172be.js",
+		"js/main.min_7acf3c53.js"
 	]
 }
