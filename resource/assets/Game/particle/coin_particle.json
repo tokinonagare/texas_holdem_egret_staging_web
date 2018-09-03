@@ -7,7 +7,7 @@
 ,"startBlueVariance":0
 ,"startSize":30
 ,"emitter":{"x":60,"y":10}
-,"maxParticles":200
+,"maxParticles":80
 ,"endRedVariance":0
 ,"engGreenVariance":0
 ,"emitAngleVariance":360
@@ -25,7 +25,7 @@
 ,"maxRadius":100
 ,"startAlpha":0.8901960784313725
 ,"speedVariance":0
-,"gravity":{"x":0,"y":110}
+,"gravity":{"x":0,"y":500}
 ,"endRed":255
 ,"endAlphaVariance":0
 ,"speed":20
@@ -41,10 +41,10 @@
 ,"endAlpha":1
 ,"tangentialAcceleration":0
 ,"maxRadiusVariance":30
-,"lifespan":1000
+,"lifespan":500
 ,"endBlue":255
 ,"minRadius":20
-,"lifespanVariance":700
+,"lifespanVariance":500
 ,"startGreen":255
 ,"minRadiusVariance":10
 ,"startRed":255
