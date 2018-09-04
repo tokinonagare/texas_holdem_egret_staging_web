@@ -5,7 +5,7 @@
 			"name": "preload"
 		},
 		{
-			"keys": "bg_loading_png,icon_texas_holdem_logo_png",
+			"keys": "bg_loading_png",
 			"name": "loading"
 		}
 	],
@@ -115,11 +115,6 @@
 			"url": "assets/Loading/bg_loading.png",
 			"type": "image",
 			"name": "bg_loading_png"
-		},
-		{
-			"url": "assets/Loading/icon_texas_holdem_logo.png",
-			"type": "image",
-			"name": "icon_texas_holdem_logo_png"
 		},
 		{
 			"name": "bg_raise_shadow_png",
