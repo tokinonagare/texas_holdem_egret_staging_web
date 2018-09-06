@@ -17,6 +17,8 @@
 		"resource/eui_skins/GameSkins/View/CardItemSkin.exml",
 		"resource/eui_skins/GameSkins/View/ChatSkin.exml",
 		"resource/eui_skins/GameSkins/View/MarkSkin.exml",
+		"resource/eui_skins/GameSkins/View/MenuItemSkin.exml",
+		"resource/eui_skins/GameSkins/View/MenuViewSkin.exml",
 		"resource/eui_skins/GameSkins/View/NumericKeyboardSkin.exml",
 		"resource/eui_skins/GameSkins/View/PlayerSkin.exml",
 		"resource/eui_skins/GameSkins/View/PotItemSkin.exml",
