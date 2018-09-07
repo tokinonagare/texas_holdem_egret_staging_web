@@ -15,6 +15,7 @@
 		"resource/eui_skins/GameSkins/View/RaiseSelectorSkin.exml",
 		"resource/eui_skins/GameSkins/GameSkin.exml",
 		"resource/eui_skins/GameSkins/View/CardItemSkin.exml",
+		"resource/eui_skins/GameSkins/View/CardPatternSkin.exml",
 		"resource/eui_skins/GameSkins/View/ChatSkin.exml",
 		"resource/eui_skins/GameSkins/View/MarkSkin.exml",
 		"resource/eui_skins/GameSkins/View/MenuItemSkin.exml",
