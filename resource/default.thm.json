@@ -28,6 +28,7 @@
 		"resource/eui_skins/GameSkins/View/MenuItemSkin.exml",
 		"resource/eui_skins/GameSkins/View/MenuViewSkin.exml",
 		"resource/eui_skins/GameSkins/View/NumericKeyboardSkin.exml",
+		"resource/eui_skins/GameSkins/View/PlayerDetailSkin.exml",
 		"resource/eui_skins/GameSkins/View/PlayerSkin.exml",
 		"resource/eui_skins/GameSkins/View/PotItemSkin.exml",
 		"resource/eui_skins/GameSkins/View/ScoreboardSkin.exml",

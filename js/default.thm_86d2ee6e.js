@@ -2446,6 +2446,78 @@
 		return t;
 	};
 	return NumericKeyboardSkin;
+})(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/PlayerDetailSkin.exml'] = window.PlayerDetailSkin = (function (_super) {
+	__extends(PlayerDetailSkin, _super);
+	function PlayerDetailSkin() {
+		_super.call(this);
+		this.skinParts = ["background","avatarImage","nicknameLabel"];
+		
+		this.height = 1334;
+		this.width = 750;
+		this.elementsContent = [this.background_i(),this._Group1_i()];
+	}
+	var _proto = PlayerDetailSkin.prototype;
+
+	_proto.background_i = function () {
+		var t = new eui.Rect();
+		this.background = t;
+		t.fillAlpha = 0;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto._Group1_i = function () {
+		var t = new eui.Group();
+		t.height = 970;
+		t.horizontalCenter = 0;
+		t.verticalCenter = 0;
+		t.width = 690;
+		t.elementsContent = [this._Image1_i(),this.avatarImage_i(),this.nicknameLabel_i(),this._Label1_i()];
+		return t;
+	};
+	_proto._Image1_i = function () {
+		var t = new eui.Image();
+		t.height = 970;
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "bg_player_detail_png";
+		t.verticalCenter = 0;
+		t.width = 690;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto.avatarImage_i = function () {
+		var t = new eui.Image();
+		this.avatarImage = t;
+		t.height = 150;
+		t.source = "image_default_avatar_png";
+		t.width = 150;
+		t.x = 48;
+		t.y = 30;
+		return t;
+	};
+	_proto.nicknameLabel_i = function () {
+		var t = new eui.Label();
+		this.nicknameLabel = t;
+		t.text = "Stan";
+		t.x = 230;
+		t.y = 60;
+		return t;
+	};
+	_proto._Label1_i = function () {
+		var t = new eui.Label();
+		t.size = 22;
+		t.text = "签名: lalalalalalalalalalla";
+		t.textColor = 0xb8c2c0;
+		t.x = 230;
+		t.y = 130;
+		return t;
+	};
+	return PlayerDetailSkin;
 })(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/PlayerSkin.exml'] = window.PlayerSkin = (function (_super) {
 	__extends(PlayerSkin, _super);
 	function PlayerSkin() {
