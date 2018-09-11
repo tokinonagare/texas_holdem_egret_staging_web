@@ -2450,7 +2450,7 @@
 	__extends(PlayerDetailSkin, _super);
 	function PlayerDetailSkin() {
 		_super.call(this);
-		this.skinParts = ["background","avatarImage","nicknameLabel","bioLabel","recordList","cardList"];
+		this.skinParts = ["background","avatarImage","nicknameLabel","bioLabel","statisticList","cardList"];
 		
 		this.height = 1334;
 		this.width = 750;
@@ -2474,7 +2474,7 @@
 		t.horizontalCenter = 0;
 		t.verticalCenter = 0;
 		t.width = 690;
-		t.elementsContent = [this._Rect1_i(),this._Rect2_i(),this.avatarImage_i(),this.nicknameLabel_i(),this.bioLabel_i(),this.recordList_i(),this._Label1_i(),this.cardList_i()];
+		t.elementsContent = [this._Rect1_i(),this._Rect2_i(),this.avatarImage_i(),this.nicknameLabel_i(),this.bioLabel_i(),this.statisticList_i(),this._Label1_i(),this.cardList_i()];
 		return t;
 	};
 	_proto._Rect1_i = function () {
@@ -2531,14 +2531,14 @@
 		t.y = 130;
 		return t;
 	};
-	_proto.recordList_i = function () {
+	_proto.statisticList_i = function () {
 		var t = new eui.List();
-		this.recordList = t;
+		this.statisticList = t;
 		t.anchorOffsetX = 0;
 		t.anchorOffsetY = 0;
 		t.height = 604;
 		t.horizontalCenter = 0;
-		t.itemRendererSkinName = RecordItemSkin;
+		t.itemRendererSkinName = StatisticItemSkin;
 		t.width = 660;
 		t.y = 206;
 		t.layout = this._TileLayout1_i();
@@ -2711,9 +2711,9 @@
 		return t;
 	};
 	return PlayerDetailSkin;
-})(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/PlayerDetail/RecordItemSkin.exml'] = window.RecordItemSkin = (function (_super) {
-	__extends(RecordItemSkin, _super);
-	function RecordItemSkin() {
+})(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/PlayerDetail/StatisticdItemSkin.exml'] = window.StatisticItemSkin = (function (_super) {
+	__extends(StatisticItemSkin, _super);
+	function StatisticItemSkin() {
 		_super.call(this);
 		this.skinParts = ["titleLabel","dataLabel"];
 		
@@ -2724,7 +2724,7 @@
 		eui.Binding.$bindProperties(this, ["hostComponent.data.title"],[0],this.titleLabel,"text");
 		eui.Binding.$bindProperties(this, ["hostComponent.data.data"],[0],this.dataLabel,"text");
 	}
-	var _proto = RecordItemSkin.prototype;
+	var _proto = StatisticItemSkin.prototype;
 
 	_proto.titleLabel_i = function () {
 		var t = new eui.Label();
@@ -2743,6 +2743,7 @@
 		this.dataLabel = t;
 		t.anchorOffsetX = 0;
 		t.size = 32;
+		t.textColor = 0xffffff;
 		t.width = 158;
 		t.x = 20;
 		t.y = 65;
@@ -2757,7 +2758,7 @@
 		t.y = 118;
 		return t;
 	};
-	return RecordItemSkin;
+	return StatisticItemSkin;
 })(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/PlayerDetail/WonCardItemSkin.exml'] = window.WonCardItemSkin = (function (_super) {
 	__extends(WonCardItemSkin, _super);
 	function WonCardItemSkin() {

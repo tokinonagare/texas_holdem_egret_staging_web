@@ -29,7 +29,7 @@
 		"resource/eui_skins/GameSkins/View/MenuViewSkin.exml",
 		"resource/eui_skins/GameSkins/View/NumericKeyboardSkin.exml",
 		"resource/eui_skins/GameSkins/View/PlayerDetail/PlayerDetailSkin.exml",
-		"resource/eui_skins/GameSkins/View/PlayerDetail/RecordItemSkin.exml",
+		"resource/eui_skins/GameSkins/View/PlayerDetail/StatisticdItemSkin.exml",
 		"resource/eui_skins/GameSkins/View/PlayerDetail/WonCardItemSkin.exml",
 		"resource/eui_skins/GameSkins/View/PlayerSkin.exml",
 		"resource/eui_skins/GameSkins/View/PotItemSkin.exml",
