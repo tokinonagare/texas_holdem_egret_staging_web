@@ -2527,6 +2527,7 @@
 		t.size = 22;
 		t.text = "签名: lalalalalalalalalalla";
 		t.textColor = 0xb8c2c0;
+		t.visible = false;
 		t.x = 230;
 		t.y = 130;
 		return t;
