@@ -2446,11 +2446,11 @@
 		return t;
 	};
 	return NumericKeyboardSkin;
-})(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/PlayerDetailSkin.exml'] = window.PlayerDetailSkin = (function (_super) {
+})(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/PlayerDetail/PlayerDetailSkin.exml'] = window.PlayerDetailSkin = (function (_super) {
 	__extends(PlayerDetailSkin, _super);
 	function PlayerDetailSkin() {
 		_super.call(this);
-		this.skinParts = ["background","avatarImage","nicknameLabel"];
+		this.skinParts = ["background","avatarImage","nicknameLabel","bioLabel","recordList","cardList"];
 		
 		this.height = 1334;
 		this.width = 750;
@@ -2474,20 +2474,33 @@
 		t.horizontalCenter = 0;
 		t.verticalCenter = 0;
 		t.width = 690;
-		t.elementsContent = [this._Image1_i(),this.avatarImage_i(),this.nicknameLabel_i(),this._Label1_i()];
+		t.elementsContent = [this._Rect1_i(),this._Rect2_i(),this.avatarImage_i(),this.nicknameLabel_i(),this.bioLabel_i(),this.recordList_i(),this._Label1_i(),this.cardList_i()];
 		return t;
 	};
-	_proto._Image1_i = function () {
-		var t = new eui.Image();
+	_proto._Rect1_i = function () {
+		var t = new eui.Rect();
+		t.ellipseHeight = 20;
+		t.ellipseWidth = 20;
+		t.fillColor = 0x001211;
 		t.height = 970;
-		t.horizontalCenter = 0;
-		t.scaleX = 1;
-		t.scaleY = 1;
-		t.source = "bg_player_detail_png";
-		t.verticalCenter = 0;
+		t.strokeAlpha = 0.5;
+		t.strokeColor = 0x3bffde;
+		t.strokeWeight = 3;
 		t.width = 690;
 		t.x = 0;
 		t.y = 0;
+		return t;
+	};
+	_proto._Rect2_i = function () {
+		var t = new eui.Rect();
+		t.anchorOffsetY = 0;
+		t.ellipseHeight = 20;
+		t.ellipseWidth = 20;
+		t.fillColor = 0x072927;
+		t.height = 742;
+		t.width = 660;
+		t.x = 15;
+		t.y = 206;
 		return t;
 	};
 	_proto.avatarImage_i = function () {
@@ -2508,8 +2521,9 @@
 		t.y = 60;
 		return t;
 	};
-	_proto._Label1_i = function () {
+	_proto.bioLabel_i = function () {
 		var t = new eui.Label();
+		this.bioLabel = t;
 		t.size = 22;
 		t.text = "签名: lalalalalalalalalalla";
 		t.textColor = 0xb8c2c0;
@@ -2517,7 +2531,256 @@
 		t.y = 130;
 		return t;
 	};
+	_proto.recordList_i = function () {
+		var t = new eui.List();
+		this.recordList = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 604;
+		t.horizontalCenter = 0;
+		t.itemRendererSkinName = RecordItemSkin;
+		t.width = 660;
+		t.y = 206;
+		t.layout = this._TileLayout1_i();
+		t.dataProvider = this._ArrayCollection1_i();
+		return t;
+	};
+	_proto._TileLayout1_i = function () {
+		var t = new eui.TileLayout();
+		t.horizontalAlign = "left";
+		t.horizontalGap = 0;
+		t.orientation = "columns";
+		t.paddingBottom = 0;
+		t.paddingLeft = 0;
+		t.paddingRight = 0;
+		t.paddingTop = 30;
+		t.verticalAlign = "contentJustify";
+		t.verticalGap = 25;
+		return t;
+	};
+	_proto._ArrayCollection1_i = function () {
+		var t = new eui.ArrayCollection();
+		t.source = [this._Object1_i(),this._Object2_i(),this._Object3_i(),this._Object4_i(),this._Object5_i(),this._Object6_i(),this._Object7_i(),this._Object8_i(),this._Object9_i(),this._Object10_i(),this._Object11_i(),this._Object12_i(),this._Object13_i(),this._Object14_i(),this._Object15_i()];
+		return t;
+	};
+	_proto._Object1_i = function () {
+		var t = {};
+		t.data = "0";
+		t.title = "总局数";
+		return t;
+	};
+	_proto._Object2_i = function () {
+		var t = {};
+		t.data = "0";
+		t.title = "获胜局数";
+		return t;
+	};
+	_proto._Object3_i = function () {
+		var t = {};
+		t.data = "0";
+		t.title = "获胜率";
+		return t;
+	};
+	_proto._Object4_i = function () {
+		var t = {};
+		t.data = "0";
+		t.title = "总手数";
+		return t;
+	};
+	_proto._Object5_i = function () {
+		var t = {};
+		t.data = "0";
+		t.title = "入池率(VPIP)";
+		return t;
+	};
+	_proto._Object6_i = function () {
+		var t = {};
+		t.data = "0";
+		t.title = "入池胜率";
+		return t;
+	};
+	_proto._Object7_i = function () {
+		var t = {};
+		t.data = "0";
+		t.title = "场均带入";
+		return t;
+	};
+	_proto._Object8_i = function () {
+		var t = {};
+		t.data = "0";
+		t.title = "场均战绩";
+		return t;
+	};
+	_proto._Object9_i = function () {
+		var t = {};
+		t.data = "0";
+		t.title = "激进度(AF)";
+		return t;
+	};
+	_proto._Object10_i = function () {
+		var t = {};
+		t.data = "0";
+		t.title = "翻牌前加注率(PFR)";
+		return t;
+	};
+	_proto._Object11_i = function () {
+		var t = {};
+		t.data = "0";
+		t.title = "翻牌前再加注率(3Bet)";
+		return t;
+	};
+	_proto._Object12_i = function () {
+		var t = {};
+		t.data = "0";
+		t.title = "翻牌后持续下注率(CBet)";
+		return t;
+	};
+	_proto._Object13_i = function () {
+		var t = {};
+		t.data = "0";
+		t.title = "摊派率";
+		return t;
+	};
+	_proto._Object14_i = function () {
+		var t = {};
+		t.data = "0";
+		t.title = "All-In胜率";
+		return t;
+	};
+	_proto._Object15_i = function () {
+		var t = {};
+		t.data = "0";
+		t.title = "赢过最大的池底";
+		return t;
+	};
+	_proto._Label1_i = function () {
+		var t = new eui.Label();
+		t.size = 24;
+		t.text = "赢过最大的牌";
+		t.textColor = 0xb8c2c0;
+		t.x = 35;
+		t.y = 870;
+		return t;
+	};
+	_proto.cardList_i = function () {
+		var t = new eui.List();
+		this.cardList = t;
+		t.anchorOffsetX = 0;
+		t.height = 80;
+		t.itemRendererSkinName = WonCardItemSkin;
+		t.width = 366;
+		t.x = 250;
+		t.y = 842;
+		t.layout = this._HorizontalLayout1_i();
+		t.dataProvider = this._ArrayCollection2_i();
+		return t;
+	};
+	_proto._HorizontalLayout1_i = function () {
+		var t = new eui.HorizontalLayout();
+		t.gap = 18;
+		return t;
+	};
+	_proto._ArrayCollection2_i = function () {
+		var t = new eui.ArrayCollection();
+		t.source = [this._Object16_i(),this._Object17_i(),this._Object18_i(),this._Object19_i(),this._Object20_i()];
+		return t;
+	};
+	_proto._Object16_i = function () {
+		var t = {};
+		t.cardName = "1";
+		return t;
+	};
+	_proto._Object17_i = function () {
+		var t = {};
+		t.cardName = "null";
+		return t;
+	};
+	_proto._Object18_i = function () {
+		var t = {};
+		t.cardName = "null";
+		return t;
+	};
+	_proto._Object19_i = function () {
+		var t = {};
+		t.cardName = "null";
+		return t;
+	};
+	_proto._Object20_i = function () {
+		var t = {};
+		t.cardName = "null";
+		return t;
+	};
 	return PlayerDetailSkin;
+})(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/PlayerDetail/RecordItemSkin.exml'] = window.RecordItemSkin = (function (_super) {
+	__extends(RecordItemSkin, _super);
+	function RecordItemSkin() {
+		_super.call(this);
+		this.skinParts = ["titleLabel","dataLabel"];
+		
+		this.height = 120;
+		this.width = 220;
+		this.elementsContent = [this.titleLabel_i(),this.dataLabel_i(),this._Rect1_i()];
+		
+		eui.Binding.$bindProperties(this, ["hostComponent.data.title"],[0],this.titleLabel,"text");
+		eui.Binding.$bindProperties(this, ["hostComponent.data.data"],[0],this.dataLabel,"text");
+	}
+	var _proto = RecordItemSkin.prototype;
+
+	_proto.titleLabel_i = function () {
+		var t = new eui.Label();
+		this.titleLabel = t;
+		t.anchorOffsetX = 0;
+		t.height = 48;
+		t.size = 24;
+		t.textColor = 0xb8c2c0;
+		t.width = 148;
+		t.x = 20;
+		t.y = 15;
+		return t;
+	};
+	_proto.dataLabel_i = function () {
+		var t = new eui.Label();
+		this.dataLabel = t;
+		t.anchorOffsetX = 0;
+		t.size = 32;
+		t.width = 158;
+		t.x = 20;
+		t.y = 65;
+		return t;
+	};
+	_proto._Rect1_i = function () {
+		var t = new eui.Rect();
+		t.fillColor = 0x08372c;
+		t.height = 2;
+		t.width = 220;
+		t.x = 0;
+		t.y = 118;
+		return t;
+	};
+	return RecordItemSkin;
+})(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/PlayerDetail/WonCardItemSkin.exml'] = window.WonCardItemSkin = (function (_super) {
+	__extends(WonCardItemSkin, _super);
+	function WonCardItemSkin() {
+		_super.call(this);
+		this.skinParts = ["cardImage"];
+		
+		this.height = 80;
+		this.width = 54;
+		this.elementsContent = [this.cardImage_i()];
+	}
+	var _proto = WonCardItemSkin.prototype;
+
+	_proto.cardImage_i = function () {
+		var t = new eui.Image();
+		this.cardImage = t;
+		t.height = 80;
+		t.source = "poker_back_png";
+		t.width = 54;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	return WonCardItemSkin;
 })(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/PlayerSkin.exml'] = window.PlayerSkin = (function (_super) {
 	__extends(PlayerSkin, _super);
 	function PlayerSkin() {
