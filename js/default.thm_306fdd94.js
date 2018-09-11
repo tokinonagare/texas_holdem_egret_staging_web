@@ -1997,6 +1997,194 @@
 		return t;
 	};
 	return LeaderboardSceneSkin;
+})(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/BuyInView/BuyInButtonSkin.exml'] = window.BuyInButtonSkin = (function (_super) {
+	__extends(BuyInButtonSkin, _super);
+	function BuyInButtonSkin() {
+		_super.call(this);
+		this.skinParts = ["labelDisplay"];
+		
+		this.height = 102;
+		this.width = 536;
+		this.elementsContent = [this._Rect1_i(),this._Rect2_i(),this.labelDisplay_i()];
+		this.states = [
+			new eui.State ("up",
+				[
+				])
+			,
+			new eui.State ("down",
+				[
+					new eui.SetProperty("_Rect1","fillColor",0x146862)
+				])
+			,
+			new eui.State ("disabled",
+				[
+				])
+		];
+	}
+	var _proto = BuyInButtonSkin.prototype;
+
+	_proto._Rect1_i = function () {
+		var t = new eui.Rect();
+		this._Rect1 = t;
+		t.fillColor = 0x072927;
+		t.height = 102;
+		t.width = 536;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto._Rect2_i = function () {
+		var t = new eui.Rect();
+		t.fillColor = 0x041716;
+		t.height = 2;
+		t.width = 536;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto.labelDisplay_i = function () {
+		var t = new eui.Label();
+		this.labelDisplay = t;
+		t.horizontalCenter = 0;
+		t.size = 34;
+		t.text = "Label";
+		t.verticalCenter = 0;
+		return t;
+	};
+	return BuyInButtonSkin;
+})(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/BuyInView/BuyInSliderSkin.exml'] = window.BuyInSliderSkin = (function (_super) {
+	__extends(BuyInSliderSkin, _super);
+	function BuyInSliderSkin() {
+		_super.call(this);
+		this.skinParts = ["track","thumb"];
+		
+		this.height = 46;
+		this.width = 499;
+		this.elementsContent = [this.track_i(),this.thumb_i()];
+	}
+	var _proto = BuyInSliderSkin.prototype;
+
+	_proto.track_i = function () {
+		var t = new eui.Image();
+		this.track = t;
+		t.height = 10;
+		t.horizontalCenter = 0;
+		t.source = "image_buy_in_track_png";
+		t.verticalCenter = 0;
+		t.width = 476;
+		return t;
+	};
+	_proto.thumb_i = function () {
+		var t = new eui.Image();
+		this.thumb = t;
+		t.height = 46;
+		t.source = "image_buy_in_thumb_png";
+		t.verticalCenter = 0;
+		t.width = 46;
+		t.x = 0;
+		return t;
+	};
+	return BuyInSliderSkin;
+})(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/BuyInView/BuyInSkin.exml'] = window.BuyInSkin = (function (_super) {
+	__extends(BuyInSkin, _super);
+	function BuyInSkin() {
+		_super.call(this);
+		this.skinParts = ["background","scoreLabel","scoreSlider","confirmButton"];
+		
+		this.height = 1334;
+		this.width = 750;
+		this.elementsContent = [this.background_i(),this._Group1_i()];
+	}
+	var _proto = BuyInSkin.prototype;
+
+	_proto.background_i = function () {
+		var t = new eui.Rect();
+		this.background = t;
+		t.fillAlpha = 0;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto._Group1_i = function () {
+		var t = new eui.Group();
+		t.height = 400;
+		t.horizontalCenter = 0;
+		t.verticalCenter = 0;
+		t.width = 536;
+		t.elementsContent = [this._Rect1_i(),this._Label1_i(),this._Image1_i(),this.scoreLabel_i(),this.scoreSlider_i(),this.confirmButton_i()];
+		return t;
+	};
+	_proto._Rect1_i = function () {
+		var t = new eui.Rect();
+		t.ellipseHeight = 30;
+		t.ellipseWidth = 30;
+		t.fillColor = 0x072927;
+		t.height = 400;
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.verticalCenter = 0;
+		t.width = 536;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto._Label1_i = function () {
+		var t = new eui.Label();
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 36;
+		t.text = "带入记分牌:";
+		t.textColor = 0xe3e9e9;
+		t.x = 80;
+		t.y = 80;
+		return t;
+	};
+	_proto._Image1_i = function () {
+		var t = new eui.Image();
+		t.height = 36;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "icon_buy_in_chip_png";
+		t.width = 36;
+		t.x = 300;
+		t.y = 78;
+		return t;
+	};
+	_proto.scoreLabel_i = function () {
+		var t = new eui.Label();
+		this.scoreLabel = t;
+		t.size = 44;
+		t.text = "200";
+		t.width = 160;
+		t.x = 360;
+		t.y = 74;
+		return t;
+	};
+	_proto.scoreSlider_i = function () {
+		var t = new eui.HSlider();
+		this.scoreSlider = t;
+		t.height = 46;
+		t.horizontalCenter = 0;
+		t.skinName = "BuyInSliderSkin";
+		t.width = 499;
+		t.y = 180;
+		return t;
+	};
+	_proto.confirmButton_i = function () {
+		var t = new eui.Button();
+		this.confirmButton = t;
+		t.bottom = 0;
+		t.height = 102;
+		t.label = "确定";
+		t.skinName = "BuyInButtonSkin";
+		t.width = 536;
+		t.x = 0;
+		return t;
+	};
+	return BuyInSkin;
 })(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/CardItemSkin.exml'] = window.CardItemSkin = (function (_super) {
 	__extends(CardItemSkin, _super);
 	function CardItemSkin() {
