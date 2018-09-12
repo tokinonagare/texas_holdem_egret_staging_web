@@ -2169,7 +2169,7 @@
 		var t = new eui.Label();
 		this.scoreLabel = t;
 		t.size = 44;
-		t.text = "200";
+		t.text = "0";
 		t.width = 160;
 		t.x = 360;
 		t.y = 74;
