@@ -1433,11 +1433,11 @@
 
 	function GameSkin() {
 		_super.call(this);
-		this.skinParts = ["mainPotLabel","pinLabel","creatorLabel","blindLabel","talkButton","microphoneButton","communityCardList","startGameButton","cardTypeLabel","potsList","menuButton","playGameButtonGroup","raiseSelector","cardPattern","bottomToolbar"];
+		this.skinParts = ["mainPotLabel","pinLabel","creatorLabel","blindLabel","talkButton","microphoneButton","communityCardList","startGameButton","cardTypeLabel","potsList","menuButton","playGameButtonGroup","raiseSelector","cardPattern","bottomToolbar","group"];
 		
 		this.height = 1334;
 		this.width = 750;
-		this.elementsContent = [this._Image1_i(),this.mainPotLabel_i(),this.pinLabel_i(),this.creatorLabel_i(),this.blindLabel_i(),this.talkButton_i(),this.microphoneButton_i(),this.communityCardList_i(),this.startGameButton_i(),this.cardTypeLabel_i(),this.potsList_i(),this.menuButton_i(),this.playGameButtonGroup_i(),this.raiseSelector_i(),this.cardPattern_i(),this.bottomToolbar_i()];
+		this.elementsContent = [this._Image1_i(),this.group_i()];
 	}
 	var _proto = GameSkin.prototype;
 
@@ -1450,9 +1450,21 @@
 		t.y = 0;
 		return t;
 	};
+	_proto.group_i = function () {
+		var t = new eui.Group();
+		this.group = t;
+		t.height = 1334;
+		t.width = 750;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this.mainPotLabel_i(),this.pinLabel_i(),this.creatorLabel_i(),this.blindLabel_i(),this.talkButton_i(),this.microphoneButton_i(),this.communityCardList_i(),this.startGameButton_i(),this.cardTypeLabel_i(),this.potsList_i(),this.menuButton_i(),this.playGameButtonGroup_i(),this.raiseSelector_i(),this.cardPattern_i(),this.bottomToolbar_i()];
+		return t;
+	};
 	_proto.mainPotLabel_i = function () {
 		var t = new eui.Label();
 		this.mainPotLabel = t;
+		t.scaleX = 1;
+		t.scaleY = 1;
 		t.size = 22;
 		t.text = "底池: 0";
 		t.textAlign = "center";
