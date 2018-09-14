@@ -2987,12 +2987,12 @@
 	__extends(PlayerSkin, _super);
 	function PlayerSkin() {
 		_super.call(this);
-		this.skinParts = ["winnerAnimation","avatarImage","nameLabel","scoreLabel","cover","progressBorder","winnerBorder","timerLabel"];
+		this.skinParts = ["winnerAnimation","avatarImage","nameLabel","scoreLabel","countdownCover","timerLabel","progressBorder","winnerBorder","foldCover"];
 		
 		this.height = 200;
 		this.width = 140;
 		this.winnerAnimation_i();
-		this.elementsContent = [this._Image1_i(),this.avatarImage_i(),this.nameLabel_i(),this.scoreLabel_i(),this.cover_i(),this.progressBorder_i(),this.winnerBorder_i(),this.timerLabel_i()];
+		this.elementsContent = [this._Image1_i(),this.avatarImage_i(),this.nameLabel_i(),this.scoreLabel_i(),this.countdownCover_i(),this.timerLabel_i(),this.progressBorder_i(),this.winnerBorder_i(),this.foldCover_i()];
 		
 		eui.Binding.$bindProperties(this, ["winnerBorder"],[0],this._TweenItem1,"target");
 		eui.Binding.$bindProperties(this, [1],[],this._Object1,"alpha");
@@ -3189,19 +3189,34 @@
 		t.y = 150;
 		return t;
 	};
-	_proto.cover_i = function () {
+	_proto.countdownCover_i = function () {
 		var t = new eui.Rect();
-		this.cover = t;
+		this.countdownCover = t;
 		t.anchorOffsetX = 0;
 		t.anchorOffsetY = 0;
 		t.ellipseHeight = 10;
 		t.ellipseWidth = 10;
 		t.fillAlpha = 0.5;
-		t.height = 182;
+		t.height = 177;
 		t.visible = false;
-		t.width = 120;
-		t.x = 10;
-		t.y = 8;
+		t.width = 118;
+		t.x = 11;
+		t.y = 11;
+		return t;
+	};
+	_proto.timerLabel_i = function () {
+		var t = new eui.Label();
+		this.timerLabel = t;
+		t.bold = true;
+		t.horizontalCenter = 0;
+		t.size = 80;
+		t.text = "15";
+		t.textAlign = "center";
+		t.textColor = 0x86f210;
+		t.verticalAlign = "middle";
+		t.verticalCenter = 0;
+		t.visible = false;
+		t.width = 100;
 		return t;
 	};
 	_proto.progressBorder_i = function () {
@@ -3226,19 +3241,19 @@
 		t.y = 0;
 		return t;
 	};
-	_proto.timerLabel_i = function () {
-		var t = new eui.Label();
-		this.timerLabel = t;
-		t.bold = true;
-		t.horizontalCenter = 0;
-		t.size = 80;
-		t.text = "15";
-		t.textAlign = "center";
-		t.textColor = 0x86f210;
-		t.verticalAlign = "middle";
-		t.verticalCenter = 0;
+	_proto.foldCover_i = function () {
+		var t = new eui.Rect();
+		this.foldCover = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.ellipseHeight = 10;
+		t.ellipseWidth = 10;
+		t.fillAlpha = 0.5;
+		t.height = 177;
 		t.visible = false;
-		t.width = 100;
+		t.width = 118;
+		t.x = 11;
+		t.y = 11;
 		return t;
 	};
 	return PlayerSkin;
