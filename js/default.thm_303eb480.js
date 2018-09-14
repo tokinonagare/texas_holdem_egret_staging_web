@@ -2750,7 +2750,7 @@
 		var t = new eui.TileLayout();
 		t.horizontalAlign = "left";
 		t.horizontalGap = 0;
-		t.orientation = "columns";
+		t.orientation = "rows";
 		t.paddingBottom = 0;
 		t.paddingLeft = 0;
 		t.paddingRight = 0;
