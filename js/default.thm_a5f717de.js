@@ -2564,8 +2564,8 @@
 		t.height = 356;
 		t.itemRendererSkinName = MenuItemSkin;
 		t.width = 240;
-		t.x = 0;
-		t.y = -356;
+		t.x = -240;
+		t.y = 0;
 		t.layout = this._VerticalLayout1_i();
 		t.dataProvider = this._ArrayCollection1_i();
 		return t;
