@@ -2051,8 +2051,8 @@
 		var t = new eui.Rect();
 		this._Rect1 = t;
 		t.fillColor = 0x072927;
-		t.height = 102;
-		t.width = 536;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
 		t.x = 0;
 		t.y = 0;
 		return t;
@@ -2061,7 +2061,7 @@
 		var t = new eui.Rect();
 		t.fillColor = 0x041716;
 		t.height = 2;
-		t.width = 536;
+		t.percentWidth = 100;
 		t.x = 0;
 		t.y = 0;
 		return t;
@@ -2076,6 +2076,124 @@
 		return t;
 	};
 	return BuyInButtonSkin;
+})(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/BuyInApplication/BuyInApplicationSkin.exml'] = window.BuyInApplicationSkin = (function (_super) {
+	__extends(BuyInApplicationSkin, _super);
+	function BuyInApplicationSkin() {
+		_super.call(this);
+		this.skinParts = ["nicknameLabel","scoreLabel","rejectButton","agreeButton"];
+		
+		this.height = 1334;
+		this.width = 750;
+		this.elementsContent = [this._Rect1_i(),this._Group1_i()];
+	}
+	var _proto = BuyInApplicationSkin.prototype;
+
+	_proto._Rect1_i = function () {
+		var t = new eui.Rect();
+		t.fillAlpha = 0;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto._Group1_i = function () {
+		var t = new eui.Group();
+		t.height = 400;
+		t.horizontalCenter = 0;
+		t.verticalCenter = 0;
+		t.width = 536;
+		t.elementsContent = [this._Rect2_i(),this._Label1_i(),this.nicknameLabel_i(),this.scoreLabel_i(),this.rejectButton_i(),this.agreeButton_i(),this._Rect3_i(),this._Label2_i()];
+		return t;
+	};
+	_proto._Rect2_i = function () {
+		var t = new eui.Rect();
+		t.ellipseHeight = 20;
+		t.ellipseWidth = 20;
+		t.fillColor = 0x072927;
+		t.height = 400;
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.verticalCenter = 0;
+		t.width = 536;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto._Label1_i = function () {
+		var t = new eui.Label();
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 36;
+		t.text = "记分牌带入申请";
+		t.y = 50;
+		return t;
+	};
+	_proto.nicknameLabel_i = function () {
+		var t = new eui.Label();
+		this.nicknameLabel = t;
+		t.horizontalCenter = 0;
+		t.size = 32;
+		t.text = "Stan";
+		t.textAlign = "center";
+		t.textColor = 0x6bfffd;
+		t.width = 400;
+		t.y = 140;
+		return t;
+	};
+	_proto.scoreLabel_i = function () {
+		var t = new eui.Label();
+		this.scoreLabel = t;
+		t.horizontalCenter = 0;
+		t.size = 32;
+		t.text = "申请带入记分牌 200";
+		t.textAlign = "center";
+		t.width = 400;
+		t.y = 180;
+		return t;
+	};
+	_proto.rejectButton_i = function () {
+		var t = new eui.Button();
+		this.rejectButton = t;
+		t.label = "拒绝";
+		t.left = 0;
+		t.skinName = "BuyInButtonSkin";
+		t.width = 268;
+		t.y = 298;
+		return t;
+	};
+	_proto.agreeButton_i = function () {
+		var t = new eui.Button();
+		this.agreeButton = t;
+		t.label = "同意";
+		t.right = 0;
+		t.skinName = "BuyInButtonSkin";
+		t.width = 268;
+		t.y = 298;
+		return t;
+	};
+	_proto._Rect3_i = function () {
+		var t = new eui.Rect();
+		t.bottom = 0;
+		t.height = 102;
+		t.horizontalCenter = 0;
+		t.width = 2;
+		return t;
+	};
+	_proto._Label2_i = function () {
+		var t = new eui.Label();
+		t.horizontalCenter = 0;
+		t.size = 18;
+		t.text = "* 该房间最低带入记分牌为 400";
+		t.textAlign = "center";
+		t.textColor = 0xfe2a2a;
+		t.width = 400;
+		t.y = 260;
+		return t;
+	};
+	return BuyInApplicationSkin;
 })(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/BuyInView/BuyInSliderSkin.exml'] = window.BuyInSliderSkin = (function (_super) {
 	__extends(BuyInSliderSkin, _super);
 	function BuyInSliderSkin() {
