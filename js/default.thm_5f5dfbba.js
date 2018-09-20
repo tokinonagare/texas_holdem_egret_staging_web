@@ -409,7 +409,7 @@
 
 	_proto._Rect1_i = function () {
 		var t = new eui.Rect();
-		t.fillAlpha = 0.7;
+		t.fillAlpha = 0.5;
 		t.height = 13347;
 		t.width = 750;
 		t.x = 0;
@@ -2021,6 +2021,106 @@
 		return t;
 	};
 	return LeaderboardSceneSkin;
+})(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/BuyInApplication/ApplicationRecoreItemSkin.exml'] = window.ApplicationRecoreItemSkin = (function (_super) {
+	__extends(ApplicationRecoreItemSkin, _super);
+	function ApplicationRecoreItemSkin() {
+		_super.call(this);
+		this.skinParts = ["nicknameLabel","scroeLabel","rejectButton","agreeButton"];
+		
+		this.height = 132;
+		this.width = 662;
+		this.elementsContent = [this.nicknameLabel_i(),this.scroeLabel_i(),this._Label1_i(),this._Group1_i(),this._Rect2_i()];
+		
+		eui.Binding.$bindProperties(this, ["hostComponent.data.nickname"],[0],this.nicknameLabel,"text");
+	}
+	var _proto = ApplicationRecoreItemSkin.prototype;
+
+	_proto.nicknameLabel_i = function () {
+		var t = new eui.Label();
+		this.nicknameLabel = t;
+		t.textColor = 0x6bfffd;
+		t.width = 300;
+		t.x = 14;
+		t.y = 24;
+		return t;
+	};
+	_proto.scroeLabel_i = function () {
+		var t = new eui.Label();
+		this.scroeLabel = t;
+		t.text = "申请带入记分牌 2000";
+		t.width = 300;
+		t.x = 14;
+		t.y = 60;
+		return t;
+	};
+	_proto._Label1_i = function () {
+		var t = new eui.Label();
+		t.size = 18;
+		t.text = "* 该房间最低带入记分牌为 400";
+		t.textAlign = "left";
+		t.textColor = 0xFE2A2A;
+		t.width = 400;
+		t.x = 14;
+		t.y = 100;
+		return t;
+	};
+	_proto._Group1_i = function () {
+		var t = new eui.Group();
+		t.bottom = 0;
+		t.height = 132;
+		t.right = 0;
+		t.width = 250;
+		t.elementsContent = [this.rejectButton_i(),this.agreeButton_i(),this._Rect1_i()];
+		return t;
+	};
+	_proto.rejectButton_i = function () {
+		var t = new eui.Label();
+		this.rejectButton = t;
+		t.left = 20;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 36;
+		t.text = "拒绝";
+		t.textColor = 0x86acac;
+		t.touchEnabled = true;
+		t.y = 53.94;
+		return t;
+	};
+	_proto.agreeButton_i = function () {
+		var t = new eui.Label();
+		this.agreeButton = t;
+		t.right = 20;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 36;
+		t.text = "同意";
+		t.textColor = 0xcadddd;
+		t.touchEnabled = true;
+		t.y = 54;
+		return t;
+	};
+	_proto._Rect1_i = function () {
+		var t = new eui.Rect();
+		t.fillColor = 0x889595;
+		t.height = 20;
+		t.horizontalCenter = 0;
+		t.rotation = 357.29;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.width = 2;
+		t.y = 62;
+		return t;
+	};
+	_proto._Rect2_i = function () {
+		var t = new eui.Rect();
+		t.bottom = 0;
+		t.fillColor = 0x041716;
+		t.height = 2;
+		t.width = 662;
+		t.x = 0;
+		return t;
+	};
+	return ApplicationRecoreItemSkin;
 })(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/BuyInView/BuyInButtonSkin.exml'] = window.BuyInButtonSkin = (function (_super) {
 	__extends(BuyInButtonSkin, _super);
 	function BuyInButtonSkin() {
@@ -2194,6 +2294,109 @@
 		return t;
 	};
 	return BuyInApplicationSkin;
+})(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/BuyInApplication/RoomRecordSkin.exml'] = window.RoomRecordSkin = (function (_super) {
+	__extends(RoomRecordSkin, _super);
+	function RoomRecordSkin() {
+		_super.call(this);
+		this.skinParts = ["recordList"];
+		
+		this.height = 1334;
+		this.width = 750;
+		this.elementsContent = [this._Group1_i()];
+	}
+	var _proto = RoomRecordSkin.prototype;
+
+	_proto._Group1_i = function () {
+		var t = new eui.Group();
+		t.height = 770;
+		t.horizontalCenter = 0;
+		t.verticalCenter = 0;
+		t.width = 720;
+		t.elementsContent = [this._Rect1_i(),this._Label1_i(),this._Rect2_i(),this.recordList_i()];
+		return t;
+	};
+	_proto._Rect1_i = function () {
+		var t = new eui.Rect();
+		t.fillColor = 0x021b19;
+		t.height = 770;
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.verticalCenter = 0;
+		t.width = 720;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto._Label1_i = function () {
+		var t = new eui.Label();
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 36;
+		t.text = "房间消息";
+		t.textAlign = "center";
+		t.width = 300;
+		t.x = 210;
+		t.y = 32;
+		return t;
+	};
+	_proto._Rect2_i = function () {
+		var t = new eui.Rect();
+		t.fillColor = 0x072927;
+		t.height = 652;
+		t.horizontalCenter = 0;
+		t.width = 688;
+		t.y = 102;
+		return t;
+	};
+	_proto.recordList_i = function () {
+		var t = new eui.List();
+		this.recordList = t;
+		t.height = 652;
+		t.horizontalCenter = 0;
+		t.itemRendererSkinName = ApplicationRecoreItemSkin;
+		t.width = 688;
+		t.y = 102;
+		t.layout = this._VerticalLayout1_i();
+		t.dataProvider = this._ArrayCollection1_i();
+		return t;
+	};
+	_proto._VerticalLayout1_i = function () {
+		var t = new eui.VerticalLayout();
+		t.gap = 0;
+		t.paddingLeft = 10;
+		t.paddingRight = 10;
+		t.paddingTop = 10;
+		t.verticalAlign = "top";
+		return t;
+	};
+	_proto._ArrayCollection1_i = function () {
+		var t = new eui.ArrayCollection();
+		t.source = [this._Object1_i(),this._Object2_i(),this._Object3_i(),this._Object4_i()];
+		return t;
+	};
+	_proto._Object1_i = function () {
+		var t = {};
+		t.nickname = "mike";
+		return t;
+	};
+	_proto._Object2_i = function () {
+		var t = {};
+		t.nickname = "sherlly";
+		return t;
+	};
+	_proto._Object3_i = function () {
+		var t = {};
+		t.nickname = "null";
+		return t;
+	};
+	_proto._Object4_i = function () {
+		var t = {};
+		t.nickname = "null";
+		return t;
+	};
+	return RoomRecordSkin;
 })(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/BuyInView/BuyInSliderSkin.exml'] = window.BuyInSliderSkin = (function (_super) {
 	__extends(BuyInSliderSkin, _super);
 	function BuyInSliderSkin() {
