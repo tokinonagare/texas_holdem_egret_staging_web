@@ -2577,16 +2577,16 @@
 	__extends(LeaderboardListItemSkin, _super);
 	function LeaderboardListItemSkin() {
 		_super.call(this);
-		this.skinParts = ["nicknameLabel","buyInLabel","roundAmountLabel","stackLabel"];
+		this.skinParts = ["nicknameLabel","buyInLabel","roundAmountLabel","scoreLabel"];
 		
 		this.height = 66;
 		this.width = 618;
-		this.elementsContent = [this.nicknameLabel_i(),this.buyInLabel_i(),this.roundAmountLabel_i(),this.stackLabel_i()];
+		this.elementsContent = [this.nicknameLabel_i(),this.buyInLabel_i(),this.roundAmountLabel_i(),this.scoreLabel_i()];
 		
 		eui.Binding.$bindProperties(this, ["hostComponent.data.nickname"],[0],this.nicknameLabel,"text");
 		eui.Binding.$bindProperties(this, ["hostComponent.data.buyIn"],[0],this.buyInLabel,"text");
 		eui.Binding.$bindProperties(this, ["hostComponent.data.roundAmount"],[0],this.roundAmountLabel,"text");
-		eui.Binding.$bindProperties(this, ["hostComponent.data.stack"],[0],this.stackLabel,"text");
+		eui.Binding.$bindProperties(this, ["hostComponent.data.scoreString"],[0],this.scoreLabel,"text");
 	}
 	var _proto = LeaderboardListItemSkin.prototype;
 
@@ -2614,9 +2614,9 @@
 		t.verticalCenter = 0;
 		return t;
 	};
-	_proto.stackLabel_i = function () {
+	_proto.scoreLabel_i = function () {
 		var t = new eui.Label();
-		this.stackLabel = t;
+		this.scoreLabel = t;
 		t.horizontalCenter = 245;
 		t.size = 22;
 		t.verticalCenter = 0;
