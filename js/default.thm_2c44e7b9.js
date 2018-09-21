@@ -2025,11 +2025,11 @@
 	__extends(ApplicationRecoreItemSkin, _super);
 	function ApplicationRecoreItemSkin() {
 		_super.call(this);
-		this.skinParts = ["nicknameLabel","scroeLabel","rejectButton","agreeButton"];
+		this.skinParts = ["nicknameLabel","scroeLabel","rejectLabel","agreeLabel","operationGroup","statusLabel"];
 		
 		this.height = 132;
 		this.width = 662;
-		this.elementsContent = [this.nicknameLabel_i(),this.scroeLabel_i(),this._Label1_i(),this._Group1_i(),this._Rect2_i()];
+		this.elementsContent = [this.nicknameLabel_i(),this.scroeLabel_i(),this._Label1_i(),this.operationGroup_i(),this._Rect2_i(),this.statusLabel_i()];
 		
 		eui.Binding.$bindProperties(this, ["hostComponent.data.nickname"],[0],this.nicknameLabel,"text");
 	}
@@ -2064,18 +2064,19 @@
 		t.y = 100;
 		return t;
 	};
-	_proto._Group1_i = function () {
+	_proto.operationGroup_i = function () {
 		var t = new eui.Group();
+		this.operationGroup = t;
 		t.bottom = 0;
 		t.height = 132;
 		t.right = 0;
 		t.width = 250;
-		t.elementsContent = [this.rejectButton_i(),this.agreeButton_i(),this._Rect1_i()];
+		t.elementsContent = [this.rejectLabel_i(),this.agreeLabel_i(),this._Rect1_i()];
 		return t;
 	};
-	_proto.rejectButton_i = function () {
+	_proto.rejectLabel_i = function () {
 		var t = new eui.Label();
-		this.rejectButton = t;
+		this.rejectLabel = t;
 		t.left = 20;
 		t.scaleX = 1;
 		t.scaleY = 1;
@@ -2086,9 +2087,9 @@
 		t.y = 53.94;
 		return t;
 	};
-	_proto.agreeButton_i = function () {
+	_proto.agreeLabel_i = function () {
 		var t = new eui.Label();
-		this.agreeButton = t;
+		this.agreeLabel = t;
 		t.right = 20;
 		t.scaleX = 1;
 		t.scaleY = 1;
@@ -2120,180 +2121,31 @@
 		t.x = 0;
 		return t;
 	};
+	_proto.statusLabel_i = function () {
+		var t = new eui.Label();
+		this.statusLabel = t;
+		t.right = 20;
+		t.text = "已同意";
+		t.textAlign = "right";
+		t.textColor = 0x5e6f6f;
+		t.verticalCenter = 0;
+		t.visible = false;
+		t.width = 230;
+		return t;
+	};
 	return ApplicationRecoreItemSkin;
-})(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/BuyInView/BuyInButtonSkin.exml'] = window.BuyInButtonSkin = (function (_super) {
-	__extends(BuyInButtonSkin, _super);
-	function BuyInButtonSkin() {
+})(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/BuyInApplication/RecordItemButtonSkin.exml'] = window.RecordItemButtonSkin = (function (_super) {
+	__extends(RecordItemButtonSkin, _super);
+	function RecordItemButtonSkin() {
 		_super.call(this);
-		this.skinParts = ["labelDisplay"];
+		this.skinParts = [];
 		
-		this.height = 102;
-		this.width = 536;
-		this.elementsContent = [this._Rect1_i(),this._Rect2_i(),this.labelDisplay_i()];
-		this.states = [
-			new eui.State ("up",
-				[
-				])
-			,
-			new eui.State ("down",
-				[
-					new eui.SetProperty("_Rect1","fillColor",0x146862)
-				])
-			,
-			new eui.State ("disabled",
-				[
-				])
-		];
+		this.height = 300;
+		this.width = 400;
 	}
-	var _proto = BuyInButtonSkin.prototype;
+	var _proto = RecordItemButtonSkin.prototype;
 
-	_proto._Rect1_i = function () {
-		var t = new eui.Rect();
-		this._Rect1 = t;
-		t.fillColor = 0x072927;
-		t.percentHeight = 100;
-		t.percentWidth = 100;
-		t.x = 0;
-		t.y = 0;
-		return t;
-	};
-	_proto._Rect2_i = function () {
-		var t = new eui.Rect();
-		t.fillColor = 0x041716;
-		t.height = 2;
-		t.percentWidth = 100;
-		t.x = 0;
-		t.y = 0;
-		return t;
-	};
-	_proto.labelDisplay_i = function () {
-		var t = new eui.Label();
-		this.labelDisplay = t;
-		t.horizontalCenter = 0;
-		t.size = 34;
-		t.text = "Label";
-		t.verticalCenter = 0;
-		return t;
-	};
-	return BuyInButtonSkin;
-})(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/BuyInApplication/BuyInApplicationSkin.exml'] = window.BuyInApplicationSkin = (function (_super) {
-	__extends(BuyInApplicationSkin, _super);
-	function BuyInApplicationSkin() {
-		_super.call(this);
-		this.skinParts = ["nicknameLabel","scoreLabel","rejectButton","agreeButton"];
-		
-		this.height = 1334;
-		this.width = 750;
-		this.elementsContent = [this._Rect1_i(),this._Group1_i()];
-	}
-	var _proto = BuyInApplicationSkin.prototype;
-
-	_proto._Rect1_i = function () {
-		var t = new eui.Rect();
-		t.fillAlpha = 0;
-		t.percentHeight = 100;
-		t.percentWidth = 100;
-		t.x = 0;
-		t.y = 0;
-		return t;
-	};
-	_proto._Group1_i = function () {
-		var t = new eui.Group();
-		t.height = 400;
-		t.horizontalCenter = 0;
-		t.verticalCenter = 0;
-		t.width = 536;
-		t.elementsContent = [this._Rect2_i(),this._Label1_i(),this.nicknameLabel_i(),this.scoreLabel_i(),this.rejectButton_i(),this.agreeButton_i(),this._Rect3_i(),this._Label2_i()];
-		return t;
-	};
-	_proto._Rect2_i = function () {
-		var t = new eui.Rect();
-		t.ellipseHeight = 20;
-		t.ellipseWidth = 20;
-		t.fillColor = 0x072927;
-		t.height = 400;
-		t.horizontalCenter = 0;
-		t.scaleX = 1;
-		t.scaleY = 1;
-		t.verticalCenter = 0;
-		t.width = 536;
-		t.x = 0;
-		t.y = 0;
-		return t;
-	};
-	_proto._Label1_i = function () {
-		var t = new eui.Label();
-		t.horizontalCenter = 0;
-		t.scaleX = 1;
-		t.scaleY = 1;
-		t.size = 36;
-		t.text = "记分牌带入申请";
-		t.y = 50;
-		return t;
-	};
-	_proto.nicknameLabel_i = function () {
-		var t = new eui.Label();
-		this.nicknameLabel = t;
-		t.horizontalCenter = 0;
-		t.size = 32;
-		t.text = "Stan";
-		t.textAlign = "center";
-		t.textColor = 0x6bfffd;
-		t.width = 400;
-		t.y = 140;
-		return t;
-	};
-	_proto.scoreLabel_i = function () {
-		var t = new eui.Label();
-		this.scoreLabel = t;
-		t.horizontalCenter = 0;
-		t.size = 32;
-		t.text = "申请带入记分牌 200";
-		t.textAlign = "center";
-		t.width = 400;
-		t.y = 180;
-		return t;
-	};
-	_proto.rejectButton_i = function () {
-		var t = new eui.Button();
-		this.rejectButton = t;
-		t.label = "拒绝";
-		t.left = 0;
-		t.skinName = "BuyInButtonSkin";
-		t.width = 268;
-		t.y = 298;
-		return t;
-	};
-	_proto.agreeButton_i = function () {
-		var t = new eui.Button();
-		this.agreeButton = t;
-		t.label = "同意";
-		t.right = 0;
-		t.skinName = "BuyInButtonSkin";
-		t.width = 268;
-		t.y = 298;
-		return t;
-	};
-	_proto._Rect3_i = function () {
-		var t = new eui.Rect();
-		t.bottom = 0;
-		t.height = 102;
-		t.horizontalCenter = 0;
-		t.width = 2;
-		return t;
-	};
-	_proto._Label2_i = function () {
-		var t = new eui.Label();
-		t.horizontalCenter = 0;
-		t.size = 18;
-		t.text = "* 该房间最低带入记分牌为 400";
-		t.textAlign = "center";
-		t.textColor = 0xfe2a2a;
-		t.width = 400;
-		t.y = 260;
-		return t;
-	};
-	return BuyInApplicationSkin;
+	return RecordItemButtonSkin;
 })(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/BuyInApplication/RoomRecordSkin.exml'] = window.RoomRecordSkin = (function (_super) {
 	__extends(RoomRecordSkin, _super);
 	function RoomRecordSkin() {
@@ -2397,6 +2249,61 @@
 		return t;
 	};
 	return RoomRecordSkin;
+})(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/BuyInView/BuyInButtonSkin.exml'] = window.BuyInButtonSkin = (function (_super) {
+	__extends(BuyInButtonSkin, _super);
+	function BuyInButtonSkin() {
+		_super.call(this);
+		this.skinParts = ["labelDisplay"];
+		
+		this.height = 102;
+		this.width = 536;
+		this.elementsContent = [this._Rect1_i(),this._Rect2_i(),this.labelDisplay_i()];
+		this.states = [
+			new eui.State ("up",
+				[
+				])
+			,
+			new eui.State ("down",
+				[
+					new eui.SetProperty("_Rect1","fillColor",0x146862)
+				])
+			,
+			new eui.State ("disabled",
+				[
+				])
+		];
+	}
+	var _proto = BuyInButtonSkin.prototype;
+
+	_proto._Rect1_i = function () {
+		var t = new eui.Rect();
+		this._Rect1 = t;
+		t.fillColor = 0x072927;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto._Rect2_i = function () {
+		var t = new eui.Rect();
+		t.fillColor = 0x041716;
+		t.height = 2;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto.labelDisplay_i = function () {
+		var t = new eui.Label();
+		this.labelDisplay = t;
+		t.horizontalCenter = 0;
+		t.size = 34;
+		t.text = "Label";
+		t.verticalCenter = 0;
+		return t;
+	};
+	return BuyInButtonSkin;
 })(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/BuyInView/BuyInSliderSkin.exml'] = window.BuyInSliderSkin = (function (_super) {
 	__extends(BuyInSliderSkin, _super);
 	function BuyInSliderSkin() {
