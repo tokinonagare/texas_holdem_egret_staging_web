@@ -5093,11 +5093,11 @@ window.skins={};
 	__extends(ScoreboardSkin, _super);
 	function ScoreboardSkin() {
 		_super.call(this);
-		this.skinParts = ["chipLabel"];
+		this.skinParts = ["icon","chipLabel"];
 		
 		this.height = 26;
 		this.width = 100;
-		this.elementsContent = [this._Rect1_i(),this._Image1_i(),this.chipLabel_i()];
+		this.elementsContent = [this._Rect1_i(),this.icon_i(),this.chipLabel_i()];
 	}
 	var _proto = ScoreboardSkin.prototype;
 
@@ -5112,8 +5112,9 @@ window.skins={};
 		t.y = 0;
 		return t;
 	};
-	_proto._Image1_i = function () {
+	_proto.icon_i = function () {
 		var t = new eui.Image();
+		this.icon = t;
 		t.anchorOffsetX = 0;
 		t.anchorOffsetY = 0;
 		t.height = 26;
