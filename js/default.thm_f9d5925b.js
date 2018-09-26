@@ -1481,10 +1481,10 @@
 		this.pinLabel = t;
 		t.horizontalCenter = 0;
 		t.size = 22;
-		t.text = "房间号: 000000000";
+		t.text = "房间号";
 		t.textAlign = "center";
 		t.textColor = 0x034d45;
-		t.width = 300;
+		t.width = 400;
 		t.y = 840;
 		return t;
 	};
@@ -1493,10 +1493,10 @@
 		this.creatorLabel = t;
 		t.horizontalCenter = 0;
 		t.size = 22;
-		t.text = "Stan";
+		t.text = "";
 		t.textAlign = "center";
 		t.textColor = 0x034d45;
-		t.width = 200;
+		t.width = 400;
 		t.y = 810;
 		return t;
 	};
@@ -1505,7 +1505,7 @@
 		this.blindLabel = t;
 		t.horizontalCenter = 0;
 		t.size = 22;
-		t.text = "盲注: 1/2";
+		t.text = "盲注";
 		t.textAlign = "center";
 		t.textColor = 0x034d45;
 		t.width = 200;
