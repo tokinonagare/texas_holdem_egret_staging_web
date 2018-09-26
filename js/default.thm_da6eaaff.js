@@ -1834,11 +1834,11 @@ window.skins={};
 	__extends(LeaderboardSkin, _super);
 	function LeaderboardSkin() {
 		_super.call(this);
-		this.skinParts = ["remainTimeLabel","playerInfoHeader","playerList","viewerHeader","viewPlayerList"];
+		this.skinParts = ["remainTimeLabel","headerGroup","playerInfoHeader","playerList","viewerHeader","viewPlayerList","contentScroller"];
 		
 		this.height = 1334;
 		this.width = 618;
-		this.elementsContent = [this._Rect1_i(),this._Group1_i(),this._Scroller1_i()];
+		this.elementsContent = [this._Rect1_i(),this.headerGroup_i(),this.contentScroller_i()];
 	}
 	var _proto = LeaderboardSkin.prototype;
 
@@ -1851,8 +1851,9 @@ window.skins={};
 		t.y = 0;
 		return t;
 	};
-	_proto._Group1_i = function () {
+	_proto.headerGroup_i = function () {
 		var t = new eui.Group();
+		this.headerGroup = t;
 		t.height = 84;
 		t.horizontalCenter = 0;
 		t.top = 0;
@@ -1863,7 +1864,7 @@ window.skins={};
 	_proto._Rect2_i = function () {
 		var t = new eui.Rect();
 		t.fillColor = 0x021B19;
-		t.height = 84;
+		t.percentHeight = 100;
 		t.scaleX = 1;
 		t.scaleY = 1;
 		t.percentWidth = 100;
@@ -1874,34 +1875,38 @@ window.skins={};
 	_proto.remainTimeLabel_i = function () {
 		var t = new eui.Label();
 		this.remainTimeLabel = t;
+		t.bottom = 24;
 		t.height = 22;
 		t.right = 20;
 		t.size = 22;
 		t.text = "剩余时间：00:30:18";
 		t.textColor = 0x6BFFFD;
-		t.top = 38;
 		t.visible = false;
 		return t;
 	};
 	_proto._Label1_i = function () {
 		var t = new eui.Label();
+		t.bottom = 24;
+		t.height = 30;
 		t.left = 40;
 		t.text = "实时战绩";
 		t.textColor = 0x6BFFFD;
-		t.top = 30;
 		return t;
 	};
-	_proto._Scroller1_i = function () {
+	_proto.contentScroller_i = function () {
 		var t = new eui.Scroller();
+		this.contentScroller = t;
 		t.bottom = 0;
 		t.height = 1250;
 		t.width = 618;
 		t.x = 0;
-		t.viewport = this._Group2_i();
+		t.viewport = this._Group1_i();
 		return t;
 	};
-	_proto._Group2_i = function () {
+	_proto._Group1_i = function () {
 		var t = new eui.Group();
+		t.percentHeight = 100;
+		t.percentWidth = 100;
 		t.layout = this._VerticalLayout1_i();
 		t.elementsContent = [this.playerInfoHeader_i(),this.playerList_i(),this.viewerHeader_i(),this.viewPlayerList_i()];
 		return t;
@@ -2350,51 +2355,35 @@ window.skins={};
 		
 		this.height = 177;
 		this.width = 620;
-		this.elementsContent = [this._Group2_i()];
+		this.elementsContent = [this.pageSlider_i(),this._Group1_i()];
 	}
 	var _proto = ReviewboardFooterSkin.prototype;
 
-	_proto._Group2_i = function () {
-		var t = new eui.Group();
-		t.percentHeight = 100;
-		t.horizontalCenter = 0;
-		t.percentWidth = 100;
-		t.layout = this._VerticalLayout1_i();
-		t.elementsContent = [this.pageSlider_i(),this._Group1_i()];
-		return t;
-	};
-	_proto._VerticalLayout1_i = function () {
-		var t = new eui.VerticalLayout();
-		t.gap = 37;
-		t.horizontalAlign = "center";
-		t.verticalAlign = "middle";
-		return t;
-	};
 	_proto.pageSlider_i = function () {
 		var t = new eui.HSlider();
 		this.pageSlider = t;
 		t.height = 20;
+		t.horizontalCenter = 0;
 		t.scaleX = 1;
 		t.scaleY = 1;
 		t.skinName = "skins.HSliderSkin";
+		t.top = 38;
 		t.width = 460;
-		t.x = 267;
-		t.y = 48;
 		return t;
 	};
 	_proto._Group1_i = function () {
 		var t = new eui.Group();
-		t.height = 40;
+		t.height = 64;
+		t.horizontalCenter = 0;
+		t.top = 76;
 		t.width = 400;
-		t.x = 113;
-		t.y = 107;
 		t.layout = this._HorizontalLayout1_i();
 		t.elementsContent = [this.previousButton_i(),this.pageLabel_i(),this.nextButton_i()];
 		return t;
 	};
 	_proto._HorizontalLayout1_i = function () {
 		var t = new eui.HorizontalLayout();
-		t.gap = 103;
+		t.gap = 83;
 		t.horizontalAlign = "center";
 		t.verticalAlign = "middle";
 		return t;
@@ -2433,7 +2422,7 @@ window.skins={};
 	__extends(ReviewboardSkin, _super);
 	function ReviewboardSkin() {
 		_super.call(this);
-		this.skinParts = ["settlementHistoryView","gameHistoryView","contentViewStack","contentTabbar","footer"];
+		this.skinParts = ["header","settlementHistoryView","gameHistoryView","contentViewStack","contentTabbar","footer"];
 		
 		this.height = 1334;
 		this.width = 620;
@@ -2457,7 +2446,7 @@ window.skins={};
 		t.x = 0;
 		t.y = 0;
 		t.layout = this._VerticalLayout1_i();
-		t.elementsContent = [this._ReviewboardHeader1_i(),this.contentViewStack_i(),this._Group1_i(),this.footer_i()];
+		t.elementsContent = [this.header_i(),this.contentViewStack_i(),this._Group1_i(),this.footer_i()];
 		return t;
 	};
 	_proto._VerticalLayout1_i = function () {
@@ -2467,8 +2456,9 @@ window.skins={};
 		t.verticalAlign = "bottom";
 		return t;
 	};
-	_proto._ReviewboardHeader1_i = function () {
+	_proto.header_i = function () {
 		var t = new ReviewboardHeader();
+		this.header = t;
 		t.skinName = "ReviewboardHeaderSkin";
 		t.x = 215;
 		t.y = -4;
@@ -2489,8 +2479,10 @@ window.skins={};
 	_proto.settlementHistoryView_i = function () {
 		var t = new ReviewboardSettlementHistoryView();
 		this.settlementHistoryView = t;
+		t.percentHeight = 100;
 		t.name = "牌局结算";
 		t.skinName = "ReviewboardSettlementHistorySkin";
+		t.percentWidth = 100;
 		t.x = 0;
 		t.y = 0;
 		return t;
