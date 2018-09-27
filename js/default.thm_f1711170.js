@@ -1480,11 +1480,11 @@ window.skins={};
 
 	function GameSkin() {
 		_super.call(this);
-		this.skinParts = ["mainPotLabel","pinLabel","creatorLabel","blindLabel","talkButton","microphoneButton","communityCardList","startGameButton","cardTypeLabel","potsList","menuButton","playGameButtonGroup","raiseSelector","quickRaiser","cardPattern","bottomToolbar","reviewboardButton","group"];
+		this.skinParts = ["mainPotLabel","pinLabel","creatorLabel","blindLabel","talkButton","microphoneButton","communityCardList","startGameButton","cardTypeLabel","potsList","menuButton","playGameButtonGroup","raiseSelector","quickRaiser","bottomToolbar","reviewboardButton","group","cardPattern"];
 		
 		this.height = 1334;
 		this.width = 750;
-		this.elementsContent = [this._Image1_i(),this.group_i()];
+		this.elementsContent = [this._Image1_i(),this.group_i(),this.cardPattern_i()];
 	}
 	var _proto = GameSkin.prototype;
 
@@ -1504,7 +1504,7 @@ window.skins={};
 		t.width = 750;
 		t.x = 0;
 		t.y = 0;
-		t.elementsContent = [this.mainPotLabel_i(),this.pinLabel_i(),this.creatorLabel_i(),this.blindLabel_i(),this.talkButton_i(),this.microphoneButton_i(),this.communityCardList_i(),this.startGameButton_i(),this.cardTypeLabel_i(),this.potsList_i(),this.menuButton_i(),this.playGameButtonGroup_i(),this.raiseSelector_i(),this.quickRaiser_i(),this.cardPattern_i(),this.bottomToolbar_i(),this.reviewboardButton_i()];
+		t.elementsContent = [this.mainPotLabel_i(),this.pinLabel_i(),this.creatorLabel_i(),this.blindLabel_i(),this.talkButton_i(),this.microphoneButton_i(),this.communityCardList_i(),this.startGameButton_i(),this.cardTypeLabel_i(),this.potsList_i(),this.menuButton_i(),this.playGameButtonGroup_i(),this.raiseSelector_i(),this.quickRaiser_i(),this.bottomToolbar_i(),this.reviewboardButton_i()];
 		return t;
 	};
 	_proto.mainPotLabel_i = function () {
@@ -1678,16 +1678,6 @@ window.skins={};
 		t.y = 0;
 		return t;
 	};
-	_proto.cardPattern_i = function () {
-		var t = new CardPattern();
-		this.cardPattern = t;
-		t.height = 1334;
-		t.visible = false;
-		t.width = 750;
-		t.x = 0;
-		t.y = 0;
-		return t;
-	};
 	_proto.bottomToolbar_i = function () {
 		var t = new BottomToolbar();
 		this.bottomToolbar = t;
@@ -1703,6 +1693,16 @@ window.skins={};
 		t.right = 34;
 		t.top = 30;
 		t.skinName = GameSkin$Skin15;
+		return t;
+	};
+	_proto.cardPattern_i = function () {
+		var t = new CardPattern();
+		this.cardPattern = t;
+		t.height = 1334;
+		t.visible = false;
+		t.width = 750;
+		t.x = 0;
+		t.y = 0;
 		return t;
 	};
 	return GameSkin;
