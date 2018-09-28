@@ -5702,11 +5702,11 @@ window.skins={};
 
 	function LaunchSkin() {
 		_super.call(this);
-		this.skinParts = ["loginButton","visitorButton","closeButton"];
+		this.skinParts = ["loginButton","visitorButton","buttonGroup","closeButton","displayLabel"];
 		
 		this.height = 1334;
 		this.width = 750;
-		this.elementsContent = [this._Image1_i(),this.loginButton_i(),this.visitorButton_i(),this.closeButton_i()];
+		this.elementsContent = [this._Image1_i(),this.buttonGroup_i(),this.closeButton_i(),this.displayLabel_i()];
 	}
 	var _proto = LaunchSkin.prototype;
 
@@ -5719,12 +5719,27 @@ window.skins={};
 		t.y = 0;
 		return t;
 	};
+	_proto.buttonGroup_i = function () {
+		var t = new eui.Group();
+		this.buttonGroup = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 415.15;
+		t.horizontalCenter = 0;
+		t.width = 487.88;
+		t.y = 718;
+		t.elementsContent = [this.loginButton_i(),this.visitorButton_i()];
+		return t;
+	};
 	_proto.loginButton_i = function () {
 		var t = new eui.Button();
 		this.loginButton = t;
 		t.horizontalCenter = 0;
 		t.label = "";
-		t.y = 995;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.x = 93;
+		t.y = 277.0000000000001;
 		t.skinName = LaunchSkin$Skin21;
 		return t;
 	};
@@ -5733,7 +5748,10 @@ window.skins={};
 		this.visitorButton = t;
 		t.horizontalCenter = 0;
 		t.label = "";
-		t.y = 843.3;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.x = 93;
+		t.y = 125.29999999999995;
 		t.skinName = LaunchSkin$Skin22;
 		return t;
 	};
@@ -5745,6 +5763,18 @@ window.skins={};
 		t.x = 650;
 		t.y = 40;
 		t.skinName = LaunchSkin$Skin23;
+		return t;
+	};
+	_proto.displayLabel_i = function () {
+		var t = new eui.Label();
+		this.displayLabel = t;
+		t.bold = true;
+		t.horizontalCenter = 0;
+		t.text = "正在进入房间...";
+		t.textAlign = "center";
+		t.visible = false;
+		t.width = 500;
+		t.y = 700;
 		return t;
 	};
 	return LaunchSkin;
