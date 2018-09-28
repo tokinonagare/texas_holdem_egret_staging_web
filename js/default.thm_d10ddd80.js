@@ -2971,7 +2971,7 @@ window.skins={};
 	__extends(BuyInSkin, _super);
 	function BuyInSkin() {
 		_super.call(this);
-		this.skinParts = ["background","scoreLabel","scoreSlider","confirmButton"];
+		this.skinParts = ["background","scoreLabel","scoreSlider","confirmButton","minBuyLabel","balanceLabel"];
 		
 		this.height = 1334;
 		this.width = 750;
@@ -2995,7 +2995,7 @@ window.skins={};
 		t.horizontalCenter = 0;
 		t.verticalCenter = 0;
 		t.width = 536;
-		t.elementsContent = [this._Rect1_i(),this._Label1_i(),this._Image1_i(),this.scoreLabel_i(),this.scoreSlider_i(),this.confirmButton_i()];
+		t.elementsContent = [this._Rect1_i(),this._Label1_i(),this._Image1_i(),this.scoreLabel_i(),this.scoreSlider_i(),this.confirmButton_i(),this.minBuyLabel_i(),this.balanceLabel_i()];
 		return t;
 	};
 	_proto._Rect1_i = function () {
@@ -3064,6 +3064,32 @@ window.skins={};
 		t.skinName = "BuyInButtonSkin";
 		t.width = 536;
 		t.x = 0;
+		return t;
+	};
+	_proto.minBuyLabel_i = function () {
+		var t = new eui.Label();
+		this.minBuyLabel = t;
+		t.height = 18;
+		t.size = 18;
+		t.text = "";
+		t.textAlign = "center";
+		t.textColor = 0xfe2a2a;
+		t.width = 400;
+		t.x = 68;
+		t.y = 130;
+		return t;
+	};
+	_proto.balanceLabel_i = function () {
+		var t = new eui.Label();
+		this.balanceLabel = t;
+		t.height = 20;
+		t.horizontalCenter = 0;
+		t.size = 20;
+		t.text = "";
+		t.textAlign = "center";
+		t.textColor = 0x596e6d;
+		t.width = 400;
+		t.y = 250;
 		return t;
 	};
 	return BuyInSkin;
