@@ -2430,17 +2430,26 @@ window.skins={};
 		
 		this.height = 1334;
 		this.width = 620;
-		this.elementsContent = [this._Rect1_i(),this.loadingLabel_i(),this._Group2_i()];
+		this.elementsContent = [this._Rect1_i(),this._Rect2_i(),this.loadingLabel_i(),this._Group2_i()];
 	}
 	var _proto = ReviewboardSkin.prototype;
 
 	_proto._Rect1_i = function () {
 		var t = new eui.Rect();
 		t.fillColor = 0x072927;
-		t.percentHeight = 100;
+		t.height = 1157;
+		t.horizontalCenter = 0;
+		t.top = 0;
 		t.percentWidth = 100;
-		t.x = 0;
-		t.y = 0;
+		return t;
+	};
+	_proto._Rect2_i = function () {
+		var t = new eui.Rect();
+		t.bottom = 0;
+		t.fillColor = 0x0d3a37;
+		t.height = 177;
+		t.horizontalCenter = 0;
+		t.percentWidth = 100;
 		return t;
 	};
 	_proto.loadingLabel_i = function () {
@@ -2481,7 +2490,7 @@ window.skins={};
 	_proto.contentViewStack_i = function () {
 		var t = new eui.ViewStack();
 		this.contentViewStack = t;
-		t.height = 1018;
+		t.height = 1006;
 		t.scaleX = 1;
 		t.scaleY = 1;
 		t.selectedIndex = 1;
@@ -2525,10 +2534,10 @@ window.skins={};
 		t.percentWidth = 100;
 		t.x = 0;
 		t.y = 1104;
-		t.elementsContent = [this._Rect2_i(),this.contentTabbar_i()];
+		t.elementsContent = [this._Rect3_i(),this.contentTabbar_i()];
 		return t;
 	};
-	_proto._Rect2_i = function () {
+	_proto._Rect3_i = function () {
 		var t = new eui.Rect();
 		t.fillColor = 0x021C1A;
 		t.percentHeight = 100;
