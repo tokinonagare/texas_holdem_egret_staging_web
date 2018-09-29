@@ -5078,7 +5078,7 @@ window.skins={};
 		t.scaleX = 1;
 		t.scaleY = 1;
 		t.size = 24;
-		t.text = "同花顺";
+		t.text = "-";
 		t.textColor = 0xb8c2c0;
 		t.verticalCenter = 0;
 		return t;
