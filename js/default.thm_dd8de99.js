@@ -2422,11 +2422,11 @@ window.skins={};
 	__extends(ReviewboardSkin, _super);
 	function ReviewboardSkin() {
 		_super.call(this);
-		this.skinParts = ["header","settlementHistoryView","gameHistoryView","contentViewStack","contentTabbar","footer"];
+		this.skinParts = ["loadingLabel","header","settlementHistoryView","gameHistoryView","contentViewStack","contentTabbar","footer"];
 		
 		this.height = 1334;
 		this.width = 620;
-		this.elementsContent = [this._Rect1_i(),this._Group2_i()];
+		this.elementsContent = [this._Rect1_i(),this.loadingLabel_i(),this._Group2_i()];
 	}
 	var _proto = ReviewboardSkin.prototype;
 
@@ -2437,6 +2437,16 @@ window.skins={};
 		t.percentWidth = 100;
 		t.x = 0;
 		t.y = 0;
+		return t;
+	};
+	_proto.loadingLabel_i = function () {
+		var t = new eui.Label();
+		this.loadingLabel = t;
+		t.horizontalCenter = 0;
+		t.size = 24;
+		t.text = "数据加载中...";
+		t.textColor = 0xb8c2c0;
+		t.verticalCenter = -65;
 		return t;
 	};
 	_proto._Group2_i = function () {
