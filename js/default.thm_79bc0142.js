@@ -3293,24 +3293,24 @@ window.skins={};
 	__extends(LeaderboardViewerSkin, _super);
 	function LeaderboardViewerSkin() {
 		_super.call(this);
-		this.skinParts = ["avatar","nameLabel"];
+		this.skinParts = ["avatar","leftAvatarCover","nameLabel"];
 		
 		this.height = 160;
 		this.width = 206;
-		this.elementsContent = [this._Group1_i()];
+		this.elementsContent = [this._Group2_i()];
 		
 		eui.Binding.$bindProperties(this, ["hostComponent.data.nickname"],[0],this.nameLabel,"text");
 	}
 	var _proto = LeaderboardViewerSkin.prototype;
 
-	_proto._Group1_i = function () {
+	_proto._Group2_i = function () {
 		var t = new eui.Group();
 		t.percentHeight = 100;
 		t.percentWidth = 100;
 		t.x = 0;
 		t.y = 0;
 		t.layout = this._VerticalLayout1_i();
-		t.elementsContent = [this.avatar_i(),this.nameLabel_i()];
+		t.elementsContent = [this._Group1_i(),this.nameLabel_i()];
 		return t;
 	};
 	_proto._VerticalLayout1_i = function () {
@@ -3320,26 +3320,48 @@ window.skins={};
 		t.verticalAlign = "middle";
 		return t;
 	};
+	_proto._Group1_i = function () {
+		var t = new eui.Group();
+		t.height = 80;
+		t.width = 80;
+		t.x = 45;
+		t.y = 11;
+		t.elementsContent = [this.avatar_i(),this.leftAvatarCover_i()];
+		return t;
+	};
 	_proto.avatar_i = function () {
 		var t = new eui.Image();
 		this.avatar = t;
 		t.height = 80;
+		t.scaleX = 1;
+		t.scaleY = 1;
 		t.source = "image_default_avatar_png";
 		t.width = 80;
-		t.x = 69;
-		t.y = 20;
+		t.x = 0;
+		return t;
+	};
+	_proto.leftAvatarCover_i = function () {
+		var t = new eui.Rect();
+		this.leftAvatarCover = t;
+		t.fillAlpha = 0.6;
+		t.fillColor = 0xa2b7b5;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
 		return t;
 	};
 	_proto.nameLabel_i = function () {
 		var t = new eui.Label();
 		this.nameLabel = t;
+		t.height = 24;
 		t.multiline = false;
+		t.scaleX = 1;
+		t.scaleY = 1;
 		t.size = 24;
 		t.textAlign = "center";
 		t.width = 200;
 		t.wordWrap = false;
-		t.x = 4;
-		t.y = 116;
+		t.x = 0;
+		t.y = 0;
 		return t;
 	};
 	return LeaderboardViewerSkin;
