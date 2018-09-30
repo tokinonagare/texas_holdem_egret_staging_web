@@ -1838,7 +1838,7 @@ window.skins={};
 	__extends(LeaderboardSkin, _super);
 	function LeaderboardSkin() {
 		_super.call(this);
-		this.skinParts = ["remainTimeLabel","headerGroup","playerInfoHeader","playerList","viewerHeader","viewPlayerList","contentScroller"];
+		this.skinParts = ["remainTimeLabel","headerGroup","playerInfoHeader","playerList","viewerHeader","viewerList","contentScroller"];
 		
 		this.height = 1334;
 		this.width = 618;
@@ -1912,7 +1912,7 @@ window.skins={};
 		t.percentHeight = 100;
 		t.percentWidth = 100;
 		t.layout = this._VerticalLayout1_i();
-		t.elementsContent = [this.playerInfoHeader_i(),this.playerList_i(),this.viewerHeader_i(),this.viewPlayerList_i()];
+		t.elementsContent = [this.playerInfoHeader_i(),this.playerList_i(),this.viewerHeader_i(),this.viewerList_i()];
 		return t;
 	};
 	_proto._VerticalLayout1_i = function () {
@@ -1945,9 +1945,9 @@ window.skins={};
 		t.y = 249;
 		return t;
 	};
-	_proto.viewPlayerList_i = function () {
+	_proto.viewerList_i = function () {
 		var t = new eui.List();
-		this.viewPlayerList = t;
+		this.viewerList = t;
 		t.width = 618;
 		t.x = 126;
 		t.y = 424;
