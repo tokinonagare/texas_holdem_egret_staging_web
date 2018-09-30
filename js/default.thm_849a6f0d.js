@@ -556,100 +556,105 @@ window.skins={};
 		return t;
 	};
 	return RaiseSliderSkin;
-})(eui.Skin);generateEUI.paths['resource/eui_skins/Components/SeatViewSkin.exml'] = window.SeatViewSkin = (function (_super) {
-	__extends(SeatViewSkin, _super);
-	function SeatViewSkin() {
+})(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/PlayGameButton/AutonCheckOrFoldButtonSkin.exml'] = window.AutonCheckOrFoldButtonSkin = (function (_super) {
+	__extends(AutonCheckOrFoldButtonSkin, _super);
+	function AutonCheckOrFoldButtonSkin() {
 		_super.call(this);
-		this.skinParts = ["bounce","labelDisplay","icon"];
+		this.skinParts = [];
 		
-		this.height = 100;
-		this.width = 100;
-		this.bounce_i();
-		this.elementsContent = [this._Rect1_i(),this.labelDisplay_i(),this.icon_i()];
-		
-		eui.Binding.$bindProperties(this, ["icon"],[0],this._TweenItem1,"target");
-		eui.Binding.$bindProperties(this, [-30],[],this._Object1,"y");
-		eui.Binding.$bindProperties(this, [-48],[],this._Object2,"y");
+		this.height = 126;
+		this.width = 122;
+		this.elementsContent = [this._Image1_i()];
+		this.states = [
+			new eui.State ("up",
+				[
+				])
+			,
+			new eui.State ("down",
+				[
+				])
+			,
+			new eui.State ("disabled",
+				[
+				])
+			,
+			new eui.State ("upAndSelected",
+				[
+					new eui.SetProperty("_Image1","source","btn_check_or_fold_selected_png")
+				])
+			,
+			new eui.State ("downAndSelected",
+				[
+				])
+			,
+			new eui.State ("disabledAndSelected",
+				[
+				])
+		];
 	}
-	var _proto = SeatViewSkin.prototype;
+	var _proto = AutonCheckOrFoldButtonSkin.prototype;
 
-	_proto.bounce_i = function () {
-		var t = new egret.tween.TweenGroup();
-		this.bounce = t;
-		t.items = [this._TweenItem1_i()];
-		return t;
-	};
-	_proto._TweenItem1_i = function () {
-		var t = new egret.tween.TweenItem();
-		this._TweenItem1 = t;
-		t.paths = [this._Set1_i(),this._To1_i(),this._To2_i()];
-		return t;
-	};
-	_proto._Set1_i = function () {
-		var t = new egret.tween.Set();
-		return t;
-	};
-	_proto._To1_i = function () {
-		var t = new egret.tween.To();
-		t.duration = 500;
-		t.props = this._Object1_i();
-		return t;
-	};
-	_proto._Object1_i = function () {
-		var t = {};
-		this._Object1 = t;
-		return t;
-	};
-	_proto._To2_i = function () {
-		var t = new egret.tween.To();
-		t.duration = 500;
-		t.props = this._Object2_i();
-		return t;
-	};
-	_proto._Object2_i = function () {
-		var t = {};
-		this._Object2 = t;
-		return t;
-	};
-	_proto._Rect1_i = function () {
-		var t = new eui.Rect();
-		t.ellipseHeight = 100;
-		t.ellipseWidth = 100;
-		t.fillAlpha = 0;
-		t.height = 100;
-		t.strokeColor = 0x118079;
-		t.strokeWeight = 2;
-		t.width = 100;
-		t.x = 0;
-		t.y = 0;
-		return t;
-	};
-	_proto.labelDisplay_i = function () {
-		var t = new eui.Label();
-		this.labelDisplay = t;
-		t.height = 100;
-		t.size = 26;
-		t.text = "label";
-		t.textAlign = "center";
-		t.textColor = 0x118079;
-		t.verticalAlign = "middle";
-		t.width = 100;
-		t.x = 0;
-		t.y = 0;
-		return t;
-	};
-	_proto.icon_i = function () {
+	_proto._Image1_i = function () {
 		var t = new eui.Image();
-		this.icon = t;
-		t.height = 48;
-		t.source = "icon_sit_down_png";
-		t.width = 56;
-		t.x = 22;
-		t.y = -48;
+		this._Image1 = t;
+		t.percentHeight = 100;
+		t.source = "btn_check_or_fold_unselect_png";
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
 		return t;
 	};
-	return SeatViewSkin;
-})(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/PlayGameButtonGroupSkin.exml'] = window.PlayGameButtonGroupSkin = (function (_super) {
+	return AutonCheckOrFoldButtonSkin;
+})(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/PlayGameButton/AutoCheckButtonSkin.exml'] = window.AutoCheckButtonSkin = (function (_super) {
+	__extends(AutoCheckButtonSkin, _super);
+	function AutoCheckButtonSkin() {
+		_super.call(this);
+		this.skinParts = [];
+		
+		this.height = 126;
+		this.width = 122;
+		this.elementsContent = [this._Image1_i()];
+		this.states = [
+			new eui.State ("up",
+				[
+				])
+			,
+			new eui.State ("down",
+				[
+				])
+			,
+			new eui.State ("disabled",
+				[
+				])
+			,
+			new eui.State ("upAndSelected",
+				[
+					new eui.SetProperty("_Image1","source","btn_check_auto_selected_png")
+				])
+			,
+			new eui.State ("downAndSelected",
+				[
+				])
+			,
+			new eui.State ("disabledAndSelected",
+				[
+				])
+		];
+	}
+	var _proto = AutoCheckButtonSkin.prototype;
+
+	_proto._Image1_i = function () {
+		var t = new eui.Image();
+		this._Image1 = t;
+		t.percentHeight = 100;
+		t.source = "btn_check_auto_unselect_png";
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	return AutoCheckButtonSkin;
+})(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/PlayGameButton/PlayGameButtonGroupSkin.exml'] = window.PlayGameButtonGroupSkin = (function (_super) {
 	__extends(PlayGameButtonGroupSkin, _super);
 	var PlayGameButtonGroupSkin$Skin1 = 	(function (_super) {
 		__extends(PlayGameButtonGroupSkin$Skin1, _super);
@@ -925,19 +930,32 @@ window.skins={};
 
 	function PlayGameButtonGroupSkin() {
 		_super.call(this);
-		this.skinParts = ["foldButton","checkButton","callButton","raiseButton","allInButton","quickRaiseButton"];
+		this.skinParts = ["foldButton","checkButton","callButton","raiseButton","allInButton","quickRaiseButton","switchGroup","autoCheckOrFoldButton","autoCheckButton","autoGroup"];
 		
 		this.height = 320;
 		this.width = 750;
-		this.elementsContent = [this.foldButton_i(),this.checkButton_i(),this.callButton_i(),this.raiseButton_i(),this.allInButton_i(),this.quickRaiseButton_i()];
+		this.elementsContent = [this.switchGroup_i(),this.autoGroup_i()];
 	}
 	var _proto = PlayGameButtonGroupSkin.prototype;
 
+	_proto.switchGroup_i = function () {
+		var t = new eui.Group();
+		this.switchGroup = t;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this.foldButton_i(),this.checkButton_i(),this.callButton_i(),this.raiseButton_i(),this.allInButton_i(),this.quickRaiseButton_i()];
+		return t;
+	};
 	_proto.foldButton_i = function () {
 		var t = new eui.Button();
 		this.foldButton = t;
 		t.label = "";
 		t.left = 120;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.x = 120;
 		t.y = 170;
 		t.skinName = PlayGameButtonGroupSkin$Skin1;
 		return t;
@@ -947,6 +965,9 @@ window.skins={};
 		this.checkButton = t;
 		t.label = "";
 		t.right = 120;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.x = 508;
 		t.y = 170;
 		t.skinName = PlayGameButtonGroupSkin$Skin2;
 		return t;
@@ -957,6 +978,9 @@ window.skins={};
 		t.enabled = true;
 		t.label = "";
 		t.right = 120;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.x = 508;
 		t.y = 170;
 		t.skinName = PlayGameButtonGroupSkin$Skin3;
 		return t;
@@ -965,6 +989,8 @@ window.skins={};
 		var t = new eui.Button();
 		this.raiseButton = t;
 		t.label = "";
+		t.scaleX = 1;
+		t.scaleY = 1;
 		t.x = 314;
 		t.y = 100;
 		t.skinName = PlayGameButtonGroupSkin$Skin4;
@@ -974,6 +1000,8 @@ window.skins={};
 		var t = new eui.Button();
 		this.allInButton = t;
 		t.label = "";
+		t.scaleX = 1;
+		t.scaleY = 1;
 		t.x = 314;
 		t.y = 100;
 		t.skinName = PlayGameButtonGroupSkin$Skin5;
@@ -983,9 +1011,47 @@ window.skins={};
 		var t = new eui.Button();
 		this.quickRaiseButton = t;
 		t.label = "";
+		t.scaleX = 1;
+		t.scaleY = 1;
 		t.x = 603;
 		t.y = 330;
 		t.skinName = PlayGameButtonGroupSkin$Skin6;
+		return t;
+	};
+	_proto.autoGroup_i = function () {
+		var t = new eui.Group();
+		this.autoGroup = t;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this.autoCheckOrFoldButton_i(),this.autoCheckButton_i()];
+		return t;
+	};
+	_proto.autoCheckOrFoldButton_i = function () {
+		var t = new eui.CheckBox();
+		this.autoCheckOrFoldButton = t;
+		t.height = 126;
+		t.label = "CheckBox";
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.skinName = "AutonCheckOrFoldButtonSkin";
+		t.width = 122;
+		t.x = 120;
+		t.y = 170;
+		return t;
+	};
+	_proto.autoCheckButton_i = function () {
+		var t = new eui.CheckBox();
+		this.autoCheckButton = t;
+		t.height = 126;
+		t.label = "CheckBox";
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.skinName = "AutoCheckButtonSkin";
+		t.width = 122;
+		t.x = 508;
+		t.y = 170;
 		return t;
 	};
 	return PlayGameButtonGroupSkin;
@@ -5222,6 +5288,99 @@ window.skins={};
 		return t;
 	};
 	return ScoreboardSkin;
+})(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/SeatViewSkin.exml'] = window.SeatViewSkin = (function (_super) {
+	__extends(SeatViewSkin, _super);
+	function SeatViewSkin() {
+		_super.call(this);
+		this.skinParts = ["bounce","labelDisplay","icon"];
+		
+		this.height = 80;
+		this.width = 80;
+		this.bounce_i();
+		this.elementsContent = [this._Rect1_i(),this.labelDisplay_i(),this.icon_i()];
+		
+		eui.Binding.$bindProperties(this, ["icon"],[0],this._TweenItem1,"target");
+		eui.Binding.$bindProperties(this, [0],[],this._Object1,"y");
+		eui.Binding.$bindProperties(this, [-18],[],this._Object2,"y");
+	}
+	var _proto = SeatViewSkin.prototype;
+
+	_proto.bounce_i = function () {
+		var t = new egret.tween.TweenGroup();
+		this.bounce = t;
+		t.items = [this._TweenItem1_i()];
+		return t;
+	};
+	_proto._TweenItem1_i = function () {
+		var t = new egret.tween.TweenItem();
+		this._TweenItem1 = t;
+		t.paths = [this._Set1_i(),this._To1_i(),this._To2_i()];
+		return t;
+	};
+	_proto._Set1_i = function () {
+		var t = new egret.tween.Set();
+		return t;
+	};
+	_proto._To1_i = function () {
+		var t = new egret.tween.To();
+		t.duration = 500;
+		t.props = this._Object1_i();
+		return t;
+	};
+	_proto._Object1_i = function () {
+		var t = {};
+		this._Object1 = t;
+		return t;
+	};
+	_proto._To2_i = function () {
+		var t = new egret.tween.To();
+		t.duration = 500;
+		t.props = this._Object2_i();
+		return t;
+	};
+	_proto._Object2_i = function () {
+		var t = {};
+		this._Object2 = t;
+		return t;
+	};
+	_proto._Rect1_i = function () {
+		var t = new eui.Rect();
+		t.ellipseHeight = 100;
+		t.ellipseWidth = 100;
+		t.fillAlpha = 0;
+		t.height = 80;
+		t.strokeColor = 0x118079;
+		t.strokeWeight = 2;
+		t.width = 80;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto.labelDisplay_i = function () {
+		var t = new eui.Label();
+		this.labelDisplay = t;
+		t.height = 80;
+		t.size = 25;
+		t.text = "label";
+		t.textAlign = "center";
+		t.textColor = 0x118079;
+		t.verticalAlign = "middle";
+		t.width = 80;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto.icon_i = function () {
+		var t = new eui.Image();
+		this.icon = t;
+		t.height = 34;
+		t.horizontalCenter = 0;
+		t.source = "icon_sit_down_png";
+		t.width = 46;
+		t.y = -18;
+		return t;
+	};
+	return SeatViewSkin;
 })(eui.Skin);generateEUI.paths['resource/eui_skins/LaunchSkins/InputPhoneNumberSkin.exml'] = window.InputPhoneNumberSkin = (function (_super) {
 	__extends(InputPhoneNumberSkin, _super);
 	var InputPhoneNumberSkin$Skin19 = 	(function (_super) {
