@@ -1005,10 +1005,10 @@ window.skins={};
 	_proto.switchGroup_i = function () {
 		var t = new eui.Group();
 		this.switchGroup = t;
-		t.percentHeight = 100;
-		t.percentWidth = 100;
-		t.x = 0;
-		t.y = 0;
+		t.height = 320;
+		t.horizontalCenter = 0;
+		t.verticalCenter = 0;
+		t.width = 750;
 		t.elementsContent = [this.foldButton_i(),this.checkButton_i(),this.callButton_i(),this.raiseButton_i(),this.allInButton_i(),this.quickRaiseButton_i(),this.shortcutGroup_i()];
 		return t;
 	};
@@ -1161,10 +1161,10 @@ window.skins={};
 	_proto.autoGroup_i = function () {
 		var t = new eui.Group();
 		this.autoGroup = t;
-		t.percentHeight = 100;
-		t.percentWidth = 100;
-		t.x = 0;
-		t.y = 0;
+		t.height = 320;
+		t.horizontalCenter = 0;
+		t.verticalCenter = 0;
+		t.width = 750;
 		t.elementsContent = [this.autoCheckOrFoldButton_i(),this.autoCheckButton_i()];
 		return t;
 	};
@@ -1859,9 +1859,8 @@ window.skins={};
 	_proto.playGameButtonGroup_i = function () {
 		var t = new PlayGameButtonGroup();
 		this.playGameButtonGroup = t;
-		t.height = 260;
+		t.height = 320;
 		t.skinName = "PlayGameButtonGroupSkin";
-		t.visible = false;
 		t.width = 750;
 		t.x = 0;
 		t.y = 820;
@@ -3200,11 +3199,11 @@ window.skins={};
 	__extends(BuyInSkin, _super);
 	function BuyInSkin() {
 		_super.call(this);
-		this.skinParts = ["background","scoreLabel","scoreSlider","confirmButton","minBuyLabel","balanceLabel"];
+		this.skinParts = ["background","scoreLabel","scoreSlider","confirmButton","minBuyLabel","balanceLabel","group"];
 		
 		this.height = 1334;
 		this.width = 750;
-		this.elementsContent = [this.background_i(),this._Group1_i()];
+		this.elementsContent = [this.background_i(),this.group_i()];
 	}
 	var _proto = BuyInSkin.prototype;
 
@@ -3218,8 +3217,9 @@ window.skins={};
 		t.y = 0;
 		return t;
 	};
-	_proto._Group1_i = function () {
+	_proto.group_i = function () {
 		var t = new eui.Group();
+		this.group = t;
 		t.height = 400;
 		t.horizontalCenter = 0;
 		t.verticalCenter = 0;
@@ -4063,11 +4063,11 @@ window.skins={};
 	__extends(PlayerDetailSkin, _super);
 	function PlayerDetailSkin() {
 		_super.call(this);
-		this.skinParts = ["background","avatarImage","nicknameLabel","bioLabel","statisticList","cardList"];
+		this.skinParts = ["background","avatarImage","nicknameLabel","bioLabel","statisticList","cardList","group"];
 		
 		this.height = 1334;
 		this.width = 750;
-		this.elementsContent = [this.background_i(),this._Group1_i()];
+		this.elementsContent = [this.background_i(),this.group_i()];
 	}
 	var _proto = PlayerDetailSkin.prototype;
 
@@ -4081,8 +4081,9 @@ window.skins={};
 		t.y = 0;
 		return t;
 	};
-	_proto._Group1_i = function () {
+	_proto.group_i = function () {
 		var t = new eui.Group();
+		this.group = t;
 		t.height = 970;
 		t.horizontalCenter = 0;
 		t.verticalCenter = 0;
