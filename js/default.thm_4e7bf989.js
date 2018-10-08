@@ -556,6 +556,70 @@ window.skins={};
 		return t;
 	};
 	return RaiseSliderSkin;
+})(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/PlayGameButton/ShortcutRaiseButtonSkin.exml'] = window.ShortcutRaiseButtonSkin = (function (_super) {
+	__extends(ShortcutRaiseButtonSkin, _super);
+	function ShortcutRaiseButtonSkin() {
+		_super.call(this);
+		this.skinParts = ["icon","amountLabel","labelDisplay"];
+		
+		this.height = 96;
+		this.width = 84;
+		this.elementsContent = [this.icon_i(),this.amountLabel_i(),this.labelDisplay_i()];
+		this.states = [
+			new eui.State ("up",
+				[
+				])
+			,
+			new eui.State ("down",
+				[
+					new eui.SetProperty("icon","source","bg_shortcut_raise_disabled_png")
+				])
+			,
+			new eui.State ("disabled",
+				[
+					new eui.SetProperty("icon","source","bg_shortcut_raise_disabled_png")
+				])
+		];
+		
+		eui.Binding.$bindProperties(this, ["hostComponent.amount"],[0],this.amountLabel,"text");
+		eui.Binding.$bindProperties(this, ["hostComponent.label"],[0],this.labelDisplay,"text");
+	}
+	var _proto = ShortcutRaiseButtonSkin.prototype;
+
+	_proto.icon_i = function () {
+		var t = new eui.Image();
+		this.icon = t;
+		t.height = 76;
+		t.source = "bg_shortcut_raise_png";
+		t.width = 84;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto.amountLabel_i = function () {
+		var t = new eui.Label();
+		this.amountLabel = t;
+		t.horizontalCenter = 0;
+		t.size = 20;
+		t.textAlign = "center";
+		t.width = 84;
+		t.y = 77;
+		return t;
+	};
+	_proto.labelDisplay_i = function () {
+		var t = new eui.Label();
+		this.labelDisplay = t;
+		t.height = 76;
+		t.horizontalCenter = 0;
+		t.size = 20;
+		t.textAlign = "center";
+		t.textColor = 0x4a330a;
+		t.verticalAlign = "middle";
+		t.width = 40;
+		t.y = 0;
+		return t;
+	};
+	return ShortcutRaiseButtonSkin;
 })(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/PlayGameButton/AutonCheckOrFoldButtonSkin.exml'] = window.AutonCheckOrFoldButtonSkin = (function (_super) {
 	__extends(AutonCheckOrFoldButtonSkin, _super);
 	function AutonCheckOrFoldButtonSkin() {
@@ -930,7 +994,7 @@ window.skins={};
 
 	function PlayGameButtonGroupSkin() {
 		_super.call(this);
-		this.skinParts = ["foldButton","checkButton","callButton","raiseButton","allInButton","quickRaiseButton","switchGroup","autoCheckOrFoldButton","autoCheckButton","autoGroup"];
+		this.skinParts = ["foldButton","checkButton","callButton","raiseButton","allInButton","quickRaiseButton","firstShortcutButton","secondShortcutButton","thirdShortcutButton","fourthShortcutButton","shortcutGroup","switchGroup","autoCheckOrFoldButton","autoCheckButton","autoGroup"];
 		
 		this.height = 320;
 		this.width = 750;
@@ -945,7 +1009,7 @@ window.skins={};
 		t.percentWidth = 100;
 		t.x = 0;
 		t.y = 0;
-		t.elementsContent = [this.foldButton_i(),this.checkButton_i(),this.callButton_i(),this.raiseButton_i(),this.allInButton_i(),this.quickRaiseButton_i()];
+		t.elementsContent = [this.foldButton_i(),this.checkButton_i(),this.callButton_i(),this.raiseButton_i(),this.allInButton_i(),this.quickRaiseButton_i(),this.shortcutGroup_i()];
 		return t;
 	};
 	_proto.foldButton_i = function () {
@@ -1016,6 +1080,82 @@ window.skins={};
 		t.x = 603;
 		t.y = 330;
 		t.skinName = PlayGameButtonGroupSkin$Skin6;
+		return t;
+	};
+	_proto.shortcutGroup_i = function () {
+		var t = new eui.Group();
+		this.shortcutGroup = t;
+		t.anchorOffsetX = 0;
+		t.height = 96;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.width = 750;
+		t.x = 0;
+		t.y = 0;
+		t.layout = this._HorizontalLayout1_i();
+		t.elementsContent = [this.firstShortcutButton_i(),this.secondShortcutButton_i(),this.thirdShortcutButton_i(),this.fourthShortcutButton_i()];
+		return t;
+	};
+	_proto._HorizontalLayout1_i = function () {
+		var t = new eui.HorizontalLayout();
+		t.gap = 30;
+		t.horizontalAlign = "center";
+		return t;
+	};
+	_proto.firstShortcutButton_i = function () {
+		var t = new ShortcutRaiseButton();
+		this.firstShortcutButton = t;
+		t.amount = "1000";
+		t.height = 96;
+		t.label = "1/3大盲";
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.skinName = "ShortcutRaiseButtonSkin";
+		t.width = 84;
+		t.x = 445;
+		t.y = 0;
+		return t;
+	};
+	_proto.secondShortcutButton_i = function () {
+		var t = new ShortcutRaiseButton();
+		this.secondShortcutButton = t;
+		t.amount = "1000";
+		t.height = 96;
+		t.label = "1/2大盲";
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.skinName = "ShortcutRaiseButtonSkin";
+		t.width = 84;
+		t.x = 60;
+		t.y = -1;
+		return t;
+	};
+	_proto.thirdShortcutButton_i = function () {
+		var t = new ShortcutRaiseButton();
+		this.thirdShortcutButton = t;
+		t.amount = "1000";
+		t.height = 96;
+		t.label = "2/3大盲";
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.skinName = "ShortcutRaiseButtonSkin";
+		t.width = 84;
+		t.x = 608;
+		t.y = 0;
+		return t;
+	};
+	_proto.fourthShortcutButton_i = function () {
+		var t = new ShortcutRaiseButton();
+		this.fourthShortcutButton = t;
+		t.amount = "1000";
+		t.height = 96;
+		t.label = "一倍底池";
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.skinName = "ShortcutRaiseButtonSkin";
+		t.width = 84;
+		t.x = 182;
+		t.y = -1;
 		return t;
 	};
 	_proto.autoGroup_i = function () {
