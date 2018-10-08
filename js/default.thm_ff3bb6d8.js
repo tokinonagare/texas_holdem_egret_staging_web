@@ -1861,6 +1861,7 @@ window.skins={};
 		this.playGameButtonGroup = t;
 		t.height = 320;
 		t.skinName = "PlayGameButtonGroupSkin";
+		t.visible = false;
 		t.width = 750;
 		t.x = 0;
 		t.y = 820;
