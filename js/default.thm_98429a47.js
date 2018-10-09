@@ -6058,58 +6058,13 @@ window.skins={};
 		return LaunchSkin$Skin22;
 	})(eui.Skin);
 
-	var LaunchSkin$Skin23 = 	(function (_super) {
-		__extends(LaunchSkin$Skin23, _super);
-		function LaunchSkin$Skin23() {
-			_super.call(this);
-			this.skinParts = ["labelDisplay"];
-			
-			this.elementsContent = [this._Image1_i(),this.labelDisplay_i()];
-			this.states = [
-				new eui.State ("up",
-					[
-					])
-				,
-				new eui.State ("down",
-					[
-						new eui.SetProperty("_Image1","percentWidth",90),
-						new eui.SetProperty("_Image1","percentHeight",90)
-					])
-				,
-				new eui.State ("disabled",
-					[
-					])
-			];
-		}
-		var _proto = LaunchSkin$Skin23.prototype;
-
-		_proto._Image1_i = function () {
-			var t = new eui.Image();
-			this._Image1 = t;
-			t.percentHeight = 100;
-			t.horizontalCenter = 0;
-			t.source = "btn_close_png";
-			t.verticalCenter = 0;
-			t.percentWidth = 100;
-			return t;
-		};
-		_proto.labelDisplay_i = function () {
-			var t = new eui.Label();
-			this.labelDisplay = t;
-			t.horizontalCenter = 0;
-			t.verticalCenter = 0;
-			return t;
-		};
-		return LaunchSkin$Skin23;
-	})(eui.Skin);
-
 	function LaunchSkin() {
 		_super.call(this);
-		this.skinParts = ["loginButton","visitorButton","buttonGroup","closeButton","displayLabel"];
+		this.skinParts = ["loginButton","visitorButton","buttonGroup","displayLabel"];
 		
 		this.height = 1334;
 		this.width = 750;
-		this.elementsContent = [this._Image1_i(),this.buttonGroup_i(),this.closeButton_i(),this.displayLabel_i()];
+		this.elementsContent = [this._Image1_i(),this.buttonGroup_i(),this.displayLabel_i()];
 	}
 	var _proto = LaunchSkin.prototype;
 
@@ -6156,16 +6111,6 @@ window.skins={};
 		t.x = 93;
 		t.y = 125.29999999999995;
 		t.skinName = LaunchSkin$Skin22;
-		return t;
-	};
-	_proto.closeButton_i = function () {
-		var t = new eui.Button();
-		this.closeButton = t;
-		t.label = "";
-		t.visible = false;
-		t.x = 650;
-		t.y = 40;
-		t.skinName = LaunchSkin$Skin23;
 		return t;
 	};
 	_proto.displayLabel_i = function () {
