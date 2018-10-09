@@ -1686,7 +1686,7 @@ window.skins={};
 
 	function GameSkin() {
 		_super.call(this);
-		this.skinParts = ["mainPotLabel","pinLabel","creatorLabel","blindLabel","talkButton","microphoneButton","communityCardList","startGameButton","cardTypeLabel","potsList","menuButton","playGameButtonGroup","raiseSelector","quickRaiser","bottomToolbar","reviewboardButton","group","cardPattern"];
+		this.skinParts = ["mainPotLabel","pinLabel","creatorLabel","blindLabel","talkButton","microphoneButton","communityCardList","startGameButton","cardTypeLabel","potsList","menuButton","playGameButtonGroup","raiseSelector","quickRaiser","bottomToolbar","reviewboardButton","infoLabel","group","cardPattern"];
 		
 		this.height = 1334;
 		this.width = 750;
@@ -1710,7 +1710,7 @@ window.skins={};
 		t.width = 750;
 		t.x = 0;
 		t.y = 0;
-		t.elementsContent = [this.mainPotLabel_i(),this.pinLabel_i(),this.creatorLabel_i(),this.blindLabel_i(),this.talkButton_i(),this.microphoneButton_i(),this.communityCardList_i(),this.startGameButton_i(),this.cardTypeLabel_i(),this.potsList_i(),this.menuButton_i(),this.playGameButtonGroup_i(),this.raiseSelector_i(),this.quickRaiser_i(),this.bottomToolbar_i(),this.reviewboardButton_i()];
+		t.elementsContent = [this.mainPotLabel_i(),this.pinLabel_i(),this.creatorLabel_i(),this.blindLabel_i(),this.talkButton_i(),this.microphoneButton_i(),this.communityCardList_i(),this.startGameButton_i(),this.cardTypeLabel_i(),this.potsList_i(),this.menuButton_i(),this.playGameButtonGroup_i(),this.raiseSelector_i(),this.quickRaiser_i(),this.bottomToolbar_i(),this.reviewboardButton_i(),this.infoLabel_i()];
 		return t;
 	};
 	_proto.mainPotLabel_i = function () {
@@ -1903,6 +1903,18 @@ window.skins={};
 		t.right = 34;
 		t.top = 30;
 		t.skinName = GameSkin$Skin15;
+		return t;
+	};
+	_proto.infoLabel_i = function () {
+		var t = new eui.Label();
+		this.infoLabel = t;
+		t.bottom = 20;
+		t.height = 60;
+		t.horizontalCenter = 0;
+		t.text = "";
+		t.textAlign = "center";
+		t.visible = false;
+		t.width = 450;
 		return t;
 	};
 	_proto.cardPattern_i = function () {
