@@ -1457,6 +1457,66 @@ window.skins={};
 		return t;
 	};
 	return BottomToolbarSkin;
+})(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/DebugViewSkin.exml'] = window.DebugViewSkin = (function (_super) {
+	__extends(DebugViewSkin, _super);
+	function DebugViewSkin() {
+		_super.call(this);
+		this.skinParts = ["logLabel","contentGroup","logScroller"];
+		
+		this.height = 600;
+		this.width = 600;
+		this.elementsContent = [this._Rect1_i(),this.logScroller_i()];
+	}
+	var _proto = DebugViewSkin.prototype;
+
+	_proto._Rect1_i = function () {
+		var t = new eui.Rect();
+		t.fillAlpha = 0.7;
+		t.height = 600;
+		t.width = 600;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto.logScroller_i = function () {
+		var t = new eui.Scroller();
+		this.logScroller = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		t.viewport = this.contentGroup_i();
+		return t;
+	};
+	_proto.contentGroup_i = function () {
+		var t = new eui.Group();
+		this.contentGroup = t;
+		t.layout = this._VerticalLayout1_i();
+		t.elementsContent = [this.logLabel_i()];
+		return t;
+	};
+	_proto._VerticalLayout1_i = function () {
+		var t = new eui.VerticalLayout();
+		t.gap = 6;
+		t.paddingBottom = 10;
+		t.paddingLeft = 20;
+		t.paddingRight = 20;
+		t.paddingTop = 10;
+		return t;
+	};
+	_proto.logLabel_i = function () {
+		var t = new eui.Label();
+		this.logLabel = t;
+		t.size = 20;
+		t.text = "";
+		t.width = 560;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	return DebugViewSkin;
 })(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/GameSkin.exml'] = window.GameSkin = (function (_super) {
 	__extends(GameSkin, _super);
 	var GameSkin$Skin11 = 	(function (_super) {
@@ -1686,7 +1746,7 @@ window.skins={};
 
 	function GameSkin() {
 		_super.call(this);
-		this.skinParts = ["mainPotLabel","pinLabel","creatorLabel","blindLabel","talkButton","microphoneButton","communityCardList","startGameButton","cardTypeLabel","potsList","menuButton","playGameButtonGroup","raiseSelector","quickRaiser","bottomToolbar","reviewboardButton","infoLabel","group","cardPattern"];
+		this.skinParts = ["mainPotLabel","pinLabel","creatorLabel","blindLabel","talkButton","microphoneButton","communityCardList","startGameButton","cardTypeLabel","potsList","menuButton","playGameButtonGroup","raiseSelector","quickRaiser","bottomToolbar","reviewboardButton","infoLabel","debugView","group","cardPattern"];
 		
 		this.height = 1334;
 		this.width = 750;
@@ -1710,7 +1770,7 @@ window.skins={};
 		t.width = 750;
 		t.x = 0;
 		t.y = 0;
-		t.elementsContent = [this.mainPotLabel_i(),this.pinLabel_i(),this.creatorLabel_i(),this.blindLabel_i(),this.talkButton_i(),this.microphoneButton_i(),this.communityCardList_i(),this.startGameButton_i(),this.cardTypeLabel_i(),this.potsList_i(),this.menuButton_i(),this.playGameButtonGroup_i(),this.raiseSelector_i(),this.quickRaiser_i(),this.bottomToolbar_i(),this.reviewboardButton_i(),this.infoLabel_i()];
+		t.elementsContent = [this.mainPotLabel_i(),this.pinLabel_i(),this.creatorLabel_i(),this.blindLabel_i(),this.talkButton_i(),this.microphoneButton_i(),this.communityCardList_i(),this.startGameButton_i(),this.cardTypeLabel_i(),this.potsList_i(),this.menuButton_i(),this.playGameButtonGroup_i(),this.raiseSelector_i(),this.quickRaiser_i(),this.bottomToolbar_i(),this.reviewboardButton_i(),this.infoLabel_i(),this.debugView_i()];
 		return t;
 	};
 	_proto.mainPotLabel_i = function () {
@@ -1911,10 +1971,21 @@ window.skins={};
 		t.bottom = 20;
 		t.height = 60;
 		t.horizontalCenter = 0;
-		t.text = "";
+		t.text = "DebugLabel";
 		t.textAlign = "center";
 		t.visible = false;
 		t.width = 450;
+		return t;
+	};
+	_proto.debugView_i = function () {
+		var t = new DebugView();
+		this.debugView = t;
+		t.height = 600;
+		t.horizontalCenter = 0;
+		t.skinName = "DebugViewSkin";
+		t.visible = false;
+		t.width = 600;
+		t.y = 0;
 		return t;
 	};
 	_proto.cardPattern_i = function () {
