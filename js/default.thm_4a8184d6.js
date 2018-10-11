@@ -1457,11 +1457,11 @@ window.skins={};
 		return t;
 	};
 	return BottomToolbarSkin;
-})(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/DebugViewSkin.exml'] = window.DebugViewSkin = (function (_super) {
+})(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/DebugView/DebugViewSkin.exml'] = window.DebugViewSkin = (function (_super) {
 	__extends(DebugViewSkin, _super);
 	function DebugViewSkin() {
 		_super.call(this);
-		this.skinParts = ["logLabel","contentGroup","logScroller"];
+		this.skinParts = ["logList","logScroller"];
 		
 		this.height = 600;
 		this.width = 600;
@@ -1483,37 +1483,28 @@ window.skins={};
 		this.logScroller = t;
 		t.anchorOffsetX = 0;
 		t.anchorOffsetY = 0;
-		t.percentHeight = 100;
-		t.percentWidth = 100;
+		t.height = 600;
+		t.width = 600;
 		t.x = 0;
 		t.y = 0;
-		t.viewport = this.contentGroup_i();
+		t.viewport = this.logList_i();
 		return t;
 	};
-	_proto.contentGroup_i = function () {
-		var t = new eui.Group();
-		this.contentGroup = t;
+	_proto.logList_i = function () {
+		var t = new eui.List();
+		this.logList = t;
+		t.height = 600;
+		t.width = 600;
 		t.layout = this._VerticalLayout1_i();
-		t.elementsContent = [this.logLabel_i()];
 		return t;
 	};
 	_proto._VerticalLayout1_i = function () {
 		var t = new eui.VerticalLayout();
-		t.gap = 6;
-		t.paddingBottom = 10;
+		t.gap = 20;
+		t.paddingBottom = 0;
 		t.paddingLeft = 20;
 		t.paddingRight = 20;
-		t.paddingTop = 10;
-		return t;
-	};
-	_proto.logLabel_i = function () {
-		var t = new eui.Label();
-		this.logLabel = t;
-		t.size = 20;
-		t.text = "";
-		t.width = 560;
-		t.x = 0;
-		t.y = 0;
+		t.paddingTop = 0;
 		return t;
 	};
 	return DebugViewSkin;
