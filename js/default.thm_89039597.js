@@ -1747,7 +1747,7 @@ window.skins={};
 
 	function GameSkin() {
 		_super.call(this);
-		this.skinParts = ["mainPotLabel","pinLabel","creatorLabel","blindLabel","talkButton","microphoneButton","communityCardList","startGameButton","cardTypeLabel","potsList","menuButton","playGameButtonGroup","raiseSelector","quickRaiser","bottomToolbar","reviewboardButton","infoLabel","group","debugView","cardPattern"];
+		this.skinParts = ["mainPotLabel","pinLabel","creatorLabel","blindLabel","talkButton","microphoneButton","communityCardList","startGameButton","cardTypeLabel","potsList","menuButton","playGameButtonGroup","raiseSelector","quickRaiser","bottomToolbar","reviewboardButton","infoLabel","promptLabel","group","debugView","cardPattern"];
 		
 		this.height = 1334;
 		this.width = 750;
@@ -1771,7 +1771,7 @@ window.skins={};
 		t.width = 750;
 		t.x = 0;
 		t.y = 0;
-		t.elementsContent = [this.mainPotLabel_i(),this.pinLabel_i(),this.creatorLabel_i(),this.blindLabel_i(),this.talkButton_i(),this.microphoneButton_i(),this.communityCardList_i(),this.startGameButton_i(),this.cardTypeLabel_i(),this.potsList_i(),this.menuButton_i(),this.playGameButtonGroup_i(),this.raiseSelector_i(),this.quickRaiser_i(),this.bottomToolbar_i(),this.reviewboardButton_i(),this.infoLabel_i()];
+		t.elementsContent = [this.mainPotLabel_i(),this.pinLabel_i(),this.creatorLabel_i(),this.blindLabel_i(),this.talkButton_i(),this.microphoneButton_i(),this.communityCardList_i(),this.startGameButton_i(),this.cardTypeLabel_i(),this.potsList_i(),this.menuButton_i(),this.playGameButtonGroup_i(),this.raiseSelector_i(),this.quickRaiser_i(),this.bottomToolbar_i(),this.reviewboardButton_i(),this.infoLabel_i(),this.promptLabel_i()];
 		return t;
 	};
 	_proto.mainPotLabel_i = function () {
@@ -1978,6 +1978,16 @@ window.skins={};
 		t.textAlign = "center";
 		t.visible = false;
 		t.width = 450;
+		return t;
+	};
+	_proto.promptLabel_i = function () {
+		var t = new eui.Label();
+		this.promptLabel = t;
+		t.size = 20;
+		t.text = "等待下一局开始";
+		t.visible = false;
+		t.x = 376;
+		t.y = 1153.5;
 		return t;
 	};
 	_proto.debugView_i = function () {
