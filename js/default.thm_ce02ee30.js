@@ -1461,11 +1461,11 @@ window.skins={};
 	__extends(DebugViewSkin, _super);
 	function DebugViewSkin() {
 		_super.call(this);
-		this.skinParts = ["logList","logScroller"];
+		this.skinParts = ["logList","logScroller","domainLabel"];
 		
 		this.height = 600;
 		this.width = 600;
-		this.elementsContent = [this._Rect1_i(),this.logScroller_i()];
+		this.elementsContent = [this._Rect1_i(),this.logScroller_i(),this.domainLabel_i()];
 	}
 	var _proto = DebugViewSkin.prototype;
 
@@ -1483,17 +1483,17 @@ window.skins={};
 		this.logScroller = t;
 		t.anchorOffsetX = 0;
 		t.anchorOffsetY = 0;
-		t.height = 600;
+		t.height = 560;
 		t.width = 600;
 		t.x = 0;
-		t.y = 0;
+		t.y = 40;
 		t.viewport = this.logList_i();
 		return t;
 	};
 	_proto.logList_i = function () {
 		var t = new eui.List();
 		this.logList = t;
-		t.height = 600;
+		t.height = 560;
 		t.width = 600;
 		t.layout = this._VerticalLayout1_i();
 		return t;
@@ -1505,6 +1505,16 @@ window.skins={};
 		t.paddingLeft = 20;
 		t.paddingRight = 20;
 		t.paddingTop = 0;
+		return t;
+	};
+	_proto.domainLabel_i = function () {
+		var t = new eui.Label();
+		this.domainLabel = t;
+		t.text = "Label";
+		t.textColor = 0xf7ea11;
+		t.width = 560;
+		t.x = 20;
+		t.y = 5;
 		return t;
 	};
 	return DebugViewSkin;
