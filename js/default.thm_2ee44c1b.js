@@ -1963,8 +1963,8 @@ window.skins={};
 		var t = new eui.Button();
 		this.reviewboardButton = t;
 		t.label = "";
-		t.right = 34;
-		t.top = 30;
+		t.x = 644;
+		t.y = 30;
 		t.skinName = GameSkin$Skin15;
 		return t;
 	};
@@ -2470,7 +2470,7 @@ window.skins={};
 		_super.call(this);
 		this.skinParts = ["settlementList"];
 		
-		this.height = 1018;
+		this.height = 1006;
 		this.width = 620;
 		this.elementsContent = [this._Scroller1_i()];
 	}
@@ -2507,15 +2507,62 @@ window.skins={};
 		return t;
 	};
 	return ReviewboardSettlementHistorySkin;
+})(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/Reviewboard/GameHistory/ReviewboardBlindingBetHeaderSkin.exml'] = window.ReviewboardBlindingBetHeaderSkin = (function (_super) {
+	__extends(ReviewboardBlindingBetHeaderSkin, _super);
+	function ReviewboardBlindingBetHeaderSkin() {
+		_super.call(this);
+		this.skinParts = [];
+		
+		this.height = 60;
+		this.width = 620;
+		this.elementsContent = [this._Rect1_i(),this._Label1_i(),this._Label2_i(),this._Label3_i()];
+	}
+	var _proto = ReviewboardBlindingBetHeaderSkin.prototype;
+
+	_proto._Rect1_i = function () {
+		var t = new eui.Rect();
+		t.fillColor = 0x283736;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto._Label1_i = function () {
+		var t = new eui.Label();
+		t.left = 30;
+		t.size = 24;
+		t.text = "位置 / 玩家";
+		t.verticalCenter = 0;
+		return t;
+	};
+	_proto._Label2_i = function () {
+		var t = new eui.Label();
+		t.left = 340;
+		t.size = 24;
+		t.text = "行动";
+		t.verticalCenter = 0;
+		return t;
+	};
+	_proto._Label3_i = function () {
+		var t = new eui.Label();
+		t.right = 30;
+		t.size = 24;
+		t.text = "后手";
+		t.verticalCenter = 0;
+		t.width = 48;
+		return t;
+	};
+	return ReviewboardBlindingBetHeaderSkin;
 })(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/Reviewboard/GameHistory/ReviewboardGameHistorySkin.exml'] = window.ReviewboardGameHistorySkin = (function (_super) {
 	__extends(ReviewboardGameHistorySkin, _super);
 	function ReviewboardGameHistorySkin() {
 		_super.call(this);
 		this.skinParts = ["scrollerGroup","contentScroller"];
 		
-		this.height = 1018;
+		this.height = 1006;
 		this.width = 620;
-		this.elementsContent = [this.contentScroller_i()];
+		this.elementsContent = [this.contentScroller_i(),this._ReviewboardBlindingBetHeader1_i()];
 	}
 	var _proto = ReviewboardGameHistorySkin.prototype;
 
@@ -2539,7 +2586,15 @@ window.skins={};
 		var t = new eui.VerticalLayout();
 		t.gap = 0;
 		t.horizontalAlign = "center";
+		t.paddingTop = 60;
 		t.verticalAlign = "top";
+		return t;
+	};
+	_proto._ReviewboardBlindingBetHeader1_i = function () {
+		var t = new ReviewboardBlindingBetHeader();
+		t.skinName = "ReviewboardBlindingBetHeaderSkin";
+		t.x = 0;
+		t.y = 0;
 		return t;
 	};
 	return ReviewboardGameHistorySkin;
@@ -4235,10 +4290,11 @@ window.skins={};
 	_proto.bioLabel_i = function () {
 		var t = new eui.Label();
 		this.bioLabel = t;
+		t.height = 44;
 		t.size = 22;
-		t.text = "签名: lalalalalalalalalalla";
+		t.text = "签名:";
 		t.textColor = 0xb8c2c0;
-		t.visible = false;
+		t.width = 300;
 		t.x = 230;
 		t.y = 130;
 		return t;
@@ -4836,53 +4892,6 @@ window.skins={};
 		return t;
 	};
 	return PotItemSkin;
-})(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/Reviewboard/GameHistory/ReviewboardBlindingBetHeaderSkin.exml'] = window.ReviewboardBlindingBetHeaderSkin = (function (_super) {
-	__extends(ReviewboardBlindingBetHeaderSkin, _super);
-	function ReviewboardBlindingBetHeaderSkin() {
-		_super.call(this);
-		this.skinParts = [];
-		
-		this.height = 60;
-		this.width = 620;
-		this.elementsContent = [this._Rect1_i(),this._Label1_i(),this._Label2_i(),this._Label3_i()];
-	}
-	var _proto = ReviewboardBlindingBetHeaderSkin.prototype;
-
-	_proto._Rect1_i = function () {
-		var t = new eui.Rect();
-		t.fillColor = 0x283736;
-		t.percentHeight = 100;
-		t.percentWidth = 100;
-		t.x = 0;
-		t.y = 0;
-		return t;
-	};
-	_proto._Label1_i = function () {
-		var t = new eui.Label();
-		t.left = 30;
-		t.size = 24;
-		t.text = "位置 / 玩家";
-		t.verticalCenter = 0;
-		return t;
-	};
-	_proto._Label2_i = function () {
-		var t = new eui.Label();
-		t.left = 340;
-		t.size = 24;
-		t.text = "行动";
-		t.verticalCenter = 0;
-		return t;
-	};
-	_proto._Label3_i = function () {
-		var t = new eui.Label();
-		t.right = 30;
-		t.size = 24;
-		t.text = "后手";
-		t.verticalCenter = 0;
-		t.width = 48;
-		return t;
-	};
-	return ReviewboardBlindingBetHeaderSkin;
 })(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/Reviewboard/GameHistory/ReviewboardPlayerPositionIconSkin.exml'] = window.ReviewboardPlayerPositionIconSkin = (function (_super) {
 	__extends(ReviewboardPlayerPositionIconSkin, _super);
 	function ReviewboardPlayerPositionIconSkin() {
