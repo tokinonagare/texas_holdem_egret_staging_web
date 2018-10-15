@@ -4040,7 +4040,7 @@ window.skins={};
 
 	function NumericKeyboardSkin() {
 		_super.call(this);
-		this.skinParts = ["background","displayLabel","buttonList","zeroButton","deleteButton","closeButton","confirmButton"];
+		this.skinParts = ["background","displayLabel","buttonList","zeroButton","deleteButton","confirmButton","closeButton"];
 		
 		this.height = 1334;
 		this.width = 750;
@@ -4064,7 +4064,7 @@ window.skins={};
 		t.horizontalCenter = 0;
 		t.verticalCenter = 0;
 		t.width = 440;
-		t.elementsContent = [this._Rect1_i(),this.displayLabel_i(),this.buttonList_i(),this.zeroButton_i(),this.deleteButton_i(),this.closeButton_i(),this.confirmButton_i()];
+		t.elementsContent = [this._Rect1_i(),this.displayLabel_i(),this.buttonList_i(),this.zeroButton_i(),this.deleteButton_i(),this.confirmButton_i(),this.closeButton_i()];
 		return t;
 	};
 	_proto._Rect1_i = function () {
@@ -4079,7 +4079,7 @@ window.skins={};
 		t.strokeWeight = 3;
 		t.width = 440;
 		t.x = 0;
-		t.y = 0;
+		t.y = -2;
 		return t;
 	};
 	_proto.displayLabel_i = function () {
@@ -4190,15 +4190,6 @@ window.skins={};
 		t.y = 398;
 		return t;
 	};
-	_proto.closeButton_i = function () {
-		var t = new eui.Button();
-		this.closeButton = t;
-		t.label = "";
-		t.right = 20;
-		t.top = 20;
-		t.skinName = NumericKeyboardSkin$Skin18;
-		return t;
-	};
 	_proto.confirmButton_i = function () {
 		var t = new eui.Button();
 		this.confirmButton = t;
@@ -4208,6 +4199,26 @@ window.skins={};
 		t.width = 128;
 		t.x = 292;
 		t.y = 398;
+		return t;
+	};
+	_proto.closeButton_i = function () {
+		var t = new eui.Group();
+		this.closeButton = t;
+		t.height = 80;
+		t.width = 80;
+		t.x = 360;
+		t.y = 0;
+		t.elementsContent = [this._Button1_i()];
+		return t;
+	};
+	_proto._Button1_i = function () {
+		var t = new eui.Button();
+		t.horizontalCenter = 0;
+		t.label = "";
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.verticalCenter = 0;
+		t.skinName = NumericKeyboardSkin$Skin18;
 		return t;
 	};
 	return NumericKeyboardSkin;
