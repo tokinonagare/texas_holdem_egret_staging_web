@@ -1457,6 +1457,41 @@ window.skins={};
 		return t;
 	};
 	return BottomToolbarSkin;
+})(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/BuyInApplication/MessageAlarmSkin.exml'] = window.MessageAlarmSkin = (function (_super) {
+	__extends(MessageAlarmSkin, _super);
+	function MessageAlarmSkin() {
+		_super.call(this);
+		this.skinParts = ["dot"];
+		
+		this.height = 50;
+		this.width = 43;
+		this.elementsContent = [this._Image1_i(),this.dot_i()];
+	}
+	var _proto = MessageAlarmSkin.prototype;
+
+	_proto._Image1_i = function () {
+		var t = new eui.Image();
+		t.height = 50;
+		t.source = "icon_message_alarm_png";
+		t.verticalCenter = 0;
+		t.width = 43;
+		t.x = 0;
+		return t;
+	};
+	_proto.dot_i = function () {
+		var t = new eui.Rect();
+		this.dot = t;
+		t.ellipseHeight = 15;
+		t.ellipseWidth = 15;
+		t.fillColor = 0xff0000;
+		t.height = 13;
+		t.visible = false;
+		t.width = 13;
+		t.x = 30;
+		t.y = 3;
+		return t;
+	};
+	return MessageAlarmSkin;
 })(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/DebugView/DebugViewSkin.exml'] = window.DebugViewSkin = (function (_super) {
 	__extends(DebugViewSkin, _super);
 	function DebugViewSkin() {
@@ -1747,7 +1782,7 @@ window.skins={};
 
 	function GameSkin() {
 		_super.call(this);
-		this.skinParts = ["mainPotLabel","pinLabel","creatorLabel","blindLabel","talkButton","microphoneButton","communityCardList","startGameButton","cardTypeLabel","potsList","menuButton","playGameButtonGroup","raiseSelector","quickRaiser","bottomToolbar","reviewboardButton","infoLabel","promptLabel","group","debugView","cardPattern"];
+		this.skinParts = ["mainPotLabel","pinLabel","creatorLabel","blindLabel","talkButton","microphoneButton","communityCardList","startGameButton","cardTypeLabel","potsList","menuButton","playGameButtonGroup","raiseSelector","quickRaiser","bottomToolbar","reviewboardButton","infoLabel","promptLabel","messageAlarm","group","debugView","cardPattern"];
 		
 		this.height = 1334;
 		this.width = 750;
@@ -1771,7 +1806,7 @@ window.skins={};
 		t.width = 750;
 		t.x = 0;
 		t.y = 0;
-		t.elementsContent = [this.mainPotLabel_i(),this.pinLabel_i(),this.creatorLabel_i(),this.blindLabel_i(),this.talkButton_i(),this.microphoneButton_i(),this.communityCardList_i(),this.startGameButton_i(),this.cardTypeLabel_i(),this.potsList_i(),this.menuButton_i(),this.playGameButtonGroup_i(),this.raiseSelector_i(),this.quickRaiser_i(),this.bottomToolbar_i(),this.reviewboardButton_i(),this.infoLabel_i(),this.promptLabel_i()];
+		t.elementsContent = [this.mainPotLabel_i(),this.pinLabel_i(),this.creatorLabel_i(),this.blindLabel_i(),this.talkButton_i(),this.microphoneButton_i(),this.communityCardList_i(),this.startGameButton_i(),this.cardTypeLabel_i(),this.potsList_i(),this.menuButton_i(),this.playGameButtonGroup_i(),this.raiseSelector_i(),this.quickRaiser_i(),this.bottomToolbar_i(),this.reviewboardButton_i(),this.infoLabel_i(),this.promptLabel_i(),this.messageAlarm_i()];
 		return t;
 	};
 	_proto.mainPotLabel_i = function () {
@@ -1962,8 +1997,10 @@ window.skins={};
 	_proto.reviewboardButton_i = function () {
 		var t = new eui.Button();
 		this.reviewboardButton = t;
+		t.height = 56;
 		t.label = "";
-		t.x = 644;
+		t.right = 30;
+		t.width = 58;
 		t.y = 30;
 		t.skinName = GameSkin$Skin15;
 		return t;
@@ -1988,6 +2025,17 @@ window.skins={};
 		t.visible = false;
 		t.x = 376;
 		t.y = 1153.5;
+		return t;
+	};
+	_proto.messageAlarm_i = function () {
+		var t = new MessageAlarm();
+		this.messageAlarm = t;
+		t.height = 50;
+		t.skinName = "MessageAlarmSkin";
+		t.visible = false;
+		t.width = 43;
+		t.x = 578.5;
+		t.y = 33;
 		return t;
 	};
 	_proto.debugView_i = function () {
@@ -3107,7 +3155,6 @@ window.skins={};
 		t.width = 688;
 		t.y = 102;
 		t.layout = this._VerticalLayout1_i();
-		t.dataProvider = this._ArrayCollection1_i();
 		return t;
 	};
 	_proto._VerticalLayout1_i = function () {
@@ -3117,31 +3164,6 @@ window.skins={};
 		t.paddingRight = 10;
 		t.paddingTop = 10;
 		t.verticalAlign = "top";
-		return t;
-	};
-	_proto._ArrayCollection1_i = function () {
-		var t = new eui.ArrayCollection();
-		t.source = [this._Object1_i(),this._Object2_i(),this._Object3_i(),this._Object4_i()];
-		return t;
-	};
-	_proto._Object1_i = function () {
-		var t = {};
-		t.nickname = "mike";
-		return t;
-	};
-	_proto._Object2_i = function () {
-		var t = {};
-		t.nickname = "sherlly";
-		return t;
-	};
-	_proto._Object3_i = function () {
-		var t = {};
-		t.nickname = "null";
-		return t;
-	};
-	_proto._Object4_i = function () {
-		var t = {};
-		t.nickname = "null";
 		return t;
 	};
 	return ApplicationRecordSkin;
@@ -3317,7 +3339,7 @@ window.skins={};
 	__extends(BuyInApplicationSkin, _super);
 	function BuyInApplicationSkin() {
 		_super.call(this);
-		this.skinParts = ["background","nicknameLabel","scoreLabel","rejectButton","agreeButton","group"];
+		this.skinParts = ["background","nicknameLabel","scoreLabel","rejectButton","agreeButton","minScoreLabel","group"];
 		
 		this.height = 1334;
 		this.width = 750;
@@ -3329,8 +3351,8 @@ window.skins={};
 		var t = new eui.Rect();
 		this.background = t;
 		t.fillAlpha = 0.5;
-		t.percentHeight = 100;
-		t.percentWidth = 100;
+		t.height = 1334;
+		t.width = 750;
 		t.x = 0;
 		t.y = 0;
 		return t;
@@ -3342,7 +3364,7 @@ window.skins={};
 		t.horizontalCenter = 0;
 		t.verticalCenter = 0;
 		t.width = 536;
-		t.elementsContent = [this._Rect1_i(),this._Label1_i(),this.nicknameLabel_i(),this.scoreLabel_i(),this.rejectButton_i(),this.agreeButton_i(),this._Rect2_i(),this._Label2_i()];
+		t.elementsContent = [this._Rect1_i(),this._Label1_i(),this.nicknameLabel_i(),this.scoreLabel_i(),this.rejectButton_i(),this.agreeButton_i(),this._Rect2_i(),this.minScoreLabel_i()];
 		return t;
 	};
 	_proto._Rect1_i = function () {
@@ -3379,7 +3401,7 @@ window.skins={};
 		t.textAlign = "center";
 		t.textColor = 0x6bfffd;
 		t.width = 400;
-		t.y = 140;
+		t.y = 130;
 		return t;
 	};
 	_proto.scoreLabel_i = function () {
@@ -3387,7 +3409,7 @@ window.skins={};
 		this.scoreLabel = t;
 		t.horizontalCenter = 0;
 		t.size = 32;
-		t.text = "申请带入记分牌 200";
+		t.text = "申请带入记分牌";
 		t.textAlign = "center";
 		t.width = 400;
 		t.y = 180;
@@ -3421,11 +3443,12 @@ window.skins={};
 		t.width = 2;
 		return t;
 	};
-	_proto._Label2_i = function () {
+	_proto.minScoreLabel_i = function () {
 		var t = new eui.Label();
+		this.minScoreLabel = t;
 		t.horizontalCenter = 0;
 		t.size = 18;
-		t.text = "* 该房间最低带入记分牌为 400";
+		t.text = "* 该房间最低带入记分牌为";
 		t.textAlign = "center";
 		t.textColor = 0xfe2a2a;
 		t.width = 400;
