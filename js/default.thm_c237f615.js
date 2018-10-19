@@ -2309,7 +2309,7 @@ window.skins={};
 		t.columnWidth = 206;
 		t.horizontalAlign = "center";
 		t.horizontalGap = 0;
-		t.orientation = "columns";
+		t.orientation = "rows";
 		t.requestedColumnCount = 3;
 		t.rowHeight = 180;
 		t.verticalAlign = "top";
@@ -3079,130 +3079,42 @@ window.skins={};
 		return t;
 	};
 	return ReviewboardSceneSkin;
-})(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/BuyInApplication/ApplicationRecordSkin.exml'] = window.ApplicationRecordSkin = (function (_super) {
-	__extends(ApplicationRecordSkin, _super);
-	function ApplicationRecordSkin() {
+})(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/BuyInApplication/ApplicationRecordItemSkin.exml'] = window.ApplicationRecordItemSkin = (function (_super) {
+	__extends(ApplicationRecordItemSkin, _super);
+	function ApplicationRecordItemSkin() {
 		_super.call(this);
-		this.skinParts = ["background","recordList","group"];
-		
-		this.height = 1334;
-		this.width = 750;
-		this.elementsContent = [this.background_i(),this.group_i()];
-	}
-	var _proto = ApplicationRecordSkin.prototype;
-
-	_proto.background_i = function () {
-		var t = new eui.Rect();
-		this.background = t;
-		t.fillAlpha = 0.5;
-		t.percentHeight = 100;
-		t.percentWidth = 100;
-		t.x = 0;
-		t.y = 0;
-		return t;
-	};
-	_proto.group_i = function () {
-		var t = new eui.Group();
-		this.group = t;
-		t.height = 770;
-		t.horizontalCenter = 0;
-		t.verticalCenter = 0;
-		t.width = 720;
-		t.elementsContent = [this._Rect1_i(),this._Label1_i(),this._Rect2_i(),this.recordList_i()];
-		return t;
-	};
-	_proto._Rect1_i = function () {
-		var t = new eui.Rect();
-		t.fillColor = 0x021b19;
-		t.height = 770;
-		t.horizontalCenter = 0;
-		t.scaleX = 1;
-		t.scaleY = 1;
-		t.verticalCenter = 0;
-		t.width = 720;
-		t.x = 0;
-		t.y = 0;
-		return t;
-	};
-	_proto._Label1_i = function () {
-		var t = new eui.Label();
-		t.horizontalCenter = 0;
-		t.scaleX = 1;
-		t.scaleY = 1;
-		t.size = 36;
-		t.text = "房间消息";
-		t.textAlign = "center";
-		t.width = 300;
-		t.x = 210;
-		t.y = 32;
-		return t;
-	};
-	_proto._Rect2_i = function () {
-		var t = new eui.Rect();
-		t.fillColor = 0x072927;
-		t.height = 652;
-		t.horizontalCenter = 0;
-		t.width = 688;
-		t.y = 102;
-		return t;
-	};
-	_proto.recordList_i = function () {
-		var t = new eui.List();
-		this.recordList = t;
-		t.height = 652;
-		t.horizontalCenter = 0;
-		t.itemRendererSkinName = ApplicationRecoreItemSkin;
-		t.width = 688;
-		t.y = 102;
-		t.layout = this._VerticalLayout1_i();
-		return t;
-	};
-	_proto._VerticalLayout1_i = function () {
-		var t = new eui.VerticalLayout();
-		t.gap = 0;
-		t.paddingLeft = 10;
-		t.paddingRight = 10;
-		t.paddingTop = 10;
-		t.verticalAlign = "top";
-		return t;
-	};
-	return ApplicationRecordSkin;
-})(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/BuyInApplication/ApplicationRecoreItemSkin.exml'] = window.ApplicationRecoreItemSkin = (function (_super) {
-	__extends(ApplicationRecoreItemSkin, _super);
-	function ApplicationRecoreItemSkin() {
-		_super.call(this);
-		this.skinParts = ["nicknameLabel","scroeLabel","rejectLabel","agreeLabel","operationGroup","statusLabel"];
+		this.skinParts = ["nicknameLabel","scoreLabel","minLabel","rejectLabel","agreeLabel","operationGroup","statusLabel"];
 		
 		this.height = 132;
 		this.width = 662;
-		this.elementsContent = [this.nicknameLabel_i(),this.scroeLabel_i(),this._Label1_i(),this.operationGroup_i(),this._Rect2_i(),this.statusLabel_i()];
-		
-		eui.Binding.$bindProperties(this, ["hostComponent.data.nickname"],[0],this.nicknameLabel,"text");
+		this.elementsContent = [this.nicknameLabel_i(),this.scoreLabel_i(),this.minLabel_i(),this.operationGroup_i(),this._Rect2_i(),this.statusLabel_i()];
 	}
-	var _proto = ApplicationRecoreItemSkin.prototype;
+	var _proto = ApplicationRecordItemSkin.prototype;
 
 	_proto.nicknameLabel_i = function () {
 		var t = new eui.Label();
 		this.nicknameLabel = t;
+		t.text = "Stan";
 		t.textColor = 0x6bfffd;
 		t.width = 300;
 		t.x = 14;
 		t.y = 24;
 		return t;
 	};
-	_proto.scroeLabel_i = function () {
+	_proto.scoreLabel_i = function () {
 		var t = new eui.Label();
-		this.scroeLabel = t;
-		t.text = "申请带入记分牌 2000";
+		this.scoreLabel = t;
+		t.text = "申请带入记分牌";
 		t.width = 300;
 		t.x = 14;
 		t.y = 60;
 		return t;
 	};
-	_proto._Label1_i = function () {
+	_proto.minLabel_i = function () {
 		var t = new eui.Label();
+		this.minLabel = t;
 		t.size = 18;
-		t.text = "* 该房间最低带入记分牌为 400";
+		t.text = "* 该房间最低带入记分牌为";
 		t.textAlign = "left";
 		t.textColor = 0xFE2A2A;
 		t.width = 400;
@@ -3216,6 +3128,7 @@ window.skins={};
 		t.bottom = 0;
 		t.height = 132;
 		t.right = 0;
+		t.touchChildren = true;
 		t.width = 250;
 		t.elementsContent = [this.rejectLabel_i(),this.agreeLabel_i(),this._Rect1_i()];
 		return t;
@@ -3279,7 +3192,113 @@ window.skins={};
 		t.width = 230;
 		return t;
 	};
-	return ApplicationRecoreItemSkin;
+	return ApplicationRecordItemSkin;
+})(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/BuyInApplication/ApplicationRecordSkin.exml'] = window.ApplicationRecordSkin = (function (_super) {
+	__extends(ApplicationRecordSkin, _super);
+	function ApplicationRecordSkin() {
+		_super.call(this);
+		this.skinParts = ["background","recordList","promptLabel","group"];
+		
+		this.height = 1334;
+		this.width = 750;
+		this.elementsContent = [this.background_i(),this.group_i()];
+	}
+	var _proto = ApplicationRecordSkin.prototype;
+
+	_proto.background_i = function () {
+		var t = new eui.Rect();
+		this.background = t;
+		t.fillAlpha = 0.5;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto.group_i = function () {
+		var t = new eui.Group();
+		this.group = t;
+		t.height = 770;
+		t.horizontalCenter = 0;
+		t.verticalCenter = 0;
+		t.width = 720;
+		t.elementsContent = [this._Rect1_i(),this._Label1_i(),this._Rect2_i(),this._Scroller1_i(),this.promptLabel_i()];
+		return t;
+	};
+	_proto._Rect1_i = function () {
+		var t = new eui.Rect();
+		t.fillColor = 0x021b19;
+		t.height = 770;
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.verticalCenter = 0;
+		t.width = 720;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto._Label1_i = function () {
+		var t = new eui.Label();
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 36;
+		t.text = "房间消息";
+		t.textAlign = "center";
+		t.width = 300;
+		t.x = 210;
+		t.y = 32;
+		return t;
+	};
+	_proto._Rect2_i = function () {
+		var t = new eui.Rect();
+		t.fillColor = 0x072927;
+		t.height = 652;
+		t.horizontalCenter = 0;
+		t.width = 688;
+		t.y = 102;
+		return t;
+	};
+	_proto._Scroller1_i = function () {
+		var t = new eui.Scroller();
+		t.height = 652;
+		t.width = 688;
+		t.x = 16;
+		t.y = 102;
+		t.viewport = this.recordList_i();
+		return t;
+	};
+	_proto.recordList_i = function () {
+		var t = new eui.List();
+		this.recordList = t;
+		t.height = 652;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.width = 688;
+		t.x = 16;
+		t.y = 102;
+		t.layout = this._VerticalLayout1_i();
+		return t;
+	};
+	_proto._VerticalLayout1_i = function () {
+		var t = new eui.VerticalLayout();
+		t.gap = 0;
+		t.paddingLeft = 10;
+		t.paddingRight = 10;
+		t.paddingTop = 10;
+		t.verticalAlign = "top";
+		return t;
+	};
+	_proto.promptLabel_i = function () {
+		var t = new eui.Label();
+		this.promptLabel = t;
+		t.horizontalCenter = 0;
+		t.text = "正在加载房间消息...";
+		t.verticalCenter = 0;
+		return t;
+	};
+	return ApplicationRecordSkin;
 })(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/BuyInView/BuyInButtonSkin.exml'] = window.BuyInButtonSkin = (function (_super) {
 	__extends(BuyInButtonSkin, _super);
 	function BuyInButtonSkin() {
@@ -5113,15 +5132,15 @@ window.skins={};
 		t.scaleX = 1;
 		t.scaleY = 1;
 		t.skinName = "ReviewboardPlayerPositionIconSkin";
-		t.top = 30;
+		t.top = 16;
 		t.x = 26;
 		return t;
 	};
 	_proto._Group1_i = function () {
 		var t = new eui.Group();
-		t.height = 50;
+		t.height = 28;
 		t.left = 100;
-		t.top = 6;
+		t.top = 16;
 		t.width = 200;
 		t.layout = this._HorizontalLayout1_i();
 		t.elementsContent = [this.playerNameLabel_i(),this.playerStateLabel_i()];
@@ -5156,7 +5175,7 @@ window.skins={};
 	_proto.handPokersList_i = function () {
 		var t = new eui.List();
 		this.handPokersList = t;
-		t.bottom = 0;
+		t.bottom = 15;
 		t.height = 80;
 		t.left = 52;
 		t.width = 120;
@@ -5177,7 +5196,7 @@ window.skins={};
 	_proto.boardPokersList_i = function () {
 		var t = new eui.List();
 		this.boardPokersList = t;
-		t.bottom = 0;
+		t.bottom = 15;
 		t.height = 80;
 		t.left = 211;
 		t.width = 300;
@@ -5200,7 +5219,7 @@ window.skins={};
 		t.right = 30;
 		t.size = 24;
 		t.text = "200";
-		t.verticalCenter = 28;
+		t.verticalCenter = 16;
 		return t;
 	};
 	return ReviewboardGameHistorySettlementItemSkin;
@@ -5428,6 +5447,119 @@ window.skins={};
 		return t;
 	};
 	return ReviewboardPlayerActionViewSkin;
+})(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/Reviewboard/GameHistory/ReviewboardTerminologySpecificItemSkin.exml'] = window.ReviewboardTerminologySpecificItemSkin = (function (_super) {
+	__extends(ReviewboardTerminologySpecificItemSkin, _super);
+	function ReviewboardTerminologySpecificItemSkin() {
+		_super.call(this);
+		this.skinParts = ["actionIcon","descriptionLabel"];
+		
+		this.height = 30;
+		this.width = 620;
+		this.elementsContent = [this._Group2_i()];
+	}
+	var _proto = ReviewboardTerminologySpecificItemSkin.prototype;
+
+	_proto._Group2_i = function () {
+		var t = new eui.Group();
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		t.layout = this._HorizontalLayout2_i();
+		t.elementsContent = [this.actionIcon_i(),this._Group1_i()];
+		return t;
+	};
+	_proto._HorizontalLayout2_i = function () {
+		var t = new eui.HorizontalLayout();
+		t.gap = -60;
+		t.horizontalAlign = "left";
+		t.paddingLeft = 30;
+		t.verticalAlign = "middle";
+		return t;
+	};
+	_proto.actionIcon_i = function () {
+		var t = new ReviewboardPlayerActionIcon();
+		this.actionIcon = t;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.skinName = "ReviewboardPlayerActionIconSkin";
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto._Group1_i = function () {
+		var t = new eui.Group();
+		t.percentHeight = 100;
+		t.width = 300;
+		t.x = 147;
+		t.y = 4;
+		t.layout = this._HorizontalLayout1_i();
+		t.elementsContent = [this._Label1_i(),this.descriptionLabel_i()];
+		return t;
+	};
+	_proto._HorizontalLayout1_i = function () {
+		var t = new eui.HorizontalLayout();
+		t.gap = 0;
+		t.horizontalAlign = "left";
+		t.verticalAlign = "middle";
+		return t;
+	};
+	_proto._Label1_i = function () {
+		var t = new eui.Label();
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.text = "：";
+		t.x = -14;
+		t.y = 0;
+		return t;
+	};
+	_proto.descriptionLabel_i = function () {
+		var t = new eui.Label();
+		this.descriptionLabel = t;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.text = "Label";
+		t.x = -44;
+		t.y = 0;
+		return t;
+	};
+	return ReviewboardTerminologySpecificItemSkin;
+})(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/Reviewboard/GameHistory/ReviewboardTerminologySpecificSkin.exml'] = window.ReviewboardTerminologySpecificSkin = (function (_super) {
+	__extends(ReviewboardTerminologySpecificSkin, _super);
+	function ReviewboardTerminologySpecificSkin() {
+		_super.call(this);
+		this.skinParts = ["terminologySpecificList"];
+		
+		this.height = 420;
+		this.width = 620;
+		this.elementsContent = [this.terminologySpecificList_i()];
+	}
+	var _proto = ReviewboardTerminologySpecificSkin.prototype;
+
+	_proto.terminologySpecificList_i = function () {
+		var t = new eui.List();
+		this.terminologySpecificList = t;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		t.layout = this._TileLayout1_i();
+		return t;
+	};
+	_proto._TileLayout1_i = function () {
+		var t = new eui.TileLayout();
+		t.columnWidth = 620;
+		t.horizontalAlign = "center";
+		t.horizontalGap = 0;
+		t.orientation = "columns";
+		t.paddingTop = 20;
+		t.requestedColumnCount = 1;
+		t.rowHeight = 30;
+		t.verticalAlign = "top";
+		t.verticalGap = 20;
+		return t;
+	};
+	return ReviewboardTerminologySpecificSkin;
 })(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/Reviewboard/ReviewboardPokerSkin.exml'] = window.ReviewboardPokerSkin = (function (_super) {
 	__extends(ReviewboardPokerSkin, _super);
 	function ReviewboardPokerSkin() {
