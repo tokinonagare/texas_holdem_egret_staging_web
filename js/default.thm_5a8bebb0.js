@@ -4505,9 +4505,9 @@ window.skins={};
 		t.paddingBottom = 0;
 		t.paddingLeft = 0;
 		t.paddingRight = 0;
-		t.paddingTop = 30;
+		t.paddingTop = 0;
 		t.verticalAlign = "contentJustify";
-		t.verticalGap = 25;
+		t.verticalGap = 0;
 		return t;
 	};
 	_proto._ArrayCollection1_i = function () {
