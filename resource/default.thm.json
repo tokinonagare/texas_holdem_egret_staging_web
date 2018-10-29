@@ -40,6 +40,8 @@
 		"resource/eui_skins/GameSkins/View/CardItemSkin.exml",
 		"resource/eui_skins/GameSkins/View/CardPatternSkin.exml",
 		"resource/eui_skins/GameSkins/View/ChatSkin.exml",
+		"resource/eui_skins/GameSkins/View/InsuranceView/CountdownProgressSkin.exml",
+		"resource/eui_skins/GameSkins/View/InsuranceView/InsuranceSkin.exml",
 		"resource/eui_skins/GameSkins/View/Leaderboard/LeaderboardListItemSkin.exml",
 		"resource/eui_skins/GameSkins/View/Leaderboard/LeaderboardViewerSkin.exml",
 		"resource/eui_skins/GameSkins/View/MarkSkin.exml",

@@ -3783,6 +3783,137 @@ window.skins={};
 		return t;
 	};
 	return ChatSkin;
+})(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/InsuranceView/CountdownProgressSkin.exml'] = window.CountdownProgressSkin = (function (_super) {
+	__extends(CountdownProgressSkin, _super);
+	function CountdownProgressSkin() {
+		_super.call(this);
+		this.skinParts = ["track","thumb"];
+		
+		this.height = 4;
+		this.width = 600;
+		this.elementsContent = [this.track_i(),this.thumb_i()];
+	}
+	var _proto = CountdownProgressSkin.prototype;
+
+	_proto.track_i = function () {
+		var t = new eui.Rect();
+		this.track = t;
+		t.fillColor = 0x051817;
+		t.height = 4;
+		t.width = 600;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto.thumb_i = function () {
+		var t = new eui.Rect();
+		this.thumb = t;
+		t.ellipseHeight = 2;
+		t.ellipseWidth = 2;
+		t.fillColor = 0x58d4d2;
+		t.height = 4;
+		t.width = 600;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	return CountdownProgressSkin;
+})(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/InsuranceView/InsuranceSkin.exml'] = window.InsuranceSkin = (function (_super) {
+	__extends(InsuranceSkin, _super);
+	function InsuranceSkin() {
+		_super.call(this);
+		this.skinParts = ["countdownProgress","buySlider","dontButton","buyButton","group"];
+		
+		this.height = 1334;
+		this.width = 750;
+		this.elementsContent = [this._Rect1_i(),this.group_i()];
+	}
+	var _proto = InsuranceSkin.prototype;
+
+	_proto._Rect1_i = function () {
+		var t = new eui.Rect();
+		t.fillAlpha = 0;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto.group_i = function () {
+		var t = new eui.Group();
+		this.group = t;
+		t.height = 738;
+		t.horizontalCenter = 0;
+		t.verticalCenter = 0;
+		t.width = 640;
+		t.elementsContent = [this._Rect2_i(),this.countdownProgress_i(),this.buySlider_i(),this.dontButton_i(),this.buyButton_i(),this._Rect3_i()];
+		return t;
+	};
+	_proto._Rect2_i = function () {
+		var t = new eui.Rect();
+		t.fillColor = 0x072927;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto.countdownProgress_i = function () {
+		var t = new eui.ProgressBar();
+		this.countdownProgress = t;
+		t.direction = "rtl";
+		t.height = 4;
+		t.horizontalCenter = 0;
+		t.left = 20;
+		t.rotation = 0;
+		t.skinName = "CountdownProgressSkin";
+		t.value = 80;
+		t.width = 600;
+		t.y = 66;
+		return t;
+	};
+	_proto.buySlider_i = function () {
+		var t = new eui.HSlider();
+		this.buySlider = t;
+		t.height = 10;
+		t.skinName = "BuyInSliderSkin";
+		t.value = 0;
+		t.width = 380;
+		t.x = 200;
+		t.y = 580;
+		return t;
+	};
+	_proto.dontButton_i = function () {
+		var t = new eui.Button();
+		this.dontButton = t;
+		t.bottom = 0;
+		t.height = 102;
+		t.label = "不买";
+		t.left = 0;
+		t.skinName = "BuyInButtonSkin";
+		t.width = 320;
+		return t;
+	};
+	_proto.buyButton_i = function () {
+		var t = new eui.Button();
+		this.buyButton = t;
+		t.bottom = 0;
+		t.height = 102;
+		t.label = "购买保险";
+		t.right = 0;
+		t.skinName = "BuyInButtonSkin";
+		t.width = 320;
+		return t;
+	};
+	_proto._Rect3_i = function () {
+		var t = new eui.Rect();
+		t.bottom = 0;
+		t.height = 102;
+		t.horizontalCenter = 0;
+		t.width = 2;
+		return t;
+	};
+	return InsuranceSkin;
 })(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/Leaderboard/LeaderboardListItemSkin.exml'] = window.LeaderboardListItemSkin = (function (_super) {
 	__extends(LeaderboardListItemSkin, _super);
 	function LeaderboardListItemSkin() {
