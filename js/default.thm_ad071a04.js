@@ -4018,8 +4018,8 @@ window.skins={};
 	_proto.leftAvatarCover_i = function () {
 		var t = new eui.Rect();
 		this.leftAvatarCover = t;
-		t.fillAlpha = 0.6;
-		t.fillColor = 0xa2b7b5;
+		t.fillAlpha = 0.5;
+		t.fillColor = 0x000000;
 		t.percentHeight = 100;
 		t.percentWidth = 100;
 		return t;
