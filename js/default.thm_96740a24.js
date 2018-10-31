@@ -5160,8 +5160,6 @@ window.skins={};
 		this.height = 36;
 		this.width = 144;
 		this.elementsContent = [this._Rect1_i(),this._Image1_i(),this.amountLabel_i()];
-		
-		eui.Binding.$bindProperties(this, ["hostComponent.data.amount"],[0],this.amountLabel,"text");
 	}
 	var _proto = PotItemSkin.prototype;
 
@@ -5192,6 +5190,7 @@ window.skins={};
 		this.amountLabel = t;
 		t.anchorOffsetX = 0;
 		t.height = 36;
+		t.text = "";
 		t.textAlign = "center";
 		t.textColor = 0xffffff;
 		t.verticalAlign = "middle";
