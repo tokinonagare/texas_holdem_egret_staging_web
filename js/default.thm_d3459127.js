@@ -3664,24 +3664,36 @@ window.skins={};
 	__extends(CardItemSkin, _super);
 	function CardItemSkin() {
 		_super.call(this);
-		this.skinParts = ["cardImage"];
+		this.skinParts = ["cardImage","cover"];
 		
 		this.height = 124;
 		this.width = 83;
-		this.elementsContent = [this.cardImage_i()];
+		this.elementsContent = [this.cardImage_i(),this.cover_i()];
 	}
 	var _proto = CardItemSkin.prototype;
 
 	_proto.cardImage_i = function () {
 		var t = new eui.Image();
 		this.cardImage = t;
-		t.anchorOffsetX = 45;
-		t.anchorOffsetY = 65;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
 		t.height = 124;
 		t.horizontalCenter = 0;
 		t.source = "poker_back_png";
 		t.verticalCenter = 0;
-		t.width = 82;
+		t.width = 83;
+		return t;
+	};
+	_proto.cover_i = function () {
+		var t = new eui.Rect();
+		this.cover = t;
+		t.ellipseHeight = 10;
+		t.ellipseWidth = 10;
+		t.fillAlpha = 0.5;
+		t.height = 124;
+		t.verticalCenter = 0;
+		t.width = 83;
+		t.x = 0;
 		return t;
 	};
 	return CardItemSkin;
@@ -3719,6 +3731,42 @@ window.skins={};
 		return t;
 	};
 	return CardPatternSkin;
+})(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/CardSkin.exml'] = window.CardSkin = (function (_super) {
+	__extends(CardSkin, _super);
+	function CardSkin() {
+		_super.call(this);
+		this.skinParts = ["cardImage","cover"];
+		
+		this.height = 112;
+		this.width = 76;
+		this.elementsContent = [this.cardImage_i(),this.cover_i()];
+	}
+	var _proto = CardSkin.prototype;
+
+	_proto.cardImage_i = function () {
+		var t = new eui.Image();
+		this.cardImage = t;
+		t.height = 112;
+		t.horizontalCenter = 0;
+		t.source = "poker_back_png";
+		t.verticalCenter = 0;
+		t.width = 76;
+		return t;
+	};
+	_proto.cover_i = function () {
+		var t = new eui.Rect();
+		this.cover = t;
+		t.ellipseHeight = 10;
+		t.ellipseWidth = 10;
+		t.fillAlpha = 0.5;
+		t.height = 112;
+		t.horizontalCenter = 0;
+		t.verticalCenter = 0;
+		t.visible = false;
+		t.width = 76;
+		return t;
+	};
+	return CardSkin;
 })(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/ChatSkin.exml'] = window.ChatSkin = (function (_super) {
 	__extends(ChatSkin, _super);
 	function ChatSkin() {

@@ -39,6 +39,7 @@
 		"resource/eui_skins/GameSkins/View/BuyInView/BuyInSkin.exml",
 		"resource/eui_skins/GameSkins/View/CardItemSkin.exml",
 		"resource/eui_skins/GameSkins/View/CardPatternSkin.exml",
+		"resource/eui_skins/GameSkins/View/CardSkin.exml",
 		"resource/eui_skins/GameSkins/View/ChatSkin.exml",
 		"resource/eui_skins/GameSkins/View/InsuranceView/CountdownProgressSkin.exml",
 		"resource/eui_skins/GameSkins/View/InsuranceView/InsuranceSkin.exml",
