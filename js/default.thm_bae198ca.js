@@ -4924,12 +4924,12 @@ window.skins={};
 	__extends(PlayerSkin, _super);
 	function PlayerSkin() {
 		_super.call(this);
-		this.skinParts = ["winnerAnimation","avatarImage","nameLabel","scoreLabel","countdownCover","timerLabel","progressBorder","winnerBorder","foldCover"];
+		this.skinParts = ["winnerAnimation","avatarImage","nameLabel","scoreLabel","countdownCover","timerLabel","progressBorder","winnerBorder","cover"];
 		
 		this.height = 167;
 		this.width = 100;
 		this.winnerAnimation_i();
-		this.elementsContent = [this.avatarImage_i(),this.nameLabel_i(),this._Group1_i(),this.countdownCover_i(),this.timerLabel_i(),this.progressBorder_i(),this.winnerBorder_i(),this.foldCover_i()];
+		this.elementsContent = [this.avatarImage_i(),this.nameLabel_i(),this._Group1_i(),this.countdownCover_i(),this.timerLabel_i(),this.progressBorder_i(),this.winnerBorder_i(),this.cover_i()];
 		
 		eui.Binding.$bindProperties(this, ["winnerBorder"],[0],this._TweenItem1,"target");
 		eui.Binding.$bindProperties(this, [1],[],this._Object1,"alpha");
@@ -5196,9 +5196,9 @@ window.skins={};
 		t.y = 31;
 		return t;
 	};
-	_proto.foldCover_i = function () {
+	_proto.cover_i = function () {
 		var t = new eui.Rect();
-		this.foldCover = t;
+		this.cover = t;
 		t.anchorOffsetX = 0;
 		t.anchorOffsetY = 0;
 		t.ellipseHeight = 10;
