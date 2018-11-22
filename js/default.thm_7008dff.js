@@ -4924,12 +4924,12 @@ window.skins={};
 	__extends(PlayerSkin, _super);
 	function PlayerSkin() {
 		_super.call(this);
-		this.skinParts = ["winnerAnimation","avatarImage","nameLabel","scoreLabel","countdownCover","timerLabel","progressBorder","winnerBorder","cover"];
+		this.skinParts = ["winnerAnimation","avatarImage","nameLabel","scoreLabel","countdownCover","cover","timerLabel","progressBorder","winnerBorder"];
 		
 		this.height = 167;
 		this.width = 100;
 		this.winnerAnimation_i();
-		this.elementsContent = [this.avatarImage_i(),this.nameLabel_i(),this._Group1_i(),this.countdownCover_i(),this.timerLabel_i(),this.progressBorder_i(),this.winnerBorder_i(),this.cover_i()];
+		this.elementsContent = [this.avatarImage_i(),this.nameLabel_i(),this._Group1_i(),this.countdownCover_i(),this.cover_i(),this.timerLabel_i(),this.progressBorder_i(),this.winnerBorder_i()];
 		
 		eui.Binding.$bindProperties(this, ["winnerBorder"],[0],this._TweenItem1,"target");
 		eui.Binding.$bindProperties(this, [1],[],this._Object1,"alpha");
@@ -5159,6 +5159,21 @@ window.skins={};
 		t.y = 31;
 		return t;
 	};
+	_proto.cover_i = function () {
+		var t = new eui.Rect();
+		this.cover = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.ellipseHeight = 10;
+		t.ellipseWidth = 10;
+		t.fillAlpha = 0.5;
+		t.height = 100;
+		t.visible = false;
+		t.width = 100;
+		t.x = 0;
+		t.y = 31;
+		return t;
+	};
 	_proto.timerLabel_i = function () {
 		var t = new eui.Label();
 		this.timerLabel = t;
@@ -5190,21 +5205,6 @@ window.skins={};
 		t.alpha = 0;
 		t.height = 100;
 		t.source = "image_border_yellow_png";
-		t.visible = false;
-		t.width = 100;
-		t.x = 0;
-		t.y = 31;
-		return t;
-	};
-	_proto.cover_i = function () {
-		var t = new eui.Rect();
-		this.cover = t;
-		t.anchorOffsetX = 0;
-		t.anchorOffsetY = 0;
-		t.ellipseHeight = 10;
-		t.ellipseWidth = 10;
-		t.fillAlpha = 0.5;
-		t.height = 100;
 		t.visible = false;
 		t.width = 100;
 		t.x = 0;
