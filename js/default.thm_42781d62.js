@@ -1782,7 +1782,7 @@ window.skins={};
 
 	function GameSkin() {
 		_super.call(this);
-		this.skinParts = ["mainPotLabel","pinLabel","creatorLabel","blindLabel","countdownLabel","talkButton","microphoneButton","communityCardList","startGameButton","cardTypeLabel","potsList","menuButton","playGameButtonGroup","raiseSelector","quickRaiser","bottomToolbar","reviewboardButton","infoLabel","promptLabel","messageAlarm","group","debugView","cardPattern"];
+		this.skinParts = ["mainPotLabel","pinLabel","creatorLabel","blindLabel","countdownLabel","talkButton","microphoneButton","communityCardList","startGameButton","cardTypeLabel","potsList","menuButton","playGameButtonGroup","raiseSelector","quickRaiser","bottomToolbar","reviewboardButton","infoLabel","promptLabel","messageAlarm","wonCardLabel","group","debugView","cardPattern"];
 		
 		this.height = 1334;
 		this.width = 750;
@@ -1806,7 +1806,7 @@ window.skins={};
 		t.width = 750;
 		t.x = 0;
 		t.y = 0;
-		t.elementsContent = [this.mainPotLabel_i(),this.pinLabel_i(),this.creatorLabel_i(),this.blindLabel_i(),this.countdownLabel_i(),this.talkButton_i(),this.microphoneButton_i(),this.communityCardList_i(),this.startGameButton_i(),this.cardTypeLabel_i(),this.potsList_i(),this.menuButton_i(),this.playGameButtonGroup_i(),this.raiseSelector_i(),this.quickRaiser_i(),this.bottomToolbar_i(),this.reviewboardButton_i(),this.infoLabel_i(),this.promptLabel_i(),this.messageAlarm_i()];
+		t.elementsContent = [this.mainPotLabel_i(),this.pinLabel_i(),this.creatorLabel_i(),this.blindLabel_i(),this.countdownLabel_i(),this.talkButton_i(),this.microphoneButton_i(),this.communityCardList_i(),this.startGameButton_i(),this.cardTypeLabel_i(),this.potsList_i(),this.menuButton_i(),this.playGameButtonGroup_i(),this.raiseSelector_i(),this.quickRaiser_i(),this.bottomToolbar_i(),this.reviewboardButton_i(),this.infoLabel_i(),this.promptLabel_i(),this.messageAlarm_i(),this.wonCardLabel_i()];
 		return t;
 	};
 	_proto.mainPotLabel_i = function () {
@@ -2048,6 +2048,19 @@ window.skins={};
 		t.width = 43;
 		t.x = 578.5;
 		t.y = 33;
+		return t;
+	};
+	_proto.wonCardLabel_i = function () {
+		var t = new eui.BitmapLabel();
+		this.wonCardLabel = t;
+		t.font = "card_type_fnt";
+		t.height = 30;
+		t.horizontalCenter = 0;
+		t.text = "";
+		t.textAlign = "center";
+		t.visible = false;
+		t.width = 200;
+		t.y = 550;
 		return t;
 	};
 	_proto.debugView_i = function () {
