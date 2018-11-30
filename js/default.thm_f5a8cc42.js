@@ -2817,7 +2817,7 @@ window.skins={};
 	};
 	_proto._HorizontalLayout1_i = function () {
 		var t = new eui.HorizontalLayout();
-		t.gap = 83;
+		t.gap = 61;
 		t.horizontalAlign = "center";
 		t.verticalAlign = "middle";
 		return t;
@@ -2837,7 +2837,7 @@ window.skins={};
 		t.text = "6/16";
 		t.textAlign = "center";
 		t.textColor = 0xb8c2c0;
-		t.width = 100;
+		t.width = 150;
 		t.x = 96;
 		t.y = 4;
 		return t;
