@@ -4937,7 +4937,7 @@ window.skins={};
 	__extends(PlayerSkin, _super);
 	function PlayerSkin() {
 		_super.call(this);
-		this.skinParts = ["avatarImage","nameLabel","scoreLabel","countdownCover","cover","timerLabel","progressBorder"];
+		this.skinParts = ["avatarImage","nameLabel","scoreLabel","cardTypeLabel","countdownCover","cover","timerLabel","progressBorder"];
 		
 		this.height = 167;
 		this.width = 100;
@@ -4978,7 +4978,7 @@ window.skins={};
 		t.height = 32;
 		t.width = 100;
 		t.x = 0;
-		t.elementsContent = [this._Rect1_i(),this.scoreLabel_i()];
+		t.elementsContent = [this._Rect1_i(),this.scoreLabel_i(),this.cardTypeLabel_i()];
 		return t;
 	};
 	_proto._Rect1_i = function () {
@@ -5005,6 +5005,19 @@ window.skins={};
 		t.textAlign = "center";
 		t.textColor = 0xe6ecec;
 		t.verticalAlign = "middle";
+		t.width = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto.cardTypeLabel_i = function () {
+		var t = new eui.BitmapLabel();
+		this.cardTypeLabel = t;
+		t.font = "card_type_fnt";
+		t.height = 32;
+		t.text = "对子";
+		t.textAlign = "center";
+		t.visible = false;
 		t.width = 100;
 		t.x = 0;
 		t.y = 0;
