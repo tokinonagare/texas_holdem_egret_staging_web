@@ -399,11 +399,11 @@ window.skins={};
 	__extends(MessageAlertSkin, _super);
 	function MessageAlertSkin() {
 		_super.call(this);
-		this.skinParts = ["messageLabel","buttonGroup"];
+		this.skinParts = ["messageLabel","promptLabel","buttonGroup"];
 		
 		this.height = 1334;
 		this.width = 750;
-		this.elementsContent = [this._Rect1_i(),this._Image1_i(),this.messageLabel_i(),this.buttonGroup_i()];
+		this.elementsContent = [this._Rect1_i(),this._Image1_i(),this.messageLabel_i(),this.promptLabel_i(),this.buttonGroup_i()];
 	}
 	var _proto = MessageAlertSkin.prototype;
 
@@ -432,15 +432,28 @@ window.skins={};
 		this.messageLabel = t;
 		t.anchorOffsetX = 0;
 		t.anchorOffsetY = 0;
-		t.height = 184.33;
+		t.height = 120;
 		t.horizontalCenter = 0;
 		t.size = 30;
 		t.text = "请填写内容";
 		t.textAlign = "center";
 		t.textColor = 0x782314;
 		t.verticalAlign = "middle";
-		t.width = 528;
-		t.y = 527.67;
+		t.width = 530;
+		t.y = 550;
+		return t;
+	};
+	_proto.promptLabel_i = function () {
+		var t = new eui.Label();
+		this.promptLabel = t;
+		t.height = 20;
+		t.horizontalCenter = 0;
+		t.size = 18;
+		t.text = "sdfsdf ";
+		t.textAlign = "center";
+		t.textColor = 0x7f7a7a;
+		t.width = 530;
+		t.y = 670;
 		return t;
 	};
 	_proto.buttonGroup_i = function () {
