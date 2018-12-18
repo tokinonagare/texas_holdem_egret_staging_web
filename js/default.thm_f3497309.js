@@ -2247,11 +2247,11 @@ window.skins={};
 	__extends(LeaderboardSkin, _super);
 	function LeaderboardSkin() {
 		_super.call(this);
-		this.skinParts = ["remainTimeLabel","headerGroup","playerInfoHeader","playerList","viewerHeader","viewerList","contentScroller"];
+		this.skinParts = ["emptyLabel","remainTimeLabel","headerGroup","playerInfoHeader","playerList","viewerHeader","viewerList","contentScroller"];
 		
 		this.height = 1334;
 		this.width = 618;
-		this.elementsContent = [this._Rect1_i(),this.headerGroup_i(),this.contentScroller_i()];
+		this.elementsContent = [this._Rect1_i(),this.emptyLabel_i(),this.headerGroup_i(),this.contentScroller_i()];
 	}
 	var _proto = LeaderboardSkin.prototype;
 
@@ -2262,6 +2262,16 @@ window.skins={};
 		t.percentWidth = 100;
 		t.x = 0;
 		t.y = 0;
+		return t;
+	};
+	_proto.emptyLabel_i = function () {
+		var t = new eui.Label();
+		this.emptyLabel = t;
+		t.horizontalCenter = 0;
+		t.size = 22;
+		t.text = "房间还没战绩";
+		t.textColor = 0x6bfffd;
+		t.verticalCenter = -253;
 		return t;
 	};
 	_proto.headerGroup_i = function () {
@@ -2320,12 +2330,13 @@ window.skins={};
 		var t = new eui.Group();
 		t.percentHeight = 100;
 		t.percentWidth = 100;
-		t.layout = this._VerticalLayout1_i();
-		t.elementsContent = [this.playerInfoHeader_i(),this.playerList_i(),this.viewerHeader_i(),this.viewerList_i()];
+		t.layout = this._VerticalLayout2_i();
+		t.elementsContent = [this.playerInfoHeader_i(),this._Scroller1_i(),this.viewerHeader_i(),this._Scroller2_i()];
 		return t;
 	};
-	_proto._VerticalLayout1_i = function () {
+	_proto._VerticalLayout2_i = function () {
 		var t = new eui.VerticalLayout();
+		t.gap = 0;
 		t.horizontalAlign = "center";
 		t.verticalAlign = "top";
 		return t;
@@ -2338,12 +2349,28 @@ window.skins={};
 		t.y = 192;
 		return t;
 	};
+	_proto._Scroller1_i = function () {
+		var t = new eui.Scroller();
+		t.height = 557;
+		t.width = 618;
+		t.x = 121;
+		t.y = 172;
+		t.viewport = this.playerList_i();
+		return t;
+	};
 	_proto.playerList_i = function () {
 		var t = new eui.List();
 		this.playerList = t;
-		t.width = 618;
+		t.height = 140;
+		t.scaleX = 1;
+		t.scaleY = 1;
 		t.x = 0;
 		t.y = 0;
+		t.layout = this._VerticalLayout1_i();
+		return t;
+	};
+	_proto._VerticalLayout1_i = function () {
+		var t = new eui.VerticalLayout();
 		return t;
 	};
 	_proto.viewerHeader_i = function () {
@@ -2354,12 +2381,24 @@ window.skins={};
 		t.y = 249;
 		return t;
 	};
+	_proto._Scroller2_i = function () {
+		var t = new eui.Scroller();
+		t.height = 557;
+		t.width = 618;
+		t.x = 186;
+		t.y = 624;
+		t.viewport = this.viewerList_i();
+		return t;
+	};
 	_proto.viewerList_i = function () {
 		var t = new eui.List();
 		this.viewerList = t;
+		t.height = 170;
+		t.scaleX = 1;
+		t.scaleY = 1;
 		t.width = 618;
-		t.x = 126;
-		t.y = 424;
+		t.x = 0;
+		t.y = 0;
 		t.layout = this._TileLayout1_i();
 		return t;
 	};
@@ -4081,8 +4120,6 @@ window.skins={};
 		this.height = 160;
 		this.width = 206;
 		this.elementsContent = [this._Group2_i()];
-		
-		eui.Binding.$bindProperties(this, ["hostComponent.data.nickname"],[0],this.nameLabel,"text");
 	}
 	var _proto = LeaderboardViewerSkin.prototype;
 
@@ -4140,6 +4177,7 @@ window.skins={};
 		t.scaleX = 1;
 		t.scaleY = 1;
 		t.size = 24;
+		t.text = "Label";
 		t.textAlign = "center";
 		t.width = 200;
 		t.wordWrap = false;
