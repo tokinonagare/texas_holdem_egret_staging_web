@@ -1797,11 +1797,11 @@ window.skins={};
 
 	function GameSkin() {
 		_super.call(this);
-		this.skinParts = ["mainPotLabel","pinLabel","creatorLabel","blindLabel","countdownLabel","talkButton","microphoneButton","communityCardList","startGameButton","cardTypeLabel","potsList","menuButton","playGameButtonGroup","raiseSelector","quickRaiser","bottomToolbar","reviewboardButton","infoLabel","promptLabel","messageAlarm","wonCardLabel","group","debugView","cardPattern"];
+		this.skinParts = ["header","mainPotLabel","pinLabel","creatorLabel","blindLabel","countdownLabel","talkButton","microphoneButton","communityCardList","startGameButton","cardTypeLabel","potsList","menuButton","playGameButtonGroup","raiseSelector","quickRaiser","bottomToolbar","reviewboardButton","infoLabel","promptLabel","messageAlarm","wonCardLabel","group","debugView","cardPattern","footer"];
 		
 		this.height = 1334;
 		this.width = 750;
-		this.elementsContent = [this._Image1_i(),this.group_i(),this.debugView_i(),this.cardPattern_i()];
+		this.elementsContent = [this._Image1_i(),this.header_i(),this.group_i(),this.debugView_i(),this.cardPattern_i(),this.footer_i()];
 	}
 	var _proto = GameSkin.prototype;
 
@@ -1810,17 +1810,27 @@ window.skins={};
 		t.percentHeight = 100;
 		t.source = "bg_game_png";
 		t.percentWidth = 100;
-		t.x = 1;
+		t.x = 0;
 		t.y = 0;
+		return t;
+	};
+	_proto.header_i = function () {
+		var t = new eui.Rect();
+		this.header = t;
+		t.fillAlpha = 0;
+		t.height = 0;
+		t.top = 0;
+		t.width = 750;
+		t.x = 0;
 		return t;
 	};
 	_proto.group_i = function () {
 		var t = new eui.Group();
 		this.group = t;
 		t.height = 1334;
-		t.width = 750;
+		t.verticalCenter = 0;
+		t.width = 749;
 		t.x = 0;
-		t.y = 0;
 		t.elementsContent = [this.mainPotLabel_i(),this.pinLabel_i(),this.creatorLabel_i(),this.blindLabel_i(),this.countdownLabel_i(),this.talkButton_i(),this.microphoneButton_i(),this.communityCardList_i(),this.startGameButton_i(),this.cardTypeLabel_i(),this.potsList_i(),this.menuButton_i(),this.playGameButtonGroup_i(),this.raiseSelector_i(),this.quickRaiser_i(),this.bottomToolbar_i(),this.reviewboardButton_i(),this.infoLabel_i(),this.promptLabel_i(),this.messageAlarm_i(),this.wonCardLabel_i()];
 		return t;
 	};
@@ -2097,6 +2107,15 @@ window.skins={};
 		t.width = 750;
 		t.x = 0;
 		t.y = 0;
+		return t;
+	};
+	_proto.footer_i = function () {
+		var t = new eui.Rect();
+		this.footer = t;
+		t.bottom = 0;
+		t.fillAlpha = 0;
+		t.width = 750;
+		t.x = 0;
 		return t;
 	};
 	return GameSkin;
