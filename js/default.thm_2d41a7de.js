@@ -2251,11 +2251,11 @@ window.skins={};
 	__extends(LeaderboardSkin, _super);
 	function LeaderboardSkin() {
 		_super.call(this);
-		this.skinParts = ["emptyLabel","remainTimeLabel","headerGroup","playerInfoHeader","playerList","viewerHeader","viewerList","contentScroller"];
+		this.skinParts = ["emptyLabel","remainTimeLabel","headerGroup","playerInfoHeader","playerList","playerListScroller","viewerHeader","viewerList","viewerListScroller","contentGroup","backgroundGroup"];
 		
 		this.height = 1334;
 		this.width = 618;
-		this.elementsContent = [this._Rect1_i(),this.emptyLabel_i(),this.headerGroup_i(),this.contentScroller_i()];
+		this.elementsContent = [this._Rect1_i(),this.emptyLabel_i(),this.backgroundGroup_i()];
 	}
 	var _proto = LeaderboardSkin.prototype;
 
@@ -2282,13 +2282,35 @@ window.skins={};
 		t.y = 319;
 		return t;
 	};
+	_proto.backgroundGroup_i = function () {
+		var t = new eui.Group();
+		this.backgroundGroup = t;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		t.layout = this._VerticalLayout3_i();
+		t.elementsContent = [this.headerGroup_i(),this.contentGroup_i()];
+		return t;
+	};
+	_proto._VerticalLayout3_i = function () {
+		var t = new eui.VerticalLayout();
+		t.gap = 0;
+		t.horizontalAlign = "center";
+		t.verticalAlign = "top";
+		return t;
+	};
 	_proto.headerGroup_i = function () {
 		var t = new eui.Group();
 		this.headerGroup = t;
 		t.height = 84;
 		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
 		t.top = 0;
 		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
 		t.elementsContent = [this._Rect2_i(),this.remainTimeLabel_i(),this._Label1_i()];
 		return t;
 	};
@@ -2324,22 +2346,17 @@ window.skins={};
 		t.textColor = 0x6BFFFD;
 		return t;
 	};
-	_proto.contentScroller_i = function () {
-		var t = new eui.Scroller();
-		this.contentScroller = t;
+	_proto.contentGroup_i = function () {
+		var t = new eui.Group();
+		this.contentGroup = t;
 		t.height = 1250;
+		t.scaleX = 1;
+		t.scaleY = 1;
 		t.width = 618;
 		t.x = 0;
 		t.y = 84;
-		t.viewport = this._Group1_i();
-		return t;
-	};
-	_proto._Group1_i = function () {
-		var t = new eui.Group();
-		t.percentHeight = 100;
-		t.percentWidth = 100;
 		t.layout = this._VerticalLayout2_i();
-		t.elementsContent = [this.playerInfoHeader_i(),this._Scroller1_i(),this.viewerHeader_i(),this._Scroller2_i()];
+		t.elementsContent = [this.playerInfoHeader_i(),this.playerListScroller_i(),this.viewerHeader_i(),this.viewerListScroller_i()];
 		return t;
 	};
 	_proto._VerticalLayout2_i = function () {
@@ -2357,8 +2374,9 @@ window.skins={};
 		t.y = 192;
 		return t;
 	};
-	_proto._Scroller1_i = function () {
+	_proto.playerListScroller_i = function () {
 		var t = new eui.Scroller();
+		this.playerListScroller = t;
 		t.height = 557;
 		t.width = 618;
 		t.x = 121;
@@ -2389,8 +2407,9 @@ window.skins={};
 		t.y = 249;
 		return t;
 	};
-	_proto._Scroller2_i = function () {
+	_proto.viewerListScroller_i = function () {
 		var t = new eui.Scroller();
+		this.viewerListScroller = t;
 		t.height = 557;
 		t.width = 618;
 		t.x = 186;
