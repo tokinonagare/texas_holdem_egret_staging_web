@@ -2090,6 +2090,7 @@ window.skins={};
 		this.messageAlarm = t;
 		t.height = 60;
 		t.skinName = "MessageAlarmSkin";
+		t.visible = false;
 		t.width = 63;
 		t.x = 575;
 		t.y = 34.5;
