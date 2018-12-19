@@ -1805,7 +1805,7 @@ window.skins={};
 		
 		this.height = 1334;
 		this.width = 750;
-		this.elementsContent = [this._Image1_i(),this.group_i(),this.raiseSelector_i(),this.quickRaiser_i(),this.reviewboardButton_i(),this.messageAlarm_i(),this.menuButton_i(),this.debugView_i(),this.bottomToolbar_i(),this.cardPattern_i()];
+		this.elementsContent = [this._Image1_i(),this._Image2_i(),this.group_i(),this.raiseSelector_i(),this.quickRaiser_i(),this.reviewboardButton_i(),this.messageAlarm_i(),this.menuButton_i(),this.debugView_i(),this.bottomToolbar_i(),this.cardPattern_i()];
 	}
 	var _proto = GameSkin.prototype;
 
@@ -1816,6 +1816,15 @@ window.skins={};
 		t.percentWidth = 100;
 		t.x = 0;
 		t.y = 0;
+		return t;
+	};
+	_proto._Image2_i = function () {
+		var t = new eui.Image();
+		t.height = 310;
+		t.horizontalCenter = 0;
+		t.source = "image_logo_on_table_png";
+		t.verticalCenter = 0;
+		t.width = 298;
 		return t;
 	};
 	_proto.group_i = function () {
@@ -1848,7 +1857,7 @@ window.skins={};
 		t.height = 120;
 		t.horizontalCenter = 0;
 		t.width = 400;
-		t.y = 800;
+		t.y = 820;
 		t.elementsContent = [this.creatorLabel_i(),this.pinLabel_i(),this.blindLabel_i(),this.countdownLabel_i()];
 		return t;
 	};
