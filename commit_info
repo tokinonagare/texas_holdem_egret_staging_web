@@ -1,1 +1,1 @@
-1812191333 b9a6ba1 组件适配显示优化
+1812191428 5007e07 保存stageSize在SceneManager中，取代场景宽高判断对screenSize的依赖
