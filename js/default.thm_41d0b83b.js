@@ -3519,8 +3519,8 @@ window.skins={};
 		var t = new eui.Rect();
 		this.background = t;
 		t.fillAlpha = 0.5;
-		t.height = 1334;
-		t.width = 750;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
 		t.x = 0;
 		t.y = 0;
 		return t;
@@ -4341,11 +4341,11 @@ window.skins={};
 	__extends(MenuViewSkin, _super);
 	function MenuViewSkin() {
 		_super.call(this);
-		this.skinParts = ["background","menuList"];
+		this.skinParts = ["background","header","menuList","group"];
 		
 		this.height = 1334;
 		this.width = 750;
-		this.elementsContent = [this.background_i(),this.menuList_i()];
+		this.elementsContent = [this.background_i(),this.group_i()];
 	}
 	var _proto = MenuViewSkin.prototype;
 
@@ -4359,13 +4359,43 @@ window.skins={};
 		t.y = 0;
 		return t;
 	};
+	_proto.group_i = function () {
+		var t = new eui.Group();
+		this.group = t;
+		t.height = 600;
+		t.width = 240;
+		t.x = -240;
+		t.y = 0;
+		t.layout = this._VerticalLayout2_i();
+		t.elementsContent = [this.header_i(),this.menuList_i()];
+		return t;
+	};
+	_proto._VerticalLayout2_i = function () {
+		var t = new eui.VerticalLayout();
+		t.gap = 0;
+		t.horizontalAlign = "center";
+		t.verticalAlign = "top";
+		return t;
+	};
+	_proto.header_i = function () {
+		var t = new eui.Rect();
+		this.header = t;
+		t.fillColor = 0x021a17;
+		t.height = 0;
+		t.width = 240;
+		t.x = 94;
+		t.y = 154;
+		return t;
+	};
 	_proto.menuList_i = function () {
 		var t = new eui.List();
 		this.menuList = t;
 		t.height = 356;
 		t.itemRendererSkinName = MenuItemSkin;
+		t.scaleX = 1;
+		t.scaleY = 1;
 		t.width = 240;
-		t.x = -240;
+		t.x = 0;
 		t.y = 0;
 		t.layout = this._VerticalLayout1_i();
 		t.dataProvider = this._ArrayCollection1_i();
