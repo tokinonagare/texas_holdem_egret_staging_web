@@ -3698,7 +3698,7 @@ window.skins={};
 		t.horizontalCenter = 0;
 		t.verticalCenter = 0;
 		t.width = 536;
-		t.elementsContent = [this._Rect1_i(),this._Label1_i(),this._Image1_i(),this.scoreLabel_i(),this.scoreSlider_i(),this.confirmButton_i(),this.minBuyLabel_i(),this.balanceLabel_i()];
+		t.elementsContent = [this._Rect1_i(),this._Label1_i(),this._Image1_i(),this.scoreLabel_i(),this.scoreSlider_i(),this.confirmButton_i(),this.minBuyLabel_i(),this.balanceLabel_i(),this._Label2_i()];
 		return t;
 	};
 	_proto._Rect1_i = function () {
@@ -3735,7 +3735,7 @@ window.skins={};
 		t.scaleY = 1;
 		t.source = "icon_buy_in_chip_png";
 		t.width = 36;
-		t.y = 100;
+		t.y = 110;
 		return t;
 	};
 	_proto.scoreLabel_i = function () {
@@ -3745,7 +3745,7 @@ window.skins={};
 		t.text = "0";
 		t.width = 200;
 		t.x = 250;
-		t.y = 97;
+		t.y = 107;
 		return t;
 	};
 	_proto.scoreSlider_i = function () {
@@ -3793,6 +3793,16 @@ window.skins={};
 		t.textColor = 0x596e6d;
 		t.width = 400;
 		t.y = 230;
+		return t;
+	};
+	_proto._Label2_i = function () {
+		var t = new eui.Label();
+		t.horizontalCenter = 0;
+		t.size = 15;
+		t.text = "温馨提示: 游戏途中成功申请带入, 将在下一局游戏开始后到账";
+		t.textAlign = "center";
+		t.width = 550;
+		t.y = 75;
 		return t;
 	};
 	return BuyInSkin;
@@ -4390,7 +4400,7 @@ window.skins={};
 	_proto.menuList_i = function () {
 		var t = new eui.List();
 		this.menuList = t;
-		t.height = 356;
+		t.height = 600;
 		t.itemRendererSkinName = MenuItemSkin;
 		t.scaleX = 1;
 		t.scaleY = 1;
@@ -4408,7 +4418,7 @@ window.skins={};
 	};
 	_proto._ArrayCollection1_i = function () {
 		var t = new eui.ArrayCollection();
-		t.source = [this._Object1_i(),this._Object2_i(),this._Object3_i()];
+		t.source = [this._Object1_i(),this._Object2_i(),this._Object3_i(),this._Object4_i()];
 		return t;
 	};
 	_proto._Object1_i = function () {
@@ -4419,11 +4429,17 @@ window.skins={};
 	};
 	_proto._Object2_i = function () {
 		var t = {};
-		t.item = "站起围观";
+		t.item = "补充带入";
 		t.showArrow = "";
 		return t;
 	};
 	_proto._Object3_i = function () {
+		var t = {};
+		t.item = "站起围观";
+		t.showArrow = "";
+		return t;
+	};
+	_proto._Object4_i = function () {
 		var t = {};
 		t.item = "退出牌局";
 		t.showArrow = "";
