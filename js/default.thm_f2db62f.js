@@ -2903,10 +2903,17 @@ window.skins={};
 		
 		this.height = 177;
 		this.width = 620;
-		this.elementsContent = [this.pageSlider_i(),this._Group1_i()];
+		this.elementsContent = [this._Rect1_i(),this.pageSlider_i(),this._Group1_i()];
 	}
 	var _proto = ReviewboardFooterSkin.prototype;
 
+	_proto._Rect1_i = function () {
+		var t = new eui.Rect();
+		t.fillColor = 0x0d3a37;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		return t;
+	};
 	_proto.pageSlider_i = function () {
 		var t = new eui.HSlider();
 		this.pageSlider = t;
@@ -2970,11 +2977,11 @@ window.skins={};
 	__extends(ReviewboardSkin, _super);
 	function ReviewboardSkin() {
 		_super.call(this);
-		this.skinParts = ["loadingLabel","header","settlementHistoryView","gameHistoryView","contentViewStack","contentGroup","contentTabbar","tabbarGroup","footer"];
+		this.skinParts = ["loadingLabel","header","settlementHistoryView","gameHistoryView","contentViewStack","contentGroup","footer","contentTabbar","tabbarGroup"];
 		
 		this.height = 1334;
 		this.width = 620;
-		this.elementsContent = [this._Rect1_i(),this._Rect2_i(),this.loadingLabel_i(),this.contentGroup_i(),this.tabbarGroup_i(),this.footer_i()];
+		this.elementsContent = [this._Rect1_i(),this.loadingLabel_i(),this.contentGroup_i(),this.footer_i(),this.tabbarGroup_i()];
 	}
 	var _proto = ReviewboardSkin.prototype;
 
@@ -2984,15 +2991,6 @@ window.skins={};
 		t.percentHeight = 100;
 		t.horizontalCenter = 0;
 		t.top = 0;
-		t.percentWidth = 100;
-		return t;
-	};
-	_proto._Rect2_i = function () {
-		var t = new eui.Rect();
-		t.bottom = 0;
-		t.fillColor = 0x0d3a37;
-		t.height = 177;
-		t.horizontalCenter = 0;
 		t.percentWidth = 100;
 		return t;
 	};
@@ -3010,6 +3008,8 @@ window.skins={};
 		var t = new eui.Group();
 		this.contentGroup = t;
 		t.height = 1104;
+		t.scaleX = 1;
+		t.scaleY = 1;
 		t.width = 620;
 		t.x = 0;
 		t.y = 0;
@@ -3075,10 +3075,21 @@ window.skins={};
 		t.y = 0;
 		return t;
 	};
+	_proto.footer_i = function () {
+		var t = new ReviewboardFooter();
+		this.footer = t;
+		t.bottom = 0;
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.skinName = "ReviewboardFooterSkin";
+		t.x = 0;
+		t.y = 1157;
+		return t;
+	};
 	_proto.tabbarGroup_i = function () {
 		var t = new eui.Group();
 		this.tabbarGroup = t;
-		t.bottom = 177;
 		t.height = 53;
 		t.horizontalCenter = 0;
 		t.scaleX = 1;
@@ -3086,13 +3097,14 @@ window.skins={};
 		t.percentWidth = 100;
 		t.x = 0;
 		t.y = 1104;
-		t.elementsContent = [this._Rect3_i(),this.contentTabbar_i()];
+		t.elementsContent = [this._Rect2_i(),this.contentTabbar_i()];
 		return t;
 	};
-	_proto._Rect3_i = function () {
+	_proto._Rect2_i = function () {
 		var t = new eui.Rect();
 		t.fillColor = 0x021C1A;
 		t.percentHeight = 100;
+		t.visible = false;
 		t.percentWidth = 100;
 		t.x = 0;
 		t.y = 0;
@@ -3105,18 +3117,6 @@ window.skins={};
 		t.percentHeight = 100;
 		t.percentWidth = 100;
 		t.x = 0;
-		return t;
-	};
-	_proto.footer_i = function () {
-		var t = new ReviewboardFooter();
-		this.footer = t;
-		t.bottom = 0;
-		t.horizontalCenter = 0;
-		t.scaleX = 1;
-		t.scaleY = 1;
-		t.skinName = "ReviewboardFooterSkin";
-		t.x = 0;
-		t.y = 1157;
 		return t;
 	};
 	return ReviewboardSkin;
