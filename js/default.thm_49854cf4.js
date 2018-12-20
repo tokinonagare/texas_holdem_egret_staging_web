@@ -2970,11 +2970,11 @@ window.skins={};
 	__extends(ReviewboardSkin, _super);
 	function ReviewboardSkin() {
 		_super.call(this);
-		this.skinParts = ["loadingLabel","header","settlementHistoryView","gameHistoryView","contentViewStack","contentTabbar","footer"];
+		this.skinParts = ["loadingLabel","header","settlementHistoryView","gameHistoryView","contentViewStack","contentGroup","contentTabbar","tabbarGroup","footer"];
 		
 		this.height = 1334;
 		this.width = 620;
-		this.elementsContent = [this._Rect1_i(),this._Rect2_i(),this.loadingLabel_i(),this._Group1_i(),this._Group2_i(),this.footer_i()];
+		this.elementsContent = [this._Rect1_i(),this._Rect2_i(),this.loadingLabel_i(),this.contentGroup_i(),this.tabbarGroup_i(),this.footer_i()];
 	}
 	var _proto = ReviewboardSkin.prototype;
 
@@ -3006,8 +3006,9 @@ window.skins={};
 		t.verticalCenter = -65;
 		return t;
 	};
-	_proto._Group1_i = function () {
+	_proto.contentGroup_i = function () {
 		var t = new eui.Group();
+		this.contentGroup = t;
 		t.height = 1104;
 		t.width = 620;
 		t.x = 0;
@@ -3036,8 +3037,7 @@ window.skins={};
 	_proto.contentViewStack_i = function () {
 		var t = new eui.ViewStack();
 		this.contentViewStack = t;
-		t.bottom = 230;
-		t.height = 1006;
+		t.percentHeight = 100;
 		t.scaleX = 1;
 		t.scaleY = 1;
 		t.selectedIndex = 1;
@@ -3051,8 +3051,7 @@ window.skins={};
 	_proto.settlementHistoryView_i = function () {
 		var t = new ReviewboardSettlementHistoryView();
 		this.settlementHistoryView = t;
-		t.bottom = 0;
-		t.height = 1006;
+		t.percentHeight = 100;
 		t.name = "牌局结算";
 		t.skinName = "ReviewboardSettlementHistorySkin";
 		t.top = 0;
@@ -3076,8 +3075,9 @@ window.skins={};
 		t.y = 0;
 		return t;
 	};
-	_proto._Group2_i = function () {
+	_proto.tabbarGroup_i = function () {
 		var t = new eui.Group();
+		this.tabbarGroup = t;
 		t.bottom = 177;
 		t.height = 53;
 		t.horizontalCenter = 0;
