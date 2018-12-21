@@ -2669,25 +2669,13 @@ window.skins={};
 		t.percentWidth = 100;
 		t.x = 0;
 		t.y = 0;
-		t.viewport = this._Group1_i();
-		return t;
-	};
-	_proto._Group1_i = function () {
-		var t = new eui.Group();
-		t.layout = this._VerticalLayout1_i();
-		t.elementsContent = [this.settlementList_i()];
-		return t;
-	};
-	_proto._VerticalLayout1_i = function () {
-		var t = new eui.VerticalLayout();
-		t.gap = 0;
-		t.horizontalAlign = "center";
-		t.verticalAlign = "top";
+		t.viewport = this.settlementList_i();
 		return t;
 	};
 	_proto.settlementList_i = function () {
 		var t = new eui.List();
 		this.settlementList = t;
+		t.height = 300;
 		t.percentWidth = 100;
 		t.x = 66;
 		t.y = 132;
@@ -5456,7 +5444,7 @@ window.skins={};
 		
 		this.height = 100;
 		this.width = 620;
-		this.elementsContent = [this._Rect1_i(),this._Group1_i(),this.boardPokerList_i(),this.potStackLabel_i()];
+		this.elementsContent = [this._Rect1_i(),this._Group1_i(),this._Scroller1_i(),this.potStackLabel_i()];
 	}
 	var _proto = ReviewboardGameSectionHeaderSkin.prototype;
 
@@ -5509,6 +5497,15 @@ window.skins={};
 		t.y = 40;
 		return t;
 	};
+	_proto._Scroller1_i = function () {
+		var t = new eui.Scroller();
+		t.height = 100;
+		t.width = 320;
+		t.x = 171;
+		t.y = 0;
+		t.viewport = this.boardPokerList_i();
+		return t;
+	};
 	_proto.boardPokerList_i = function () {
 		var t = new eui.List();
 		this.boardPokerList = t;
@@ -5516,7 +5513,7 @@ window.skins={};
 		t.height = 100;
 		t.left = 171;
 		t.verticalCenter = 0;
-		t.width = 320;
+		t.width = 100;
 		t.layout = this._TileLayout1_i();
 		return t;
 	};
@@ -5869,7 +5866,7 @@ window.skins={};
 		
 		this.height = 160;
 		this.width = 620;
-		this.elementsContent = [this._Group1_i(),this.playerAvatarImage_i(),this._Group2_i(),this.communityPokerList_i(),this.holePokerList_i()];
+		this.elementsContent = [this._Group1_i(),this.playerAvatarImage_i(),this._Group2_i(),this._Scroller1_i(),this.holePokerList_i()];
 	}
 	var _proto = ReviewboardSettlementItemSkin.prototype;
 
@@ -5963,13 +5960,22 @@ window.skins={};
 		t.y = -31;
 		return t;
 	};
+	_proto._Scroller1_i = function () {
+		var t = new eui.Scroller();
+		t.height = 90;
+		t.width = 310;
+		t.x = 280;
+		t.y = 51;
+		t.viewport = this.communityPokerList_i();
+		return t;
+	};
 	_proto.communityPokerList_i = function () {
 		var t = new eui.List();
 		this.communityPokerList = t;
 		t.height = 90;
 		t.right = 30;
 		t.verticalCenter = 16;
-		t.width = 310;
+		t.width = 100;
 		t.layout = this._TileLayout1_i();
 		return t;
 	};
