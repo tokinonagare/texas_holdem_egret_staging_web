@@ -62,11 +62,11 @@ window.skins={};
 	__extends(ChatTextInputSkin, _super);
 	function ChatTextInputSkin() {
 		_super.call(this);
-		this.skinParts = ["textDisplay","promptDisplay"];
+		this.skinParts = ["textDisplay","promptDisplay","amountLabel"];
 		
 		this.height = 88;
 		this.width = 400;
-		this.elementsContent = [this._Rect1_i(),this.textDisplay_i()];
+		this.elementsContent = [this._Rect1_i(),this.textDisplay_i(),this.amountLabel_i()];
 		this.promptDisplay_i();
 		
 		this.states = [
@@ -80,12 +80,12 @@ window.skins={};
 			,
 			new eui.State ("normalWithPrompt",
 				[
-					new eui.AddItems("promptDisplay","",1,"")
+					new eui.AddItems("promptDisplay","",2,"amountLabel")
 				])
 			,
 			new eui.State ("disabledWithPrompt",
 				[
-					new eui.AddItems("promptDisplay","",1,"")
+					new eui.AddItems("promptDisplay","",2,"amountLabel")
 				])
 		];
 	}
@@ -109,28 +109,38 @@ window.skins={};
 		t.anchorOffsetY = 0;
 		t.bold = true;
 		t.percentHeight = 80;
-		t.horizontalCenter = "0";
+		t.left = "20";
 		t.text = "";
 		t.textAlign = "left";
 		t.textColor = 0xffffff;
 		t.verticalAlign = "middle";
 		t.verticalCenter = "0";
-		t.percentWidth = 90;
+		t.percentWidth = 80;
 		return t;
 	};
 	_proto.promptDisplay_i = function () {
 		var t = new eui.Label();
 		this.promptDisplay = t;
 		t.percentHeight = 80;
-		t.horizontalCenter = 0;
+		t.left = 20;
 		t.strokeColor = 0xf72222;
 		t.text = "";
-		t.textAlign = "center";
-		t.textColor = 0xa9a9a9;
+		t.textAlign = "left";
+		t.textColor = 0x9dbac4;
 		t.touchEnabled = false;
 		t.verticalAlign = "middle";
 		t.verticalCenter = 0;
-		t.percentWidth = 90;
+		t.percentWidth = 80;
+		return t;
+	};
+	_proto.amountLabel_i = function () {
+		var t = new eui.Label();
+		this.amountLabel = t;
+		t.right = 15;
+		t.size = 24;
+		t.text = "0/0";
+		t.textColor = 0x9dbac4;
+		t.verticalCenter = 0;
 		return t;
 	};
 	return ChatTextInputSkin;
@@ -3729,7 +3739,7 @@ window.skins={};
 		t.scaleY = 1;
 		t.source = "icon_buy_in_chip_png";
 		t.width = 36;
-		t.y = 110;
+		t.y = 120;
 		return t;
 	};
 	_proto.scoreLabel_i = function () {
@@ -3739,7 +3749,7 @@ window.skins={};
 		t.text = "0";
 		t.width = 200;
 		t.x = 250;
-		t.y = 107;
+		t.y = 117;
 		return t;
 	};
 	_proto.scoreSlider_i = function () {
@@ -3792,11 +3802,11 @@ window.skins={};
 	_proto._Label2_i = function () {
 		var t = new eui.Label();
 		t.horizontalCenter = 0;
-		t.size = 15;
+		t.size = 18;
 		t.text = "温馨提示: 游戏途中成功申请带入, 将在下一局游戏开始后到账";
 		t.textAlign = "center";
 		t.width = 550;
-		t.y = 75;
+		t.y = 80;
 		return t;
 	};
 	return BuyInSkin;
@@ -4005,8 +4015,8 @@ window.skins={};
 		
 		this.currentState = "up";
 		this.height = 98;
-		this.width = 138;
-		this.elementsContent = [this.label_i()];
+		this.width = 230;
+		this.elementsContent = [this._Rect1_i(),this.label_i()];
 		this.iconUp_i();
 		
 		this.iconDown_i();
@@ -4014,7 +4024,7 @@ window.skins={};
 		this.states = [
 			new eui.State ("up",
 				[
-					new eui.AddItems("iconUp","",0,""),
+					new eui.AddItems("iconUp","",2,"label"),
 					new eui.SetProperty("label","textColor",0x80a5a7)
 				])
 			,
@@ -4029,31 +4039,40 @@ window.skins={};
 	}
 	var _proto = ChatTabBarSkin.prototype;
 
+	_proto._Rect1_i = function () {
+		var t = new eui.Rect();
+		t.fillAlpha = 0;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
 	_proto.iconUp_i = function () {
 		var t = new eui.Image();
 		this.iconUp = t;
 		t.height = 56;
+		t.left = 46;
 		t.source = "";
 		t.verticalCenter = 0;
 		t.width = 64;
-		t.x = 0;
 		return t;
 	};
 	_proto.iconDown_i = function () {
 		var t = new eui.Image();
 		this.iconDown = t;
 		t.height = 56;
+		t.left = 46;
 		t.source = "";
 		t.verticalCenter = 0;
 		t.width = 64;
-		t.x = 0;
 		return t;
 	};
 	_proto.label_i = function () {
 		var t = new eui.Label();
 		this.label = t;
 		t.height = 60;
-		t.right = 0;
+		t.right = 46;
 		t.size = 30;
 		t.textAlign = "center";
 		t.textColor = 0x80a5a7;
@@ -4067,7 +4086,7 @@ window.skins={};
 	__extends(ChatViewSkin, _super);
 	function ChatViewSkin() {
 		_super.call(this);
-		this.skinParts = ["background","barrageCheckBox","messageInput","sendButton","tabBar","stickerList","phraseList","chatHistoryView","viewStack","group"];
+		this.skinParts = ["background","barrageCheckBox","toggleLabel","messageInput","sendButton","tabBar","stickerList","phraseList","chatHistoryView","viewStack","group"];
 		
 		this.height = 1334;
 		this.width = 750;
@@ -4094,7 +4113,7 @@ window.skins={};
 		t.percentWidth = 100;
 		t.x = 0;
 		t.y = 570;
-		t.elementsContent = [this._Rect1_i(),this.barrageCheckBox_i(),this._Group1_i(),this.tabBar_i(),this._Group5_i()];
+		t.elementsContent = [this._Rect1_i(),this.barrageCheckBox_i(),this.toggleLabel_i(),this._Group1_i(),this.tabBar_i(),this._Group5_i()];
 		return t;
 	};
 	_proto._Rect1_i = function () {
@@ -4123,6 +4142,15 @@ window.skins={};
 		t.y = 20;
 		return t;
 	};
+	_proto.toggleLabel_i = function () {
+		var t = new eui.Label();
+		this.toggleLabel = t;
+		t.size = 24;
+		t.text = "弹幕开启";
+		t.x = 120;
+		t.y = 33;
+		return t;
+	};
 	_proto._Group1_i = function () {
 		var t = new eui.Group();
 		t.height = 85;
@@ -4133,12 +4161,13 @@ window.skins={};
 		return t;
 	};
 	_proto.messageInput_i = function () {
-		var t = new eui.TextInput();
+		var t = new ChatTextInput();
 		this.messageInput = t;
 		t.height = 85;
-		t.scaleX = 1;
-		t.scaleY = 1;
+		t.maximun = 0;
+		t.prompt = "请输入文字";
 		t.skinName = "ChatTextInputSkin";
+		t.value = 0;
 		t.width = 568;
 		t.x = 0;
 		t.y = 0;
@@ -4164,6 +4193,7 @@ window.skins={};
 		t.height = 98;
 		t.horizontalCenter = 0;
 		t.itemRendererSkinName = ChatTabBarSkin;
+		t.selectedIndex = 1;
 		t.width = 692;
 		t.y = 171;
 		t.layout = this._HorizontalLayout1_i();
@@ -4171,8 +4201,10 @@ window.skins={};
 	};
 	_proto._HorizontalLayout1_i = function () {
 		var t = new eui.HorizontalLayout();
-		t.gap = 100;
+		t.gap = 0;
 		t.horizontalAlign = "center";
+		t.paddingLeft = 1;
+		t.paddingRight = 1;
 		t.verticalAlign = "contentJustify";
 		return t;
 	};
@@ -4203,6 +4235,7 @@ window.skins={};
 		var t = new eui.ViewStack();
 		this.viewStack = t;
 		t.height = 470;
+		t.selectedIndex = 1;
 		t.width = 692;
 		t.x = 0;
 		t.y = 0;
