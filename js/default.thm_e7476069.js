@@ -3958,6 +3958,45 @@ window.skins={};
 		return t;
 	};
 	return BarrageCheckBoxSkin;
+})(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/Chat/ChatHistorySkin.exml'] = window.ChatHistorySkin = (function (_super) {
+	__extends(ChatHistorySkin, _super);
+	function ChatHistorySkin() {
+		_super.call(this);
+		this.skinParts = ["historyList"];
+		
+		this.height = 470;
+		this.width = 692;
+		this.elementsContent = [this._Scroller1_i()];
+	}
+	var _proto = ChatHistorySkin.prototype;
+
+	_proto._Scroller1_i = function () {
+		var t = new eui.Scroller();
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		t.viewport = this.historyList_i();
+		return t;
+	};
+	_proto.historyList_i = function () {
+		var t = new eui.List();
+		this.historyList = t;
+		t.layout = this._VerticalLayout1_i();
+		return t;
+	};
+	_proto._VerticalLayout1_i = function () {
+		var t = new eui.VerticalLayout();
+		t.gap = 17;
+		t.horizontalAlign = "left";
+		t.paddingBottom = 12;
+		t.paddingLeft = 12;
+		t.paddingRight = 12;
+		t.paddingTop = 12;
+		t.verticalAlign = "top";
+		return t;
+	};
+	return ChatHistorySkin;
 })(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/Chat/ChatTabBarSkin.exml'] = window.ChatTabBarSkin = (function (_super) {
 	__extends(ChatTabBarSkin, _super);
 	function ChatTabBarSkin() {
@@ -4028,7 +4067,7 @@ window.skins={};
 	__extends(ChatViewSkin, _super);
 	function ChatViewSkin() {
 		_super.call(this);
-		this.skinParts = ["background","barrageCheckBox","messageInput","sendButton","tabBar","stickerList","phraseList","viewStack","group"];
+		this.skinParts = ["background","barrageCheckBox","messageInput","sendButton","tabBar","stickerList","phraseList","chatHistoryView","viewStack","group"];
 		
 		this.height = 1334;
 		this.width = 750;
@@ -4236,22 +4275,18 @@ window.skins={};
 		t.percentHeight = 100;
 		t.name = "聊天记录";
 		t.percentWidth = 100;
-		t.elementsContent = [this._Scroller3_i()];
+		t.elementsContent = [this.chatHistoryView_i()];
 		return t;
 	};
-	_proto._Scroller3_i = function () {
-		var t = new eui.Scroller();
+	_proto.chatHistoryView_i = function () {
+		var t = new ChatHistoryView();
+		this.chatHistoryView = t;
 		t.percentHeight = 100;
 		t.scaleX = 1;
 		t.scaleY = 1;
 		t.percentWidth = 100;
-		t.x = -19;
-		t.y = -829;
-		t.viewport = this._List1_i();
-		return t;
-	};
-	_proto._List1_i = function () {
-		var t = new eui.List();
+		t.x = 0;
+		t.y = 0;
 		return t;
 	};
 	return ChatViewSkin;

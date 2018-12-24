@@ -41,6 +41,7 @@
 		"resource/eui_skins/GameSkins/View/CardPatternSkin.exml",
 		"resource/eui_skins/GameSkins/View/CardSkin.exml",
 		"resource/eui_skins/GameSkins/View/Chat/BarrageCheckBoxSkin.exml",
+		"resource/eui_skins/GameSkins/View/Chat/ChatHistorySkin.exml",
 		"resource/eui_skins/GameSkins/View/Chat/ChatTabBarSkin.exml",
 		"resource/eui_skins/GameSkins/View/Chat/ChatViewSkin.exml",
 		"resource/eui_skins/GameSkins/View/Chat/PhraseItemSkin.exml",
