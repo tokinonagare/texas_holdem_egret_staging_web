@@ -3997,12 +3997,12 @@ window.skins={};
 	};
 	_proto._VerticalLayout1_i = function () {
 		var t = new eui.VerticalLayout();
-		t.gap = 17;
+		t.gap = 20;
 		t.horizontalAlign = "left";
-		t.paddingBottom = 12;
-		t.paddingLeft = 12;
-		t.paddingRight = 12;
-		t.paddingTop = 12;
+		t.paddingBottom = 20;
+		t.paddingLeft = 20;
+		t.paddingRight = 20;
+		t.paddingTop = 20;
 		t.verticalAlign = "top";
 		return t;
 	};
@@ -4193,7 +4193,7 @@ window.skins={};
 		t.height = 98;
 		t.horizontalCenter = 0;
 		t.itemRendererSkinName = ChatTabBarSkin;
-		t.selectedIndex = 1;
+		t.selectedIndex = 0;
 		t.width = 692;
 		t.y = 171;
 		t.layout = this._HorizontalLayout1_i();
@@ -4235,7 +4235,7 @@ window.skins={};
 		var t = new eui.ViewStack();
 		this.viewStack = t;
 		t.height = 470;
-		t.selectedIndex = 1;
+		t.selectedIndex = 0;
 		t.width = 692;
 		t.x = 0;
 		t.y = 0;
@@ -4264,6 +4264,21 @@ window.skins={};
 	_proto.stickerList_i = function () {
 		var t = new eui.List();
 		this.stickerList = t;
+		t.itemRendererSkinName = StickerItemSkin;
+		t.layout = this._TileLayout1_i();
+		return t;
+	};
+	_proto._TileLayout1_i = function () {
+		var t = new eui.TileLayout();
+		t.horizontalAlign = "center";
+		t.horizontalGap = 12;
+		t.orientation = "rows";
+		t.paddingBottom = 16;
+		t.paddingLeft = 16;
+		t.paddingRight = 16;
+		t.paddingTop = 16;
+		t.verticalAlign = "top";
+		t.verticalGap = 12;
 		return t;
 	};
 	_proto._Group3_i = function () {
@@ -4367,6 +4382,40 @@ window.skins={};
 		return t;
 	};
 	return PhraseItemSkin;
+})(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/Chat/StickerItemSkin.exml'] = window.StickerItemSkin = (function (_super) {
+	__extends(StickerItemSkin, _super);
+	function StickerItemSkin() {
+		_super.call(this);
+		this.skinParts = ["sticker"];
+		
+		this.height = 100;
+		this.width = 100;
+		this.elementsContent = [this._Rect1_i(),this.sticker_i()];
+	}
+	var _proto = StickerItemSkin.prototype;
+
+	_proto._Rect1_i = function () {
+		var t = new eui.Rect();
+		t.ellipseHeight = 25;
+		t.ellipseWidth = 25;
+		t.fillColor = 0x34595b;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto.sticker_i = function () {
+		var t = new eui.Image();
+		this.sticker = t;
+		t.percentHeight = 80;
+		t.horizontalCenter = 0;
+		t.source = "icon_sticker_drink_png";
+		t.verticalCenter = 0;
+		t.percentWidth = 80;
+		return t;
+	};
+	return StickerItemSkin;
 })(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/InsuranceView/CountdownProgressSkin.exml'] = window.CountdownProgressSkin = (function (_super) {
 	__extends(CountdownProgressSkin, _super);
 	function CountdownProgressSkin() {
