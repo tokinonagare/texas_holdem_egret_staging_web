@@ -3481,7 +3481,7 @@ window.skins={};
 	_proto._Rect1_i = function () {
 		var t = new eui.Rect();
 		this._Rect1 = t;
-		t.fillColor = 0x072927;
+		t.fillColor = 0x1b1e2d;
 		t.percentHeight = 100;
 		t.percentWidth = 100;
 		t.x = 0;
@@ -3490,7 +3490,7 @@ window.skins={};
 	};
 	_proto._Rect2_i = function () {
 		var t = new eui.Rect();
-		t.fillColor = 0x041716;
+		t.fillColor = 0x50505b;
 		t.height = 2;
 		t.percentWidth = 100;
 		t.x = 0;
@@ -3543,7 +3543,7 @@ window.skins={};
 		var t = new eui.Rect();
 		t.ellipseHeight = 20;
 		t.ellipseWidth = 20;
-		t.fillColor = 0x072927;
+		t.fillColor = 0x1b1e2d;
 		t.height = 400;
 		t.horizontalCenter = 0;
 		t.scaleX = 1;
@@ -3610,6 +3610,7 @@ window.skins={};
 	_proto._Rect2_i = function () {
 		var t = new eui.Rect();
 		t.bottom = 0;
+		t.fillColor = 0x50505b;
 		t.height = 102;
 		t.horizontalCenter = 0;
 		t.width = 2;
@@ -3673,11 +3674,103 @@ window.skins={};
 		return t;
 	};
 	return BuyInSliderSkin;
+})(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/BuyInView/ScoreTextInputSkin.exml'] = window.ScoreTextInputSkin = (function (_super) {
+	__extends(ScoreTextInputSkin, _super);
+	var ScoreTextInputSkin$Skin18 = 	(function (_super) {
+		__extends(ScoreTextInputSkin$Skin18, _super);
+		function ScoreTextInputSkin$Skin18() {
+			_super.call(this);
+			this.skinParts = ["labelDisplay"];
+			
+			this.elementsContent = [this._Image1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_Image1","percentWidth",90),
+						new eui.SetProperty("_Image1","percentHeight",90)
+					])
+				,
+				new eui.State ("disabled",
+					[
+					])
+			];
+		}
+		var _proto = ScoreTextInputSkin$Skin18.prototype;
+
+		_proto._Image1_i = function () {
+			var t = new eui.Image();
+			this._Image1 = t;
+			t.percentHeight = 100;
+			t.horizontalCenter = 0;
+			t.source = "btn_score_input_delete_png";
+			t.verticalCenter = 0;
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		return ScoreTextInputSkin$Skin18;
+	})(eui.Skin);
+
+	function ScoreTextInputSkin() {
+		_super.call(this);
+		this.skinParts = ["textDisplay","deleteButton"];
+		
+		this.height = 50;
+		this.width = 230;
+		this.elementsContent = [this.textDisplay_i(),this._Rect1_i(),this.deleteButton_i()];
+	}
+	var _proto = ScoreTextInputSkin.prototype;
+
+	_proto.textDisplay_i = function () {
+		var t = new eui.EditableText();
+		this.textDisplay = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 40;
+		t.text = "200";
+		t.textAlign = "center";
+		t.verticalAlign = "middle";
+		t.verticalCenter = "0";
+		t.percentWidth = 85;
+		t.x = 0;
+		return t;
+	};
+	_proto._Rect1_i = function () {
+		var t = new eui.Rect();
+		t.bottom = 0;
+		t.fillColor = 0x50505b;
+		t.height = 2;
+		t.horizontalCenter = 0;
+		t.percentWidth = 100;
+		return t;
+	};
+	_proto.deleteButton_i = function () {
+		var t = new eui.Button();
+		this.deleteButton = t;
+		t.height = 32;
+		t.label = "";
+		t.right = 0;
+		t.verticalCenter = 0;
+		t.width = 32;
+		t.skinName = ScoreTextInputSkin$Skin18;
+		return t;
+	};
+	return ScoreTextInputSkin;
 })(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/BuyInView/BuyInSkin.exml'] = window.BuyInSkin = (function (_super) {
 	__extends(BuyInSkin, _super);
 	function BuyInSkin() {
 		_super.call(this);
-		this.skinParts = ["background","scoreLabel","scoreSlider","confirmButton","minBuyLabel","balanceLabel","group"];
+		this.skinParts = ["background","scoreSlider","confirmButton","minBuyLabel","balanceLabel","scoreTextInput","group"];
 		
 		this.height = 1334;
 		this.width = 750;
@@ -3702,14 +3795,14 @@ window.skins={};
 		t.horizontalCenter = 0;
 		t.verticalCenter = 0;
 		t.width = 536;
-		t.elementsContent = [this._Rect1_i(),this._Label1_i(),this._Image1_i(),this.scoreLabel_i(),this.scoreSlider_i(),this.confirmButton_i(),this.minBuyLabel_i(),this.balanceLabel_i(),this._Label2_i()];
+		t.elementsContent = [this._Rect1_i(),this._Label1_i(),this.scoreSlider_i(),this.confirmButton_i(),this.minBuyLabel_i(),this.balanceLabel_i(),this._Label2_i(),this.scoreTextInput_i()];
 		return t;
 	};
 	_proto._Rect1_i = function () {
 		var t = new eui.Rect();
 		t.ellipseHeight = 30;
 		t.ellipseWidth = 30;
-		t.fillColor = 0x072927;
+		t.fillColor = 0x1b1e2d;
 		t.height = 400;
 		t.horizontalCenter = 0;
 		t.scaleX = 1;
@@ -3731,27 +3824,6 @@ window.skins={};
 		t.y = 30;
 		return t;
 	};
-	_proto._Image1_i = function () {
-		var t = new eui.Image();
-		t.height = 36;
-		t.left = 194;
-		t.scaleX = 1;
-		t.scaleY = 1;
-		t.source = "icon_buy_in_chip_png";
-		t.width = 36;
-		t.y = 120;
-		return t;
-	};
-	_proto.scoreLabel_i = function () {
-		var t = new eui.Label();
-		this.scoreLabel = t;
-		t.size = 44;
-		t.text = "0";
-		t.width = 200;
-		t.x = 250;
-		t.y = 117;
-		return t;
-	};
 	_proto.scoreSlider_i = function () {
 		var t = new eui.HSlider();
 		this.scoreSlider = t;
@@ -3759,7 +3831,7 @@ window.skins={};
 		t.horizontalCenter = 0;
 		t.skinName = "BuyInSliderSkin";
 		t.width = 499;
-		t.y = 170;
+		t.y = 190;
 		return t;
 	};
 	_proto.confirmButton_i = function () {
@@ -3778,7 +3850,7 @@ window.skins={};
 		this.minBuyLabel = t;
 		t.height = 18;
 		t.size = 18;
-		t.text = "";
+		t.text = "100000";
 		t.textAlign = "center";
 		t.textColor = 0xfe2a2a;
 		t.width = 400;
@@ -3792,21 +3864,32 @@ window.skins={};
 		t.height = 20;
 		t.horizontalCenter = 0;
 		t.size = 20;
-		t.text = "";
+		t.text = "100000";
 		t.textAlign = "center";
-		t.textColor = 0x596e6d;
+		t.textColor = 0x7f7f89;
 		t.width = 400;
 		t.y = 230;
 		return t;
 	};
 	_proto._Label2_i = function () {
 		var t = new eui.Label();
+		t.height = 40;
 		t.horizontalCenter = 0;
-		t.size = 18;
+		t.size = 20;
 		t.text = "温馨提示: 游戏途中成功申请带入, 将在下一局游戏开始后到账";
 		t.textAlign = "center";
-		t.width = 550;
+		t.width = 400;
 		t.y = 80;
+		return t;
+	};
+	_proto.scoreTextInput_i = function () {
+		var t = new ScoreTextInput();
+		this.scoreTextInput = t;
+		t.height = 50;
+		t.horizontalCenter = 0;
+		t.skinName = "ScoreTextInputSkin";
+		t.width = 230;
+		t.y = 130;
 		return t;
 	};
 	return BuyInSkin;
@@ -4959,9 +5042,9 @@ window.skins={};
 	return NumericKeyboardItemSkin;
 })(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/NumericKeyboard/NumericKeyboardSkin.exml'] = window.NumericKeyboardSkin = (function (_super) {
 	__extends(NumericKeyboardSkin, _super);
-	var NumericKeyboardSkin$Skin18 = 	(function (_super) {
-		__extends(NumericKeyboardSkin$Skin18, _super);
-		function NumericKeyboardSkin$Skin18() {
+	var NumericKeyboardSkin$Skin19 = 	(function (_super) {
+		__extends(NumericKeyboardSkin$Skin19, _super);
+		function NumericKeyboardSkin$Skin19() {
 			_super.call(this);
 			this.skinParts = ["labelDisplay"];
 			
@@ -4982,7 +5065,7 @@ window.skins={};
 					])
 			];
 		}
-		var _proto = NumericKeyboardSkin$Skin18.prototype;
+		var _proto = NumericKeyboardSkin$Skin19.prototype;
 
 		_proto._Image1_i = function () {
 			var t = new eui.Image();
@@ -5001,7 +5084,7 @@ window.skins={};
 			t.verticalCenter = 0;
 			return t;
 		};
-		return NumericKeyboardSkin$Skin18;
+		return NumericKeyboardSkin$Skin19;
 	})(eui.Skin);
 
 	function NumericKeyboardSkin() {
@@ -5184,7 +5267,7 @@ window.skins={};
 		t.scaleX = 1;
 		t.scaleY = 1;
 		t.verticalCenter = 0;
-		t.skinName = NumericKeyboardSkin$Skin18;
+		t.skinName = NumericKeyboardSkin$Skin19;
 		return t;
 	};
 	return NumericKeyboardSkin;
@@ -6598,9 +6681,9 @@ window.skins={};
 	return SeatViewSkin;
 })(eui.Skin);generateEUI.paths['resource/eui_skins/LaunchSkins/InputPhoneNumberSkin.exml'] = window.InputPhoneNumberSkin = (function (_super) {
 	__extends(InputPhoneNumberSkin, _super);
-	var InputPhoneNumberSkin$Skin19 = 	(function (_super) {
-		__extends(InputPhoneNumberSkin$Skin19, _super);
-		function InputPhoneNumberSkin$Skin19() {
+	var InputPhoneNumberSkin$Skin20 = 	(function (_super) {
+		__extends(InputPhoneNumberSkin$Skin20, _super);
+		function InputPhoneNumberSkin$Skin20() {
 			_super.call(this);
 			this.skinParts = ["labelDisplay"];
 			
@@ -6621,7 +6704,7 @@ window.skins={};
 					])
 			];
 		}
-		var _proto = InputPhoneNumberSkin$Skin19.prototype;
+		var _proto = InputPhoneNumberSkin$Skin20.prototype;
 
 		_proto._Image1_i = function () {
 			var t = new eui.Image();
@@ -6640,7 +6723,7 @@ window.skins={};
 			t.verticalCenter = 0;
 			return t;
 		};
-		return InputPhoneNumberSkin$Skin19;
+		return InputPhoneNumberSkin$Skin20;
 	})(eui.Skin);
 
 	function InputPhoneNumberSkin() {
@@ -6718,7 +6801,7 @@ window.skins={};
 		t.label = "";
 		t.x = 158;
 		t.y = 250;
-		t.skinName = InputPhoneNumberSkin$Skin19;
+		t.skinName = InputPhoneNumberSkin$Skin20;
 		return t;
 	};
 	return InputPhoneNumberSkin;
@@ -6872,9 +6955,9 @@ window.skins={};
 	return TimerButtonSkin;
 })(eui.Skin);generateEUI.paths['resource/eui_skins/LaunchSkins/InputVerificationCodeSkin.exml'] = window.InputVerificationCodeSkin = (function (_super) {
 	__extends(InputVerificationCodeSkin, _super);
-	var InputVerificationCodeSkin$Skin20 = 	(function (_super) {
-		__extends(InputVerificationCodeSkin$Skin20, _super);
-		function InputVerificationCodeSkin$Skin20() {
+	var InputVerificationCodeSkin$Skin21 = 	(function (_super) {
+		__extends(InputVerificationCodeSkin$Skin21, _super);
+		function InputVerificationCodeSkin$Skin21() {
 			_super.call(this);
 			this.skinParts = ["labelDisplay"];
 			
@@ -6895,7 +6978,7 @@ window.skins={};
 					])
 			];
 		}
-		var _proto = InputVerificationCodeSkin$Skin20.prototype;
+		var _proto = InputVerificationCodeSkin$Skin21.prototype;
 
 		_proto._Image1_i = function () {
 			var t = new eui.Image();
@@ -6914,7 +6997,7 @@ window.skins={};
 			t.verticalCenter = 0;
 			return t;
 		};
-		return InputVerificationCodeSkin$Skin20;
+		return InputVerificationCodeSkin$Skin21;
 	})(eui.Skin);
 
 	function InputVerificationCodeSkin() {
@@ -6974,7 +7057,7 @@ window.skins={};
 		t.label = "";
 		t.x = 158;
 		t.y = 290;
-		t.skinName = InputVerificationCodeSkin$Skin20;
+		t.skinName = InputVerificationCodeSkin$Skin21;
 		return t;
 	};
 	_proto._Label2_i = function () {
@@ -7031,51 +7114,6 @@ window.skins={};
 	return InputVerificationCodeSkin;
 })(eui.Skin);generateEUI.paths['resource/eui_skins/LaunchSkins/LaunchSkin.exml'] = window.LaunchSkin = (function (_super) {
 	__extends(LaunchSkin, _super);
-	var LaunchSkin$Skin21 = 	(function (_super) {
-		__extends(LaunchSkin$Skin21, _super);
-		function LaunchSkin$Skin21() {
-			_super.call(this);
-			this.skinParts = ["labelDisplay"];
-			
-			this.elementsContent = [this._Image1_i(),this.labelDisplay_i()];
-			this.states = [
-				new eui.State ("up",
-					[
-					])
-				,
-				new eui.State ("down",
-					[
-						new eui.SetProperty("_Image1","percentWidth",90),
-						new eui.SetProperty("_Image1","percentHeight",90)
-					])
-				,
-				new eui.State ("disabled",
-					[
-					])
-			];
-		}
-		var _proto = LaunchSkin$Skin21.prototype;
-
-		_proto._Image1_i = function () {
-			var t = new eui.Image();
-			this._Image1 = t;
-			t.percentHeight = 100;
-			t.horizontalCenter = 0;
-			t.source = "btn_phone_login_png";
-			t.verticalCenter = 0;
-			t.percentWidth = 100;
-			return t;
-		};
-		_proto.labelDisplay_i = function () {
-			var t = new eui.Label();
-			this.labelDisplay = t;
-			t.horizontalCenter = 0;
-			t.verticalCenter = 0;
-			return t;
-		};
-		return LaunchSkin$Skin21;
-	})(eui.Skin);
-
 	var LaunchSkin$Skin22 = 	(function (_super) {
 		__extends(LaunchSkin$Skin22, _super);
 		function LaunchSkin$Skin22() {
@@ -7106,7 +7144,7 @@ window.skins={};
 			this._Image1 = t;
 			t.percentHeight = 100;
 			t.horizontalCenter = 0;
-			t.source = "btn_login_by_visitor_png";
+			t.source = "btn_phone_login_png";
 			t.verticalCenter = 0;
 			t.percentWidth = 100;
 			return t;
@@ -7119,6 +7157,51 @@ window.skins={};
 			return t;
 		};
 		return LaunchSkin$Skin22;
+	})(eui.Skin);
+
+	var LaunchSkin$Skin23 = 	(function (_super) {
+		__extends(LaunchSkin$Skin23, _super);
+		function LaunchSkin$Skin23() {
+			_super.call(this);
+			this.skinParts = ["labelDisplay"];
+			
+			this.elementsContent = [this._Image1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_Image1","percentWidth",90),
+						new eui.SetProperty("_Image1","percentHeight",90)
+					])
+				,
+				new eui.State ("disabled",
+					[
+					])
+			];
+		}
+		var _proto = LaunchSkin$Skin23.prototype;
+
+		_proto._Image1_i = function () {
+			var t = new eui.Image();
+			this._Image1 = t;
+			t.percentHeight = 100;
+			t.horizontalCenter = 0;
+			t.source = "btn_login_by_visitor_png";
+			t.verticalCenter = 0;
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		return LaunchSkin$Skin23;
 	})(eui.Skin);
 
 	function LaunchSkin() {
@@ -7161,7 +7244,7 @@ window.skins={};
 		t.scaleY = 1;
 		t.x = 93;
 		t.y = 277.0000000000001;
-		t.skinName = LaunchSkin$Skin21;
+		t.skinName = LaunchSkin$Skin22;
 		return t;
 	};
 	_proto.visitorButton_i = function () {
@@ -7173,7 +7256,7 @@ window.skins={};
 		t.scaleY = 1;
 		t.x = 93;
 		t.y = 125.29999999999995;
-		t.skinName = LaunchSkin$Skin22;
+		t.skinName = LaunchSkin$Skin23;
 		return t;
 	};
 	_proto.displayLabel_i = function () {
