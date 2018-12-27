@@ -5192,7 +5192,7 @@ window.skins={};
 	__extends(PlayerDetailSkin, _super);
 	function PlayerDetailSkin() {
 		_super.call(this);
-		this.skinParts = ["background","avatarImage","nicknameLabel","bioLabel","statisticList","cardList","group"];
+		this.skinParts = ["background","avatarImage","nicknameLabel","bioLabel","statisticList","propsList","group"];
 		
 		this.height = 1334;
 		this.width = 750;
@@ -5213,37 +5213,25 @@ window.skins={};
 	_proto.group_i = function () {
 		var t = new eui.Group();
 		this.group = t;
-		t.height = 970;
+		t.height = 960;
 		t.horizontalCenter = 0;
 		t.verticalCenter = 0;
 		t.width = 690;
-		t.elementsContent = [this._Rect1_i(),this._Rect2_i(),this.avatarImage_i(),this.nicknameLabel_i(),this.bioLabel_i(),this.statisticList_i(),this._Label1_i(),this.cardList_i()];
+		t.elementsContent = [this._Rect1_i(),this.avatarImage_i(),this.nicknameLabel_i(),this.bioLabel_i(),this._Group1_i(),this._Group2_i()];
 		return t;
 	};
 	_proto._Rect1_i = function () {
 		var t = new eui.Rect();
 		t.ellipseHeight = 20;
 		t.ellipseWidth = 20;
-		t.fillColor = 0x001211;
-		t.height = 970;
+		t.fillColor = 0x1b1e2d;
+		t.height = 960;
 		t.strokeAlpha = 0.5;
-		t.strokeColor = 0x3bffde;
+		t.strokeColor = 0xe1edea;
 		t.strokeWeight = 3;
 		t.width = 690;
 		t.x = 0;
 		t.y = 0;
-		return t;
-	};
-	_proto._Rect2_i = function () {
-		var t = new eui.Rect();
-		t.anchorOffsetY = 0;
-		t.ellipseHeight = 20;
-		t.ellipseWidth = 20;
-		t.fillColor = 0x072927;
-		t.height = 742;
-		t.width = 660;
-		t.x = 15;
-		t.y = 206;
 		return t;
 	};
 	_proto.avatarImage_i = function () {
@@ -5276,16 +5264,42 @@ window.skins={};
 		t.y = 130;
 		return t;
 	};
+	_proto._Group1_i = function () {
+		var t = new eui.Group();
+		t.height = 560;
+		t.width = 660;
+		t.x = 15;
+		t.y = 206;
+		t.elementsContent = [this._Rect2_i(),this.statisticList_i()];
+		return t;
+	};
+	_proto._Rect2_i = function () {
+		var t = new eui.Rect();
+		t.anchorOffsetY = 0;
+		t.ellipseHeight = 20;
+		t.ellipseWidth = 20;
+		t.fillColor = 0x32374c;
+		t.height = 560;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.width = 660;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
 	_proto.statisticList_i = function () {
 		var t = new eui.List();
 		this.statisticList = t;
 		t.anchorOffsetX = 0;
 		t.anchorOffsetY = 0;
-		t.height = 604;
+		t.height = 560;
 		t.horizontalCenter = 0;
 		t.itemRendererSkinName = StatisticItemSkin;
+		t.scaleX = 1;
+		t.scaleY = 1;
 		t.width = 660;
-		t.y = 206;
+		t.x = 0;
+		t.y = 0;
 		t.layout = this._TileLayout1_i();
 		t.dataProvider = this._ArrayCollection1_i();
 		return t;
@@ -5298,9 +5312,9 @@ window.skins={};
 		t.paddingBottom = 0;
 		t.paddingLeft = 0;
 		t.paddingRight = 0;
-		t.paddingTop = 0;
+		t.paddingTop = 10;
 		t.verticalAlign = "contentJustify";
-		t.verticalGap = 0;
+		t.verticalGap = 10;
 		return t;
 	};
 	_proto._ArrayCollection1_i = function () {
@@ -5398,73 +5412,95 @@ window.skins={};
 		t.title = "赢过最大的池底";
 		return t;
 	};
-	_proto._Label1_i = function () {
-		var t = new eui.Label();
-		t.size = 24;
-		t.text = "赢过最大的牌";
-		t.textColor = 0xb8c2c0;
-		t.x = 35;
-		t.y = 870;
+	_proto._Group2_i = function () {
+		var t = new eui.Group();
+		t.height = 160;
+		t.width = 660;
+		t.x = 15;
+		t.y = 780;
+		t.elementsContent = [this._Rect3_i(),this._Scroller1_i()];
 		return t;
 	};
-	_proto.cardList_i = function () {
+	_proto._Rect3_i = function () {
+		var t = new eui.Rect();
+		t.ellipseHeight = 20;
+		t.ellipseWidth = 20;
+		t.fillColor = 0x32374c;
+		t.height = 160;
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.width = 660;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto._Scroller1_i = function () {
+		var t = new eui.Scroller();
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		t.viewport = this.propsList_i();
+		return t;
+	};
+	_proto.propsList_i = function () {
 		var t = new eui.List();
-		this.cardList = t;
-		t.anchorOffsetX = 0;
-		t.height = 80;
-		t.itemRendererSkinName = WonCardItemSkin;
-		t.width = 366;
-		t.x = 250;
-		t.y = 842;
+		this.propsList = t;
 		t.layout = this._HorizontalLayout1_i();
-		t.dataProvider = this._ArrayCollection2_i();
 		return t;
 	};
 	_proto._HorizontalLayout1_i = function () {
 		var t = new eui.HorizontalLayout();
-		t.gap = 18;
-		return t;
-	};
-	_proto._ArrayCollection2_i = function () {
-		var t = new eui.ArrayCollection();
-		t.source = [this._Object16_i(),this._Object17_i(),this._Object18_i(),this._Object19_i(),this._Object20_i()];
-		return t;
-	};
-	_proto._Object16_i = function () {
-		var t = {};
-		t.cardName = "1";
-		return t;
-	};
-	_proto._Object17_i = function () {
-		var t = {};
-		t.cardName = "null";
-		return t;
-	};
-	_proto._Object18_i = function () {
-		var t = {};
-		t.cardName = "null";
-		return t;
-	};
-	_proto._Object19_i = function () {
-		var t = {};
-		t.cardName = "null";
-		return t;
-	};
-	_proto._Object20_i = function () {
-		var t = {};
-		t.cardName = "null";
+		t.gap = 26;
+		t.horizontalAlign = "contentJustify";
+		t.paddingLeft = 26;
+		t.paddingRight = 26;
+		t.verticalAlign = "middle";
 		return t;
 	};
 	return PlayerDetailSkin;
+})(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/PlayerDetail/PropsItemSkin.exml'] = window.PropsItemSkin = (function (_super) {
+	__extends(PropsItemSkin, _super);
+	function PropsItemSkin() {
+		_super.call(this);
+		this.skinParts = ["props"];
+		
+		this.height = 100;
+		this.width = 100;
+		this.elementsContent = [this._Rect1_i(),this.props_i()];
+	}
+	var _proto = PropsItemSkin.prototype;
+
+	_proto._Rect1_i = function () {
+		var t = new eui.Rect();
+		t.fillAlpha = 0;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto.props_i = function () {
+		var t = new eui.Image();
+		this.props = t;
+		t.height = 100;
+		t.horizontalCenter = 0;
+		t.source = "icon_props_tomato_png";
+		t.verticalCenter = 0;
+		t.width = 100;
+		return t;
+	};
+	return PropsItemSkin;
 })(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/PlayerDetail/StatisticdItemSkin.exml'] = window.StatisticItemSkin = (function (_super) {
 	__extends(StatisticItemSkin, _super);
 	function StatisticItemSkin() {
 		_super.call(this);
 		this.skinParts = ["titleLabel","dataLabel"];
 		
-		this.height = 120;
+		this.height = 100;
 		this.width = 220;
-		this.elementsContent = [this.titleLabel_i(),this.dataLabel_i(),this._Rect1_i()];
+		this.elementsContent = [this.titleLabel_i(),this.dataLabel_i()];
 		
 		eui.Binding.$bindProperties(this, ["hostComponent.data.title"],[0],this.titleLabel,"text");
 		eui.Binding.$bindProperties(this, ["hostComponent.data.data"],[0],this.dataLabel,"text");
@@ -5480,7 +5516,7 @@ window.skins={};
 		t.textColor = 0xb8c2c0;
 		t.width = 148;
 		t.x = 20;
-		t.y = 15;
+		t.y = 0;
 		return t;
 	};
 	_proto.dataLabel_i = function () {
@@ -5491,42 +5527,10 @@ window.skins={};
 		t.textColor = 0xffffff;
 		t.width = 158;
 		t.x = 20;
-		t.y = 65;
-		return t;
-	};
-	_proto._Rect1_i = function () {
-		var t = new eui.Rect();
-		t.fillColor = 0x08372c;
-		t.height = 2;
-		t.width = 220;
-		t.x = 0;
-		t.y = 118;
+		t.y = 58;
 		return t;
 	};
 	return StatisticItemSkin;
-})(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/PlayerDetail/WonCardItemSkin.exml'] = window.WonCardItemSkin = (function (_super) {
-	__extends(WonCardItemSkin, _super);
-	function WonCardItemSkin() {
-		_super.call(this);
-		this.skinParts = ["cardImage"];
-		
-		this.height = 80;
-		this.width = 54;
-		this.elementsContent = [this.cardImage_i()];
-	}
-	var _proto = WonCardItemSkin.prototype;
-
-	_proto.cardImage_i = function () {
-		var t = new eui.Image();
-		this.cardImage = t;
-		t.height = 80;
-		t.source = "poker_back_png";
-		t.width = 54;
-		t.x = 0;
-		t.y = 0;
-		return t;
-	};
-	return WonCardItemSkin;
 })(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/PlayerSkin.exml'] = window.PlayerSkin = (function (_super) {
 	__extends(PlayerSkin, _super);
 	function PlayerSkin() {
