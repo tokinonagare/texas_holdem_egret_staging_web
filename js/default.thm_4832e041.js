@@ -1816,11 +1816,11 @@ window.skins={};
 
 	function GameSkin() {
 		_super.call(this);
-		this.skinParts = ["mainPotLabel","creatorLabel","pinLabel","blindLabel","countdownLabel","roomInfoGroup","microphoneButton","communityCardList","startGameButton","cardTypeLabel","potsList","playGameButtonGroup","infoLabel","promptLabel","wonCardLabel","group","raiseSelector","quickRaiser","reviewboardButton","messageAlarm","menuButton","debugView","bottomToolbar","chatButton","cardPattern"];
+		this.skinParts = ["icon","mainPotLabel","creatorLabel","pinLabel","blindLabel","countdownLabel","roomInfoGroup","microphoneButton","communityCardList","startGameButton","cardTypeLabel","potsList","playGameButtonGroup","infoLabel","promptLabel","wonCardLabel","group","raiseSelector","quickRaiser","reviewboardButton","messageAlarm","menuButton","debugView","bottomToolbar","chatButton","cardPattern"];
 		
 		this.height = 1334;
 		this.width = 750;
-		this.elementsContent = [this._Image1_i(),this._Image2_i(),this.group_i(),this.raiseSelector_i(),this.quickRaiser_i(),this.reviewboardButton_i(),this.messageAlarm_i(),this.menuButton_i(),this.debugView_i(),this.bottomToolbar_i(),this.chatButton_i(),this.cardPattern_i()];
+		this.elementsContent = [this._Image1_i(),this.icon_i(),this.group_i(),this.raiseSelector_i(),this.quickRaiser_i(),this.reviewboardButton_i(),this.messageAlarm_i(),this.menuButton_i(),this.debugView_i(),this.bottomToolbar_i(),this.chatButton_i(),this.cardPattern_i()];
 	}
 	var _proto = GameSkin.prototype;
 
@@ -1833,8 +1833,9 @@ window.skins={};
 		t.y = 0;
 		return t;
 	};
-	_proto._Image2_i = function () {
+	_proto.icon_i = function () {
 		var t = new eui.Image();
+		this.icon = t;
 		t.height = 310;
 		t.horizontalCenter = 0;
 		t.source = "image_logo_on_table_png";
@@ -1847,6 +1848,7 @@ window.skins={};
 		this.group = t;
 		t.height = 1334;
 		t.horizontalCenter = 0;
+		t.touchThrough = true;
 		t.verticalCenter = 0;
 		t.width = 750;
 		t.elementsContent = [this.mainPotLabel_i(),this.roomInfoGroup_i(),this.microphoneButton_i(),this.communityCardList_i(),this.startGameButton_i(),this.cardTypeLabel_i(),this.potsList_i(),this.playGameButtonGroup_i(),this.infoLabel_i(),this.promptLabel_i(),this.wonCardLabel_i()];
