@@ -1388,8 +1388,8 @@ window.skins={};
 	_proto.dashboardButton_i = function () {
 		var t = new eui.Button();
 		this.dashboardButton = t;
+		t.horizontalCenter = 0;
 		t.label = "0";
-		t.x = 313;
 		t.y = 260;
 		t.skinName = RaiseSelectorSkin$Skin8;
 		return t;
@@ -1519,11 +1519,11 @@ window.skins={};
 		return t;
 	};
 	return DebugViewSkin;
-})(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/BottomToolbarSkin.exml'] = window.BottomToolbarSkin = (function (_super) {
-	__extends(BottomToolbarSkin, _super);
-	var BottomToolbarSkin$Skin10 = 	(function (_super) {
-		__extends(BottomToolbarSkin$Skin10, _super);
-		function BottomToolbarSkin$Skin10() {
+})(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/GameSkin.exml'] = window.GameSkin = (function (_super) {
+	__extends(GameSkin, _super);
+	var GameSkin$Skin10 = 	(function (_super) {
+		__extends(GameSkin$Skin10, _super);
+		function GameSkin$Skin10() {
 			_super.call(this);
 			this.skinParts = ["labelDisplay"];
 			
@@ -1544,14 +1544,14 @@ window.skins={};
 					])
 			];
 		}
-		var _proto = BottomToolbarSkin$Skin10.prototype;
+		var _proto = GameSkin$Skin10.prototype;
 
 		_proto._Image1_i = function () {
 			var t = new eui.Image();
 			this._Image1 = t;
 			t.percentHeight = 100;
 			t.horizontalCenter = 0;
-			t.source = "btn_game_record@2x_png";
+			t.source = "icon_microphone_png";
 			t.verticalCenter = 0;
 			t.percentWidth = 100;
 			return t;
@@ -1563,32 +1563,9 @@ window.skins={};
 			t.verticalCenter = 0;
 			return t;
 		};
-		return BottomToolbarSkin$Skin10;
+		return GameSkin$Skin10;
 	})(eui.Skin);
 
-	function BottomToolbarSkin() {
-		_super.call(this);
-		this.skinParts = ["leaderboardButton"];
-		
-		this.height = 80;
-		this.width = 750;
-		this.elementsContent = [this.leaderboardButton_i()];
-	}
-	var _proto = BottomToolbarSkin.prototype;
-
-	_proto.leaderboardButton_i = function () {
-		var t = new eui.Button();
-		this.leaderboardButton = t;
-		t.bottom = 23;
-		t.height = 56;
-		t.label = "";
-		t.left = 48;
-		t.skinName = BottomToolbarSkin$Skin10;
-		return t;
-	};
-	return BottomToolbarSkin;
-})(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/GameSkin.exml'] = window.GameSkin = (function (_super) {
-	__extends(GameSkin, _super);
 	var GameSkin$Skin11 = 	(function (_super) {
 		__extends(GameSkin$Skin11, _super);
 		function GameSkin$Skin11() {
@@ -1619,7 +1596,7 @@ window.skins={};
 			this._Image1 = t;
 			t.percentHeight = 100;
 			t.horizontalCenter = 0;
-			t.source = "icon_microphone_png";
+			t.source = "btn_room_start_game_png";
 			t.verticalCenter = 0;
 			t.percentWidth = 100;
 			return t;
@@ -1664,7 +1641,7 @@ window.skins={};
 			this._Image1 = t;
 			t.percentHeight = 100;
 			t.horizontalCenter = 0;
-			t.source = "btn_room_start_game_png";
+			t.source = "icon_hand_notes@2x_png";
 			t.verticalCenter = 0;
 			t.percentWidth = 100;
 			return t;
@@ -1709,7 +1686,7 @@ window.skins={};
 			this._Image1 = t;
 			t.percentHeight = 100;
 			t.horizontalCenter = 0;
-			t.source = "icon_hand_notes@2x_png";
+			t.source = "btn_game_dropdown_png";
 			t.verticalCenter = 0;
 			t.percentWidth = 100;
 			return t;
@@ -1754,7 +1731,7 @@ window.skins={};
 			this._Image1 = t;
 			t.percentHeight = 100;
 			t.horizontalCenter = 0;
-			t.source = "btn_game_dropdown_png";
+			t.source = "btn_game_record@2x_png";
 			t.verticalCenter = 0;
 			t.percentWidth = 100;
 			return t;
@@ -1816,11 +1793,11 @@ window.skins={};
 
 	function GameSkin() {
 		_super.call(this);
-		this.skinParts = ["icon","mainPotLabel","creatorLabel","pinLabel","blindLabel","countdownLabel","roomInfoGroup","microphoneButton","communityCardList","startGameButton","cardTypeLabel","potsList","playGameButtonGroup","infoLabel","promptLabel","wonCardLabel","group","raiseSelector","quickRaiser","reviewboardButton","messageAlarm","menuButton","debugView","bottomToolbar","chatButton","cardPattern"];
+		this.skinParts = ["icon","mainPotLabel","creatorLabel","pinLabel","blindLabel","countdownLabel","roomInfoGroup","microphoneButton","communityCardList","startGameButton","cardTypeLabel","potsList","playGameButtonGroup","infoLabel","promptLabel","wonCardLabel","group","raiseSelector","quickRaiser","reviewboardButton","messageAlarm","menuButton","debugView","leaderButton","chatButton","cardPattern"];
 		
 		this.height = 1334;
 		this.width = 750;
-		this.elementsContent = [this._Image1_i(),this.icon_i(),this.group_i(),this.raiseSelector_i(),this.quickRaiser_i(),this.reviewboardButton_i(),this.messageAlarm_i(),this.menuButton_i(),this.debugView_i(),this.bottomToolbar_i(),this.chatButton_i(),this.cardPattern_i()];
+		this.elementsContent = [this._Image1_i(),this.icon_i(),this.group_i(),this.raiseSelector_i(),this.quickRaiser_i(),this.reviewboardButton_i(),this.messageAlarm_i(),this.menuButton_i(),this.debugView_i(),this.leaderButton_i(),this.chatButton_i(),this.cardPattern_i()];
 	}
 	var _proto = GameSkin.prototype;
 
@@ -1949,7 +1926,7 @@ window.skins={};
 		t.label = "";
 		t.right = 136;
 		t.visible = false;
-		t.skinName = GameSkin$Skin11;
+		t.skinName = GameSkin$Skin10;
 		return t;
 	};
 	_proto.communityCardList_i = function () {
@@ -1978,7 +1955,7 @@ window.skins={};
 		t.label = "";
 		t.visible = false;
 		t.y = 820;
-		t.skinName = GameSkin$Skin12;
+		t.skinName = GameSkin$Skin11;
 		return t;
 	};
 	_proto.cardTypeLabel_i = function () {
@@ -2088,20 +2065,20 @@ window.skins={};
 		this.reviewboardButton = t;
 		t.height = 66;
 		t.label = "";
+		t.right = 34;
 		t.width = 68;
-		t.x = 648;
 		t.y = 30;
-		t.skinName = GameSkin$Skin13;
+		t.skinName = GameSkin$Skin12;
 		return t;
 	};
 	_proto.messageAlarm_i = function () {
 		var t = new MessageAlarm();
 		this.messageAlarm = t;
 		t.height = 60;
+		t.right = 112;
 		t.skinName = "MessageAlarmSkin";
 		t.visible = false;
 		t.width = 63;
-		t.x = 575;
 		t.y = 34.5;
 		return t;
 	};
@@ -2111,7 +2088,7 @@ window.skins={};
 		t.label = "";
 		t.x = 34;
 		t.y = 30;
-		t.skinName = GameSkin$Skin14;
+		t.skinName = GameSkin$Skin13;
 		return t;
 	};
 	_proto.debugView_i = function () {
@@ -2125,12 +2102,13 @@ window.skins={};
 		t.y = 0;
 		return t;
 	};
-	_proto.bottomToolbar_i = function () {
-		var t = new BottomToolbar();
-		this.bottomToolbar = t;
-		t.bottom = 30;
-		t.horizontalCenter = 0;
-		t.skinName = "BottomToolbarSkin";
+	_proto.leaderButton_i = function () {
+		var t = new eui.Button();
+		this.leaderButton = t;
+		t.bottom = 46;
+		t.label = "";
+		t.left = 47;
+		t.skinName = GameSkin$Skin14;
 		return t;
 	};
 	_proto.chatButton_i = function () {
@@ -2138,7 +2116,7 @@ window.skins={};
 		this.chatButton = t;
 		t.bottom = 46;
 		t.label = "";
-		t.x = 635;
+		t.right = 47;
 		t.skinName = GameSkin$Skin15;
 		return t;
 	};
@@ -3139,11 +3117,11 @@ window.skins={};
 		this.elementsContent = [this.background_i(),this.reviewboard_i()];
 		
 		eui.Binding.$bindProperties(this, ["reviewboard"],[0],this._TweenItem1,"target");
-		eui.Binding.$bindProperties(this, [130],[],this._Object1,"x");
-		eui.Binding.$bindProperties(this, [750],[],this._Object2,"x");
+		eui.Binding.$bindProperties(this, [0],[],this._Object1,"right");
+		eui.Binding.$bindProperties(this, [-620],[],this._Object2,"right");
 		eui.Binding.$bindProperties(this, ["reviewboard"],[0],this._TweenItem2,"target");
-		eui.Binding.$bindProperties(this, [750],[],this._Object3,"x");
-		eui.Binding.$bindProperties(this, [130],[],this._Object4,"x");
+		eui.Binding.$bindProperties(this, [-620],[],this._Object3,"right");
+		eui.Binding.$bindProperties(this, [0],[],this._Object4,"right");
 	}
 	var _proto = ReviewboardSceneSkin.prototype;
 
@@ -4207,10 +4185,10 @@ window.skins={};
 		t.fillAlpha = 0.9;
 		t.fillColor = 0x032425;
 		t.height = 764;
+		t.horizontalCenter = 0;
 		t.scaleX = 1;
 		t.scaleY = 1;
 		t.percentWidth = 100;
-		t.x = 0;
 		t.y = 0;
 		return t;
 	};
@@ -4239,8 +4217,8 @@ window.skins={};
 	_proto._Group1_i = function () {
 		var t = new eui.Group();
 		t.height = 85;
+		t.horizontalCenter = 0;
 		t.width = 692;
-		t.x = 29;
 		t.y = 86;
 		t.elementsContent = [this.messageInput_i(),this.sendButton_i()];
 		return t;
@@ -4296,8 +4274,8 @@ window.skins={};
 	_proto._Group5_i = function () {
 		var t = new eui.Group();
 		t.height = 470;
+		t.horizontalCenter = 0;
 		t.width = 692;
-		t.x = 29;
 		t.y = 269;
 		t.elementsContent = [this._Rect2_i(),this.viewStack_i()];
 		return t;
@@ -4882,6 +4860,7 @@ window.skins={};
 		var t = new eui.Group();
 		this.group = t;
 		t.height = 600;
+		t.touchThrough = true;
 		t.width = 240;
 		t.x = -240;
 		t.y = 0;
