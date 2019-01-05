@@ -1378,9 +1378,9 @@ window.skins={};
 		var t = new eui.Button();
 		this.confirmButton = t;
 		t.height = 127;
+		t.horizontalCenter = 0;
 		t.label = "";
 		t.width = 122;
-		t.x = 314;
 		t.y = 920;
 		t.skinName = RaiseSelectorSkin$Skin7;
 		return t;
@@ -1397,9 +1397,9 @@ window.skins={};
 	_proto._Image1_i = function () {
 		var t = new eui.Image();
 		t.height = 25;
+		t.horizontalCenter = 0;
 		t.source = "icon_raise_slider_arrow_png";
 		t.width = 34;
-		t.x = 356;
 		t.y = 880;
 		return t;
 	};
@@ -1407,17 +1407,17 @@ window.skins={};
 		var t = new RaiseSlider();
 		this.raiseSlider = t;
 		t.height = 560;
+		t.horizontalCenter = 0;
 		t.skinName = "RaiseSliderSkin";
 		t.width = 120;
-		t.x = 313;
 		t.y = 310;
 		return t;
 	};
 	_proto.allInButton_i = function () {
 		var t = new eui.Button();
 		this.allInButton = t;
+		t.horizontalCenter = 0;
 		t.label = "";
-		t.right = 317;
 		t.y = 195;
 		t.skinName = RaiseSelectorSkin$Skin9;
 		return t;
@@ -4927,7 +4927,7 @@ window.skins={};
 	};
 	_proto._ArrayCollection1_i = function () {
 		var t = new eui.ArrayCollection();
-		t.source = [this._Object1_i(),this._Object2_i(),this._Object3_i(),this._Object4_i()];
+		t.source = [this._Object1_i(),this._Object2_i(),this._Object3_i()];
 		return t;
 	};
 	_proto._Object1_i = function () {
@@ -4938,17 +4938,11 @@ window.skins={};
 	};
 	_proto._Object2_i = function () {
 		var t = {};
-		t.item = "补充记分牌";
-		t.showArrow = "";
-		return t;
-	};
-	_proto._Object3_i = function () {
-		var t = {};
 		t.item = "站起围观";
 		t.showArrow = "";
 		return t;
 	};
-	_proto._Object4_i = function () {
+	_proto._Object3_i = function () {
 		var t = {};
 		t.item = "退出牌局";
 		t.showArrow = "";
