@@ -4906,7 +4906,7 @@ window.skins={};
 	};
 	_proto._ArrayCollection1_i = function () {
 		var t = new eui.ArrayCollection();
-		t.source = [this._Object1_i(),this._Object2_i(),this._Object3_i()];
+		t.source = [this._Object1_i(),this._Object2_i(),this._Object3_i(),this._Object4_i()];
 		return t;
 	};
 	_proto._Object1_i = function () {
@@ -4917,11 +4917,17 @@ window.skins={};
 	};
 	_proto._Object2_i = function () {
 		var t = {};
-		t.item = "站起围观";
+		t.item = "补充记分牌";
 		t.showArrow = "";
 		return t;
 	};
 	_proto._Object3_i = function () {
+		var t = {};
+		t.item = "站起围观";
+		t.showArrow = "";
+		return t;
+	};
+	_proto._Object4_i = function () {
 		var t = {};
 		t.item = "退出牌局";
 		t.showArrow = "";
