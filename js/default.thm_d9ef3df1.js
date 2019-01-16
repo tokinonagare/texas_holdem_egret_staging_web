@@ -1462,19 +1462,19 @@ window.skins={};
 	__extends(DebugViewSkin, _super);
 	function DebugViewSkin() {
 		_super.call(this);
-		this.skinParts = ["logList","logScroller","domainLabel"];
+		this.skinParts = ["logList","logScroller","domainLabel","delayLabel"];
 		
-		this.height = 600;
+		this.height = 630;
 		this.width = 600;
-		this.elementsContent = [this._Rect1_i(),this.logScroller_i(),this.domainLabel_i()];
+		this.elementsContent = [this._Rect1_i(),this.logScroller_i(),this.domainLabel_i(),this.delayLabel_i()];
 	}
 	var _proto = DebugViewSkin.prototype;
 
 	_proto._Rect1_i = function () {
 		var t = new eui.Rect();
 		t.fillAlpha = 0.7;
-		t.height = 600;
-		t.width = 600;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
 		t.x = 0;
 		t.y = 0;
 		return t;
@@ -1487,15 +1487,15 @@ window.skins={};
 		t.height = 560;
 		t.width = 600;
 		t.x = 0;
-		t.y = 40;
+		t.y = 60;
 		t.viewport = this.logList_i();
 		return t;
 	};
 	_proto.logList_i = function () {
 		var t = new eui.List();
 		this.logList = t;
-		t.height = 560;
-		t.width = 600;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
 		t.layout = this._VerticalLayout1_i();
 		return t;
 	};
@@ -1511,11 +1511,27 @@ window.skins={};
 	_proto.domainLabel_i = function () {
 		var t = new eui.Label();
 		this.domainLabel = t;
+		t.anchorOffsetX = 0;
+		t.height = 60;
 		t.text = "Label";
+		t.textAlign = "left";
 		t.textColor = 0xf7ea11;
-		t.width = 560;
+		t.verticalAlign = "middle";
+		t.width = 450;
 		t.x = 20;
-		t.y = 5;
+		t.y = 0;
+		return t;
+	};
+	_proto.delayLabel_i = function () {
+		var t = new eui.Label();
+		this.delayLabel = t;
+		t.right = 0;
+		t.text = "500ms";
+		t.textAlign = "center";
+		t.textColor = 0x87fc11;
+		t.verticalAlign = "middle";
+		t.width = 130;
+		t.y = 16;
 		return t;
 	};
 	return DebugViewSkin;
