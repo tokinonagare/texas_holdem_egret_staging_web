@@ -3950,6 +3950,7 @@ window.skins={};
 		this.scoreTextInput = t;
 		t.height = 50;
 		t.horizontalCenter = 0;
+		t.inputType = "tel";
 		t.skinName = "ScoreTextInputSkin";
 		t.width = 230;
 		t.y = 190;
