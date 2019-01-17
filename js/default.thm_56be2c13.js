@@ -1462,18 +1462,109 @@ window.skins={};
 	__extends(DebugViewSkin, _super);
 	function DebugViewSkin() {
 		_super.call(this);
-		this.skinParts = ["logList","logScroller","domainLabel","delayLabel"];
+		this.skinParts = ["header","domainLabel","delayLabel","logList","logScroller"];
 		
-		this.height = 630;
+		this.height = 690;
 		this.width = 600;
-		this.elementsContent = [this._Rect1_i(),this.logScroller_i(),this.domainLabel_i(),this.delayLabel_i()];
+		this.elementsContent = [this._Group3_i()];
 	}
 	var _proto = DebugViewSkin.prototype;
 
+	_proto._Group3_i = function () {
+		var t = new eui.Group();
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		t.layout = this._VerticalLayout2_i();
+		t.elementsContent = [this.header_i(),this._Group1_i(),this._Group2_i()];
+		return t;
+	};
+	_proto._VerticalLayout2_i = function () {
+		var t = new eui.VerticalLayout();
+		t.gap = 0;
+		return t;
+	};
+	_proto.header_i = function () {
+		var t = new eui.Rect();
+		this.header = t;
+		t.fillAlpha = 0.7;
+		t.height = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto._Group1_i = function () {
+		var t = new eui.Group();
+		t.height = 60;
+		t.percentWidth = 100;
+		t.x = 106;
+		t.y = 614;
+		t.elementsContent = [this._Rect1_i(),this.domainLabel_i(),this.delayLabel_i()];
+		return t;
+	};
 	_proto._Rect1_i = function () {
 		var t = new eui.Rect();
 		t.fillAlpha = 0.7;
 		t.percentHeight = 100;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto.domainLabel_i = function () {
+		var t = new eui.Label();
+		this.domainLabel = t;
+		t.anchorOffsetX = 0;
+		t.height = 60;
+		t.left = 20;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 25;
+		t.text = "Label";
+		t.textAlign = "left";
+		t.textColor = 0xf7ea11;
+		t.verticalAlign = "middle";
+		t.width = 410;
+		t.y = 0;
+		return t;
+	};
+	_proto.delayLabel_i = function () {
+		var t = new eui.Label();
+		this.delayLabel = t;
+		t.right = 20;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 25;
+		t.text = "500ms";
+		t.textAlign = "center";
+		t.textColor = 0x87fc11;
+		t.verticalAlign = "middle";
+		t.verticalCenter = 0;
+		t.width = 130;
+		t.x = 0;
+		return t;
+	};
+	_proto._Group2_i = function () {
+		var t = new eui.Group();
+		t.height = 630;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this._Rect2_i(),this.logScroller_i()];
+		return t;
+	};
+	_proto._Rect2_i = function () {
+		var t = new eui.Rect();
+		t.fillAlpha = 0.7;
+		t.percentHeight = 100;
+		t.scaleX = 1;
+		t.scaleY = 1;
 		t.percentWidth = 100;
 		t.x = 0;
 		t.y = 0;
@@ -1484,54 +1575,30 @@ window.skins={};
 		this.logScroller = t;
 		t.anchorOffsetX = 0;
 		t.anchorOffsetY = 0;
-		t.height = 560;
+		t.height = 630;
+		t.scaleX = 1;
+		t.scaleY = 1;
 		t.width = 600;
 		t.x = 0;
-		t.y = 60;
+		t.y = 0;
 		t.viewport = this.logList_i();
 		return t;
 	};
 	_proto.logList_i = function () {
 		var t = new eui.List();
 		this.logList = t;
-		t.percentHeight = 100;
-		t.percentWidth = 100;
+		t.height = 630;
+		t.width = 600;
 		t.layout = this._VerticalLayout1_i();
 		return t;
 	};
 	_proto._VerticalLayout1_i = function () {
 		var t = new eui.VerticalLayout();
 		t.gap = 20;
-		t.paddingBottom = 0;
+		t.paddingBottom = 5;
 		t.paddingLeft = 20;
 		t.paddingRight = 20;
-		t.paddingTop = 0;
-		return t;
-	};
-	_proto.domainLabel_i = function () {
-		var t = new eui.Label();
-		this.domainLabel = t;
-		t.anchorOffsetX = 0;
-		t.height = 60;
-		t.text = "Label";
-		t.textAlign = "left";
-		t.textColor = 0xf7ea11;
-		t.verticalAlign = "middle";
-		t.width = 450;
-		t.x = 20;
-		t.y = 0;
-		return t;
-	};
-	_proto.delayLabel_i = function () {
-		var t = new eui.Label();
-		this.delayLabel = t;
-		t.right = 0;
-		t.text = "500ms";
-		t.textAlign = "center";
-		t.textColor = 0x87fc11;
-		t.verticalAlign = "middle";
-		t.width = 130;
-		t.y = 16;
+		t.paddingTop = 5;
 		return t;
 	};
 	return DebugViewSkin;
