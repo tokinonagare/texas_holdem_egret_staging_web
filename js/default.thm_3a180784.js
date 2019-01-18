@@ -2026,7 +2026,7 @@ window.skins={};
 	};
 	_proto._HorizontalLayout1_i = function () {
 		var t = new eui.HorizontalLayout();
-		t.gap = 5;
+		t.gap = 4;
 		t.horizontalAlign = "center";
 		t.verticalAlign = "middle";
 		return t;
@@ -3989,6 +3989,7 @@ window.skins={};
 		t.fillAlpha = 0.5;
 		t.height = 124;
 		t.verticalCenter = 0;
+		t.visible = false;
 		t.width = 83;
 		t.x = 0;
 		return t;
