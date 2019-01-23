@@ -1423,7 +1423,7 @@ window.skins={};
 		return t;
 	};
 	return RaiseSelectorSkin;
-})(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/BuyInApplication/MessageAlarmSkin.exml'] = window.MessageAlarmSkin = (function (_super) {
+})(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/Application/MessageAlarmSkin.exml'] = window.MessageAlarmSkin = (function (_super) {
 	__extends(MessageAlarmSkin, _super);
 	function MessageAlarmSkin() {
 		_super.call(this);
@@ -3294,9 +3294,233 @@ window.skins={};
 		return t;
 	};
 	return ReviewboardSceneSkin;
-})(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/BuyInApplication/ApplicationRecordItemSkin.exml'] = window.ApplicationRecordItemSkin = (function (_super) {
-	__extends(ApplicationRecordItemSkin, _super);
-	function ApplicationRecordItemSkin() {
+})(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/Application/ApplicationRecordSkin.exml'] = window.ApplicationRecordSkin = (function (_super) {
+	__extends(ApplicationRecordSkin, _super);
+	function ApplicationRecordSkin() {
+		_super.call(this);
+		this.skinParts = ["background","buyInList","buyInPromptLabel","clubApplicationList","clubApplicationPromptLabel","viewStack","group"];
+		
+		this.height = 1334;
+		this.width = 750;
+		this.elementsContent = [this.background_i(),this.group_i()];
+		
+		eui.Binding.$bindProperties(this, ["viewStack"],[0],this._TabBar1,"dataProvider");
+	}
+	var _proto = ApplicationRecordSkin.prototype;
+
+	_proto.background_i = function () {
+		var t = new eui.Rect();
+		this.background = t;
+		t.fillAlpha = 0.5;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto.group_i = function () {
+		var t = new eui.Group();
+		this.group = t;
+		t.height = 762;
+		t.horizontalCenter = 0;
+		t.verticalCenter = 0;
+		t.width = 720;
+		t.elementsContent = [this._Rect1_i(),this._TabBar1_i(),this._Group3_i()];
+		return t;
+	};
+	_proto._Rect1_i = function () {
+		var t = new eui.Rect();
+		t.ellipseHeight = 10;
+		t.ellipseWidth = 10;
+		t.fillColor = 0x1b1e2d;
+		t.height = 770;
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.verticalCenter = 0;
+		t.width = 720;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto._TabBar1_i = function () {
+		var t = new eui.TabBar();
+		this._TabBar1 = t;
+		t.height = 80;
+		t.horizontalCenter = 0;
+		t.itemRendererSkinName = ApplicationTabBarSkin;
+		t.width = 720;
+		t.y = 0;
+		return t;
+	};
+	_proto._Group3_i = function () {
+		var t = new eui.Group();
+		t.height = 652;
+		t.width = 688;
+		t.x = 16;
+		t.y = 102;
+		t.elementsContent = [this._Rect2_i(),this.viewStack_i()];
+		return t;
+	};
+	_proto._Rect2_i = function () {
+		var t = new eui.Rect();
+		t.ellipseHeight = 10;
+		t.ellipseWidth = 10;
+		t.fillColor = 0x32374c;
+		t.percentHeight = 100;
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto.viewStack_i = function () {
+		var t = new eui.ViewStack();
+		this.viewStack = t;
+		t.percentHeight = 100;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this._Group1_i(),this._Group2_i()];
+		return t;
+	};
+	_proto._Group1_i = function () {
+		var t = new eui.Group();
+		t.percentHeight = 100;
+		t.name = "带入申请";
+		t.percentWidth = 100;
+		t.elementsContent = [this._Scroller1_i(),this.buyInPromptLabel_i()];
+		return t;
+	};
+	_proto._Scroller1_i = function () {
+		var t = new eui.Scroller();
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		t.viewport = this.buyInList_i();
+		return t;
+	};
+	_proto.buyInList_i = function () {
+		var t = new eui.List();
+		this.buyInList = t;
+		t.layout = this._VerticalLayout1_i();
+		return t;
+	};
+	_proto._VerticalLayout1_i = function () {
+		var t = new eui.VerticalLayout();
+		t.gap = 0;
+		t.horizontalAlign = "center";
+		t.verticalAlign = "middle";
+		return t;
+	};
+	_proto.buyInPromptLabel_i = function () {
+		var t = new eui.Label();
+		this.buyInPromptLabel = t;
+		t.horizontalCenter = 0;
+		t.text = "正在加载带入申请记录...";
+		t.verticalCenter = 0;
+		return t;
+	};
+	_proto._Group2_i = function () {
+		var t = new eui.Group();
+		t.percentHeight = 100;
+		t.name = "俱乐部申请";
+		t.percentWidth = 100;
+		t.elementsContent = [this._Scroller2_i(),this.clubApplicationPromptLabel_i()];
+		return t;
+	};
+	_proto._Scroller2_i = function () {
+		var t = new eui.Scroller();
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		t.viewport = this.clubApplicationList_i();
+		return t;
+	};
+	_proto.clubApplicationList_i = function () {
+		var t = new eui.List();
+		this.clubApplicationList = t;
+		t.layout = this._VerticalLayout2_i();
+		return t;
+	};
+	_proto._VerticalLayout2_i = function () {
+		var t = new eui.VerticalLayout();
+		t.gap = 0;
+		t.horizontalAlign = "center";
+		t.verticalAlign = "middle";
+		return t;
+	};
+	_proto.clubApplicationPromptLabel_i = function () {
+		var t = new eui.Label();
+		this.clubApplicationPromptLabel = t;
+		t.horizontalCenter = 0;
+		t.text = "正在加载俱乐部申请记录...";
+		t.verticalCenter = 0;
+		return t;
+	};
+	return ApplicationRecordSkin;
+})(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/Application/ApplicationTabBarSkin.exml'] = window.ApplicationTabBarSkin = (function (_super) {
+	__extends(ApplicationTabBarSkin, _super);
+	function ApplicationTabBarSkin() {
+		_super.call(this);
+		this.skinParts = ["label"];
+		
+		this.height = 80;
+		this.width = 360;
+		this.elementsContent = [this._Rect1_i(),this.label_i()];
+		this.states = [
+			new eui.State ("up",
+				[
+					new eui.SetProperty("_Rect1","fillColor",0x585867),
+					new eui.SetProperty("label","textColor",0xc4c3c3)
+				])
+			,
+			new eui.State ("down",
+				[
+					new eui.SetProperty("_Rect1","fillColor",0x35aeac),
+					new eui.SetProperty("_Rect1","ellipseHeight",10),
+					new eui.SetProperty("label","textColor",0xffffff)
+				])
+		];
+		
+		eui.Binding.$bindProperties(this, ["hostComponent.data"],[0],this.label,"text");
+	}
+	var _proto = ApplicationTabBarSkin.prototype;
+
+	_proto._Rect1_i = function () {
+		var t = new eui.Rect();
+		this._Rect1 = t;
+		t.ellipseHeight = 10;
+		t.ellipseWidth = 10;
+		t.fillColor = 0x585867;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto.label_i = function () {
+		var t = new eui.Label();
+		this.label = t;
+		t.percentHeight = 100;
+		t.size = 36;
+		t.textAlign = "center";
+		t.verticalAlign = "middle";
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	return ApplicationTabBarSkin;
+})(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/Application/BuyInApplicationItemSkin.exml'] = window.BuyInApplicationItemSkin = (function (_super) {
+	__extends(BuyInApplicationItemSkin, _super);
+	function BuyInApplicationItemSkin() {
 		_super.call(this);
 		this.skinParts = ["nicknameLabel","scoreLabel","minLabel","rejectLabel","agreeLabel","operationGroup","statusLabel"];
 		
@@ -3304,7 +3528,7 @@ window.skins={};
 		this.width = 662;
 		this.elementsContent = [this.nicknameLabel_i(),this.scoreLabel_i(),this.minLabel_i(),this.operationGroup_i(),this._Rect2_i(),this.statusLabel_i()];
 	}
-	var _proto = ApplicationRecordItemSkin.prototype;
+	var _proto = BuyInApplicationItemSkin.prototype;
 
 	_proto.nicknameLabel_i = function () {
 		var t = new eui.Label();
@@ -3357,7 +3581,7 @@ window.skins={};
 		t.scaleY = 1;
 		t.size = 36;
 		t.text = "拒绝";
-		t.textColor = 0x86acac;
+		t.textColor = 0x9aa4d1;
 		t.touchEnabled = true;
 		t.y = 53.94;
 		return t;
@@ -3370,7 +3594,7 @@ window.skins={};
 		t.scaleY = 1;
 		t.size = 36;
 		t.text = "同意";
-		t.textColor = 0xcadddd;
+		t.textColor = 0xffffff;
 		t.touchEnabled = true;
 		t.y = 54;
 		return t;
@@ -3390,8 +3614,8 @@ window.skins={};
 	_proto._Rect2_i = function () {
 		var t = new eui.Rect();
 		t.bottom = 0;
-		t.fillColor = 0x041716;
-		t.height = 2;
+		t.fillColor = 0x1b1e2d;
+		t.height = 1;
 		t.width = 662;
 		t.x = 0;
 		return t;
@@ -3402,119 +3626,13 @@ window.skins={};
 		t.right = 20;
 		t.text = "已同意";
 		t.textAlign = "right";
-		t.textColor = 0x5e6f6f;
+		t.textColor = 0x8b90a7;
 		t.verticalCenter = 0;
 		t.visible = false;
 		t.width = 230;
 		return t;
 	};
-	return ApplicationRecordItemSkin;
-})(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/BuyInApplication/ApplicationRecordSkin.exml'] = window.ApplicationRecordSkin = (function (_super) {
-	__extends(ApplicationRecordSkin, _super);
-	function ApplicationRecordSkin() {
-		_super.call(this);
-		this.skinParts = ["background","recordList","promptLabel","group"];
-		
-		this.height = 1334;
-		this.width = 750;
-		this.elementsContent = [this.background_i(),this.group_i()];
-	}
-	var _proto = ApplicationRecordSkin.prototype;
-
-	_proto.background_i = function () {
-		var t = new eui.Rect();
-		this.background = t;
-		t.fillAlpha = 0.5;
-		t.percentHeight = 100;
-		t.percentWidth = 100;
-		t.x = 0;
-		t.y = 0;
-		return t;
-	};
-	_proto.group_i = function () {
-		var t = new eui.Group();
-		this.group = t;
-		t.height = 770;
-		t.horizontalCenter = 0;
-		t.verticalCenter = 0;
-		t.width = 720;
-		t.elementsContent = [this._Rect1_i(),this._Label1_i(),this._Rect2_i(),this._Scroller1_i(),this.promptLabel_i()];
-		return t;
-	};
-	_proto._Rect1_i = function () {
-		var t = new eui.Rect();
-		t.fillColor = 0x021b19;
-		t.height = 770;
-		t.horizontalCenter = 0;
-		t.scaleX = 1;
-		t.scaleY = 1;
-		t.verticalCenter = 0;
-		t.width = 720;
-		t.x = 0;
-		t.y = 0;
-		return t;
-	};
-	_proto._Label1_i = function () {
-		var t = new eui.Label();
-		t.horizontalCenter = 0;
-		t.scaleX = 1;
-		t.scaleY = 1;
-		t.size = 36;
-		t.text = "房间消息";
-		t.textAlign = "center";
-		t.width = 300;
-		t.x = 210;
-		t.y = 32;
-		return t;
-	};
-	_proto._Rect2_i = function () {
-		var t = new eui.Rect();
-		t.fillColor = 0x072927;
-		t.height = 652;
-		t.horizontalCenter = 0;
-		t.width = 688;
-		t.y = 102;
-		return t;
-	};
-	_proto._Scroller1_i = function () {
-		var t = new eui.Scroller();
-		t.height = 652;
-		t.width = 688;
-		t.x = 16;
-		t.y = 102;
-		t.viewport = this.recordList_i();
-		return t;
-	};
-	_proto.recordList_i = function () {
-		var t = new eui.List();
-		this.recordList = t;
-		t.height = 652;
-		t.scaleX = 1;
-		t.scaleY = 1;
-		t.width = 688;
-		t.x = 16;
-		t.y = 102;
-		t.layout = this._VerticalLayout1_i();
-		return t;
-	};
-	_proto._VerticalLayout1_i = function () {
-		var t = new eui.VerticalLayout();
-		t.gap = 0;
-		t.paddingLeft = 10;
-		t.paddingRight = 10;
-		t.paddingTop = 10;
-		t.verticalAlign = "top";
-		return t;
-	};
-	_proto.promptLabel_i = function () {
-		var t = new eui.Label();
-		this.promptLabel = t;
-		t.horizontalCenter = 0;
-		t.text = "正在加载房间消息...";
-		t.verticalCenter = 0;
-		return t;
-	};
-	return ApplicationRecordSkin;
+	return BuyInApplicationItemSkin;
 })(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/BuyInView/BuyInButtonSkin.exml'] = window.BuyInButtonSkin = (function (_super) {
 	__extends(BuyInButtonSkin, _super);
 	function BuyInButtonSkin() {
@@ -3570,7 +3688,7 @@ window.skins={};
 		return t;
 	};
 	return BuyInButtonSkin;
-})(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/BuyInApplication/BuyInApplicationSkin.exml'] = window.BuyInApplicationSkin = (function (_super) {
+})(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/Application/BuyInApplicationSkin.exml'] = window.BuyInApplicationSkin = (function (_super) {
 	__extends(BuyInApplicationSkin, _super);
 	function BuyInApplicationSkin() {
 		_super.call(this);
@@ -3692,18 +3810,221 @@ window.skins={};
 		return t;
 	};
 	return BuyInApplicationSkin;
-})(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/BuyInApplication/RecordItemButtonSkin.exml'] = window.RecordItemButtonSkin = (function (_super) {
-	__extends(RecordItemButtonSkin, _super);
-	function RecordItemButtonSkin() {
+})(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/Application/ClubApplicationItemSkin.exml'] = window.ClubApplicationItemSkin = (function (_super) {
+	__extends(ClubApplicationItemSkin, _super);
+	function ClubApplicationItemSkin() {
 		_super.call(this);
-		this.skinParts = [];
+		this.skinParts = ["nicknameLabel","clubLabel","rejectLabel","agreeLabel","operationGroup","statusLabel"];
 		
-		this.height = 300;
-		this.width = 400;
+		this.height = 132;
+		this.width = 662;
+		this.elementsContent = [this.nicknameLabel_i(),this.clubLabel_i(),this.operationGroup_i(),this._Rect2_i(),this.statusLabel_i()];
 	}
-	var _proto = RecordItemButtonSkin.prototype;
+	var _proto = ClubApplicationItemSkin.prototype;
 
-	return RecordItemButtonSkin;
+	_proto.nicknameLabel_i = function () {
+		var t = new eui.Label();
+		this.nicknameLabel = t;
+		t.text = "Stan";
+		t.textColor = 0x6BFFFD;
+		t.width = 300;
+		t.x = 14;
+		t.y = 24;
+		return t;
+	};
+	_proto.clubLabel_i = function () {
+		var t = new eui.Label();
+		this.clubLabel = t;
+		t.height = 50;
+		t.size = 25;
+		t.text = "申请加入";
+		t.width = 380;
+		t.x = 14;
+		t.y = 70;
+		return t;
+	};
+	_proto.operationGroup_i = function () {
+		var t = new eui.Group();
+		this.operationGroup = t;
+		t.bottom = 0;
+		t.height = 132;
+		t.right = 0;
+		t.touchChildren = true;
+		t.width = 250;
+		t.elementsContent = [this.rejectLabel_i(),this.agreeLabel_i(),this._Rect1_i()];
+		return t;
+	};
+	_proto.rejectLabel_i = function () {
+		var t = new eui.Label();
+		this.rejectLabel = t;
+		t.left = 20;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 36;
+		t.text = "拒绝";
+		t.textColor = 0x9aa4d1;
+		t.touchEnabled = true;
+		t.y = 53.94;
+		return t;
+	};
+	_proto.agreeLabel_i = function () {
+		var t = new eui.Label();
+		this.agreeLabel = t;
+		t.right = 20;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 36;
+		t.text = "同意";
+		t.textColor = 0xffffff;
+		t.touchEnabled = true;
+		t.y = 54;
+		return t;
+	};
+	_proto._Rect1_i = function () {
+		var t = new eui.Rect();
+		t.fillColor = 0x889595;
+		t.height = 20;
+		t.horizontalCenter = 0;
+		t.rotation = 357.29;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.width = 2;
+		t.y = 62;
+		return t;
+	};
+	_proto._Rect2_i = function () {
+		var t = new eui.Rect();
+		t.bottom = 0;
+		t.fillColor = 0x1B1E2D;
+		t.height = 1;
+		t.width = 662;
+		t.x = 0;
+		return t;
+	};
+	_proto.statusLabel_i = function () {
+		var t = new eui.Label();
+		this.statusLabel = t;
+		t.right = 20;
+		t.text = "已同意";
+		t.textAlign = "right";
+		t.textColor = 0x8b90a7;
+		t.verticalCenter = 0;
+		t.visible = false;
+		t.width = 230;
+		return t;
+	};
+	return ClubApplicationItemSkin;
+})(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/Application/ClubApplicationSkin.exml'] = window.ClubApplicationSkin = (function (_super) {
+	__extends(ClubApplicationSkin, _super);
+	function ClubApplicationSkin() {
+		_super.call(this);
+		this.skinParts = ["background","nicknameLabel","clubLabel","rejectButton","agreeButton","group"];
+		
+		this.height = 1334;
+		this.width = 750;
+		this.elementsContent = [this.background_i(),this.group_i()];
+	}
+	var _proto = ClubApplicationSkin.prototype;
+
+	_proto.background_i = function () {
+		var t = new eui.Rect();
+		this.background = t;
+		t.fillAlpha = 0.5;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto.group_i = function () {
+		var t = new eui.Group();
+		this.group = t;
+		t.height = 350;
+		t.horizontalCenter = 0;
+		t.verticalCenter = 0;
+		t.width = 536;
+		t.elementsContent = [this._Rect1_i(),this._Label1_i(),this.nicknameLabel_i(),this.clubLabel_i(),this.rejectButton_i(),this.agreeButton_i(),this._Rect2_i()];
+		return t;
+	};
+	_proto._Rect1_i = function () {
+		var t = new eui.Rect();
+		t.ellipseHeight = 20;
+		t.ellipseWidth = 20;
+		t.fillColor = 0x1B1E2D;
+		t.percentHeight = 100;
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.verticalCenter = 0;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto._Label1_i = function () {
+		var t = new eui.Label();
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 36;
+		t.text = "俱乐部申请";
+		t.y = 50;
+		return t;
+	};
+	_proto.nicknameLabel_i = function () {
+		var t = new eui.Label();
+		this.nicknameLabel = t;
+		t.horizontalCenter = 0;
+		t.size = 32;
+		t.text = "Stan";
+		t.textAlign = "center";
+		t.textColor = 0x6BFFFD;
+		t.width = 400;
+		t.y = 110;
+		return t;
+	};
+	_proto.clubLabel_i = function () {
+		var t = new eui.Label();
+		this.clubLabel = t;
+		t.height = 64;
+		t.horizontalCenter = 0;
+		t.size = 32;
+		t.text = "申请加入俱乐部";
+		t.textAlign = "center";
+		t.width = 400;
+		t.y = 160;
+		return t;
+	};
+	_proto.rejectButton_i = function () {
+		var t = new eui.Button();
+		this.rejectButton = t;
+		t.bottom = 0;
+		t.label = "拒绝";
+		t.left = 0;
+		t.skinName = "BuyInButtonSkin";
+		t.width = 268;
+		return t;
+	};
+	_proto.agreeButton_i = function () {
+		var t = new eui.Button();
+		this.agreeButton = t;
+		t.bottom = 0;
+		t.label = "同意";
+		t.right = 0;
+		t.skinName = "BuyInButtonSkin";
+		t.width = 268;
+		return t;
+	};
+	_proto._Rect2_i = function () {
+		var t = new eui.Rect();
+		t.bottom = 0;
+		t.fillColor = 0x50505B;
+		t.height = 102;
+		t.horizontalCenter = 0;
+		t.width = 2;
+		return t;
+	};
+	return ClubApplicationSkin;
 })(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/BuyInView/BuyInSliderSkin.exml'] = window.BuyInSliderSkin = (function (_super) {
 	__extends(BuyInSliderSkin, _super);
 	function BuyInSliderSkin() {
