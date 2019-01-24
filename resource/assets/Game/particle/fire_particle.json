@@ -24,12 +24,12 @@
 ,"radialAccelerationVariance":0
 ,"duration":-1
 ,"tangentialAcceleration":0
-,"maxParticles":300
+,"maxParticles":180
 ,"blendFactorDestination":"oneMinusSourceAlpha"
 ,"maxRadius":100
 ,"speed":10
 ,"maxRadiusVariance":30
-,"lifespan":810
+,"lifespan":700
 ,"tangentialAccelerationVariance":0
 ,"minRadius":20
 ,"lifespanVariance":330
