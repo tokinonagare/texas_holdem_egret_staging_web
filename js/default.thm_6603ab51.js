@@ -7793,11 +7793,11 @@ window.skins={};
 
 	function LaunchSkin() {
 		_super.call(this);
-		this.skinParts = ["loginButton","visitorButton","buttonGroup","displayLabel"];
+		this.skinParts = ["loginButton","visitorButton","buttonGroup","loadingGroup"];
 		
 		this.height = 1334;
 		this.width = 750;
-		this.elementsContent = [this._Image1_i(),this.buttonGroup_i(),this.displayLabel_i()];
+		this.elementsContent = [this._Image1_i(),this.buttonGroup_i(),this.loadingGroup_i()];
 	}
 	var _proto = LaunchSkin.prototype;
 
@@ -7846,15 +7846,13 @@ window.skins={};
 		t.skinName = LaunchSkin$Skin28;
 		return t;
 	};
-	_proto.displayLabel_i = function () {
-		var t = new eui.Label();
-		this.displayLabel = t;
-		t.bold = true;
+	_proto.loadingGroup_i = function () {
+		var t = new eui.Group();
+		this.loadingGroup = t;
+		t.height = 50;
 		t.horizontalCenter = 0;
-		t.text = "正在进入房间...";
-		t.textAlign = "center";
 		t.visible = false;
-		t.width = 500;
+		t.width = 400;
 		t.y = 700;
 		return t;
 	};
