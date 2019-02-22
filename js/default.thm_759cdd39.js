@@ -7852,7 +7852,6 @@ window.skins={};
 		this.loadingGroup = t;
 		t.height = 50;
 		t.horizontalCenter = 0;
-		t.visible = false;
 		t.width = 400;
 		t.y = 700;
 		return t;
