@@ -45,6 +45,8 @@
 		"resource/eui_skins/GameSkins/View/Chat/BarrageCheckBoxSkin.exml",
 		"resource/eui_skins/GameSkins/View/Chat/ChatHistorySkin.exml",
 		"resource/eui_skins/GameSkins/View/Chat/ChatTabBarSkin.exml",
+		"resource/eui_skins/GameSkins/View/Chat/TextVoiceCheckBoxSkin.exml",
+		"resource/eui_skins/GameSkins/View/Chat/RecordVoiceButtonSkin.exml",
 		"resource/eui_skins/GameSkins/View/Chat/ChatViewSkin.exml",
 		"resource/eui_skins/GameSkins/View/Chat/PhraseItemSkin.exml",
 		"resource/eui_skins/GameSkins/View/Chat/StickerItemSkin.exml",

@@ -4752,15 +4752,114 @@ window.skins={};
 		return t;
 	};
 	return ChatTabBarSkin;
+})(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/Chat/TextVoiceCheckBoxSkin.exml'] = window.TextVoiceCheckBoxSkin = (function (_super) {
+	__extends(TextVoiceCheckBoxSkin, _super);
+	function TextVoiceCheckBoxSkin() {
+		_super.call(this);
+		this.skinParts = [];
+		
+		this.height = 72;
+		this.width = 72;
+		this.elementsContent = [this._Image1_i()];
+		this.states = [
+			new eui.State ("up",
+				[
+				])
+			,
+			new eui.State ("down",
+				[
+				])
+			,
+			new eui.State ("disabled",
+				[
+				])
+			,
+			new eui.State ("upAndSelected",
+				[
+					new eui.SetProperty("_Image1","source","icon_chat_text_png")
+				])
+			,
+			new eui.State ("downAndSelected",
+				[
+				])
+			,
+			new eui.State ("disabledAndSelected",
+				[
+				])
+		];
+	}
+	var _proto = TextVoiceCheckBoxSkin.prototype;
+
+	_proto._Image1_i = function () {
+		var t = new eui.Image();
+		this._Image1 = t;
+		t.percentHeight = 100;
+		t.source = "icon_chat_voice_png";
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	return TextVoiceCheckBoxSkin;
+})(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/Chat/RecordVoiceButtonSkin.exml'] = window.RecordVoiceButtonSkin = (function (_super) {
+	__extends(RecordVoiceButtonSkin, _super);
+	function RecordVoiceButtonSkin() {
+		_super.call(this);
+		this.skinParts = ["labelDisplay"];
+		
+		this.height = 89;
+		this.width = 490;
+		this.elementsContent = [this._Rect1_i(),this.labelDisplay_i()];
+		this.states = [
+			new eui.State ("up",
+				[
+				])
+			,
+			new eui.State ("down",
+				[
+					new eui.SetProperty("_Rect1","fillColor",0x2d4b55)
+				])
+			,
+			new eui.State ("disabled",
+				[
+					new eui.SetProperty("_Rect1","fillColor",0x87dbae)
+				])
+		];
+	}
+	var _proto = RecordVoiceButtonSkin.prototype;
+
+	_proto._Rect1_i = function () {
+		var t = new eui.Rect();
+		this._Rect1 = t;
+		t.ellipseHeight = 20;
+		t.ellipseWidth = 20;
+		t.fillColor = 0x638a9a;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto.labelDisplay_i = function () {
+		var t = new eui.Label();
+		this.labelDisplay = t;
+		t.horizontalCenter = 0;
+		t.size = 30;
+		t.text = "按住  说话";
+		t.textColor = 0xd7e4e9;
+		t.verticalCenter = 0;
+		return t;
+	};
+	return RecordVoiceButtonSkin;
 })(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/Chat/ChatViewSkin.exml'] = window.ChatViewSkin = (function (_super) {
 	__extends(ChatViewSkin, _super);
 	function ChatViewSkin() {
 		_super.call(this);
-		this.skinParts = ["background","barrageCheckBox","toggleLabel","messageInput","sendButton","tabBar","stickerList","phraseList","chatHistoryView","viewStack","group"];
+		this.skinParts = ["background","barrageCheckBox","toggleLabel","messageInput","sendButton","inputCheckBox","recordButton","tabBar","stickerList","phraseList","chatHistoryView","viewStack","group","statusImage","statusLabel","countdownLabel","recordGroup"];
 		
 		this.height = 1334;
 		this.width = 750;
-		this.elementsContent = [this.background_i(),this.group_i()];
+		this.elementsContent = [this.background_i(),this.group_i(),this.recordGroup_i()];
 		
 		eui.Binding.$bindProperties(this, ["viewStack"],[0],this.tabBar,"dataProvider");
 	}
@@ -4827,7 +4926,7 @@ window.skins={};
 		t.horizontalCenter = 0;
 		t.width = 692;
 		t.y = 86;
-		t.elementsContent = [this.messageInput_i(),this.sendButton_i()];
+		t.elementsContent = [this.messageInput_i(),this.sendButton_i(),this.inputCheckBox_i(),this.recordButton_i()];
 		return t;
 	};
 	_proto.messageInput_i = function () {
@@ -4838,8 +4937,8 @@ window.skins={};
 		t.prompt = "请输入文字";
 		t.skinName = "ChatTextInputSkin";
 		t.value = 0;
-		t.width = 568;
-		t.x = 0;
+		t.width = 490;
+		t.x = 78;
 		t.y = 0;
 		return t;
 	};
@@ -4853,6 +4952,29 @@ window.skins={};
 		t.scaleY = 1;
 		t.skinName = "ChatSendButtonSkin";
 		t.width = 110;
+		t.y = 0;
+		return t;
+	};
+	_proto.inputCheckBox_i = function () {
+		var t = new eui.CheckBox();
+		this.inputCheckBox = t;
+		t.height = 72;
+		t.label = "";
+		t.skinName = "TextVoiceCheckBoxSkin";
+		t.verticalCenter = 0;
+		t.width = 72;
+		t.x = 0;
+		return t;
+	};
+	_proto.recordButton_i = function () {
+		var t = new eui.Button();
+		this.recordButton = t;
+		t.height = 85;
+		t.label = "按住  说话";
+		t.skinName = "RecordVoiceButtonSkin";
+		t.visible = false;
+		t.width = 490;
+		t.x = 78;
 		t.y = 0;
 		return t;
 	};
@@ -5005,6 +5127,66 @@ window.skins={};
 		t.percentWidth = 100;
 		t.x = 0;
 		t.y = 0;
+		return t;
+	};
+	_proto.recordGroup_i = function () {
+		var t = new eui.Group();
+		this.recordGroup = t;
+		t.height = 340;
+		t.horizontalCenter = 0;
+		t.verticalCenter = 0;
+		t.visible = false;
+		t.width = 340;
+		t.elementsContent = [this._Rect3_i(),this.statusImage_i(),this.statusLabel_i(),this.countdownLabel_i()];
+		return t;
+	};
+	_proto._Rect3_i = function () {
+		var t = new eui.Rect();
+		t.ellipseHeight = 20;
+		t.ellipseWidth = 20;
+		t.fillAlpha = 0.9;
+		t.fillColor = 0x032425;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto.statusImage_i = function () {
+		var t = new eui.Image();
+		this.statusImage = t;
+		t.height = 174;
+		t.horizontalCenter = -74.5;
+		t.source = "icon_chat_big_microphone_png";
+		t.width = 103;
+		t.y = 64;
+		return t;
+	};
+	_proto.statusLabel_i = function () {
+		var t = new eui.Label();
+		this.statusLabel = t;
+		t.horizontalCenter = 0;
+		t.size = 28;
+		t.text = "手指上滑，取消发送";
+		t.textAlign = "center";
+		t.textColor = 0xaececb;
+		t.verticalAlign = "middle";
+		t.y = 280;
+		return t;
+	};
+	_proto.countdownLabel_i = function () {
+		var t = new eui.Label();
+		this.countdownLabel = t;
+		t.anchorOffsetY = 0;
+		t.bold = true;
+		t.height = 180;
+		t.size = 120;
+		t.text = "10";
+		t.textAlign = "center";
+		t.verticalAlign = "middle";
+		t.width = 180;
+		t.x = 140;
+		t.y = 64;
 		return t;
 	};
 	return ChatViewSkin;
