@@ -6434,14 +6434,90 @@ window.skins={};
 	__extends(PlayerSkin, _super);
 	function PlayerSkin() {
 		_super.call(this);
-		this.skinParts = ["avatarImage","nameLabel","smallAudio","middleAudio","bigAudio","talkingGroup","scoreLabel","cardTypeLabel","countdownCover","cover","timerLabel","progressBorder"];
+		this.skinParts = ["talkingAnimation","avatarImage","nameLabel","smallAudio","middleAudio","bigAudio","talkingGroup","scoreLabel","cardTypeLabel","countdownCover","cover","timerLabel","progressBorder"];
 		
 		this.height = 167;
 		this.width = 100;
+		this.talkingAnimation_i();
 		this.elementsContent = [this.avatarImage_i(),this.nameLabel_i(),this.talkingGroup_i(),this._Group1_i(),this.countdownCover_i(),this.cover_i(),this.timerLabel_i(),this.progressBorder_i()];
+		
+		eui.Binding.$bindProperties(this, ["middleAudio"],[0],this._TweenItem1,"target");
+		eui.Binding.$bindProperties(this, [0],[],this._Object1,"alpha");
+		eui.Binding.$bindProperties(this, [1],[],this._Object2,"alpha");
+		eui.Binding.$bindProperties(this, ["bigAudio"],[0],this._TweenItem2,"target");
+		eui.Binding.$bindProperties(this, [0],[],this._Object3,"alpha");
+		eui.Binding.$bindProperties(this, [1],[],this._Object4,"alpha");
 	}
 	var _proto = PlayerSkin.prototype;
 
+	_proto.talkingAnimation_i = function () {
+		var t = new egret.tween.TweenGroup();
+		this.talkingAnimation = t;
+		t.items = [this._TweenItem1_i(),this._TweenItem2_i()];
+		return t;
+	};
+	_proto._TweenItem1_i = function () {
+		var t = new egret.tween.TweenItem();
+		this._TweenItem1 = t;
+		t.paths = [this._Set1_i(),this._Wait1_i(),this._Set2_i()];
+		return t;
+	};
+	_proto._Set1_i = function () {
+		var t = new egret.tween.Set();
+		t.props = this._Object1_i();
+		return t;
+	};
+	_proto._Object1_i = function () {
+		var t = {};
+		this._Object1 = t;
+		return t;
+	};
+	_proto._Wait1_i = function () {
+		var t = new egret.tween.Wait();
+		t.duration = 1000;
+		return t;
+	};
+	_proto._Set2_i = function () {
+		var t = new egret.tween.Set();
+		t.props = this._Object2_i();
+		return t;
+	};
+	_proto._Object2_i = function () {
+		var t = {};
+		this._Object2 = t;
+		return t;
+	};
+	_proto._TweenItem2_i = function () {
+		var t = new egret.tween.TweenItem();
+		this._TweenItem2 = t;
+		t.paths = [this._Set3_i(),this._Wait2_i(),this._Set4_i()];
+		return t;
+	};
+	_proto._Set3_i = function () {
+		var t = new egret.tween.Set();
+		t.props = this._Object3_i();
+		return t;
+	};
+	_proto._Object3_i = function () {
+		var t = {};
+		this._Object3 = t;
+		return t;
+	};
+	_proto._Wait2_i = function () {
+		var t = new egret.tween.Wait();
+		t.duration = 2000;
+		return t;
+	};
+	_proto._Set4_i = function () {
+		var t = new egret.tween.Set();
+		t.props = this._Object4_i();
+		return t;
+	};
+	_proto._Object4_i = function () {
+		var t = {};
+		this._Object4 = t;
+		return t;
+	};
 	_proto.avatarImage_i = function () {
 		var t = new eui.Image();
 		this.avatarImage = t;
@@ -6476,7 +6552,7 @@ window.skins={};
 		t.visible = false;
 		t.width = 100;
 		t.x = 0;
-		t.y = -5;
+		t.y = 0;
 		t.elementsContent = [this._Rect1_i(),this._Label1_i(),this.smallAudio_i(),this.middleAudio_i(),this.bigAudio_i()];
 		return t;
 	};
