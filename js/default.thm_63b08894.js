@@ -6434,11 +6434,11 @@ window.skins={};
 	__extends(PlayerSkin, _super);
 	function PlayerSkin() {
 		_super.call(this);
-		this.skinParts = ["avatarImage","nameLabel","scoreLabel","cardTypeLabel","countdownCover","cover","timerLabel","progressBorder"];
+		this.skinParts = ["avatarImage","nameLabel","smallAudio","middleAudio","bigAudio","talkingGroup","scoreLabel","cardTypeLabel","countdownCover","cover","timerLabel","progressBorder"];
 		
 		this.height = 167;
 		this.width = 100;
-		this.elementsContent = [this.avatarImage_i(),this.nameLabel_i(),this._Group1_i(),this.countdownCover_i(),this.cover_i(),this.timerLabel_i(),this.progressBorder_i()];
+		this.elementsContent = [this.avatarImage_i(),this.nameLabel_i(),this.talkingGroup_i(),this._Group1_i(),this.countdownCover_i(),this.cover_i(),this.timerLabel_i(),this.progressBorder_i()];
 	}
 	var _proto = PlayerSkin.prototype;
 
@@ -6469,16 +6469,80 @@ window.skins={};
 		t.y = 2;
 		return t;
 	};
+	_proto.talkingGroup_i = function () {
+		var t = new eui.Group();
+		this.talkingGroup = t;
+		t.height = 32;
+		t.visible = false;
+		t.width = 100;
+		t.x = 0;
+		t.y = -5;
+		t.elementsContent = [this._Rect1_i(),this._Label1_i(),this.smallAudio_i(),this.middleAudio_i(),this.bigAudio_i()];
+		return t;
+	};
+	_proto._Rect1_i = function () {
+		var t = new eui.Rect();
+		t.ellipseHeight = 4;
+		t.ellipseWidth = 4;
+		t.fillColor = 0x71ff55;
+		t.percentHeight = 100;
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto._Label1_i = function () {
+		var t = new eui.Label();
+		t.size = 18;
+		t.text = "正在说话";
+		t.textColor = 0x012220;
+		t.verticalCenter = 0;
+		t.x = 25;
+		return t;
+	};
+	_proto.smallAudio_i = function () {
+		var t = new eui.Image();
+		this.smallAudio = t;
+		t.height = 7;
+		t.source = "icon_audio_small_png";
+		t.verticalCenter = 0;
+		t.width = 4;
+		t.x = 6;
+		return t;
+	};
+	_proto.middleAudio_i = function () {
+		var t = new eui.Image();
+		this.middleAudio = t;
+		t.height = 12;
+		t.source = "icon_audio_middle_png";
+		t.verticalCenter = 0;
+		t.width = 4;
+		t.x = 12;
+		return t;
+	};
+	_proto.bigAudio_i = function () {
+		var t = new eui.Image();
+		this.bigAudio = t;
+		t.height = 16;
+		t.source = "icon_audio_big_png";
+		t.verticalCenter = 0;
+		t.width = 5;
+		t.x = 18;
+		return t;
+	};
 	_proto._Group1_i = function () {
 		var t = new eui.Group();
 		t.bottom = 0;
 		t.height = 32;
 		t.width = 100;
 		t.x = 0;
-		t.elementsContent = [this._Rect1_i(),this.scoreLabel_i(),this.cardTypeLabel_i()];
+		t.elementsContent = [this._Rect2_i(),this.scoreLabel_i(),this.cardTypeLabel_i()];
 		return t;
 	};
-	_proto._Rect1_i = function () {
+	_proto._Rect2_i = function () {
 		var t = new eui.Rect();
 		t.ellipseHeight = 10;
 		t.ellipseWidth = 10;
