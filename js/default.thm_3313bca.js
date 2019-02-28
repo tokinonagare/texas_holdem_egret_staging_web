@@ -5314,6 +5314,298 @@ window.skins={};
 		return t;
 	};
 	return StickerItemSkin;
+})(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/Chat/TalkingViewSkin.exml'] = window.TalkingViewSkin = (function (_super) {
+	__extends(TalkingViewSkin, _super);
+	function TalkingViewSkin() {
+		_super.call(this);
+		this.skinParts = ["leftTalkingAnimation","rightTalkingAnimation","rightSmallAudio","rightMiddleAudio","rightBigAudio","rightTalkingGroup","leftSmallAudio","leftMiddleAudio","leftBigAudio","leftTalkingGroup"];
+		
+		this.height = 32;
+		this.width = 100;
+		this.leftTalkingAnimation_i();
+		this.rightTalkingAnimation_i();
+		this.elementsContent = [this.rightTalkingGroup_i(),this.leftTalkingGroup_i()];
+		
+		eui.Binding.$bindProperties(this, ["leftMiddleAudio"],[0],this._TweenItem1,"target");
+		eui.Binding.$bindProperties(this, [0],[],this._Object1,"alpha");
+		eui.Binding.$bindProperties(this, [1],[],this._Object2,"alpha");
+		eui.Binding.$bindProperties(this, ["leftBigAudio"],[0],this._TweenItem2,"target");
+		eui.Binding.$bindProperties(this, [0],[],this._Object3,"alpha");
+		eui.Binding.$bindProperties(this, [1],[],this._Object4,"alpha");
+		eui.Binding.$bindProperties(this, ["rightMiddleAudio"],[0],this._TweenItem3,"target");
+		eui.Binding.$bindProperties(this, [0],[],this._Object5,"alpha");
+		eui.Binding.$bindProperties(this, [1],[],this._Object6,"alpha");
+		eui.Binding.$bindProperties(this, ["rightBigAudio"],[0],this._TweenItem4,"target");
+		eui.Binding.$bindProperties(this, [0],[],this._Object7,"alpha");
+		eui.Binding.$bindProperties(this, [1],[],this._Object8,"alpha");
+	}
+	var _proto = TalkingViewSkin.prototype;
+
+	_proto.leftTalkingAnimation_i = function () {
+		var t = new egret.tween.TweenGroup();
+		this.leftTalkingAnimation = t;
+		t.items = [this._TweenItem1_i(),this._TweenItem2_i()];
+		return t;
+	};
+	_proto._TweenItem1_i = function () {
+		var t = new egret.tween.TweenItem();
+		this._TweenItem1 = t;
+		t.paths = [this._Set1_i(),this._Wait1_i(),this._Set2_i()];
+		return t;
+	};
+	_proto._Set1_i = function () {
+		var t = new egret.tween.Set();
+		t.props = this._Object1_i();
+		return t;
+	};
+	_proto._Object1_i = function () {
+		var t = {};
+		this._Object1 = t;
+		return t;
+	};
+	_proto._Wait1_i = function () {
+		var t = new egret.tween.Wait();
+		t.duration = 1000;
+		return t;
+	};
+	_proto._Set2_i = function () {
+		var t = new egret.tween.Set();
+		t.props = this._Object2_i();
+		return t;
+	};
+	_proto._Object2_i = function () {
+		var t = {};
+		this._Object2 = t;
+		return t;
+	};
+	_proto._TweenItem2_i = function () {
+		var t = new egret.tween.TweenItem();
+		this._TweenItem2 = t;
+		t.paths = [this._Set3_i(),this._Wait2_i(),this._Set4_i()];
+		return t;
+	};
+	_proto._Set3_i = function () {
+		var t = new egret.tween.Set();
+		t.props = this._Object3_i();
+		return t;
+	};
+	_proto._Object3_i = function () {
+		var t = {};
+		this._Object3 = t;
+		return t;
+	};
+	_proto._Wait2_i = function () {
+		var t = new egret.tween.Wait();
+		t.duration = 2000;
+		return t;
+	};
+	_proto._Set4_i = function () {
+		var t = new egret.tween.Set();
+		t.props = this._Object4_i();
+		return t;
+	};
+	_proto._Object4_i = function () {
+		var t = {};
+		this._Object4 = t;
+		return t;
+	};
+	_proto.rightTalkingAnimation_i = function () {
+		var t = new egret.tween.TweenGroup();
+		this.rightTalkingAnimation = t;
+		t.items = [this._TweenItem3_i(),this._TweenItem4_i()];
+		return t;
+	};
+	_proto._TweenItem3_i = function () {
+		var t = new egret.tween.TweenItem();
+		this._TweenItem3 = t;
+		t.paths = [this._Set5_i(),this._Wait3_i(),this._Set6_i()];
+		return t;
+	};
+	_proto._Set5_i = function () {
+		var t = new egret.tween.Set();
+		t.props = this._Object5_i();
+		return t;
+	};
+	_proto._Object5_i = function () {
+		var t = {};
+		this._Object5 = t;
+		return t;
+	};
+	_proto._Wait3_i = function () {
+		var t = new egret.tween.Wait();
+		t.duration = 1000;
+		return t;
+	};
+	_proto._Set6_i = function () {
+		var t = new egret.tween.Set();
+		t.props = this._Object6_i();
+		return t;
+	};
+	_proto._Object6_i = function () {
+		var t = {};
+		this._Object6 = t;
+		return t;
+	};
+	_proto._TweenItem4_i = function () {
+		var t = new egret.tween.TweenItem();
+		this._TweenItem4 = t;
+		t.paths = [this._Set7_i(),this._Wait4_i(),this._Set8_i()];
+		return t;
+	};
+	_proto._Set7_i = function () {
+		var t = new egret.tween.Set();
+		t.props = this._Object7_i();
+		return t;
+	};
+	_proto._Object7_i = function () {
+		var t = {};
+		this._Object7 = t;
+		return t;
+	};
+	_proto._Wait4_i = function () {
+		var t = new egret.tween.Wait();
+		t.duration = 2000;
+		return t;
+	};
+	_proto._Set8_i = function () {
+		var t = new egret.tween.Set();
+		t.props = this._Object8_i();
+		return t;
+	};
+	_proto._Object8_i = function () {
+		var t = {};
+		this._Object8 = t;
+		return t;
+	};
+	_proto.rightTalkingGroup_i = function () {
+		var t = new eui.Group();
+		this.rightTalkingGroup = t;
+		t.height = 32;
+		t.visible = false;
+		t.width = 100;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this._Rect1_i(),this._Label1_i(),this.rightSmallAudio_i(),this.rightMiddleAudio_i(),this.rightBigAudio_i()];
+		return t;
+	};
+	_proto._Rect1_i = function () {
+		var t = new eui.Rect();
+		t.ellipseHeight = 10;
+		t.ellipseWidth = 10;
+		t.fillColor = 0x71FF55;
+		t.percentHeight = 100;
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto._Label1_i = function () {
+		var t = new eui.Label();
+		t.right = 25;
+		t.size = 18;
+		t.text = "正在说话";
+		t.textColor = 0x012220;
+		t.verticalCenter = 0;
+		return t;
+	};
+	_proto.rightSmallAudio_i = function () {
+		var t = new eui.Image();
+		this.rightSmallAudio = t;
+		t.height = 7;
+		t.right = 6;
+		t.source = "icon_audio_small_left_png";
+		t.verticalCenter = 0;
+		t.width = 4;
+		return t;
+	};
+	_proto.rightMiddleAudio_i = function () {
+		var t = new eui.Image();
+		this.rightMiddleAudio = t;
+		t.height = 12;
+		t.right = 12;
+		t.source = "icon_audio_middle_left_png";
+		t.verticalCenter = 0;
+		t.width = 4;
+		return t;
+	};
+	_proto.rightBigAudio_i = function () {
+		var t = new eui.Image();
+		this.rightBigAudio = t;
+		t.height = 16;
+		t.right = 18;
+		t.source = "icon_audio_big_left_png";
+		t.verticalCenter = 0;
+		t.width = 5;
+		return t;
+	};
+	_proto.leftTalkingGroup_i = function () {
+		var t = new eui.Group();
+		this.leftTalkingGroup = t;
+		t.height = 32;
+		t.visible = false;
+		t.width = 100;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this._Rect2_i(),this._Label2_i(),this.leftSmallAudio_i(),this.leftMiddleAudio_i(),this.leftBigAudio_i()];
+		return t;
+	};
+	_proto._Rect2_i = function () {
+		var t = new eui.Rect();
+		t.ellipseHeight = 10;
+		t.ellipseWidth = 10;
+		t.fillColor = 0x71FF55;
+		t.percentHeight = 100;
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto._Label2_i = function () {
+		var t = new eui.Label();
+		t.size = 18;
+		t.text = "正在说话";
+		t.textColor = 0x012220;
+		t.verticalCenter = 0;
+		t.x = 25;
+		return t;
+	};
+	_proto.leftSmallAudio_i = function () {
+		var t = new eui.Image();
+		this.leftSmallAudio = t;
+		t.height = 7;
+		t.source = "icon_audio_small_right_png";
+		t.verticalCenter = 0;
+		t.width = 4;
+		t.x = 6;
+		return t;
+	};
+	_proto.leftMiddleAudio_i = function () {
+		var t = new eui.Image();
+		this.leftMiddleAudio = t;
+		t.height = 12;
+		t.source = "icon_audio_middle_right_png";
+		t.verticalCenter = 0;
+		t.width = 4;
+		t.x = 12;
+		return t;
+	};
+	_proto.leftBigAudio_i = function () {
+		var t = new eui.Image();
+		this.leftBigAudio = t;
+		t.height = 16;
+		t.source = "icon_audio_big_right_png";
+		t.verticalCenter = 0;
+		t.width = 5;
+		t.x = 18;
+		return t;
+	};
+	return TalkingViewSkin;
 })(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/InsuranceView/CountdownProgressSkin.exml'] = window.CountdownProgressSkin = (function (_super) {
 	__extends(CountdownProgressSkin, _super);
 	function CountdownProgressSkin() {
@@ -6434,90 +6726,14 @@ window.skins={};
 	__extends(PlayerSkin, _super);
 	function PlayerSkin() {
 		_super.call(this);
-		this.skinParts = ["talkingAnimation","avatarImage","nameLabel","smallAudio","middleAudio","bigAudio","talkingGroup","scoreLabel","cardTypeLabel","countdownCover","cover","timerLabel","progressBorder"];
+		this.skinParts = ["avatarImage","nameLabel","scoreLabel","cardTypeLabel","countdownCover","cover","timerLabel","progressBorder"];
 		
 		this.height = 167;
 		this.width = 100;
-		this.talkingAnimation_i();
-		this.elementsContent = [this.avatarImage_i(),this.nameLabel_i(),this.talkingGroup_i(),this._Group1_i(),this.countdownCover_i(),this.cover_i(),this.timerLabel_i(),this.progressBorder_i()];
-		
-		eui.Binding.$bindProperties(this, ["middleAudio"],[0],this._TweenItem1,"target");
-		eui.Binding.$bindProperties(this, [0],[],this._Object1,"alpha");
-		eui.Binding.$bindProperties(this, [1],[],this._Object2,"alpha");
-		eui.Binding.$bindProperties(this, ["bigAudio"],[0],this._TweenItem2,"target");
-		eui.Binding.$bindProperties(this, [0],[],this._Object3,"alpha");
-		eui.Binding.$bindProperties(this, [1],[],this._Object4,"alpha");
+		this.elementsContent = [this.avatarImage_i(),this.nameLabel_i(),this._Group1_i(),this.countdownCover_i(),this.cover_i(),this.timerLabel_i(),this.progressBorder_i()];
 	}
 	var _proto = PlayerSkin.prototype;
 
-	_proto.talkingAnimation_i = function () {
-		var t = new egret.tween.TweenGroup();
-		this.talkingAnimation = t;
-		t.items = [this._TweenItem1_i(),this._TweenItem2_i()];
-		return t;
-	};
-	_proto._TweenItem1_i = function () {
-		var t = new egret.tween.TweenItem();
-		this._TweenItem1 = t;
-		t.paths = [this._Set1_i(),this._Wait1_i(),this._Set2_i()];
-		return t;
-	};
-	_proto._Set1_i = function () {
-		var t = new egret.tween.Set();
-		t.props = this._Object1_i();
-		return t;
-	};
-	_proto._Object1_i = function () {
-		var t = {};
-		this._Object1 = t;
-		return t;
-	};
-	_proto._Wait1_i = function () {
-		var t = new egret.tween.Wait();
-		t.duration = 1000;
-		return t;
-	};
-	_proto._Set2_i = function () {
-		var t = new egret.tween.Set();
-		t.props = this._Object2_i();
-		return t;
-	};
-	_proto._Object2_i = function () {
-		var t = {};
-		this._Object2 = t;
-		return t;
-	};
-	_proto._TweenItem2_i = function () {
-		var t = new egret.tween.TweenItem();
-		this._TweenItem2 = t;
-		t.paths = [this._Set3_i(),this._Wait2_i(),this._Set4_i()];
-		return t;
-	};
-	_proto._Set3_i = function () {
-		var t = new egret.tween.Set();
-		t.props = this._Object3_i();
-		return t;
-	};
-	_proto._Object3_i = function () {
-		var t = {};
-		this._Object3 = t;
-		return t;
-	};
-	_proto._Wait2_i = function () {
-		var t = new egret.tween.Wait();
-		t.duration = 2000;
-		return t;
-	};
-	_proto._Set4_i = function () {
-		var t = new egret.tween.Set();
-		t.props = this._Object4_i();
-		return t;
-	};
-	_proto._Object4_i = function () {
-		var t = {};
-		this._Object4 = t;
-		return t;
-	};
 	_proto.avatarImage_i = function () {
 		var t = new eui.Image();
 		this.avatarImage = t;
@@ -6545,80 +6761,16 @@ window.skins={};
 		t.y = 2;
 		return t;
 	};
-	_proto.talkingGroup_i = function () {
-		var t = new eui.Group();
-		this.talkingGroup = t;
-		t.height = 32;
-		t.visible = false;
-		t.width = 100;
-		t.x = 0;
-		t.y = 0;
-		t.elementsContent = [this._Rect1_i(),this._Label1_i(),this.smallAudio_i(),this.middleAudio_i(),this.bigAudio_i()];
-		return t;
-	};
-	_proto._Rect1_i = function () {
-		var t = new eui.Rect();
-		t.ellipseHeight = 4;
-		t.ellipseWidth = 4;
-		t.fillColor = 0x71ff55;
-		t.percentHeight = 100;
-		t.horizontalCenter = 0;
-		t.scaleX = 1;
-		t.scaleY = 1;
-		t.percentWidth = 100;
-		t.x = 0;
-		t.y = 0;
-		return t;
-	};
-	_proto._Label1_i = function () {
-		var t = new eui.Label();
-		t.size = 18;
-		t.text = "正在说话";
-		t.textColor = 0x012220;
-		t.verticalCenter = 0;
-		t.x = 25;
-		return t;
-	};
-	_proto.smallAudio_i = function () {
-		var t = new eui.Image();
-		this.smallAudio = t;
-		t.height = 7;
-		t.source = "icon_audio_small_png";
-		t.verticalCenter = 0;
-		t.width = 4;
-		t.x = 6;
-		return t;
-	};
-	_proto.middleAudio_i = function () {
-		var t = new eui.Image();
-		this.middleAudio = t;
-		t.height = 12;
-		t.source = "icon_audio_middle_png";
-		t.verticalCenter = 0;
-		t.width = 4;
-		t.x = 12;
-		return t;
-	};
-	_proto.bigAudio_i = function () {
-		var t = new eui.Image();
-		this.bigAudio = t;
-		t.height = 16;
-		t.source = "icon_audio_big_png";
-		t.verticalCenter = 0;
-		t.width = 5;
-		t.x = 18;
-		return t;
-	};
 	_proto._Group1_i = function () {
 		var t = new eui.Group();
 		t.bottom = 0;
 		t.height = 32;
 		t.width = 100;
 		t.x = 0;
-		t.elementsContent = [this._Rect2_i(),this.scoreLabel_i(),this.cardTypeLabel_i()];
+		t.elementsContent = [this._Rect1_i(),this.scoreLabel_i(),this.cardTypeLabel_i()];
 		return t;
 	};
-	_proto._Rect2_i = function () {
+	_proto._Rect1_i = function () {
 		var t = new eui.Rect();
 		t.ellipseHeight = 10;
 		t.ellipseWidth = 10;
