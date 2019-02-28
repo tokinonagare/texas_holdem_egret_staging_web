@@ -4855,11 +4855,11 @@ window.skins={};
 	__extends(ChatViewSkin, _super);
 	function ChatViewSkin() {
 		_super.call(this);
-		this.skinParts = ["background","barrageCheckBox","toggleLabel","messageInput","sendButton","inputCheckBox","recordButton","tabBar","stickerList","phraseList","chatHistoryView","viewStack","chatGroup","labelBg","statusLabel","statusImage","countdownLabel","recordingGroup","cancelImage","recordGroup"];
+		this.skinParts = ["background","labelBg","statusLabel","statusImage","countdownLabel","recordingGroup","cancelImage","recordGroup","barrageCheckBox","toggleLabel","messageInput","sendButton","inputCheckBox","recordButton","tabBar","stickerList","phraseList","chatHistoryView","viewStack","chatGroup"];
 		
 		this.height = 1334;
 		this.width = 750;
-		this.elementsContent = [this.background_i(),this.chatGroup_i(),this.recordGroup_i()];
+		this.elementsContent = [this.background_i(),this.recordGroup_i(),this.chatGroup_i()];
 		
 		eui.Binding.$bindProperties(this, ["viewStack"],[0],this.tabBar,"dataProvider");
 	}
@@ -4875,6 +4875,147 @@ window.skins={};
 		t.y = 0;
 		return t;
 	};
+	_proto.recordGroup_i = function () {
+		var t = new eui.Group();
+		this.recordGroup = t;
+		t.percentHeight = 100;
+		t.horizontalCenter = 0;
+		t.verticalCenter = 0;
+		t.visible = false;
+		t.percentWidth = 100;
+		t.elementsContent = [this._Rect1_i(),this._Group2_i()];
+		return t;
+	};
+	_proto._Rect1_i = function () {
+		var t = new eui.Rect();
+		t.ellipseHeight = 20;
+		t.ellipseWidth = 20;
+		t.fillAlpha = 0;
+		t.fillColor = 0x000000;
+		t.percentHeight = 100;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.percentWidth = 100;
+		t.x = 10;
+		t.y = 10;
+		return t;
+	};
+	_proto._Group2_i = function () {
+		var t = new eui.Group();
+		t.height = 340;
+		t.horizontalCenter = 0;
+		t.verticalCenter = 0;
+		t.width = 340;
+		t.elementsContent = [this._Rect2_i(),this._Group1_i(),this.recordingGroup_i(),this.cancelImage_i()];
+		return t;
+	};
+	_proto._Rect2_i = function () {
+		var t = new eui.Rect();
+		t.ellipseHeight = 20;
+		t.ellipseWidth = 20;
+		t.fillAlpha = 0.9;
+		t.fillColor = 0x032425;
+		t.percentHeight = 100;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto._Group1_i = function () {
+		var t = new eui.Group();
+		t.height = 32;
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.width = 260;
+		t.x = 40;
+		t.y = 277;
+		t.elementsContent = [this.labelBg_i(),this.statusLabel_i()];
+		return t;
+	};
+	_proto.labelBg_i = function () {
+		var t = new eui.Rect();
+		this.labelBg = t;
+		t.fillColor = 0xac4145;
+		t.percentHeight = 100;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.visible = false;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto.statusLabel_i = function () {
+		var t = new eui.Label();
+		this.statusLabel = t;
+		t.horizontalCenter = 0;
+		t.size = 28;
+		t.text = "手指上滑，取消发送";
+		t.textAlign = "center";
+		t.textColor = 0xffffff;
+		t.verticalAlign = "middle";
+		t.verticalCenter = 0;
+		return t;
+	};
+	_proto.recordingGroup_i = function () {
+		var t = new eui.Group();
+		this.recordingGroup = t;
+		t.height = 200;
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.width = 340;
+		t.x = 0;
+		t.y = 40;
+		t.elementsContent = [this.statusImage_i(),this.countdownLabel_i()];
+		return t;
+	};
+	_proto.statusImage_i = function () {
+		var t = new eui.Image();
+		this.statusImage = t;
+		t.height = 174;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "icon_chat_big_microphone_png";
+		t.width = 103;
+		t.x = 52.00000000000006;
+		t.y = 13;
+		return t;
+	};
+	_proto.countdownLabel_i = function () {
+		var t = new eui.Label();
+		this.countdownLabel = t;
+		t.anchorOffsetY = 0;
+		t.bold = true;
+		t.height = 120;
+		t.size = 100;
+		t.text = "10";
+		t.textAlign = "center";
+		t.textColor = 0xaececb;
+		t.verticalAlign = "middle";
+		t.width = 120;
+		t.x = 180;
+		t.y = 40;
+		return t;
+	};
+	_proto.cancelImage_i = function () {
+		var t = new eui.Image();
+		this.cancelImage = t;
+		t.height = 130;
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "icon_chat_audio_cancel_png";
+		t.verticalCenter = 0;
+		t.visible = false;
+		t.width = 102;
+		t.x = 119;
+		t.y = 105;
+		return t;
+	};
 	_proto.chatGroup_i = function () {
 		var t = new eui.Group();
 		this.chatGroup = t;
@@ -4882,10 +5023,10 @@ window.skins={};
 		t.percentWidth = 100;
 		t.x = 0;
 		t.y = 570;
-		t.elementsContent = [this._Rect1_i(),this.barrageCheckBox_i(),this.toggleLabel_i(),this._Group1_i(),this.tabBar_i(),this._Group5_i()];
+		t.elementsContent = [this._Rect3_i(),this.barrageCheckBox_i(),this.toggleLabel_i(),this._Group3_i(),this.tabBar_i(),this._Group7_i()];
 		return t;
 	};
-	_proto._Rect1_i = function () {
+	_proto._Rect3_i = function () {
 		var t = new eui.Rect();
 		t.bottom = 0;
 		t.fillAlpha = 0.9;
@@ -4920,7 +5061,7 @@ window.skins={};
 		t.y = 33;
 		return t;
 	};
-	_proto._Group1_i = function () {
+	_proto._Group3_i = function () {
 		var t = new eui.Group();
 		t.height = 85;
 		t.horizontalCenter = 0;
@@ -5000,16 +5141,16 @@ window.skins={};
 		t.verticalAlign = "contentJustify";
 		return t;
 	};
-	_proto._Group5_i = function () {
+	_proto._Group7_i = function () {
 		var t = new eui.Group();
 		t.height = 470;
 		t.horizontalCenter = 0;
 		t.width = 692;
 		t.y = 269;
-		t.elementsContent = [this._Rect2_i(),this.viewStack_i()];
+		t.elementsContent = [this._Rect4_i(),this.viewStack_i()];
 		return t;
 	};
-	_proto._Rect2_i = function () {
+	_proto._Rect4_i = function () {
 		var t = new eui.Rect();
 		t.ellipseHeight = 20;
 		t.ellipseWidth = 20;
@@ -5031,10 +5172,10 @@ window.skins={};
 		t.width = 692;
 		t.x = 0;
 		t.y = 0;
-		t.elementsContent = [this._Group2_i(),this._Group3_i(),this._Group4_i()];
+		t.elementsContent = [this._Group4_i(),this._Group5_i(),this._Group6_i()];
 		return t;
 	};
-	_proto._Group2_i = function () {
+	_proto._Group4_i = function () {
 		var t = new eui.Group();
 		t.percentHeight = 100;
 		t.name = "表情";
@@ -5073,7 +5214,7 @@ window.skins={};
 		t.verticalGap = 12;
 		return t;
 	};
-	_proto._Group3_i = function () {
+	_proto._Group5_i = function () {
 		var t = new eui.Group();
 		t.percentHeight = 100;
 		t.name = "短语";
@@ -5110,7 +5251,7 @@ window.skins={};
 		t.verticalAlign = "contentJustify";
 		return t;
 	};
-	_proto._Group4_i = function () {
+	_proto._Group6_i = function () {
 		var t = new eui.Group();
 		t.percentHeight = 100;
 		t.name = "聊天记录";
@@ -5127,112 +5268,6 @@ window.skins={};
 		t.percentWidth = 100;
 		t.x = 0;
 		t.y = 0;
-		return t;
-	};
-	_proto.recordGroup_i = function () {
-		var t = new eui.Group();
-		this.recordGroup = t;
-		t.height = 340;
-		t.horizontalCenter = 0;
-		t.verticalCenter = 0;
-		t.visible = false;
-		t.width = 340;
-		t.elementsContent = [this._Rect3_i(),this._Group6_i(),this.recordingGroup_i(),this.cancelImage_i()];
-		return t;
-	};
-	_proto._Rect3_i = function () {
-		var t = new eui.Rect();
-		t.ellipseHeight = 20;
-		t.ellipseWidth = 20;
-		t.fillAlpha = 0.9;
-		t.fillColor = 0x032425;
-		t.percentHeight = 100;
-		t.percentWidth = 100;
-		t.x = 0;
-		t.y = 0;
-		return t;
-	};
-	_proto._Group6_i = function () {
-		var t = new eui.Group();
-		t.height = 32;
-		t.horizontalCenter = 0;
-		t.width = 260;
-		t.y = 280;
-		t.elementsContent = [this.labelBg_i(),this.statusLabel_i()];
-		return t;
-	};
-	_proto.labelBg_i = function () {
-		var t = new eui.Rect();
-		this.labelBg = t;
-		t.fillColor = 0xac4145;
-		t.percentHeight = 100;
-		t.scaleX = 1;
-		t.scaleY = 1;
-		t.visible = false;
-		t.percentWidth = 100;
-		t.x = 0;
-		t.y = 0;
-		return t;
-	};
-	_proto.statusLabel_i = function () {
-		var t = new eui.Label();
-		this.statusLabel = t;
-		t.horizontalCenter = 0;
-		t.size = 28;
-		t.text = "手指上滑，取消发送";
-		t.textAlign = "center";
-		t.textColor = 0xffffff;
-		t.verticalAlign = "middle";
-		t.verticalCenter = 0;
-		return t;
-	};
-	_proto.recordingGroup_i = function () {
-		var t = new eui.Group();
-		this.recordingGroup = t;
-		t.height = 200;
-		t.horizontalCenter = 0;
-		t.width = 340;
-		t.y = 51;
-		t.elementsContent = [this.statusImage_i(),this.countdownLabel_i()];
-		return t;
-	};
-	_proto.statusImage_i = function () {
-		var t = new eui.Image();
-		this.statusImage = t;
-		t.height = 174;
-		t.scaleX = 1;
-		t.scaleY = 1;
-		t.source = "icon_chat_big_microphone_png";
-		t.width = 103;
-		t.x = 52.00000000000006;
-		t.y = 13;
-		return t;
-	};
-	_proto.countdownLabel_i = function () {
-		var t = new eui.Label();
-		this.countdownLabel = t;
-		t.anchorOffsetY = 0;
-		t.bold = true;
-		t.height = 120;
-		t.size = 100;
-		t.text = "10";
-		t.textAlign = "center";
-		t.textColor = 0xaececb;
-		t.verticalAlign = "middle";
-		t.width = 120;
-		t.x = 180;
-		t.y = 40;
-		return t;
-	};
-	_proto.cancelImage_i = function () {
-		var t = new eui.Image();
-		this.cancelImage = t;
-		t.height = 130;
-		t.horizontalCenter = 0;
-		t.source = "icon_chat_audio_cancel_png";
-		t.verticalCenter = 0;
-		t.visible = false;
-		t.width = 102;
 		return t;
 	};
 	return ChatViewSkin;
