@@ -2014,7 +2014,7 @@ window.skins={};
 		t.textColor = 0x034d45;
 		t.width = 400;
 		t.x = 0;
-		t.y = 40;
+		t.y = 35;
 		return t;
 	};
 	_proto.blindLabel_i = function () {
@@ -2029,7 +2029,7 @@ window.skins={};
 		t.textColor = 0x034d45;
 		t.width = 200;
 		t.x = 100;
-		t.y = 70;
+		t.y = 65;
 		return t;
 	};
 	_proto.countdownLabel_i = function () {
