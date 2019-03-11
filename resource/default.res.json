@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "egret_icon_png,description_json,gameEui_json,bg_game_png,bg_bottom_bar_png,icon_microphone_png,image_default_avatar_png,bg_player_sprite_png,icon_talk_png,bg_chat_textinput_png,poker_json,icon_raise_progress_selector_png,image_raise_slider_track_png,icon_raise_slider_arrow_png,image_raise_slider_dashboard_png,image_loading_track_png,image_loading_thumb_png,image_loading_shadow_png,btn_phone_login_png,btn_start_game_png,btn_next_step_png,bg_login_input_png,btn_login_confirm_png,icon_loading_circle_png,icon_loading_spade_png,bg_custom_alert_png,btn_alert_confirm_png,btn_game_dropdown_png,btn_room_start_game_png,addchips_mp3,allin_mp3,bet_mp3,btn_click_mp3,check_mp3,chiptoplayers_mp3,chiptopool_mp3,fapai3_mp3,fapai_mp3,fold_mp3,g_alarm_mp3,movechips_mp3,notice_mp3,user_enter_mp3,uiclick_mp3,btn_login_by_visitor_png,coin_particle_json,coin_particle_png,btn_selector_all_in_png,icon_slider_progress_png,icon_side_pot_png,icon_player_chip_png,icon_player_all_in_png,icon_player_call_png,icon_player_check_png,icon_player_fold_png,icon_player_raise_png,bg_player_info_png,icon_sit_down_png,icon_menu_arrow_png,image_card_pattern_png,btn_game_record@2x_png,btn_add_friend_png,icon_buy_in_chip_png,image_buy_in_track_png,image_buy_in_thumb_png,btn_close_keyboard_png,icon_numeric_delete_png,btn_quick_raise_png,img_next_page@2x_png,img_previous_page@2x_png,reviewboard_thumb_png,track_sb_png,icon_hand_notes@2x_png,img_triangle_arrow@2x_png,btn_all_in_disabled_png,btn_all_in_png,btn_call_disabled_png,btn_call_png,btn_check_auto_selected_png,btn_check_auto_unselect_png,btn_check_disabled_png,btn_check_or_fold_selected_png,btn_check_or_fold_unselect_png,btn_check_png,btn_fold_disabled_png,btn_fold_png,btn_raise_confirm_png,btn_raise_disabled_png,btn_raise_png,bg_shortcut_raise_png,bg_shortcut_raise_disabled_png,btn_slider_all_in_png,icon_message_alarm_png,fire_particle_png,fire_particle_json,card_type_fnt,card_type_png,image_border_count_down_png,image_logo_on_table_png,icon_message_off_png,icon_message_on_png,icon_message_record_tab_selected_png,icon_message_record_tab_unselect_png,icon_phrase_tab_selected_png,icon_phrase_tab_unselect_png,icon_sticker_tab_unselect_png,icon_sticker_tab_selected_png,sticker_drink_json,sticker_drink_png,icon_sticker_drink_png,sticker_puchi_json,sticker_puchi_png,icon_sticker_puchi_png,sticker_cry_png,icon_sticker_cry_png,sticker_cry_json,sticker_angry_json,sticker_angry_png,icon_sticker_angry_png,sticker_smirk_json,sticker_smirk_png,icon_sticker_smirk_png,icon_sticker_titter_png,sticker_titter_png,sticker_titter_json,props_tomato_json,props_tomato_png,icon_props_tomato_png,btn_score_input_delete_png,props_flower_png,props_flower_json,icon_props_flower_png,props_heart_png,props_heart_json,icon_props_heart_png,you_win_json,you_win_png,tie_png,tie_json,throw_props_mp3,all_in_fire_mp3,props_flower_mp3,won_coin_mp3,props_heart_mp3,props_tea_png,props_tea_json,icon_props_tea_png,icon_props_water_png,props_water_png,props_water_json,btn_buy_in_confirm_png,btn_buy_in_reject_png,btn_buy_in_apply_png,bg_buy_in_application_png,btn_club_application_reject_png,btn_club_application_agree_png,enter_room_json,enter_room_png,icon_chat_voice_png,icon_chat_text_png,icon_chat_big_microphone_png,icon_chat_audio_cancel_png,icon_audio_small_left_png,icon_audio_big_right_png,icon_audio_middle_right_png,icon_audio_big_left_png,icon_audio_middle_left_png,icon_audio_small_right_png",
+			"keys": "description_json,gameEui_json,bg_game_png,bg_bottom_bar_png,icon_microphone_png,image_default_avatar_png,bg_player_sprite_png,icon_talk_png,bg_chat_textinput_png,poker_json,icon_raise_progress_selector_png,image_raise_slider_track_png,icon_raise_slider_arrow_png,image_raise_slider_dashboard_png,image_loading_track_png,image_loading_thumb_png,image_loading_shadow_png,btn_phone_login_png,btn_start_game_png,btn_next_step_png,bg_login_input_png,btn_login_confirm_png,icon_loading_circle_png,icon_loading_spade_png,bg_custom_alert_png,btn_alert_confirm_png,btn_game_dropdown_png,btn_room_start_game_png,uiclick_mp3,btn_login_by_visitor_png,coin_particle_json,coin_particle_png,btn_selector_all_in_png,icon_slider_progress_png,icon_side_pot_png,icon_player_chip_png,icon_player_all_in_png,icon_player_call_png,icon_player_check_png,icon_player_fold_png,icon_player_raise_png,bg_player_info_png,icon_sit_down_png,icon_menu_arrow_png,image_card_pattern_png,btn_game_record@2x_png,btn_add_friend_png,icon_buy_in_chip_png,image_buy_in_track_png,image_buy_in_thumb_png,btn_close_keyboard_png,icon_numeric_delete_png,btn_quick_raise_png,img_next_page@2x_png,img_previous_page@2x_png,reviewboard_thumb_png,track_sb_png,icon_hand_notes@2x_png,img_triangle_arrow@2x_png,btn_all_in_disabled_png,btn_all_in_png,btn_call_disabled_png,btn_call_png,btn_check_auto_selected_png,btn_check_auto_unselect_png,btn_check_disabled_png,btn_check_or_fold_selected_png,btn_check_or_fold_unselect_png,btn_check_png,btn_fold_disabled_png,btn_fold_png,btn_raise_confirm_png,btn_raise_disabled_png,btn_raise_png,bg_shortcut_raise_png,bg_shortcut_raise_disabled_png,btn_slider_all_in_png,icon_message_alarm_png,fire_particle_png,fire_particle_json,card_type_fnt,card_type_png,image_border_count_down_png,image_logo_on_table_png,icon_message_off_png,icon_message_on_png,icon_message_record_tab_selected_png,icon_message_record_tab_unselect_png,icon_phrase_tab_selected_png,icon_phrase_tab_unselect_png,icon_sticker_tab_unselect_png,icon_sticker_tab_selected_png,sticker_drink_json,sticker_drink_png,icon_sticker_drink_png,sticker_puchi_json,sticker_puchi_png,icon_sticker_puchi_png,sticker_cry_png,icon_sticker_cry_png,sticker_cry_json,sticker_angry_json,sticker_angry_png,icon_sticker_angry_png,sticker_smirk_json,sticker_smirk_png,icon_sticker_smirk_png,icon_sticker_titter_png,sticker_titter_png,sticker_titter_json,props_tomato_json,props_tomato_png,icon_props_tomato_png,btn_score_input_delete_png,props_flower_png,props_flower_json,icon_props_flower_png,props_heart_png,props_heart_json,icon_props_heart_png,you_win_json,you_win_png,tie_png,tie_json,props_tea_png,props_tea_json,icon_props_tea_png,icon_props_water_png,props_water_png,props_water_json,btn_buy_in_confirm_png,btn_buy_in_reject_png,btn_buy_in_apply_png,bg_buy_in_application_png,btn_club_application_reject_png,btn_club_application_agree_png,enter_room_json,enter_room_png,icon_chat_big_microphone_png,icon_audio_small_left_png,icon_audio_big_right_png,icon_audio_middle_right_png,icon_audio_big_left_png,icon_audio_middle_left_png,icon_audio_small_right_png,addchips_96_mp3,all_in_fire_96_mp3,allin_96_mp3,bet_96_mp3,btn_click_96_mp3,check_96_mp3,chiptoplayers_96_mp3,chiptopool_96_mp3,fapai_96_mp3,fapai3_96_mp3,fold_96_mp3,g_alarm_96_mp3,movechips_96_mp3,notice_96_mp3,props_flower_96_mp3,props_heart_96_mp3,throw_props_96_mp3,user_enter_96_mp3,won_coin_96_mp3,icon_audio_microphone_png,btn_audio_microphone_down_png,icon_record_cancelable_png",
 			"name": "preload"
 		},
 		{
@@ -10,11 +10,6 @@
 		}
 	],
 	"resources": [
-		{
-			"url": "assets/egret_icon.png",
-			"type": "image",
-			"name": "egret_icon_png"
-		},
 		{
 			"url": "config/description.json",
 			"type": "json",
@@ -155,76 +150,6 @@
 			"url": "assets/Game/btn_room_start_game.png",
 			"type": "image",
 			"name": "btn_room_start_game_png"
-		},
-		{
-			"url": "assets/Game/sound/addchips.mp3",
-			"type": "sound",
-			"name": "addchips_mp3"
-		},
-		{
-			"url": "assets/Game/sound/allin.mp3",
-			"type": "sound",
-			"name": "allin_mp3"
-		},
-		{
-			"url": "assets/Game/sound/bet.mp3",
-			"type": "sound",
-			"name": "bet_mp3"
-		},
-		{
-			"url": "assets/Game/sound/btn_click.mp3",
-			"type": "sound",
-			"name": "btn_click_mp3"
-		},
-		{
-			"url": "assets/Game/sound/check.mp3",
-			"type": "sound",
-			"name": "check_mp3"
-		},
-		{
-			"url": "assets/Game/sound/chiptoplayers.mp3",
-			"type": "sound",
-			"name": "chiptoplayers_mp3"
-		},
-		{
-			"url": "assets/Game/sound/chiptopool.mp3",
-			"type": "sound",
-			"name": "chiptopool_mp3"
-		},
-		{
-			"url": "assets/Game/sound/fapai3.mp3",
-			"type": "sound",
-			"name": "fapai3_mp3"
-		},
-		{
-			"url": "assets/Game/sound/fapai.mp3",
-			"type": "sound",
-			"name": "fapai_mp3"
-		},
-		{
-			"url": "assets/Game/sound/fold.mp3",
-			"type": "sound",
-			"name": "fold_mp3"
-		},
-		{
-			"url": "assets/Game/sound/g_alarm.mp3",
-			"type": "sound",
-			"name": "g_alarm_mp3"
-		},
-		{
-			"url": "assets/Game/sound/movechips.mp3",
-			"type": "sound",
-			"name": "movechips_mp3"
-		},
-		{
-			"url": "assets/Game/sound/notice.mp3",
-			"type": "sound",
-			"name": "notice_mp3"
-		},
-		{
-			"url": "assets/Game/sound/user_enter.mp3",
-			"type": "sound",
-			"name": "user_enter_mp3"
 		},
 		{
 			"url": "assets/uiclick.mp3",
@@ -387,474 +312,549 @@
 			"name": "bg_loading_jpg"
 		},
 		{
-			"name": "btn_all_in_disabled_png",
+			"url": "assets/Game/buttons/btn_all_in_disabled.png",
 			"type": "image",
-			"url": "assets/Game/buttons/btn_all_in_disabled.png"
+			"name": "btn_all_in_disabled_png"
 		},
 		{
-			"name": "btn_all_in_png",
+			"url": "assets/Game/buttons/btn_all_in.png",
 			"type": "image",
-			"url": "assets/Game/buttons/btn_all_in.png"
+			"name": "btn_all_in_png"
 		},
 		{
-			"name": "btn_call_disabled_png",
+			"url": "assets/Game/buttons/btn_call_disabled.png",
 			"type": "image",
-			"url": "assets/Game/buttons/btn_call_disabled.png"
+			"name": "btn_call_disabled_png"
 		},
 		{
-			"name": "btn_call_png",
+			"url": "assets/Game/buttons/btn_call.png",
 			"type": "image",
-			"url": "assets/Game/buttons/btn_call.png"
+			"name": "btn_call_png"
 		},
 		{
-			"name": "btn_check_auto_selected_png",
+			"url": "assets/Game/buttons/btn_check_auto_selected.png",
 			"type": "image",
-			"url": "assets/Game/buttons/btn_check_auto_selected.png"
+			"name": "btn_check_auto_selected_png"
 		},
 		{
-			"name": "btn_check_auto_unselect_png",
+			"url": "assets/Game/buttons/btn_check_auto_unselect.png",
 			"type": "image",
-			"url": "assets/Game/buttons/btn_check_auto_unselect.png"
+			"name": "btn_check_auto_unselect_png"
 		},
 		{
-			"name": "btn_check_disabled_png",
+			"url": "assets/Game/buttons/btn_check_disabled.png",
 			"type": "image",
-			"url": "assets/Game/buttons/btn_check_disabled.png"
+			"name": "btn_check_disabled_png"
 		},
 		{
-			"name": "btn_check_or_fold_selected_png",
+			"url": "assets/Game/buttons/btn_check_or_fold_selected.png",
 			"type": "image",
-			"url": "assets/Game/buttons/btn_check_or_fold_selected.png"
+			"name": "btn_check_or_fold_selected_png"
 		},
 		{
-			"name": "btn_check_or_fold_unselect_png",
+			"url": "assets/Game/buttons/btn_check_or_fold_unselect.png",
 			"type": "image",
-			"url": "assets/Game/buttons/btn_check_or_fold_unselect.png"
+			"name": "btn_check_or_fold_unselect_png"
 		},
 		{
-			"name": "btn_check_png",
+			"url": "assets/Game/buttons/btn_check.png",
 			"type": "image",
-			"url": "assets/Game/buttons/btn_check.png"
+			"name": "btn_check_png"
 		},
 		{
-			"name": "btn_fold_disabled_png",
+			"url": "assets/Game/buttons/btn_fold_disabled.png",
 			"type": "image",
-			"url": "assets/Game/buttons/btn_fold_disabled.png"
+			"name": "btn_fold_disabled_png"
 		},
 		{
-			"name": "btn_fold_png",
+			"url": "assets/Game/buttons/btn_fold.png",
 			"type": "image",
-			"url": "assets/Game/buttons/btn_fold.png"
+			"name": "btn_fold_png"
 		},
 		{
-			"name": "btn_raise_confirm_png",
+			"url": "assets/Game/buttons/btn_raise_confirm.png",
 			"type": "image",
-			"url": "assets/Game/buttons/btn_raise_confirm.png"
+			"name": "btn_raise_confirm_png"
 		},
 		{
-			"name": "btn_raise_disabled_png",
+			"url": "assets/Game/buttons/btn_raise_disabled.png",
 			"type": "image",
-			"url": "assets/Game/buttons/btn_raise_disabled.png"
+			"name": "btn_raise_disabled_png"
 		},
 		{
-			"name": "btn_raise_png",
+			"url": "assets/Game/buttons/btn_raise.png",
 			"type": "image",
-			"url": "assets/Game/buttons/btn_raise.png"
+			"name": "btn_raise_png"
 		},
 		{
-			"name": "bg_shortcut_raise_png",
+			"url": "assets/Game/buttons/bg_shortcut_raise.png",
 			"type": "image",
-			"url": "assets/Game/buttons/bg_shortcut_raise.png"
+			"name": "bg_shortcut_raise_png"
 		},
 		{
-			"name": "bg_shortcut_raise_disabled_png",
+			"url": "assets/Game/buttons/bg_shortcut_raise_disabled.png",
 			"type": "image",
-			"url": "assets/Game/buttons/bg_shortcut_raise_disabled.png"
+			"name": "bg_shortcut_raise_disabled_png"
 		},
 		{
-			"name": "btn_slider_all_in_png",
+			"url": "assets/Game/buttons/btn_slider_all_in.png",
 			"type": "image",
-			"url": "assets/Game/buttons/btn_slider_all_in.png"
+			"name": "btn_slider_all_in_png"
 		},
 		{
-			"name": "icon_message_alarm_png",
+			"url": "assets/Game/icon_message_alarm.png",
 			"type": "image",
-			"url": "assets/Game/icon_message_alarm.png"
+			"name": "icon_message_alarm_png"
 		},
 		{
-			"name": "fire_particle_png",
+			"url": "assets/Game/particle/fire_particle.png",
 			"type": "image",
-			"url": "assets/Game/particle/fire_particle.png"
+			"name": "fire_particle_png"
 		},
 		{
-			"name": "fire_particle_json",
+			"url": "assets/Game/particle/fire_particle.json",
 			"type": "json",
-			"url": "assets/Game/particle/fire_particle.json"
+			"name": "fire_particle_json"
 		},
 		{
-			"name": "card_type_fnt",
+			"url": "assets/Game/font/card_type.fnt",
 			"type": "font",
-			"url": "assets/Game/font/card_type.fnt"
+			"name": "card_type_fnt"
 		},
 		{
-			"name": "card_type_png",
+			"url": "assets/Game/font/card_type.png",
 			"type": "image",
-			"url": "assets/Game/font/card_type.png"
+			"name": "card_type_png"
 		},
 		{
-			"name": "image_border_count_down_png",
+			"url": "assets/Game/image_border_count_down.png",
 			"type": "image",
-			"url": "assets/Game/image_border_count_down.png"
+			"name": "image_border_count_down_png"
 		},
 		{
-			"name": "image_logo_on_table_png",
+			"url": "assets/Game/image_logo_on_table.png",
 			"type": "image",
-			"url": "assets/Game/image_logo_on_table.png"
+			"name": "image_logo_on_table_png"
 		},
 		{
-			"name": "icon_message_off_png",
+			"url": "assets/Game/chat/icon_message_off.png",
 			"type": "image",
-			"url": "assets/Game/chat/icon_message_off.png"
+			"name": "icon_message_off_png"
 		},
 		{
-			"name": "icon_message_on_png",
+			"url": "assets/Game/chat/icon_message_on.png",
 			"type": "image",
-			"url": "assets/Game/chat/icon_message_on.png"
+			"name": "icon_message_on_png"
 		},
 		{
-			"name": "icon_message_record_tab_selected_png",
+			"url": "assets/Game/chat/icon_message_record_tab_selected.png",
 			"type": "image",
-			"url": "assets/Game/chat/icon_message_record_tab_selected.png"
+			"name": "icon_message_record_tab_selected_png"
 		},
 		{
-			"name": "icon_message_record_tab_unselect_png",
+			"url": "assets/Game/chat/icon_message_record_tab_unselect.png",
 			"type": "image",
-			"url": "assets/Game/chat/icon_message_record_tab_unselect.png"
+			"name": "icon_message_record_tab_unselect_png"
 		},
 		{
-			"name": "icon_phrase_tab_selected_png",
+			"url": "assets/Game/chat/icon_phrase_tab_selected.png",
 			"type": "image",
-			"url": "assets/Game/chat/icon_phrase_tab_selected.png"
+			"name": "icon_phrase_tab_selected_png"
 		},
 		{
-			"name": "icon_phrase_tab_unselect_png",
+			"url": "assets/Game/chat/icon_phrase_tab_unselect.png",
 			"type": "image",
-			"url": "assets/Game/chat/icon_phrase_tab_unselect.png"
+			"name": "icon_phrase_tab_unselect_png"
 		},
 		{
-			"name": "icon_sticker_tab_unselect_png",
+			"url": "assets/Game/chat/icon_sticker_tab_unselect.png",
 			"type": "image",
-			"url": "assets/Game/chat/icon_sticker_tab_unselect.png"
+			"name": "icon_sticker_tab_unselect_png"
 		},
 		{
-			"name": "icon_sticker_tab_selected_png",
+			"url": "assets/Game/chat/icon_sticker_tab_selected.png",
 			"type": "image",
-			"url": "assets/Game/chat/icon_sticker_tab_selected.png"
+			"name": "icon_sticker_tab_selected_png"
 		},
 		{
-			"name": "sticker_drink_json",
+			"url": "assets/Game/stickers/sticker_drink.json",
 			"type": "json",
-			"url": "assets/Game/stickers/sticker_drink.json"
+			"name": "sticker_drink_json"
 		},
 		{
-			"name": "sticker_drink_png",
+			"url": "assets/Game/stickers/sticker_drink.png",
 			"type": "image",
-			"url": "assets/Game/stickers/sticker_drink.png"
+			"name": "sticker_drink_png"
 		},
 		{
-			"name": "icon_sticker_drink_png",
+			"url": "assets/Game/stickers/icon_sticker_drink.png",
 			"type": "image",
-			"url": "assets/Game/stickers/icon_sticker_drink.png"
+			"name": "icon_sticker_drink_png"
 		},
 		{
-			"name": "sticker_puchi_json",
+			"url": "assets/Game/stickers/sticker_puchi.json",
 			"type": "json",
-			"url": "assets/Game/stickers/sticker_puchi.json"
+			"name": "sticker_puchi_json"
 		},
 		{
-			"name": "sticker_puchi_png",
+			"url": "assets/Game/stickers/sticker_puchi.png",
 			"type": "image",
-			"url": "assets/Game/stickers/sticker_puchi.png"
+			"name": "sticker_puchi_png"
 		},
 		{
-			"name": "icon_sticker_puchi_png",
+			"url": "assets/Game/stickers/icon_sticker_puchi.png",
 			"type": "image",
-			"url": "assets/Game/stickers/icon_sticker_puchi.png"
+			"name": "icon_sticker_puchi_png"
 		},
 		{
-			"name": "sticker_cry_png",
+			"url": "assets/Game/stickers/sticker_cry.png",
 			"type": "image",
-			"url": "assets/Game/stickers/sticker_cry.png"
+			"name": "sticker_cry_png"
 		},
 		{
-			"name": "icon_sticker_cry_png",
+			"url": "assets/Game/stickers/icon_sticker_cry.png",
 			"type": "image",
-			"url": "assets/Game/stickers/icon_sticker_cry.png"
+			"name": "icon_sticker_cry_png"
 		},
 		{
-			"name": "sticker_cry_json",
+			"url": "assets/Game/stickers/sticker_cry.json",
 			"type": "json",
-			"url": "assets/Game/stickers/sticker_cry.json"
+			"name": "sticker_cry_json"
 		},
 		{
-			"name": "sticker_angry_json",
+			"url": "assets/Game/stickers/sticker_angry.json",
 			"type": "json",
-			"url": "assets/Game/stickers/sticker_angry.json"
+			"name": "sticker_angry_json"
 		},
 		{
-			"name": "sticker_angry_png",
+			"url": "assets/Game/stickers/sticker_angry.png",
 			"type": "image",
-			"url": "assets/Game/stickers/sticker_angry.png"
+			"name": "sticker_angry_png"
 		},
 		{
-			"name": "icon_sticker_angry_png",
+			"url": "assets/Game/stickers/icon_sticker_angry.png",
 			"type": "image",
-			"url": "assets/Game/stickers/icon_sticker_angry.png"
+			"name": "icon_sticker_angry_png"
 		},
 		{
-			"name": "sticker_smirk_json",
+			"url": "assets/Game/stickers/sticker_smirk.json",
 			"type": "json",
-			"url": "assets/Game/stickers/sticker_smirk.json"
+			"name": "sticker_smirk_json"
 		},
 		{
-			"name": "sticker_smirk_png",
+			"url": "assets/Game/stickers/sticker_smirk.png",
 			"type": "image",
-			"url": "assets/Game/stickers/sticker_smirk.png"
+			"name": "sticker_smirk_png"
 		},
 		{
-			"name": "icon_sticker_smirk_png",
+			"url": "assets/Game/stickers/icon_sticker_smirk.png",
 			"type": "image",
-			"url": "assets/Game/stickers/icon_sticker_smirk.png"
+			"name": "icon_sticker_smirk_png"
 		},
 		{
-			"name": "icon_sticker_titter_png",
+			"url": "assets/Game/stickers/icon_sticker_titter.png",
 			"type": "image",
-			"url": "assets/Game/stickers/icon_sticker_titter.png"
+			"name": "icon_sticker_titter_png"
 		},
 		{
-			"name": "sticker_titter_png",
+			"url": "assets/Game/stickers/sticker_titter.png",
 			"type": "image",
-			"url": "assets/Game/stickers/sticker_titter.png"
+			"name": "sticker_titter_png"
 		},
 		{
-			"name": "sticker_titter_json",
+			"url": "assets/Game/stickers/sticker_titter.json",
 			"type": "json",
-			"url": "assets/Game/stickers/sticker_titter.json"
+			"name": "sticker_titter_json"
 		},
 		{
-			"name": "props_tomato_json",
+			"url": "assets/Game/props/props_tomato.json",
 			"type": "json",
-			"url": "assets/Game/props/props_tomato.json"
+			"name": "props_tomato_json"
 		},
 		{
-			"name": "props_tomato_png",
+			"url": "assets/Game/props/props_tomato.png",
 			"type": "image",
-			"url": "assets/Game/props/props_tomato.png"
+			"name": "props_tomato_png"
 		},
 		{
-			"name": "icon_props_tomato_png",
+			"url": "assets/Game/props/icon_props_tomato.png",
 			"type": "image",
-			"url": "assets/Game/props/icon_props_tomato.png"
+			"name": "icon_props_tomato_png"
 		},
 		{
-			"name": "btn_score_input_delete_png",
+			"url": "assets/Game/buy_in/btn_score_input_delete.png",
 			"type": "image",
-			"url": "assets/Game/buy_in/btn_score_input_delete.png"
+			"name": "btn_score_input_delete_png"
 		},
 		{
-			"name": "props_flower_png",
+			"url": "assets/Game/props/props_flower.png",
 			"type": "image",
-			"url": "assets/Game/props/props_flower.png"
+			"name": "props_flower_png"
 		},
 		{
-			"name": "props_flower_json",
+			"url": "assets/Game/props/props_flower.json",
 			"type": "json",
-			"url": "assets/Game/props/props_flower.json"
+			"name": "props_flower_json"
 		},
 		{
-			"name": "icon_props_flower_png",
+			"url": "assets/Game/props/icon_props_flower.png",
 			"type": "image",
-			"url": "assets/Game/props/icon_props_flower.png"
+			"name": "icon_props_flower_png"
 		},
 		{
-			"name": "props_heart_png",
+			"url": "assets/Game/props/props_heart.png",
 			"type": "image",
-			"url": "assets/Game/props/props_heart.png"
+			"name": "props_heart_png"
 		},
 		{
-			"name": "props_heart_json",
+			"url": "assets/Game/props/props_heart.json",
 			"type": "json",
-			"url": "assets/Game/props/props_heart.json"
+			"name": "props_heart_json"
 		},
 		{
-			"name": "icon_props_heart_png",
+			"url": "assets/Game/props/icon_props_heart.png",
 			"type": "image",
-			"url": "assets/Game/props/icon_props_heart.png"
+			"name": "icon_props_heart_png"
 		},
 		{
-			"name": "you_win_json",
+			"url": "assets/Game/animation/you_win.json",
 			"type": "json",
-			"url": "assets/Game/animation/you_win.json"
+			"name": "you_win_json"
 		},
 		{
-			"name": "you_win_png",
+			"url": "assets/Game/animation/you_win.png",
 			"type": "image",
-			"url": "assets/Game/animation/you_win.png"
+			"name": "you_win_png"
 		},
 		{
-			"name": "tie_png",
+			"url": "assets/Game/animation/tie.png",
 			"type": "image",
-			"url": "assets/Game/animation/tie.png"
+			"name": "tie_png"
 		},
 		{
-			"name": "tie_json",
+			"url": "assets/Game/animation/tie.json",
 			"type": "json",
-			"url": "assets/Game/animation/tie.json"
+			"name": "tie_json"
 		},
 		{
-			"name": "throw_props_mp3",
+			"url": "assets/Game/props/props_tea.png",
+			"type": "image",
+			"name": "props_tea_png"
+		},
+		{
+			"url": "assets/Game/props/props_tea.json",
+			"type": "json",
+			"name": "props_tea_json"
+		},
+		{
+			"url": "assets/Game/props/icon_props_tea.png",
+			"type": "image",
+			"name": "icon_props_tea_png"
+		},
+		{
+			"url": "assets/Game/props/icon_props_water.png",
+			"type": "image",
+			"name": "icon_props_water_png"
+		},
+		{
+			"url": "assets/Game/props/props_water.png",
+			"type": "image",
+			"name": "props_water_png"
+		},
+		{
+			"url": "assets/Game/props/props_water.json",
+			"type": "json",
+			"name": "props_water_json"
+		},
+		{
+			"url": "assets/Game/buy_in/btn_buy_in_confirm.png",
+			"type": "image",
+			"name": "btn_buy_in_confirm_png"
+		},
+		{
+			"url": "assets/Game/buy_in/btn_buy_in_reject.png",
+			"type": "image",
+			"name": "btn_buy_in_reject_png"
+		},
+		{
+			"url": "assets/Game/buy_in/btn_buy_in_apply.png",
+			"type": "image",
+			"name": "btn_buy_in_apply_png"
+		},
+		{
+			"url": "assets/Game/buy_in/bg_buy_in_application.png",
+			"type": "image",
+			"name": "bg_buy_in_application_png"
+		},
+		{
+			"url": "assets/Game/club/btn_club_application_reject.png",
+			"type": "image",
+			"name": "btn_club_application_reject_png"
+		},
+		{
+			"url": "assets/Game/club/btn_club_application_agree.png",
+			"type": "image",
+			"name": "btn_club_application_agree_png"
+		},
+		{
+			"url": "assets/Loading/animation/enter_room.json",
+			"type": "json",
+			"name": "enter_room_json"
+		},
+		{
+			"url": "assets/Loading/animation/enter_room.png",
+			"type": "image",
+			"name": "enter_room_png"
+		},
+		{
+			"url": "assets/Game/chat/icon_chat_big_microphone.png",
+			"type": "image",
+			"name": "icon_chat_big_microphone_png"
+		},
+		{
+			"url": "assets/Game/chat/icon_audio_small_left.png",
+			"type": "image",
+			"name": "icon_audio_small_left_png"
+		},
+		{
+			"url": "assets/Game/chat/icon_audio_big_right.png",
+			"type": "image",
+			"name": "icon_audio_big_right_png"
+		},
+		{
+			"url": "assets/Game/chat/icon_audio_middle_right.png",
+			"type": "image",
+			"name": "icon_audio_middle_right_png"
+		},
+		{
+			"url": "assets/Game/chat/icon_audio_big_left.png",
+			"type": "image",
+			"name": "icon_audio_big_left_png"
+		},
+		{
+			"url": "assets/Game/chat/icon_audio_middle_left.png",
+			"type": "image",
+			"name": "icon_audio_middle_left_png"
+		},
+		{
+			"url": "assets/Game/chat/icon_audio_small_right.png",
+			"type": "image",
+			"name": "icon_audio_small_right_png"
+		},
+		{
+			"url": "assets/Game/sound/addchips_96.mp3",
 			"type": "sound",
-			"url": "assets/Game/sound/throw_props.mp3"
+			"name": "addchips_96_mp3"
 		},
 		{
-			"name": "all_in_fire_mp3",
+			"url": "assets/Game/sound/all_in_fire_96.mp3",
 			"type": "sound",
-			"url": "assets/Game/sound/all_in_fire.mp3"
+			"name": "all_in_fire_96_mp3"
 		},
 		{
-			"name": "props_flower_mp3",
+			"url": "assets/Game/sound/allin_96.mp3",
 			"type": "sound",
-			"url": "assets/Game/sound/props_flower.mp3"
+			"name": "allin_96_mp3"
 		},
 		{
-			"name": "won_coin_mp3",
+			"url": "assets/Game/sound/bet_96.mp3",
 			"type": "sound",
-			"url": "assets/Game/sound/won_coin.mp3"
+			"name": "bet_96_mp3"
 		},
 		{
-			"name": "props_heart_mp3",
+			"url": "assets/Game/sound/btn_click_96.mp3",
 			"type": "sound",
-			"url": "assets/Game/sound/props_heart.mp3"
+			"name": "btn_click_96_mp3"
 		},
 		{
-			"name": "props_tea_png",
+			"url": "assets/Game/sound/check_96.mp3",
+			"type": "sound",
+			"name": "check_96_mp3"
+		},
+		{
+			"url": "assets/Game/sound/chiptoplayers_96.mp3",
+			"type": "sound",
+			"name": "chiptoplayers_96_mp3"
+		},
+		{
+			"url": "assets/Game/sound/chiptopool_96.mp3",
+			"type": "sound",
+			"name": "chiptopool_96_mp3"
+		},
+		{
+			"url": "assets/Game/sound/fapai_96.mp3",
+			"type": "sound",
+			"name": "fapai_96_mp3"
+		},
+		{
+			"url": "assets/Game/sound/fapai3_96.mp3",
+			"type": "sound",
+			"name": "fapai3_96_mp3"
+		},
+		{
+			"url": "assets/Game/sound/fold_96.mp3",
+			"type": "sound",
+			"name": "fold_96_mp3"
+		},
+		{
+			"url": "assets/Game/sound/g_alarm_96.mp3",
+			"type": "sound",
+			"name": "g_alarm_96_mp3"
+		},
+		{
+			"url": "assets/Game/sound/movechips_96.mp3",
+			"type": "sound",
+			"name": "movechips_96_mp3"
+		},
+		{
+			"url": "assets/Game/sound/notice_96.mp3",
+			"type": "sound",
+			"name": "notice_96_mp3"
+		},
+		{
+			"url": "assets/Game/sound/props_flower_96.mp3",
+			"type": "sound",
+			"name": "props_flower_96_mp3"
+		},
+		{
+			"url": "assets/Game/sound/props_heart_96.mp3",
+			"type": "sound",
+			"name": "props_heart_96_mp3"
+		},
+		{
+			"url": "assets/Game/sound/throw_props_96.mp3",
+			"type": "sound",
+			"name": "throw_props_96_mp3"
+		},
+		{
+			"url": "assets/Game/sound/user_enter_96.mp3",
+			"type": "sound",
+			"name": "user_enter_96_mp3"
+		},
+		{
+			"url": "assets/Game/sound/won_coin_96.mp3",
+			"type": "sound",
+			"name": "won_coin_96_mp3"
+		},
+		{
+			"name": "btn_start_room_png",
 			"type": "image",
-			"url": "assets/Game/props/props_tea.png"
+			"url": "assets/Game/btn_start_room.png"
 		},
 		{
-			"name": "props_tea_json",
-			"type": "json",
-			"url": "assets/Game/props/props_tea.json"
-		},
-		{
-			"name": "icon_props_tea_png",
+			"name": "icon_audio_microphone_png",
 			"type": "image",
-			"url": "assets/Game/props/icon_props_tea.png"
+			"url": "assets/Game/audio/icon_audio_microphone.png"
 		},
 		{
-			"name": "icon_props_water_png",
+			"name": "btn_audio_microphone_down_png",
 			"type": "image",
-			"url": "assets/Game/props/icon_props_water.png"
+			"url": "assets/Game/audio/btn_audio_microphone_down.png"
 		},
 		{
-			"name": "props_water_png",
+			"name": "icon_record_cancelable_png",
 			"type": "image",
-			"url": "assets/Game/props/props_water.png"
-		},
-		{
-			"name": "props_water_json",
-			"type": "json",
-			"url": "assets/Game/props/props_water.json"
-		},
-		{
-			"name": "btn_buy_in_confirm_png",
-			"type": "image",
-			"url": "assets/Game/buy_in/btn_buy_in_confirm.png"
-		},
-		{
-			"name": "btn_buy_in_reject_png",
-			"type": "image",
-			"url": "assets/Game/buy_in/btn_buy_in_reject.png"
-		},
-		{
-			"name": "btn_buy_in_apply_png",
-			"type": "image",
-			"url": "assets/Game/buy_in/btn_buy_in_apply.png"
-		},
-		{
-			"name": "bg_buy_in_application_png",
-			"type": "image",
-			"url": "assets/Game/buy_in/bg_buy_in_application.png"
-		},
-		{
-			"name": "btn_club_application_reject_png",
-			"type": "image",
-			"url": "assets/Game/club/btn_club_application_reject.png"
-		},
-		{
-			"name": "btn_club_application_agree_png",
-			"type": "image",
-			"url": "assets/Game/club/btn_club_application_agree.png"
-		},
-		{
-			"name": "enter_room_json",
-			"type": "json",
-			"url": "assets/Loading/animation/enter_room.json"
-		},
-		{
-			"name": "enter_room_png",
-			"type": "image",
-			"url": "assets/Loading/animation/enter_room.png"
-		},
-		{
-			"name": "icon_chat_voice_png",
-			"type": "image",
-			"url": "assets/Game/chat/icon_chat_voice.png"
-		},
-		{
-			"name": "icon_chat_text_png",
-			"type": "image",
-			"url": "assets/Game/chat/icon_chat_text.png"
-		},
-		{
-			"name": "icon_chat_big_microphone_png",
-			"type": "image",
-			"url": "assets/Game/chat/icon_chat_big_microphone.png"
-		},
-		{
-			"name": "icon_chat_audio_cancel_png",
-			"type": "image",
-			"url": "assets/Game/chat/icon_chat_audio_cancel.png"
-		},
-		{
-			"name": "icon_audio_small_left_png",
-			"type": "image",
-			"url": "assets/Game/chat/icon_audio_small_left.png"
-		},
-		{
-			"name": "icon_audio_big_right_png",
-			"type": "image",
-			"url": "assets/Game/chat/icon_audio_big_right.png"
-		},
-		{
-			"name": "icon_audio_middle_right_png",
-			"type": "image",
-			"url": "assets/Game/chat/icon_audio_middle_right.png"
-		},
-		{
-			"name": "icon_audio_big_left_png",
-			"type": "image",
-			"url": "assets/Game/chat/icon_audio_big_left.png"
-		},
-		{
-			"name": "icon_audio_middle_left_png",
-			"type": "image",
-			"url": "assets/Game/chat/icon_audio_middle_left.png"
-		},
-		{
-			"name": "icon_audio_small_right_png",
-			"type": "image",
-			"url": "assets/Game/chat/icon_audio_small_right.png"
+			"url": "assets/Game/audio/icon_record_cancelable.png"
 		}
 	]
 }
