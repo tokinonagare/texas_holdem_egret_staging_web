@@ -144,6 +144,113 @@ window.skins={};
 		return t;
 	};
 	return ChatTextInputSkin;
+})(eui.Skin);generateEUI.paths['resource/eui_skins/Components/DisconnectViewSkin.exml'] = window.DisconnectViewSkin = (function (_super) {
+	__extends(DisconnectViewSkin, _super);
+	function DisconnectViewSkin() {
+		_super.call(this);
+		this.skinParts = ["flutterAnimation","ghostImage","promptLabel"];
+		
+		this.height = 1334;
+		this.width = 750;
+		this.flutterAnimation_i();
+		this.elementsContent = [this._Rect1_i(),this._Group1_i()];
+		
+		eui.Binding.$bindProperties(this, ["ghostImage"],[0],this._TweenItem1,"target");
+		eui.Binding.$bindProperties(this, [0],[],this._Object1,"y");
+		eui.Binding.$bindProperties(this, [35],[],this._Object2,"y");
+	}
+	var _proto = DisconnectViewSkin.prototype;
+
+	_proto.flutterAnimation_i = function () {
+		var t = new egret.tween.TweenGroup();
+		this.flutterAnimation = t;
+		t.items = [this._TweenItem1_i()];
+		return t;
+	};
+	_proto._TweenItem1_i = function () {
+		var t = new egret.tween.TweenItem();
+		this._TweenItem1 = t;
+		t.paths = [this._Set1_i(),this._To1_i(),this._To2_i()];
+		return t;
+	};
+	_proto._Set1_i = function () {
+		var t = new egret.tween.Set();
+		return t;
+	};
+	_proto._To1_i = function () {
+		var t = new egret.tween.To();
+		t.duration = 1000;
+		t.props = this._Object1_i();
+		return t;
+	};
+	_proto._Object1_i = function () {
+		var t = {};
+		this._Object1 = t;
+		return t;
+	};
+	_proto._To2_i = function () {
+		var t = new egret.tween.To();
+		t.duration = 750;
+		t.props = this._Object2_i();
+		return t;
+	};
+	_proto._Object2_i = function () {
+		var t = {};
+		this._Object2 = t;
+		return t;
+	};
+	_proto._Rect1_i = function () {
+		var t = new eui.Rect();
+		t.fillAlpha = 0.7;
+		t.fillColor = 0x000000;
+		t.height = 1334;
+		t.strokeAlpha = 0.5;
+		t.width = 750;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto._Group1_i = function () {
+		var t = new eui.Group();
+		t.height = 400;
+		t.horizontalCenter = 0;
+		t.verticalCenter = 0;
+		t.percentWidth = 100;
+		t.elementsContent = [this._Image1_i(),this.ghostImage_i(),this.promptLabel_i()];
+		return t;
+	};
+	_proto._Image1_i = function () {
+		var t = new eui.Image();
+		t.height = 159;
+		t.horizontalCenter = 0;
+		t.source = "image_disconnect_head_png";
+		t.width = 187;
+		t.y = 180;
+		return t;
+	};
+	_proto.ghostImage_i = function () {
+		var t = new eui.Image();
+		this.ghostImage = t;
+		t.height = 165;
+		t.source = "image_disconnect_ghost_png";
+		t.width = 113;
+		t.x = 375;
+		t.y = 35;
+		return t;
+	};
+	_proto.promptLabel_i = function () {
+		var t = new eui.Label();
+		this.promptLabel = t;
+		t.horizontalCenter = 0;
+		t.size = 25;
+		t.text = "来玩与母星失去连接,正在努力恢复...";
+		t.textAlign = "center";
+		t.verticalAlign = "middle";
+		t.percentWidth = 100;
+		t.y = 370;
+		return t;
+	};
+	return DisconnectViewSkin;
 })(eui.Skin);generateEUI.paths['resource/eui_skins/Components/LoadingComponentSkin.exml'] = window.LoadingComponentSkin = (function (_super) {
 	__extends(LoadingComponentSkin, _super);
 	function LoadingComponentSkin() {

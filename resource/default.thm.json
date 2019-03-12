@@ -4,6 +4,7 @@
 	"exmls": [
 		"resource/eui_skins/Components/ChatSendButtonSkin.exml",
 		"resource/eui_skins/Components/ChatTextInputSkin.exml",
+		"resource/eui_skins/Components/DisconnectViewSkin.exml",
 		"resource/eui_skins/Components/LoadingComponentSkin.exml",
 		"resource/eui_skins/Components/LoadingProgress.exml",
 		"resource/eui_skins/Components/LoginTextInputSkin.exml",
