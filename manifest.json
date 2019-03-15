@@ -10,12 +10,12 @@
 		"./js/experimental.min_31954293.js",
 		"./js/promise.min_83a6a5d.js",
 		"./js/particle.min_27fe451d.js",
-		"./js/centrifuge.min_44652cef.js",
+		"./js/centrifuge.min_ee1de359.js",
 		"./js/uuid.min_56860d1c.js",
 		"./js/decimal.min_857aef33.js"
 	],
 	"game": [
 		"./js/default.thm_c4b879b1.js",
-		"./js/main.min_a90f8302.js"
+		"./js/main.min_f0ec080e.js"
 	]
 }
