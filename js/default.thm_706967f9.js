@@ -2026,11 +2026,11 @@ window.skins={};
 
 	function GameSkin() {
 		_super.call(this);
-		this.skinParts = ["icon","mainPotLabel","creatorLabel","houseNumberLabel","blindLabel","countdownLabel","roomInfoGroup","communityCardList","startGameButton","cardTypeLabel","potsList","startRoomButton","playGameButtonGroup","infoLabel","promptLabel","wonCardLabel","group","raiseSelector","quickRaiser","reviewboardButton","messageAlarm","menuButton","debugView","leaderButton","chatButton","microphoneButton","cardPattern"];
+		this.skinParts = ["icon","mainPotLabel","creatorLabel","houseNumberLabel","blindLabel","countdownLabel","roomInfoGroup","communityCardList","startGameButton","cardTypeLabel","potsList","startRoomButton","playGameButtonGroup","infoLabel","promptLabel","wonCardLabel","group","raiseSelector","messageAlarm","quickRaiser","reviewboardButton","menuButton","debugView","leaderButton","chatButton","microphoneButton","cardPattern"];
 		
 		this.height = 1334;
 		this.width = 750;
-		this.elementsContent = [this._Image1_i(),this.icon_i(),this.group_i(),this.raiseSelector_i(),this.quickRaiser_i(),this.reviewboardButton_i(),this.messageAlarm_i(),this.menuButton_i(),this.debugView_i(),this.leaderButton_i(),this.chatButton_i(),this.microphoneButton_i(),this.cardPattern_i()];
+		this.elementsContent = [this._Image1_i(),this.icon_i(),this.group_i(),this.raiseSelector_i(),this.messageAlarm_i(),this.quickRaiser_i(),this.reviewboardButton_i(),this.menuButton_i(),this.debugView_i(),this.leaderButton_i(),this.chatButton_i(),this.microphoneButton_i(),this.cardPattern_i()];
 	}
 	var _proto = GameSkin.prototype;
 
@@ -2283,6 +2283,17 @@ window.skins={};
 		t.y = 0;
 		return t;
 	};
+	_proto.messageAlarm_i = function () {
+		var t = new MessageAlarm();
+		this.messageAlarm = t;
+		t.height = 60;
+		t.skinName = "MessageAlarmSkin";
+		t.visible = false;
+		t.width = 63;
+		t.x = 580;
+		t.y = 60;
+		return t;
+	};
 	_proto.quickRaiser_i = function () {
 		var t = new NumericKeyboardScene();
 		this.quickRaiser = t;
@@ -2300,19 +2311,8 @@ window.skins={};
 		t.label = "";
 		t.right = 34;
 		t.width = 68;
-		t.y = 30;
+		t.y = 55;
 		t.skinName = GameSkin$Skin12;
-		return t;
-	};
-	_proto.messageAlarm_i = function () {
-		var t = new MessageAlarm();
-		this.messageAlarm = t;
-		t.height = 60;
-		t.right = 112;
-		t.skinName = "MessageAlarmSkin";
-		t.visible = false;
-		t.width = 63;
-		t.y = 34.5;
 		return t;
 	};
 	_proto.menuButton_i = function () {
@@ -2320,7 +2320,7 @@ window.skins={};
 		this.menuButton = t;
 		t.label = "";
 		t.x = 34;
-		t.y = 30;
+		t.y = 55;
 		t.skinName = GameSkin$Skin13;
 		return t;
 	};
@@ -2338,7 +2338,7 @@ window.skins={};
 	_proto.leaderButton_i = function () {
 		var t = new eui.Button();
 		this.leaderButton = t;
-		t.bottom = 46;
+		t.bottom = 50;
 		t.label = "";
 		t.left = 47;
 		t.skinName = GameSkin$Skin14;
@@ -2347,7 +2347,7 @@ window.skins={};
 	_proto.chatButton_i = function () {
 		var t = new eui.Button();
 		this.chatButton = t;
-		t.bottom = 46;
+		t.bottom = 50;
 		t.label = "";
 		t.right = 123;
 		t.visible = false;
@@ -2357,7 +2357,7 @@ window.skins={};
 	_proto.microphoneButton_i = function () {
 		var t = new eui.Button();
 		this.microphoneButton = t;
-		t.bottom = 37;
+		t.bottom = 44;
 		t.label = "";
 		t.right = 44;
 		t.visible = false;
