@@ -2110,6 +2110,7 @@ window.skins={};
 	_proto.houseNumberLabel_i = function () {
 		var t = new eui.Label();
 		this.houseNumberLabel = t;
+		t.height = 22;
 		t.horizontalCenter = 0;
 		t.scaleX = 1;
 		t.scaleY = 1;
@@ -2117,7 +2118,7 @@ window.skins={};
 		t.text = "房间号";
 		t.textAlign = "center";
 		t.textColor = 0x034d45;
-		t.width = 400;
+		t.width = 440;
 		t.x = 0;
 		t.y = 35;
 		return t;
