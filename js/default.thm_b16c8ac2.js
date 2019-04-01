@@ -2026,11 +2026,11 @@ window.skins={};
 
 	function GameSkin() {
 		_super.call(this);
-		this.skinParts = ["icon","mainPotLabel","creatorLabel","houseNumberLabel","blindLabel","countdownLabel","roomInfoGroup","communityCardList","startGameButton","cardTypeLabel","potsList","startRoomButton","playGameButtonGroup","infoLabel","promptLabel","wonCardLabel","group","raiseSelector","messageAlarm","quickRaiser","reviewboardButton","menuButton","debugView","leaderButton","chatButton","microphoneButton","cardPattern"];
+		this.skinParts = ["icon","mainPotLabel","creatorLabel","houseNumberLabel","blindLabel","countdownLabel","roomInfoGroup","communityCardList","startGameButton","cardTypeLabel","potsList","startRoomButton","playGameButtonGroup","promptLabel","winningCardLabel","group","raiseSelector","messageAlarm","quickRaiser","reviewboardButton","menuButton","debugView","leaderboardButton","chatButton","microphoneButton","cardPattern"];
 		
 		this.height = 1334;
 		this.width = 750;
-		this.elementsContent = [this._Image1_i(),this.icon_i(),this.group_i(),this.raiseSelector_i(),this.messageAlarm_i(),this.quickRaiser_i(),this.reviewboardButton_i(),this.menuButton_i(),this.debugView_i(),this.leaderButton_i(),this.chatButton_i(),this.microphoneButton_i(),this.cardPattern_i()];
+		this.elementsContent = [this._Image1_i(),this.icon_i(),this.group_i(),this.raiseSelector_i(),this.messageAlarm_i(),this.quickRaiser_i(),this.reviewboardButton_i(),this.menuButton_i(),this.debugView_i(),this.leaderboardButton_i(),this.chatButton_i(),this.microphoneButton_i(),this.cardPattern_i()];
 	}
 	var _proto = GameSkin.prototype;
 
@@ -2061,7 +2061,7 @@ window.skins={};
 		t.touchThrough = true;
 		t.verticalCenter = 0;
 		t.width = 750;
-		t.elementsContent = [this.mainPotLabel_i(),this.roomInfoGroup_i(),this.communityCardList_i(),this.startGameButton_i(),this.cardTypeLabel_i(),this.potsList_i(),this.startRoomButton_i(),this.playGameButtonGroup_i(),this.infoLabel_i(),this.promptLabel_i(),this.wonCardLabel_i()];
+		t.elementsContent = [this.mainPotLabel_i(),this.roomInfoGroup_i(),this.communityCardList_i(),this.startGameButton_i(),this.cardTypeLabel_i(),this.potsList_i(),this.startRoomButton_i(),this.playGameButtonGroup_i(),this.promptLabel_i(),this.winningCardLabel_i()];
 		return t;
 	};
 	_proto.mainPotLabel_i = function () {
@@ -2238,18 +2238,6 @@ window.skins={};
 		t.y = 820;
 		return t;
 	};
-	_proto.infoLabel_i = function () {
-		var t = new eui.Label();
-		this.infoLabel = t;
-		t.bottom = 20;
-		t.height = 60;
-		t.horizontalCenter = 0;
-		t.text = "DebugLabel";
-		t.textAlign = "center";
-		t.visible = false;
-		t.width = 450;
-		return t;
-	};
 	_proto.promptLabel_i = function () {
 		var t = new eui.Label();
 		this.promptLabel = t;
@@ -2260,9 +2248,9 @@ window.skins={};
 		t.y = 1153.5;
 		return t;
 	};
-	_proto.wonCardLabel_i = function () {
+	_proto.winningCardLabel_i = function () {
 		var t = new eui.BitmapLabel();
-		this.wonCardLabel = t;
+		this.winningCardLabel = t;
 		t.font = "card_type_fnt";
 		t.height = 30;
 		t.horizontalCenter = 0;
@@ -2335,9 +2323,9 @@ window.skins={};
 		t.y = 0;
 		return t;
 	};
-	_proto.leaderButton_i = function () {
+	_proto.leaderboardButton_i = function () {
 		var t = new eui.Button();
-		this.leaderButton = t;
+		this.leaderboardButton = t;
 		t.bottom = 50;
 		t.label = "";
 		t.left = 47;
