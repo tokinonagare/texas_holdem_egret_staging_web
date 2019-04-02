@@ -24,7 +24,7 @@
 ,"radialAccelerationVariance":0
 ,"duration":-1
 ,"tangentialAcceleration":0
-,"maxParticles":180
+,"maxParticles":120
 ,"blendFactorDestination":"oneMinusSourceAlpha"
 ,"maxRadius":100
 ,"speed":10
