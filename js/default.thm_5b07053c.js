@@ -2026,7 +2026,7 @@ window.skins={};
 
 	function GameSkin() {
 		_super.call(this);
-		this.skinParts = ["icon","mainPotLabel","creatorLabel","houseNumberLabel","blindLabel","countdownLabel","roomInfoGroup","communityCardList","startGameButton","cardTypeLabel","potsList","startRoomButton","playGameButtonGroup","promptLabel","winningCardLabel","group","raiseSelector","messageAlarm","quickRaiser","reviewboardButton","menuButton","debugView","leaderboardButton","chatButton","microphoneButton","cardPattern"];
+		this.skinParts = ["icon","mainPotLabel","currencyTypeLabel","creatorLabel","houseNumberLabel","blindLabel","countdownLabel","roomInfoGroup","communityCardList","startGameButton","cardTypeLabel","potsList","startRoomButton","playGameButtonGroup","promptLabel","winningCardLabel","group","raiseSelector","messageAlarm","quickRaiser","reviewboardButton","menuButton","debugView","leaderboardButton","chatButton","microphoneButton","cardPattern"];
 		
 		this.height = 1334;
 		this.width = 750;
@@ -2081,13 +2081,30 @@ window.skins={};
 	_proto.roomInfoGroup_i = function () {
 		var t = new eui.Group();
 		this.roomInfoGroup = t;
-		t.height = 120;
+		t.height = 150;
 		t.horizontalCenter = 0;
 		t.touchChildren = true;
 		t.touchThrough = true;
 		t.width = 400;
 		t.y = 820;
-		t.elementsContent = [this.creatorLabel_i(),this.houseNumberLabel_i(),this.blindLabel_i(),this.countdownLabel_i()];
+		t.elementsContent = [this.currencyTypeLabel_i(),this.creatorLabel_i(),this.houseNumberLabel_i(),this.blindLabel_i(),this.countdownLabel_i()];
+		return t;
+	};
+	_proto.currencyTypeLabel_i = function () {
+		var t = new eui.Label();
+		this.currencyTypeLabel = t;
+		t.height = 33;
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 22;
+		t.text = "场次类型";
+		t.textAlign = "center";
+		t.textColor = 0x034D45;
+		t.verticalAlign = "middle";
+		t.width = 400;
+		t.x = 0;
+		t.y = 117;
 		return t;
 	};
 	_proto.creatorLabel_i = function () {
@@ -4661,7 +4678,7 @@ window.skins={};
 
 	function BuyInSkin() {
 		_super.call(this);
-		this.skinParts = ["background","scoreSlider","confirmButton","minBuyLabel","balanceLabel","scoreTextInput","group"];
+		this.skinParts = ["background","coinBalanceLabel","coinGroup","scoreSlider","confirmButton","minBuyLabel","balanceLabel","scoreTextInput","group"];
 		
 		this.height = 1334;
 		this.width = 750;
@@ -4686,7 +4703,7 @@ window.skins={};
 		t.horizontalCenter = 0;
 		t.verticalCenter = 0;
 		t.width = 536;
-		t.elementsContent = [this._Image1_i(),this._Label1_i(),this.scoreSlider_i(),this.confirmButton_i(),this.minBuyLabel_i(),this.balanceLabel_i(),this._Label2_i(),this.scoreTextInput_i()];
+		t.elementsContent = [this._Image1_i(),this._Label1_i(),this.coinGroup_i(),this.scoreSlider_i(),this.confirmButton_i(),this.minBuyLabel_i(),this.balanceLabel_i(),this._Label2_i(),this.scoreTextInput_i()];
 		return t;
 	};
 	_proto._Image1_i = function () {
@@ -4709,6 +4726,44 @@ window.skins={};
 		t.y = 40;
 		return t;
 	};
+	_proto.coinGroup_i = function () {
+		var t = new eui.Group();
+		this.coinGroup = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 40;
+		t.horizontalCenter = 0;
+		t.width = 400;
+		t.y = 275;
+		t.layout = this._HorizontalLayout1_i();
+		t.elementsContent = [this._Image2_i(),this.coinBalanceLabel_i()];
+		return t;
+	};
+	_proto._HorizontalLayout1_i = function () {
+		var t = new eui.HorizontalLayout();
+		t.gap = 10;
+		t.horizontalAlign = "center";
+		t.verticalAlign = "middle";
+		return t;
+	};
+	_proto._Image2_i = function () {
+		var t = new eui.Image();
+		t.height = 40;
+		t.source = "icon_coin_png";
+		t.verticalCenter = 0;
+		t.width = 40;
+		t.x = 90;
+		return t;
+	};
+	_proto.coinBalanceLabel_i = function () {
+		var t = new eui.Label();
+		this.coinBalanceLabel = t;
+		t.text = "0";
+		t.textColor = 0xffb06c;
+		t.verticalCenter = 0;
+		t.x = 161;
+		return t;
+	};
 	_proto.scoreSlider_i = function () {
 		var t = new eui.HSlider();
 		this.scoreSlider = t;
@@ -4716,7 +4771,7 @@ window.skins={};
 		t.horizontalCenter = 1;
 		t.skinName = "BuyInSliderSkin";
 		t.width = 476;
-		t.y = 245;
+		t.y = 220;
 		return t;
 	};
 	_proto.confirmButton_i = function () {
@@ -4740,7 +4795,7 @@ window.skins={};
 		t.textAlign = "center";
 		t.textColor = 0xfe2a2a;
 		t.width = 400;
-		t.y = 352;
+		t.y = 360;
 		return t;
 	};
 	_proto.balanceLabel_i = function () {
@@ -4753,7 +4808,7 @@ window.skins={};
 		t.textAlign = "center";
 		t.textColor = 0x7f7f89;
 		t.width = 400;
-		t.y = 305;
+		t.y = 325;
 		return t;
 	};
 	_proto._Label2_i = function () {
@@ -4776,7 +4831,7 @@ window.skins={};
 		t.inputType = "tel";
 		t.skinName = "ScoreTextInputSkin";
 		t.width = 230;
-		t.y = 185;
+		t.y = 170;
 		return t;
 	};
 	return BuyInSkin;
