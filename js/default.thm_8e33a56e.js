@@ -2026,7 +2026,7 @@ window.skins={};
 
 	function GameSkin() {
 		_super.call(this);
-		this.skinParts = ["icon","mainPotLabel","currencyTypeLabel","creatorLabel","houseNumberLabel","blindLabel","countdownLabel","roomInfoGroup","communityCardList","startGameButton","cardTypeLabel","potsList","startRoomButton","playGameButtonGroup","promptLabel","winningCardLabel","group","raiseSelector","messageAlarm","quickRaiser","reviewboardButton","menuButton","debugView","leaderboardButton","chatButton","microphoneButton","cardPattern"];
+		this.skinParts = ["icon","mainPotLabel","paymentMethodLabel","creatorLabel","houseNumberLabel","blindLabel","countdownLabel","roomInfoGroup","communityCardList","startGameButton","cardTypeLabel","potsList","startRoomButton","playGameButtonGroup","promptLabel","winningCardLabel","group","raiseSelector","messageAlarm","quickRaiser","reviewboardButton","menuButton","debugView","leaderboardButton","chatButton","microphoneButton","cardPattern"];
 		
 		this.height = 1334;
 		this.width = 750;
@@ -2087,12 +2087,12 @@ window.skins={};
 		t.touchThrough = true;
 		t.width = 400;
 		t.y = 820;
-		t.elementsContent = [this.currencyTypeLabel_i(),this.creatorLabel_i(),this.houseNumberLabel_i(),this.blindLabel_i(),this.countdownLabel_i()];
+		t.elementsContent = [this.paymentMethodLabel_i(),this.creatorLabel_i(),this.houseNumberLabel_i(),this.blindLabel_i(),this.countdownLabel_i()];
 		return t;
 	};
-	_proto.currencyTypeLabel_i = function () {
+	_proto.paymentMethodLabel_i = function () {
 		var t = new eui.Label();
-		this.currencyTypeLabel = t;
+		this.paymentMethodLabel = t;
 		t.height = 33;
 		t.horizontalCenter = 0;
 		t.scaleX = 1;
