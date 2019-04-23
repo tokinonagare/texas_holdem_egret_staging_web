@@ -6688,7 +6688,7 @@ window.skins={};
 	__extends(PlayerDetailSkin, _super);
 	function PlayerDetailSkin() {
 		_super.call(this);
-		this.skinParts = ["background","avatarImage","nicknameLabel","bioLabel","statisticList","propsList","group"];
+		this.skinParts = ["background","coinBalanceLabel","coinGroup","avatarImage","nicknameLabel","bioLabel","statisticList","propsList","group"];
 		
 		this.height = 1334;
 		this.width = 750;
@@ -6713,7 +6713,7 @@ window.skins={};
 		t.horizontalCenter = 0;
 		t.verticalCenter = 0;
 		t.width = 690;
-		t.elementsContent = [this._Rect1_i(),this.avatarImage_i(),this.nicknameLabel_i(),this.bioLabel_i(),this._Group1_i(),this._Group2_i()];
+		t.elementsContent = [this._Rect1_i(),this.coinGroup_i(),this.avatarImage_i(),this.nicknameLabel_i(),this.bioLabel_i(),this._Group1_i(),this._Group2_i()];
 		return t;
 	};
 	_proto._Rect1_i = function () {
@@ -6728,6 +6728,44 @@ window.skins={};
 		t.width = 690;
 		t.x = 0;
 		t.y = 0;
+		return t;
+	};
+	_proto.coinGroup_i = function () {
+		var t = new eui.Group();
+		this.coinGroup = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 40;
+		t.width = 400;
+		t.x = 230;
+		t.y = 80;
+		t.layout = this._HorizontalLayout1_i();
+		t.elementsContent = [this._Image1_i(),this.coinBalanceLabel_i()];
+		return t;
+	};
+	_proto._HorizontalLayout1_i = function () {
+		var t = new eui.HorizontalLayout();
+		t.gap = 10;
+		t.horizontalAlign = "left";
+		t.verticalAlign = "middle";
+		return t;
+	};
+	_proto._Image1_i = function () {
+		var t = new eui.Image();
+		t.height = 40;
+		t.source = "icon_coin_png";
+		t.verticalCenter = 0;
+		t.width = 40;
+		t.x = 90;
+		return t;
+	};
+	_proto.coinBalanceLabel_i = function () {
+		var t = new eui.Label();
+		this.coinBalanceLabel = t;
+		t.text = "0";
+		t.textColor = 0xFFB06C;
+		t.verticalCenter = 0;
+		t.x = 161;
 		return t;
 	};
 	_proto.avatarImage_i = function () {
@@ -6747,7 +6785,7 @@ window.skins={};
 		t.maxWidth = 240;
 		t.text = "Stan";
 		t.x = 230;
-		t.y = 60;
+		t.y = 40;
 		return t;
 	};
 	_proto.bioLabel_i = function () {
@@ -6945,10 +6983,10 @@ window.skins={};
 	_proto.propsList_i = function () {
 		var t = new eui.List();
 		this.propsList = t;
-		t.layout = this._HorizontalLayout1_i();
+		t.layout = this._HorizontalLayout2_i();
 		return t;
 	};
-	_proto._HorizontalLayout1_i = function () {
+	_proto._HorizontalLayout2_i = function () {
 		var t = new eui.HorizontalLayout();
 		t.gap = 26;
 		t.horizontalAlign = "contentJustify";
