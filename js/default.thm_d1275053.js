@@ -1567,22 +1567,22 @@ window.skins={};
 	__extends(DebugViewSkin, _super);
 	function DebugViewSkin() {
 		_super.call(this);
-		this.skinParts = ["header","domainLabel","delayLabel","logList","logScroller"];
+		this.skinParts = ["header","domainLabel","delayLabel","roomIdLabel","gameIdLabel","logList","logScroller"];
 		
-		this.height = 690;
+		this.height = 800;
 		this.width = 600;
-		this.elementsContent = [this._Group3_i()];
+		this.elementsContent = [this._Group4_i()];
 	}
 	var _proto = DebugViewSkin.prototype;
 
-	_proto._Group3_i = function () {
+	_proto._Group4_i = function () {
 		var t = new eui.Group();
 		t.percentHeight = 100;
 		t.percentWidth = 100;
 		t.x = 0;
 		t.y = 0;
 		t.layout = this._VerticalLayout2_i();
-		t.elementsContent = [this.header_i(),this._Group1_i(),this._Group2_i()];
+		t.elementsContent = [this.header_i(),this._Group1_i(),this._Group2_i(),this._Group3_i()];
 		return t;
 	};
 	_proto._VerticalLayout2_i = function () {
@@ -1627,7 +1627,7 @@ window.skins={};
 		this.domainLabel = t;
 		t.anchorOffsetX = 0;
 		t.height = 60;
-		t.left = 20;
+		t.left = 0;
 		t.scaleX = 1;
 		t.scaleY = 1;
 		t.size = 25;
@@ -1635,7 +1635,7 @@ window.skins={};
 		t.textAlign = "left";
 		t.textColor = 0xf7ea11;
 		t.verticalAlign = "middle";
-		t.width = 410;
+		t.width = 420;
 		t.y = 0;
 		return t;
 	};
@@ -1657,14 +1657,68 @@ window.skins={};
 	};
 	_proto._Group2_i = function () {
 		var t = new eui.Group();
+		t.height = 80;
+		t.percentWidth = 100;
+		t.x = 116;
+		t.y = 624;
+		t.elementsContent = [this._Rect2_i(),this.roomIdLabel_i(),this.gameIdLabel_i()];
+		return t;
+	};
+	_proto._Rect2_i = function () {
+		var t = new eui.Rect();
+		t.fillAlpha = 0.7;
+		t.percentHeight = 100;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto.roomIdLabel_i = function () {
+		var t = new eui.Label();
+		this.roomIdLabel = t;
+		t.anchorOffsetX = 0;
+		t.height = 30;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 25;
+		t.text = "Label";
+		t.textAlign = "left";
+		t.textColor = 0xf27110;
+		t.verticalAlign = "middle";
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 10;
+		return t;
+	};
+	_proto.gameIdLabel_i = function () {
+		var t = new eui.Label();
+		this.gameIdLabel = t;
+		t.anchorOffsetX = 0;
+		t.height = 30;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 25;
+		t.text = "Label";
+		t.textAlign = "left";
+		t.textColor = 0x10f2e8;
+		t.verticalAlign = "middle";
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 40;
+		return t;
+	};
+	_proto._Group3_i = function () {
+		var t = new eui.Group();
 		t.height = 630;
 		t.percentWidth = 100;
 		t.x = 0;
 		t.y = 0;
-		t.elementsContent = [this._Rect2_i(),this.logScroller_i()];
+		t.elementsContent = [this._Rect3_i(),this.logScroller_i()];
 		return t;
 	};
-	_proto._Rect2_i = function () {
+	_proto._Rect3_i = function () {
 		var t = new eui.Rect();
 		t.fillAlpha = 0.7;
 		t.percentHeight = 100;
