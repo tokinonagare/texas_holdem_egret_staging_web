@@ -7360,11 +7360,11 @@ window.skins={};
 	__extends(ReviewboardGameHistorySettlementItemSkin, _super);
 	function ReviewboardGameHistorySettlementItemSkin() {
 		_super.call(this);
-		this.skinParts = ["playerPositionIcon","playerNameLabel","playerStateLabel","handPokersList","boardPokersList","playerSettlementLabel"];
+		this.skinParts = ["playerPositionIcon","playerNameLabel","playerStateLabel","handPokersList","boardPokersList","playerSettlementLabel","showdownStrengthLabel"];
 		
 		this.height = 145;
 		this.width = 620;
-		this.elementsContent = [this.playerPositionIcon_i(),this._Group1_i(),this.handPokersList_i(),this.boardPokersList_i(),this.playerSettlementLabel_i()];
+		this.elementsContent = [this.playerPositionIcon_i(),this._Group1_i(),this.handPokersList_i(),this.boardPokersList_i(),this.playerSettlementLabel_i(),this.showdownStrengthLabel_i()];
 	}
 	var _proto = ReviewboardGameHistorySettlementItemSkin.prototype;
 
@@ -7465,6 +7465,16 @@ window.skins={};
 		t.size = 24;
 		t.text = "200";
 		t.verticalCenter = 16;
+		return t;
+	};
+	_proto.showdownStrengthLabel_i = function () {
+		var t = new eui.Label();
+		this.showdownStrengthLabel = t;
+		t.right = 30;
+		t.size = 24;
+		t.text = "-";
+		t.textColor = 0xB8C2C0;
+		t.top = 16;
 		return t;
 	};
 	return ReviewboardGameHistorySettlementItemSkin;
