@@ -1,21 +1,21 @@
 {
 	"initial": [
-		"./js/egret.min_f1f027d7.js",
-		"./js/egret.web.min_2dd0bd72.js",
-		"./js/eui.min_4f767512.js",
-		"./js/assetsmanager.min_70d22011.js",
-		"./js/tween.min_6c5a88f9.js",
-		"./js/game.min_45aa06f6.js",
-		"./js/socket.min_8b4cb752.js",
-		"./js/experimental.min_31954293.js",
-		"./js/promise.min_83a6a5d.js",
-		"./js/particle.min_27fe451d.js",
-		"./js/centrifuge.min_ee1de359.js",
-		"./js/uuid.min_56860d1c.js",
-		"./js/decimal.min_857aef33.js"
+		"js/egret.min_e70fa1ee.js",
+		"js/egret.web.min_e835c5d0.js",
+		"js/eui.min_e8f47f49.js",
+		"js/assetsmanager.min_77c2fdfe.js",
+		"js/tween.min_6c5a88f9.js",
+		"js/game.min_8c120525.js",
+		"js/socket.min_8b4cb752.js",
+		"js/experimental.min_31954293.js",
+		"js/promise.min_83a6a5d.js",
+		"js/particle.min_27fe451d.js",
+		"js/centrifuge.min_ee1de359.js",
+		"js/uuid.min_56860d1c.js",
+		"js/decimal.min_857aef33.js"
 	],
 	"game": [
-		"./js/default.thm_2507bda2.js",
-		"./js/main.min_fa68bf35.js"
+		"js/default.thm_c031f50f.js",
+		"js/main.min_5d87a51f.js"
 	]
 }

@@ -1,4 +1,4 @@
-window.skins={};
+window.skins=window.skins||{};
                 function __extends(d, b) {
                     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
                         function __() {
