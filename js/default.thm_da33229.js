@@ -2400,6 +2400,7 @@ window.skins=window.skins||{};
 		t.bottom = 50;
 		t.label = "";
 		t.left = 47;
+		t.visible = false;
 		t.skinName = GameSkin$Skin14;
 		return t;
 	};
