@@ -4797,7 +4797,7 @@ window.skins=window.skins||{};
 
 	function BuyInSkin() {
 		_super.call(this);
-		this.skinParts = ["background","coinBalanceLabel","coinGroup","scoreSlider","confirmButton","minBuyLabel","balanceLabel","scoreTextInput","group"];
+		this.skinParts = ["background","titleLabel","coinBalanceLabel","coinGroup","scoreSlider","confirmButton","minBuyLabel","balanceLabel","scoreTextInput","group"];
 		
 		this.height = 1334;
 		this.width = 750;
@@ -4822,7 +4822,7 @@ window.skins=window.skins||{};
 		t.horizontalCenter = 0;
 		t.verticalCenter = 0;
 		t.width = 536;
-		t.elementsContent = [this._Image1_i(),this._Label1_i(),this.coinGroup_i(),this.scoreSlider_i(),this.confirmButton_i(),this.minBuyLabel_i(),this.balanceLabel_i(),this._Label2_i(),this.scoreTextInput_i()];
+		t.elementsContent = [this._Image1_i(),this.titleLabel_i(),this.coinGroup_i(),this.scoreSlider_i(),this.confirmButton_i(),this.minBuyLabel_i(),this.balanceLabel_i(),this._Label1_i(),this.scoreTextInput_i()];
 		return t;
 	};
 	_proto._Image1_i = function () {
@@ -4834,8 +4834,9 @@ window.skins=window.skins||{};
 		t.y = 0;
 		return t;
 	};
-	_proto._Label1_i = function () {
+	_proto.titleLabel_i = function () {
 		var t = new eui.Label();
+		this.titleLabel = t;
 		t.horizontalCenter = 0;
 		t.scaleX = 1;
 		t.scaleY = 1;
@@ -4930,12 +4931,12 @@ window.skins=window.skins||{};
 		t.y = 325;
 		return t;
 	};
-	_proto._Label2_i = function () {
+	_proto._Label1_i = function () {
 		var t = new eui.Label();
 		t.height = 44;
 		t.horizontalCenter = 0;
 		t.size = 22;
-		t.text = "温馨提示: 游戏途中成功带入记分牌, 将在下一局游戏开始后到账";
+		t.text = "温馨提示: 游戏途中成功带入, 将在下一局游戏开始后到账";
 		t.textAlign = "center";
 		t.textColor = 0x00adf7;
 		t.width = 400;
@@ -6468,7 +6469,7 @@ window.skins=window.skins||{};
 	};
 	_proto._Object2_i = function () {
 		var t = {};
-		t.item = "补充记分牌";
+		t.item = "补充带入";
 		t.showArrow = "";
 		return t;
 	};
