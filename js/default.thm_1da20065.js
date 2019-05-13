@@ -2088,7 +2088,7 @@ window.skins=window.skins||{};
 
 	function GameSkin() {
 		_super.call(this);
-		this.skinParts = ["icon","mainPotLabel","settlementMethodLabel","creatorLabel","houseNumberLabel","blindLabel","countdownLabel","roomInfoGroup","communityCardList","startGameButton","cardTypeLabel","potsList","startRoomButton","playGameButtonGroup","promptLabel","winningCardLabel","group","raiseSelector","messageAlarm","quickRaiser","reviewboardButton","menuButton","debugView","leaderboardButton","chatButton","microphoneButton","cardPattern"];
+		this.skinParts = ["icon","mainPotLabel","blindLabel","countdownLabel","settlementMethodLabel","creatorLabel","houseNumberLabel","roomInfoGroup","communityCardList","startGameButton","cardTypeLabel","potsList","startRoomButton","playGameButtonGroup","promptLabel","winningCardLabel","group","raiseSelector","messageAlarm","quickRaiser","reviewboardButton","menuButton","debugView","leaderboardButton","chatButton","microphoneButton","cardPattern"];
 		
 		this.height = 1334;
 		this.width = 750;
@@ -2148,14 +2148,100 @@ window.skins=window.skins||{};
 		t.touchChildren = true;
 		t.touchThrough = true;
 		t.width = 400;
-		t.y = 820;
-		t.elementsContent = [this.settlementMethodLabel_i(),this.creatorLabel_i(),this.houseNumberLabel_i(),this.blindLabel_i(),this.countdownLabel_i()];
+		t.y = 830;
+		t.elementsContent = [this._Group1_i(),this._Group2_i(),this.settlementMethodLabel_i(),this.creatorLabel_i(),this.houseNumberLabel_i()];
+		return t;
+	};
+	_proto._Group1_i = function () {
+		var t = new eui.Group();
+		t.height = 24;
+		t.left = 50;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.width = 150;
+		t.y = 0;
+		t.layout = this._HorizontalLayout1_i();
+		t.elementsContent = [this._Image2_i(),this.blindLabel_i()];
+		return t;
+	};
+	_proto._HorizontalLayout1_i = function () {
+		var t = new eui.HorizontalLayout();
+		t.gap = 10;
+		t.horizontalAlign = "center";
+		t.verticalAlign = "middle";
+		return t;
+	};
+	_proto._Image2_i = function () {
+		var t = new eui.Image();
+		t.height = 21;
+		t.source = "icon_room_chip_png";
+		t.width = 22;
+		t.x = 73;
+		t.y = 7;
+		return t;
+	};
+	_proto.blindLabel_i = function () {
+		var t = new eui.Label();
+		this.blindLabel = t;
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 22;
+		t.text = "SB/BB";
+		t.textAlign = "left";
+		t.textColor = 0x034d45;
+		t.x = 100;
+		t.y = 65;
+		return t;
+	};
+	_proto._Group2_i = function () {
+		var t = new eui.Group();
+		t.height = 24;
+		t.right = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.width = 200;
+		t.y = 0;
+		t.layout = this._HorizontalLayout2_i();
+		t.elementsContent = [this._Image3_i(),this.countdownLabel_i()];
+		return t;
+	};
+	_proto._HorizontalLayout2_i = function () {
+		var t = new eui.HorizontalLayout();
+		t.gap = 10;
+		t.horizontalAlign = "center";
+		return t;
+	};
+	_proto._Image3_i = function () {
+		var t = new eui.Image();
+		t.height = 21;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "icon_room_clock_png";
+		t.width = 22;
+		t.x = -127;
+		t.y = 7;
+		return t;
+	};
+	_proto.countdownLabel_i = function () {
+		var t = new eui.Label();
+		this.countdownLabel = t;
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 22;
+		t.text = "00:00:00";
+		t.textAlign = "left";
+		t.textColor = 0x034D45;
+		t.width = 170;
+		t.x = -200;
+		t.y = 95;
 		return t;
 	};
 	_proto.settlementMethodLabel_i = function () {
 		var t = new eui.Label();
 		this.settlementMethodLabel = t;
-		t.height = 33;
+		t.height = 22;
 		t.horizontalCenter = 0;
 		t.scaleX = 1;
 		t.scaleY = 1;
@@ -2166,13 +2252,13 @@ window.skins=window.skins||{};
 		t.verticalAlign = "middle";
 		t.width = 400;
 		t.x = 0;
-		t.y = 117;
+		t.y = 90;
 		return t;
 	};
 	_proto.creatorLabel_i = function () {
 		var t = new eui.Label();
 		this.creatorLabel = t;
-		t.height = 33;
+		t.height = 22;
 		t.horizontalCenter = 0;
 		t.scaleX = 1;
 		t.scaleY = 1;
@@ -2183,7 +2269,7 @@ window.skins=window.skins||{};
 		t.verticalAlign = "middle";
 		t.width = 400;
 		t.x = 0;
-		t.y = 0;
+		t.y = 30;
 		return t;
 	};
 	_proto.houseNumberLabel_i = function () {
@@ -2199,37 +2285,7 @@ window.skins=window.skins||{};
 		t.textColor = 0x034d45;
 		t.width = 440;
 		t.x = 0;
-		t.y = 35;
-		return t;
-	};
-	_proto.blindLabel_i = function () {
-		var t = new eui.Label();
-		this.blindLabel = t;
-		t.horizontalCenter = 0;
-		t.scaleX = 1;
-		t.scaleY = 1;
-		t.size = 22;
-		t.text = "盲注";
-		t.textAlign = "center";
-		t.textColor = 0x034d45;
-		t.width = 200;
-		t.x = 100;
-		t.y = 65;
-		return t;
-	};
-	_proto.countdownLabel_i = function () {
-		var t = new eui.Label();
-		this.countdownLabel = t;
-		t.horizontalCenter = 0;
-		t.scaleX = 1;
-		t.scaleY = 1;
-		t.size = 22;
-		t.text = "00:00:00";
-		t.textAlign = "center";
-		t.textColor = 0x034D45;
-		t.width = 400;
-		t.x = 0;
-		t.y = 95;
+		t.y = 60;
 		return t;
 	};
 	_proto.communityCardList_i = function () {
@@ -2241,10 +2297,10 @@ window.skins=window.skins||{};
 		t.itemRendererSkinName = CardItemSkin;
 		t.width = 435;
 		t.y = 590;
-		t.layout = this._HorizontalLayout1_i();
+		t.layout = this._HorizontalLayout3_i();
 		return t;
 	};
-	_proto._HorizontalLayout1_i = function () {
+	_proto._HorizontalLayout3_i = function () {
 		var t = new eui.HorizontalLayout();
 		t.gap = 4;
 		t.horizontalAlign = "center";
