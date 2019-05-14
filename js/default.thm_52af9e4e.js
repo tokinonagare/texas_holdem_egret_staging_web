@@ -148,14 +148,14 @@ window.skins=window.skins||{};
 	__extends(DisconnectViewSkin, _super);
 	function DisconnectViewSkin() {
 		_super.call(this);
-		this.skinParts = ["flutterAnimation","ghostImage","promptLabel","timerLabel"];
+		this.skinParts = ["flutterAnimation","animationGroup","promptLabel","group","timerLabel"];
 		
 		this.height = 1334;
 		this.width = 750;
 		this.flutterAnimation_i();
-		this.elementsContent = [this._Rect1_i(),this._Group1_i(),this.timerLabel_i()];
+		this.elementsContent = [this._Rect1_i(),this.group_i(),this.timerLabel_i()];
 		
-		eui.Binding.$bindProperties(this, ["ghostImage"],[0],this._TweenItem1,"target");
+		eui.Binding.$bindProperties(this, ["hostComponent.ghostImage"],[0],this._TweenItem1,"target");
 		eui.Binding.$bindProperties(this, [0],[],this._Object1,"y");
 		eui.Binding.$bindProperties(this, [35],[],this._Object2,"y");
 	}
@@ -210,32 +210,42 @@ window.skins=window.skins||{};
 		t.y = 0;
 		return t;
 	};
-	_proto._Group1_i = function () {
+	_proto.group_i = function () {
 		var t = new eui.Group();
+		this.group = t;
 		t.height = 400;
 		t.horizontalCenter = 0;
 		t.verticalCenter = 0;
 		t.percentWidth = 100;
-		t.elementsContent = [this._Image1_i(),this.ghostImage_i(),this.promptLabel_i()];
+		t.layout = this._VerticalLayout2_i();
+		t.elementsContent = [this.animationGroup_i(),this.promptLabel_i()];
 		return t;
 	};
-	_proto._Image1_i = function () {
-		var t = new eui.Image();
-		t.height = 159;
+	_proto._VerticalLayout2_i = function () {
+		var t = new eui.VerticalLayout();
+		t.gap = 50;
+		t.horizontalAlign = "center";
+		t.verticalAlign = "middle";
+		return t;
+	};
+	_proto.animationGroup_i = function () {
+		var t = new eui.Group();
+		this.animationGroup = t;
+		t.height = 224;
 		t.horizontalCenter = 0;
-		t.source = "image_disconnect_head_png";
-		t.width = 187;
-		t.y = 180;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.verticalCenter = 0;
+		t.width = 262;
+		t.x = 0;
+		t.y = 0;
+		t.layout = this._VerticalLayout1_i();
 		return t;
 	};
-	_proto.ghostImage_i = function () {
-		var t = new eui.Image();
-		this.ghostImage = t;
-		t.height = 165;
-		t.source = "image_disconnect_ghost_png";
-		t.width = 113;
-		t.x = 375;
-		t.y = 35;
+	_proto._VerticalLayout1_i = function () {
+		var t = new eui.VerticalLayout();
+		t.horizontalAlign = "center";
+		t.verticalAlign = "middle";
 		return t;
 	};
 	_proto.promptLabel_i = function () {
@@ -243,10 +253,10 @@ window.skins=window.skins||{};
 		this.promptLabel = t;
 		t.horizontalCenter = 0;
 		t.size = 25;
-		t.text = "来玩与母星失去连接,正在努力恢复...";
+		t.text = "正在为您寻找更快的服务器...";
 		t.textAlign = "center";
 		t.verticalAlign = "middle";
-		t.percentWidth = 100;
+		t.width = 340;
 		t.y = 370;
 		return t;
 	};
