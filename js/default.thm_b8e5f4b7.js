@@ -7395,7 +7395,57 @@ window.skins=window.skins||{};
 		return t;
 	};
 	return PlayerSkin;
-})(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/PotItemSkin.exml'] = window.PotItemSkin = (function (_super) {
+})(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/Pot/CoinPotItemSkin.exml'] = window.CoinPotItemSkin = (function (_super) {
+	__extends(CoinPotItemSkin, _super);
+	function CoinPotItemSkin() {
+		_super.call(this);
+		this.skinParts = ["amountLabel"];
+		
+		this.height = 36;
+		this.width = 144;
+		this.elementsContent = [this._Rect1_i(),this._Image1_i(),this.amountLabel_i()];
+	}
+	var _proto = CoinPotItemSkin.prototype;
+
+	_proto._Rect1_i = function () {
+		var t = new eui.Rect();
+		t.ellipseHeight = 36;
+		t.ellipseWidth = 36;
+		t.fillAlpha = 0.7;
+		t.height = 36;
+		t.width = 144;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto._Image1_i = function () {
+		var t = new eui.Image();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 39;
+		t.source = "icon_coin_side_pot_png";
+		t.verticalCenter = -4;
+		t.width = 48;
+		t.x = 0;
+		return t;
+	};
+	_proto.amountLabel_i = function () {
+		var t = new eui.Label();
+		this.amountLabel = t;
+		t.anchorOffsetX = 0;
+		t.height = 36;
+		t.size = 20;
+		t.text = "";
+		t.textAlign = "center";
+		t.textColor = 0xFFFFFF;
+		t.verticalAlign = "middle";
+		t.width = 94;
+		t.x = 48;
+		t.y = 0;
+		return t;
+	};
+	return CoinPotItemSkin;
+})(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/Pot/PotItemSkin.exml'] = window.PotItemSkin = (function (_super) {
 	__extends(PotItemSkin, _super);
 	function PotItemSkin() {
 		_super.call(this);
