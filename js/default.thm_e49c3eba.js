@@ -253,10 +253,10 @@ window.skins=window.skins||{};
 		this.promptLabel = t;
 		t.horizontalCenter = 0;
 		t.size = 25;
-		t.text = "正在为您寻找更快的服务器...";
+		t.text = "正在为您切换更快的网络线路...";
 		t.textAlign = "center";
 		t.verticalAlign = "middle";
-		t.width = 340;
+		t.width = 500;
 		t.y = 370;
 		return t;
 	};
@@ -4837,7 +4837,7 @@ window.skins=window.skins||{};
 		t.horizontalCenter = 0;
 		t.verticalCenter = 0;
 		t.width = 536;
-		t.elementsContent = [this._Image1_i(),this.titleLabel_i(),this.coinGroup_i(),this.scoreSlider_i(),this.confirmButton_i(),this.minBuyLabel_i(),this.balanceLabel_i(),this._Label1_i(),this.scoreTextInput_i()];
+		t.elementsContent = [this._Image1_i(),this.titleLabel_i(),this.coinGroup_i(),this.scoreSlider_i(),this.confirmButton_i(),this.minBuyLabel_i(),this.balanceLabel_i(),this._Label2_i(),this.scoreTextInput_i()];
 		return t;
 	};
 	_proto._Image1_i = function () {
@@ -4871,7 +4871,7 @@ window.skins=window.skins||{};
 		t.width = 400;
 		t.y = 275;
 		t.layout = this._HorizontalLayout1_i();
-		t.elementsContent = [this._Image2_i(),this.coinBalanceLabel_i()];
+		t.elementsContent = [this._Label1_i(),this._Image2_i(),this.coinBalanceLabel_i()];
 		return t;
 	};
 	_proto._HorizontalLayout1_i = function () {
@@ -4879,6 +4879,18 @@ window.skins=window.skins||{};
 		t.gap = 10;
 		t.horizontalAlign = "center";
 		t.verticalAlign = "middle";
+		return t;
+	};
+	_proto._Label1_i = function () {
+		var t = new eui.Label();
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 20;
+		t.text = "金币余额:";
+		t.textColor = 0xffb06c;
+		t.x = 110;
+		t.y = -235;
 		return t;
 	};
 	_proto._Image2_i = function () {
@@ -4946,7 +4958,7 @@ window.skins=window.skins||{};
 		t.y = 325;
 		return t;
 	};
-	_proto._Label1_i = function () {
+	_proto._Label2_i = function () {
 		var t = new eui.Label();
 		t.height = 44;
 		t.horizontalCenter = 0;
@@ -4970,6 +4982,39 @@ window.skins=window.skins||{};
 		return t;
 	};
 	return BuyInSkin;
+})(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/BuyInView/CoinBuyInSliderSkin.exml'] = window.CoinBuyInSliderSkin = (function (_super) {
+	__extends(CoinBuyInSliderSkin, _super);
+	function CoinBuyInSliderSkin() {
+		_super.call(this);
+		this.skinParts = ["track","thumb"];
+		
+		this.height = 60;
+		this.width = 476;
+		this.elementsContent = [this.track_i(),this.thumb_i()];
+	}
+	var _proto = CoinBuyInSliderSkin.prototype;
+
+	_proto.track_i = function () {
+		var t = new eui.Image();
+		this.track = t;
+		t.height = 10;
+		t.source = "bg_coin_buy_in_track_png";
+		t.verticalCenter = 0;
+		t.width = 476;
+		t.x = 0;
+		return t;
+	};
+	_proto.thumb_i = function () {
+		var t = new eui.Image();
+		this.thumb = t;
+		t.height = 60;
+		t.source = "icon_coin_buy_in_thumb_png";
+		t.verticalCenter = 0;
+		t.width = 60;
+		t.x = -5;
+		return t;
+	};
+	return CoinBuyInSliderSkin;
 })(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/CardItemSkin.exml'] = window.CardItemSkin = (function (_super) {
 	__extends(CardItemSkin, _super);
 	function CardItemSkin() {
