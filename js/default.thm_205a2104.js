@@ -748,6 +748,7 @@ window.skins=window.skins||{};
 	_proto.amountLabel_i = function () {
 		var t = new eui.Label();
 		this.amountLabel = t;
+		t.bold = true;
 		t.horizontalCenter = 0;
 		t.size = 20;
 		t.textAlign = "center";
