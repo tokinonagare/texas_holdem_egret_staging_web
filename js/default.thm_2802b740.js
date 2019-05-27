@@ -710,11 +710,11 @@ window.skins=window.skins||{};
 	__extends(ShortcutRaiseButtonSkin, _super);
 	function ShortcutRaiseButtonSkin() {
 		_super.call(this);
-		this.skinParts = ["icon","amountLabel","labelDisplay"];
+		this.skinParts = ["btnImage","amountLabel"];
 		
 		this.height = 96;
 		this.width = 84;
-		this.elementsContent = [this.icon_i(),this.amountLabel_i(),this.labelDisplay_i()];
+		this.elementsContent = [this.btnImage_i(),this.amountLabel_i()];
 		this.states = [
 			new eui.State ("up",
 				[
@@ -722,23 +722,22 @@ window.skins=window.skins||{};
 			,
 			new eui.State ("down",
 				[
-					new eui.SetProperty("icon","source","bg_shortcut_raise_disabled_png")
+					new eui.SetProperty("btnImage","source","bg_shortcut_raise_disabled_png")
 				])
 			,
 			new eui.State ("disabled",
 				[
-					new eui.SetProperty("icon","source","bg_shortcut_raise_disabled_png")
+					new eui.SetProperty("btnImage","source","bg_shortcut_raise_disabled_png")
 				])
 		];
 		
 		eui.Binding.$bindProperties(this, ["hostComponent.amount"],[0],this.amountLabel,"text");
-		eui.Binding.$bindProperties(this, ["hostComponent.label"],[0],this.labelDisplay,"text");
 	}
 	var _proto = ShortcutRaiseButtonSkin.prototype;
 
-	_proto.icon_i = function () {
+	_proto.btnImage_i = function () {
 		var t = new eui.Image();
-		this.icon = t;
+		this.btnImage = t;
 		t.height = 76;
 		t.source = "bg_shortcut_raise_png";
 		t.width = 84;
@@ -754,19 +753,6 @@ window.skins=window.skins||{};
 		t.textAlign = "center";
 		t.width = 84;
 		t.y = 77;
-		return t;
-	};
-	_proto.labelDisplay_i = function () {
-		var t = new eui.Label();
-		this.labelDisplay = t;
-		t.height = 76;
-		t.horizontalCenter = 0;
-		t.size = 20;
-		t.textAlign = "center";
-		t.textColor = 0x4a330a;
-		t.verticalAlign = "middle";
-		t.width = 40;
-		t.y = 0;
 		return t;
 	};
 	return ShortcutRaiseButtonSkin;
@@ -1256,11 +1242,11 @@ window.skins=window.skins||{};
 		var t = new ShortcutRaiseButton();
 		this.firstShortcutButton = t;
 		t.amount = "1000";
+		t.btnSource = "btn_shortcut_raise_1_png";
 		t.height = 96;
-		t.label = "1/3大盲";
+		t.label = "";
 		t.scaleX = 1;
 		t.scaleY = 1;
-		t.skinName = "ShortcutRaiseButtonSkin";
 		t.width = 84;
 		t.x = 445;
 		t.y = 0;
@@ -1270,6 +1256,7 @@ window.skins=window.skins||{};
 		var t = new ShortcutRaiseButton();
 		this.secondShortcutButton = t;
 		t.amount = "1000";
+		t.btnSource = "btn_shortcut_raise_2_png";
 		t.height = 96;
 		t.label = "1/2大盲";
 		t.scaleX = 1;
@@ -1284,6 +1271,7 @@ window.skins=window.skins||{};
 		var t = new ShortcutRaiseButton();
 		this.thirdShortcutButton = t;
 		t.amount = "1000";
+		t.btnSource = "btn_shortcut_raise_3_png";
 		t.height = 96;
 		t.label = "2/3大盲";
 		t.scaleX = 1;
@@ -1298,6 +1286,7 @@ window.skins=window.skins||{};
 		var t = new ShortcutRaiseButton();
 		this.fourthShortcutButton = t;
 		t.amount = "1000";
+		t.btnSource = "btn_shortcut_raise_4_png";
 		t.height = 96;
 		t.label = "一倍底池";
 		t.scaleX = 1;
@@ -2120,11 +2109,11 @@ window.skins=window.skins||{};
 	_proto.icon_i = function () {
 		var t = new eui.Image();
 		this.icon = t;
-		t.height = 310;
+		t.height = 223;
 		t.horizontalCenter = 0;
 		t.source = "image_logo_on_table_png";
 		t.verticalCenter = 0;
-		t.width = 298;
+		t.width = 164;
 		return t;
 	};
 	_proto.group_i = function () {
@@ -2135,21 +2124,40 @@ window.skins=window.skins||{};
 		t.touchThrough = true;
 		t.verticalCenter = 0;
 		t.width = 750;
-		t.elementsContent = [this.mainPotLabel_i(),this.roomInfoGroup_i(),this.communityCardList_i(),this.startGameButton_i(),this.cardTypeLabel_i(),this.potsList_i(),this.startRoomButton_i(),this.playGameButtonGroup_i(),this.promptLabel_i(),this.winningCardLabel_i()];
+		t.elementsContent = [this._Group1_i(),this.roomInfoGroup_i(),this.communityCardList_i(),this.startGameButton_i(),this.cardTypeLabel_i(),this.potsList_i(),this.startRoomButton_i(),this.playGameButtonGroup_i(),this.promptLabel_i(),this.winningCardLabel_i()];
+		return t;
+	};
+	_proto._Group1_i = function () {
+		var t = new eui.Group();
+		t.height = 31;
+		t.horizontalCenter = 0;
+		t.width = 204;
+		t.y = 360;
+		t.elementsContent = [this._Image2_i(),this.mainPotLabel_i()];
+		return t;
+	};
+	_proto._Image2_i = function () {
+		var t = new eui.Image();
+		t.height = 31;
+		t.source = "bg_main_pot_png";
+		t.width = 204;
+		t.x = 0;
+		t.y = 0;
 		return t;
 	};
 	_proto.mainPotLabel_i = function () {
 		var t = new eui.Label();
 		this.mainPotLabel = t;
+		t.bold = true;
 		t.horizontalCenter = 0;
 		t.scaleX = 1;
 		t.scaleY = 1;
-		t.size = 22;
+		t.size = 20;
 		t.text = "底池: 0";
 		t.textAlign = "center";
-		t.textColor = 0x43a489;
-		t.width = 300;
-		t.y = 350;
+		t.textColor = 0x8de9cc;
+		t.verticalCenter = -4;
+		t.width = 150;
 		return t;
 	};
 	_proto.roomInfoGroup_i = function () {
@@ -2160,11 +2168,11 @@ window.skins=window.skins||{};
 		t.touchChildren = true;
 		t.touchThrough = true;
 		t.width = 400;
-		t.y = 830;
-		t.elementsContent = [this._Group1_i(),this._Group2_i(),this.settlementMethodLabel_i(),this.creatorLabel_i(),this.houseNumberLabel_i()];
+		t.y = 780;
+		t.elementsContent = [this._Group2_i(),this._Group3_i(),this.settlementMethodLabel_i(),this.creatorLabel_i(),this.houseNumberLabel_i()];
 		return t;
 	};
-	_proto._Group1_i = function () {
+	_proto._Group2_i = function () {
 		var t = new eui.Group();
 		t.height = 22;
 		t.left = 50;
@@ -2208,7 +2216,7 @@ window.skins=window.skins||{};
 		t.y = 65;
 		return t;
 	};
-	_proto._Group2_i = function () {
+	_proto._Group3_i = function () {
 		var t = new eui.Group();
 		t.height = 22;
 		t.right = 0;
@@ -2217,7 +2225,7 @@ window.skins=window.skins||{};
 		t.width = 200;
 		t.y = 0;
 		t.layout = this._HorizontalLayout2_i();
-		t.elementsContent = [this._Image2_i(),this.countdownLabel_i()];
+		t.elementsContent = [this._Image3_i(),this.countdownLabel_i()];
 		return t;
 	};
 	_proto._HorizontalLayout2_i = function () {
@@ -2226,7 +2234,7 @@ window.skins=window.skins||{};
 		t.horizontalAlign = "center";
 		return t;
 	};
-	_proto._Image2_i = function () {
+	_proto._Image3_i = function () {
 		var t = new eui.Image();
 		t.height = 21;
 		t.scaleX = 1;
@@ -2267,7 +2275,7 @@ window.skins=window.skins||{};
 		t.verticalAlign = "middle";
 		t.width = 400;
 		t.x = 0;
-		t.y = 90;
+		t.y = 100;
 		return t;
 	};
 	_proto.creatorLabel_i = function () {
@@ -2284,7 +2292,7 @@ window.skins=window.skins||{};
 		t.verticalAlign = "middle";
 		t.width = 400;
 		t.x = 0;
-		t.y = 30;
+		t.y = 40;
 		return t;
 	};
 	_proto.houseNumberLabel_i = function () {
@@ -2300,7 +2308,7 @@ window.skins=window.skins||{};
 		t.textColor = 0x43a789;
 		t.width = 440;
 		t.x = 0;
-		t.y = 60;
+		t.y = 70;
 		return t;
 	};
 	_proto.communityCardList_i = function () {
@@ -7318,10 +7326,11 @@ window.skins=window.skins||{};
 	_proto.scoreLabel_i = function () {
 		var t = new eui.Label();
 		this.scoreLabel = t;
+		t.bold = true;
 		t.height = 32;
 		t.scaleX = 1;
 		t.scaleY = 1;
-		t.size = 20;
+		t.size = 28;
 		t.text = "1000";
 		t.textAlign = "center";
 		t.textColor = 0xe6ecec;
@@ -7440,9 +7449,10 @@ window.skins=window.skins||{};
 		var t = new eui.Label();
 		this.amountLabel = t;
 		t.anchorOffsetX = 0;
+		t.bold = true;
 		t.height = 36;
-		t.size = 20;
-		t.text = "";
+		t.size = 26;
+		t.text = "1000";
 		t.textAlign = "center";
 		t.textColor = 0xFFFFFF;
 		t.verticalAlign = "middle";
@@ -8279,9 +8289,10 @@ window.skins=window.skins||{};
 		this.chipLabel = t;
 		t.anchorOffsetX = 0;
 		t.anchorOffsetY = 0;
+		t.bold = true;
 		t.height = 26;
-		t.size = 20;
-		t.text = "0";
+		t.size = 22;
+		t.text = "1000";
 		t.textAlign = "center";
 		t.verticalAlign = "middle";
 		t.width = 74;
