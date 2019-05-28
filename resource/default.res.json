@@ -832,79 +832,79 @@
 			"name": "won_coin_96_mp3"
 		},
 		{
-			"name": "btn_start_room_png",
+			"url": "assets/Game/btn_start_room.png",
 			"type": "image",
-			"url": "assets/Game/btn_start_room.png"
+			"name": "btn_start_room_png"
 		},
 		{
-			"name": "icon_audio_microphone_png",
+			"url": "assets/Game/audio/icon_audio_microphone.png",
 			"type": "image",
-			"url": "assets/Game/audio/icon_audio_microphone.png"
+			"name": "icon_audio_microphone_png"
 		},
 		{
-			"name": "btn_audio_microphone_down_png",
+			"url": "assets/Game/audio/btn_audio_microphone_down.png",
 			"type": "image",
-			"url": "assets/Game/audio/btn_audio_microphone_down.png"
+			"name": "btn_audio_microphone_down_png"
 		},
 		{
-			"name": "icon_record_cancelable_png",
+			"url": "assets/Game/audio/icon_record_cancelable.png",
 			"type": "image",
-			"url": "assets/Game/audio/icon_record_cancelable.png"
+			"name": "icon_record_cancelable_png"
 		},
 		{
-			"name": "icon_coin_png",
+			"url": "assets/Game/buy_in/icon_coin.png",
 			"type": "image",
-			"url": "assets/Game/buy_in/icon_coin.png"
+			"name": "icon_coin_png"
 		},
 		{
-			"name": "icon_room_clock_png",
+			"url": "assets/Game/icon_room_clock.png",
 			"type": "image",
-			"url": "assets/Game/icon_room_clock.png"
+			"name": "icon_room_clock_png"
 		},
 		{
-			"name": "icon_room_chip_png",
+			"url": "assets/Game/icon_room_chip.png",
 			"type": "image",
-			"url": "assets/Game/icon_room_chip.png"
+			"name": "icon_room_chip_png"
 		},
 		{
-			"name": "disconnection_animation_png",
+			"url": "assets/Game/animation/disconnection_animation.png",
 			"type": "image",
-			"url": "assets/Game/animation/disconnection_animation.png"
+			"name": "disconnection_animation_png"
 		},
 		{
-			"name": "disconnection_animation_json",
+			"url": "assets/Game/animation/disconnection_animation.json",
 			"type": "json",
-			"url": "assets/Game/animation/disconnection_animation.json"
+			"name": "disconnection_animation_json"
 		},
 		{
-			"name": "icon_room_coin_png",
+			"url": "assets/Game/icon_room_coin.png",
 			"type": "image",
-			"url": "assets/Game/icon_room_coin.png"
+			"name": "icon_room_coin_png"
 		},
 		{
-			"name": "icon_coin_buy_in_thumb_png",
+			"url": "assets/Game/buy_in/icon_coin_buy_in_thumb.png",
 			"type": "image",
-			"url": "assets/Game/buy_in/icon_coin_buy_in_thumb.png"
+			"name": "icon_coin_buy_in_thumb_png"
 		},
 		{
-			"name": "bg_coin_buy_in_track_png",
+			"url": "assets/Game/buy_in/bg_coin_buy_in_track.png",
 			"type": "image",
-			"url": "assets/Game/buy_in/bg_coin_buy_in_track.png"
+			"name": "bg_coin_buy_in_track_png"
 		},
 		{
-			"name": "icon_coin_side_pot_png",
+			"url": "assets/Game/icon_coin_side_pot.png",
 			"type": "image",
-			"url": "assets/Game/icon_coin_side_pot.png"
+			"name": "icon_coin_side_pot_png"
 		},
 		{
-			"name": "icon_player_coin_png",
+			"url": "assets/Game/icon_player_coin.png",
 			"type": "image",
-			"url": "assets/Game/icon_player_coin.png"
+			"name": "icon_player_coin_png"
 		},
 		{
-			"name": "bg_main_pot_png",
+			"url": "assets/Game/bg_main_pot.png",
 			"type": "image",
-			"url": "assets/Game/bg_main_pot.png"
+			"name": "bg_main_pot_png"
 		}
 	]
 }
