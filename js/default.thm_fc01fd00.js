@@ -710,11 +710,11 @@ window.skins=window.skins||{};
 	__extends(ShortcutRaiseButtonSkin, _super);
 	function ShortcutRaiseButtonSkin() {
 		_super.call(this);
-		this.skinParts = ["btnImage","amountLabel"];
+		this.skinParts = ["icon","amountLabel","labelDisplay"];
 		
 		this.height = 96;
 		this.width = 84;
-		this.elementsContent = [this.btnImage_i(),this.amountLabel_i()];
+		this.elementsContent = [this.icon_i(),this.amountLabel_i(),this.labelDisplay_i()];
 		this.states = [
 			new eui.State ("up",
 				[
@@ -722,22 +722,23 @@ window.skins=window.skins||{};
 			,
 			new eui.State ("down",
 				[
-					new eui.SetProperty("btnImage","source","bg_shortcut_raise_disabled_png")
+					new eui.SetProperty("icon","source","bg_shortcut_raise_disabled_png")
 				])
 			,
 			new eui.State ("disabled",
 				[
-					new eui.SetProperty("btnImage","source","bg_shortcut_raise_disabled_png")
+					new eui.SetProperty("icon","source","bg_shortcut_raise_disabled_png")
 				])
 		];
 		
 		eui.Binding.$bindProperties(this, ["hostComponent.amount"],[0],this.amountLabel,"text");
+		eui.Binding.$bindProperties(this, ["hostComponent.label"],[0],this.labelDisplay,"text");
 	}
 	var _proto = ShortcutRaiseButtonSkin.prototype;
 
-	_proto.btnImage_i = function () {
+	_proto.icon_i = function () {
 		var t = new eui.Image();
-		this.btnImage = t;
+		this.icon = t;
 		t.height = 76;
 		t.source = "bg_shortcut_raise_png";
 		t.width = 84;
@@ -754,6 +755,20 @@ window.skins=window.skins||{};
 		t.textAlign = "center";
 		t.width = 84;
 		t.y = 77;
+		return t;
+	};
+	_proto.labelDisplay_i = function () {
+		var t = new eui.Label();
+		this.labelDisplay = t;
+		t.bold = true;
+		t.height = 50;
+		t.horizontalCenter = 0;
+		t.size = 24;
+		t.textAlign = "center";
+		t.textColor = 0x000000;
+		t.verticalAlign = "middle";
+		t.verticalCenter = -5;
+		t.width = 50;
 		return t;
 	};
 	return ShortcutRaiseButtonSkin;
@@ -1243,11 +1258,11 @@ window.skins=window.skins||{};
 		var t = new ShortcutRaiseButton();
 		this.firstShortcutButton = t;
 		t.amount = "1000";
-		t.btnSource = "btn_shortcut_raise_1_png";
 		t.height = 96;
-		t.label = "";
+		t.label = "1/3大盲";
 		t.scaleX = 1;
 		t.scaleY = 1;
+		t.skinName = "ShortcutRaiseButtonSkin";
 		t.width = 84;
 		t.x = 445;
 		t.y = 0;
@@ -1257,7 +1272,6 @@ window.skins=window.skins||{};
 		var t = new ShortcutRaiseButton();
 		this.secondShortcutButton = t;
 		t.amount = "1000";
-		t.btnSource = "btn_shortcut_raise_2_png";
 		t.height = 96;
 		t.label = "1/2大盲";
 		t.scaleX = 1;
@@ -1272,7 +1286,6 @@ window.skins=window.skins||{};
 		var t = new ShortcutRaiseButton();
 		this.thirdShortcutButton = t;
 		t.amount = "1000";
-		t.btnSource = "btn_shortcut_raise_3_png";
 		t.height = 96;
 		t.label = "2/3大盲";
 		t.scaleX = 1;
@@ -1287,14 +1300,13 @@ window.skins=window.skins||{};
 		var t = new ShortcutRaiseButton();
 		this.fourthShortcutButton = t;
 		t.amount = "1000";
-		t.btnSource = "btn_shortcut_raise_4_png";
 		t.height = 96;
 		t.label = "一倍底池";
 		t.scaleX = 1;
 		t.scaleY = 1;
 		t.skinName = "ShortcutRaiseButtonSkin";
 		t.width = 84;
-		t.x = 182;
+		t.x = 505;
 		t.y = -1;
 		return t;
 	};
