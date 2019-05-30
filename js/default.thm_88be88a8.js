@@ -2102,7 +2102,7 @@ window.skins=window.skins||{};
 
 	function GameSkin() {
 		_super.call(this);
-		this.skinParts = ["icon","mainPotLabel","blindImage","blindLabel","countdownLabel","settlementMethodLabel","creatorLabel","houseNumberLabel","roomInfoGroup","communityCardList","startGameButton","cardTypeLabel","potsList","startRoomButton","playGameButtonGroup","promptLabel","winningCardLabel","group","raiseSelector","messageAlarm","quickRaiser","reviewboardButton","menuButton","debugView","leaderboardButton","chatButton","microphoneButton","cardPattern"];
+		this.skinParts = ["icon","mainPotLabel","blindImage","blindLabel","countdownLabel","countdownGroup","settlementMethodLabel","creatorLabel","houseNumberLabel","roomInfoGroup","communityCardList","startGameButton","cardTypeLabel","potsList","startRoomButton","playGameButtonGroup","promptLabel","winningCardLabel","group","raiseSelector","messageAlarm","quickRaiser","reviewboardButton","menuButton","debugView","leaderboardButton","chatButton","microphoneButton","cardPattern"];
 		
 		this.height = 1334;
 		this.width = 750;
@@ -2182,7 +2182,23 @@ window.skins=window.skins||{};
 		t.touchThrough = true;
 		t.width = 400;
 		t.y = 780;
-		t.elementsContent = [this._Group2_i(),this._Group3_i(),this.settlementMethodLabel_i(),this.creatorLabel_i(),this.houseNumberLabel_i()];
+		t.elementsContent = [this._Group3_i(),this.settlementMethodLabel_i(),this.creatorLabel_i(),this.houseNumberLabel_i()];
+		return t;
+	};
+	_proto._Group3_i = function () {
+		var t = new eui.Group();
+		t.height = 22;
+		t.width = 400;
+		t.x = 0;
+		t.y = 0;
+		t.layout = this._HorizontalLayout3_i();
+		t.elementsContent = [this._Group2_i(),this.countdownGroup_i()];
+		return t;
+	};
+	_proto._HorizontalLayout3_i = function () {
+		var t = new eui.HorizontalLayout();
+		t.horizontalAlign = "center";
+		t.verticalAlign = "contentJustify";
 		return t;
 	};
 	_proto._Group2_i = function () {
@@ -2192,6 +2208,7 @@ window.skins=window.skins||{};
 		t.scaleX = 1;
 		t.scaleY = 1;
 		t.width = 150;
+		t.x = 50;
 		t.y = 0;
 		t.layout = this._HorizontalLayout1_i();
 		t.elementsContent = [this.blindImage_i(),this.blindLabel_i()];
@@ -2229,13 +2246,15 @@ window.skins=window.skins||{};
 		t.y = 65;
 		return t;
 	};
-	_proto._Group3_i = function () {
+	_proto.countdownGroup_i = function () {
 		var t = new eui.Group();
+		this.countdownGroup = t;
 		t.height = 22;
 		t.right = 0;
 		t.scaleX = 1;
 		t.scaleY = 1;
 		t.width = 200;
+		t.x = 200;
 		t.y = 0;
 		t.layout = this._HorizontalLayout2_i();
 		t.elementsContent = [this._Image3_i(),this.countdownLabel_i()];
@@ -2333,10 +2352,10 @@ window.skins=window.skins||{};
 		t.itemRendererSkinName = CardItemSkin;
 		t.width = 435;
 		t.y = 590;
-		t.layout = this._HorizontalLayout3_i();
+		t.layout = this._HorizontalLayout4_i();
 		return t;
 	};
-	_proto._HorizontalLayout3_i = function () {
+	_proto._HorizontalLayout4_i = function () {
 		var t = new eui.HorizontalLayout();
 		t.gap = 4;
 		t.horizontalAlign = "center";
