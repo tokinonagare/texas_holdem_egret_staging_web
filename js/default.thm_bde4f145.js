@@ -1325,7 +1325,6 @@ window.skins=window.skins||{};
 		t.height = 320;
 		t.horizontalCenter = 0;
 		t.verticalCenter = 0;
-		t.visible = false;
 		t.width = 750;
 		t.elementsContent = [this.autoCheckOrFoldButton_i(),this.autoCheckButton_i()];
 		return t;
