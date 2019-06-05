@@ -7231,31 +7231,36 @@ window.skins=window.skins||{};
 	__extends(PropsItemSkin, _super);
 	function PropsItemSkin() {
 		_super.call(this);
-		this.skinParts = ["props"];
+		this.skinParts = ["props","priceLabel"];
 		
-		this.height = 100;
-		this.width = 100;
-		this.elementsContent = [this._Rect1_i(),this.props_i()];
+		this.height = 116;
+		this.width = 103;
+		this.elementsContent = [this.props_i(),this.priceLabel_i()];
 	}
 	var _proto = PropsItemSkin.prototype;
 
-	_proto._Rect1_i = function () {
-		var t = new eui.Rect();
-		t.fillAlpha = 0;
-		t.percentHeight = 100;
-		t.percentWidth = 100;
-		t.x = 0;
-		t.y = 0;
-		return t;
-	};
 	_proto.props_i = function () {
 		var t = new eui.Image();
 		this.props = t;
-		t.height = 100;
+		t.height = 116;
 		t.horizontalCenter = 0;
-		t.source = "icon_props_tomato_png";
+		t.source = "icon_props_price_tomato_png";
 		t.verticalCenter = 0;
-		t.width = 100;
+		t.width = 103;
+		return t;
+	};
+	_proto.priceLabel_i = function () {
+		var t = new eui.Label();
+		this.priceLabel = t;
+		t.anchorOffsetX = 0;
+		t.bold = true;
+		t.size = 22;
+		t.text = "50";
+		t.textColor = 0xd57f4c;
+		t.verticalAlign = "middle";
+		t.width = 44;
+		t.x = 38;
+		t.y = 85;
 		return t;
 	};
 	return PropsItemSkin;
