@@ -18,7 +18,7 @@ window.skins=window.skins||{};
 		
 		this.height = 89;
 		this.width = 110;
-		this.elementsContent = [this._Rect1_i(),this.labelDisplay_i()];
+		this.elementsContent = [this._Rect1_i(),this.labelDisplay_i(),this._Group1_i()];
 		this.states = [
 			new eui.State ("up",
 				[
@@ -52,9 +52,51 @@ window.skins=window.skins||{};
 	_proto.labelDisplay_i = function () {
 		var t = new eui.Label();
 		this.labelDisplay = t;
+		t.bold = true;
 		t.horizontalCenter = 0;
 		t.size = 32;
-		t.verticalCenter = 0;
+		t.text = "发送";
+		t.verticalCenter = -10;
+		return t;
+	};
+	_proto._Group1_i = function () {
+		var t = new eui.Group();
+		t.height = 20;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 55;
+		t.layout = this._HorizontalLayout1_i();
+		t.elementsContent = [this._Label1_i(),this._Image1_i(),this._Label2_i()];
+		return t;
+	};
+	_proto._HorizontalLayout1_i = function () {
+		var t = new eui.HorizontalLayout();
+		t.gap = 0;
+		t.horizontalAlign = "center";
+		return t;
+	};
+	_proto._Label1_i = function () {
+		var t = new eui.Label();
+		t.size = 18;
+		t.text = "(消耗";
+		t.x = 10;
+		t.y = 2;
+		return t;
+	};
+	_proto._Image1_i = function () {
+		var t = new eui.Image();
+		t.height = 20;
+		t.source = "icon_coin_png";
+		t.width = 20;
+		t.x = 71;
+		t.y = 7;
+		return t;
+	};
+	_proto._Label2_i = function () {
+		var t = new eui.Label();
+		t.size = 18;
+		t.text = "50)";
+		t.x = 80;
 		return t;
 	};
 	return ChatSendButtonSkin;
