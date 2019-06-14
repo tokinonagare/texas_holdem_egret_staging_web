@@ -2540,7 +2540,6 @@ window.skins=window.skins||{};
 		t.bottom = 50;
 		t.label = "";
 		t.right = 123;
-		t.visible = false;
 		t.skinName = GameSkin$Skin13;
 		return t;
 	};
