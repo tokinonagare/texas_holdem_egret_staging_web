@@ -6918,7 +6918,7 @@ window.skins=window.skins||{};
 	__extends(PlayerDetailSkin, _super);
 	function PlayerDetailSkin() {
 		_super.call(this);
-		this.skinParts = ["background","coinBalanceLabel","coinGroup","avatarImage","nicknameLabel","bioLabel","statisticList","propsList","locationLabel","ipLabel","group"];
+		this.skinParts = ["background","coinBalanceLabel","coinGroup","avatarImage","nicknameLabel","bioLabel","statisticList","propsList","locationLabel","group"];
 		
 		this.height = 1334;
 		this.width = 750;
@@ -6943,7 +6943,7 @@ window.skins=window.skins||{};
 		t.horizontalCenter = 0;
 		t.verticalCenter = 0;
 		t.width = 690;
-		t.elementsContent = [this._Rect1_i(),this.coinGroup_i(),this.avatarImage_i(),this.nicknameLabel_i(),this.bioLabel_i(),this._Group1_i(),this._Group2_i(),this._Group5_i()];
+		t.elementsContent = [this._Rect1_i(),this.coinGroup_i(),this.avatarImage_i(),this.nicknameLabel_i(),this.bioLabel_i(),this._Group1_i(),this._Group2_i(),this._Group4_i()];
 		return t;
 	};
 	_proto._Rect1_i = function () {
@@ -7227,17 +7227,17 @@ window.skins=window.skins||{};
 		t.verticalAlign = "middle";
 		return t;
 	};
-	_proto._Group5_i = function () {
+	_proto._Group4_i = function () {
 		var t = new eui.Group();
 		t.height = 50;
 		t.width = 660;
 		t.x = 15;
 		t.y = 960;
-		t.layout = this._HorizontalLayout5_i();
-		t.elementsContent = [this._Group3_i(),this._Group4_i()];
+		t.layout = this._HorizontalLayout4_i();
+		t.elementsContent = [this._Group3_i()];
 		return t;
 	};
-	_proto._HorizontalLayout5_i = function () {
+	_proto._HorizontalLayout4_i = function () {
 		var t = new eui.HorizontalLayout();
 		t.gap = 20;
 		t.paddingLeft = 20;
@@ -7272,46 +7272,6 @@ window.skins=window.skins||{};
 	_proto.locationLabel_i = function () {
 		var t = new eui.Label();
 		this.locationLabel = t;
-		t.scaleX = 1;
-		t.scaleY = 1;
-		t.size = 22;
-		t.text = "未知";
-		t.verticalAlign = "middle";
-		t.x = 26;
-		t.y = 0;
-		return t;
-	};
-	_proto._Group4_i = function () {
-		var t = new eui.Group();
-		t.height = 50;
-		t.scaleX = 1;
-		t.scaleY = 1;
-		t.x = 132;
-		t.y = -927;
-		t.layout = this._HorizontalLayout4_i();
-		t.elementsContent = [this._Image3_i(),this.ipLabel_i()];
-		return t;
-	};
-	_proto._HorizontalLayout4_i = function () {
-		var t = new eui.HorizontalLayout();
-		t.horizontalAlign = "center";
-		t.verticalAlign = "middle";
-		return t;
-	};
-	_proto._Image3_i = function () {
-		var t = new eui.Image();
-		t.height = 24;
-		t.scaleX = 1;
-		t.scaleY = 1;
-		t.source = "icon_detail_ip_png";
-		t.width = 20;
-		t.x = 6;
-		t.y = 0;
-		return t;
-	};
-	_proto.ipLabel_i = function () {
-		var t = new eui.Label();
-		this.ipLabel = t;
 		t.scaleX = 1;
 		t.scaleY = 1;
 		t.size = 22;
