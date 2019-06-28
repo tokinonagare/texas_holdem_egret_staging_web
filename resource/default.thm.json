@@ -67,6 +67,7 @@
 		"resource/eui_skins/GameSkins/View/NumericKeyboard/NumericKeyboardItemSkin.exml",
 		"resource/eui_skins/GameSkins/View/NumericKeyboard/NumericKeyboardSkin.exml",
 		"resource/eui_skins/GameSkins/View/PlayerDetail/PlayerDetailSkin.exml",
+		"resource/eui_skins/GameSkins/View/PlayerDetail/PlayerDetailTabBar.exml",
 		"resource/eui_skins/GameSkins/View/PlayerDetail/PropsItemSkin.exml",
 		"resource/eui_skins/GameSkins/View/PlayerDetail/StatisticdItemSkin.exml",
 		"resource/eui_skins/GameSkins/View/PlayerSkin.exml",

@@ -6913,11 +6913,13 @@ window.skins=window.skins||{};
 	__extends(PlayerDetailSkin, _super);
 	function PlayerDetailSkin() {
 		_super.call(this);
-		this.skinParts = ["background","coinBalanceLabel","coinGroup","avatarImage","nicknameLabel","bioLabel","statisticList","propsList","locationLabel","group"];
+		this.skinParts = ["background","coinBalanceLabel","coinGroup","avatarImage","nicknameLabel","bioLabel","statisticList","distanceList","noLocationLabel","viewStack","propsList","locationLabel","group"];
 		
 		this.height = 1334;
 		this.width = 750;
 		this.elementsContent = [this.background_i(),this.group_i()];
+		
+		eui.Binding.$bindProperties(this, ["viewStack"],[0],this._TabBar1,"dataProvider");
 	}
 	var _proto = PlayerDetailSkin.prototype;
 
@@ -6938,7 +6940,7 @@ window.skins=window.skins||{};
 		t.horizontalCenter = 0;
 		t.verticalCenter = 0;
 		t.width = 690;
-		t.elementsContent = [this._Rect1_i(),this.coinGroup_i(),this.avatarImage_i(),this.nicknameLabel_i(),this.bioLabel_i(),this._Group1_i(),this._Group2_i(),this._Group4_i()];
+		t.elementsContent = [this._Rect1_i(),this.coinGroup_i(),this.avatarImage_i(),this.nicknameLabel_i(),this.bioLabel_i(),this._TabBar1_i(),this._Group3_i(),this._Group4_i(),this._Group6_i()];
 		return t;
 	};
 	_proto._Rect1_i = function () {
@@ -7011,6 +7013,7 @@ window.skins=window.skins||{};
 		t.maxHeight = 30;
 		t.maxWidth = 240;
 		t.text = "Stan";
+		t.textColor = 0xffffff;
 		t.x = 230;
 		t.y = 40;
 		return t;
@@ -7027,13 +7030,25 @@ window.skins=window.skins||{};
 		t.y = 140;
 		return t;
 	};
-	_proto._Group1_i = function () {
+	_proto._TabBar1_i = function () {
+		var t = new eui.TabBar();
+		this._TabBar1 = t;
+		t.height = 70;
+		t.horizontalCenter = 0;
+		t.itemRendererSkinName = PlayerDetailTabBar;
+		t.width = 660;
+		t.y = 230;
+		return t;
+	};
+	_proto._Group3_i = function () {
 		var t = new eui.Group();
-		t.height = 560;
+		t.height = 492;
+		t.scaleX = 1;
+		t.scaleY = 1;
 		t.width = 660;
 		t.x = 15;
-		t.y = 220;
-		t.elementsContent = [this._Rect2_i(),this.statisticList_i()];
+		t.y = 290;
+		t.elementsContent = [this._Rect2_i(),this.viewStack_i()];
 		return t;
 	};
 	_proto._Rect2_i = function () {
@@ -7042,12 +7057,41 @@ window.skins=window.skins||{};
 		t.ellipseHeight = 20;
 		t.ellipseWidth = 20;
 		t.fillColor = 0x32374c;
-		t.height = 560;
+		t.percentHeight = 100;
 		t.scaleX = 1;
 		t.scaleY = 1;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto.viewStack_i = function () {
+		var t = new eui.ViewStack();
+		this.viewStack = t;
+		t.height = 492;
 		t.width = 660;
 		t.x = 0;
 		t.y = 0;
+		t.elementsContent = [this._Group1_i(),this._Group2_i()];
+		return t;
+	};
+	_proto._Group1_i = function () {
+		var t = new eui.Group();
+		t.percentHeight = 100;
+		t.name = "个人资料";
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this._Scroller1_i()];
+		return t;
+	};
+	_proto._Scroller1_i = function () {
+		var t = new eui.Scroller();
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		t.viewport = this.statisticList_i();
 		return t;
 	};
 	_proto.statisticList_i = function () {
@@ -7055,14 +7099,14 @@ window.skins=window.skins||{};
 		this.statisticList = t;
 		t.anchorOffsetX = 0;
 		t.anchorOffsetY = 0;
-		t.height = 560;
+		t.percentHeight = 100;
 		t.horizontalCenter = 0;
 		t.itemRendererSkinName = StatisticItemSkin;
 		t.scaleX = 1;
 		t.scaleY = 1;
-		t.width = 660;
+		t.percentWidth = 100;
 		t.x = 0;
-		t.y = 0;
+		t.y = 48;
 		t.layout = this._TileLayout1_i();
 		t.dataProvider = this._ArrayCollection1_i();
 		return t;
@@ -7177,11 +7221,57 @@ window.skins=window.skins||{};
 	};
 	_proto._Group2_i = function () {
 		var t = new eui.Group();
+		t.percentHeight = 100;
+		t.name = "玩家距离";
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this._Scroller2_i(),this.noLocationLabel_i()];
+		return t;
+	};
+	_proto._Scroller2_i = function () {
+		var t = new eui.Scroller();
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		t.viewport = this.distanceList_i();
+		return t;
+	};
+	_proto.distanceList_i = function () {
+		var t = new eui.List();
+		this.distanceList = t;
+		t.layout = this._VerticalLayout1_i();
+		return t;
+	};
+	_proto._VerticalLayout1_i = function () {
+		var t = new eui.VerticalLayout();
+		t.gap = 10;
+		t.horizontalAlign = "left";
+		t.paddingBottom = 20;
+		t.paddingLeft = 30;
+		t.paddingRight = 30;
+		t.paddingTop = 30;
+		t.verticalAlign = "contentJustify";
+		return t;
+	};
+	_proto.noLocationLabel_i = function () {
+		var t = new eui.Label();
+		this.noLocationLabel = t;
+		t.horizontalCenter = 0;
+		t.size = 25;
+		t.text = "暂无该玩家定位信息";
+		t.textColor = 0xFFFFFF;
+		t.verticalCenter = 0;
+		return t;
+	};
+	_proto._Group4_i = function () {
+		var t = new eui.Group();
 		t.height = 160;
 		t.width = 660;
 		t.x = 15;
 		t.y = 800;
-		t.elementsContent = [this._Rect3_i(),this._Scroller1_i()];
+		t.elementsContent = [this._Rect3_i(),this._Scroller3_i()];
 		return t;
 	};
 	_proto._Rect3_i = function () {
@@ -7198,7 +7288,7 @@ window.skins=window.skins||{};
 		t.y = 0;
 		return t;
 	};
-	_proto._Scroller1_i = function () {
+	_proto._Scroller3_i = function () {
 		var t = new eui.Scroller();
 		t.percentHeight = 100;
 		t.percentWidth = 100;
@@ -7222,14 +7312,14 @@ window.skins=window.skins||{};
 		t.verticalAlign = "middle";
 		return t;
 	};
-	_proto._Group4_i = function () {
+	_proto._Group6_i = function () {
 		var t = new eui.Group();
 		t.height = 50;
 		t.width = 660;
 		t.x = 15;
 		t.y = 960;
 		t.layout = this._HorizontalLayout4_i();
-		t.elementsContent = [this._Group3_i()];
+		t.elementsContent = [this._Group5_i()];
 		return t;
 	};
 	_proto._HorizontalLayout4_i = function () {
@@ -7238,7 +7328,7 @@ window.skins=window.skins||{};
 		t.paddingLeft = 20;
 		return t;
 	};
-	_proto._Group3_i = function () {
+	_proto._Group5_i = function () {
 		var t = new eui.Group();
 		t.height = 50;
 		t.x = 147;
@@ -7277,6 +7367,55 @@ window.skins=window.skins||{};
 		return t;
 	};
 	return PlayerDetailSkin;
+})(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/PlayerDetail/PlayerDetailTabBar.exml'] = window.PlayerDetailTabBar = (function (_super) {
+	__extends(PlayerDetailTabBar, _super);
+	function PlayerDetailTabBar() {
+		_super.call(this);
+		this.skinParts = [];
+		
+		this.height = 70;
+		this.width = 334;
+		this.elementsContent = [this._Rect1_i(),this._Label1_i()];
+		this.states = [
+			new eui.State ("up",
+				[
+					new eui.SetProperty("_Rect1","fillColor",0x32374c),
+					new eui.SetProperty("_Rect1","alpha",0.6),
+					new eui.SetProperty("_Label1","alpha",0.6)
+				])
+			,
+			new eui.State ("down",
+				[
+					new eui.SetProperty("_Rect1","fillColor",0x32374c),
+					new eui.SetProperty("_Label1","textColor",0xffffff)
+				])
+		];
+		
+		eui.Binding.$bindProperties(this, ["hostComponent.data"],[0],this._Label1,"text");
+	}
+	var _proto = PlayerDetailTabBar.prototype;
+
+	_proto._Rect1_i = function () {
+		var t = new eui.Rect();
+		this._Rect1 = t;
+		t.ellipseHeight = 20;
+		t.ellipseWidth = 20;
+		t.fillColor = 0x32374c;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto._Label1_i = function () {
+		var t = new eui.Label();
+		this._Label1 = t;
+		t.horizontalCenter = 0;
+		t.size = 28;
+		t.verticalCenter = -5;
+		return t;
+	};
+	return PlayerDetailTabBar;
 })(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/PlayerDetail/PropsItemSkin.exml'] = window.PropsItemSkin = (function (_super) {
 	__extends(PropsItemSkin, _super);
 	function PropsItemSkin() {
