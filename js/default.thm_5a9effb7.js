@@ -708,104 +708,6 @@ window.skins=window.skins||{};
 		return t;
 	};
 	return RaiseSliderSkin;
-})(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/PlayGameButton/AutonCheckOrFoldButtonSkin.exml'] = window.AutonCheckOrFoldButtonSkin = (function (_super) {
-	__extends(AutonCheckOrFoldButtonSkin, _super);
-	function AutonCheckOrFoldButtonSkin() {
-		_super.call(this);
-		this.skinParts = [];
-		
-		this.height = 126;
-		this.width = 122;
-		this.elementsContent = [this._Image1_i()];
-		this.states = [
-			new eui.State ("up",
-				[
-				])
-			,
-			new eui.State ("down",
-				[
-				])
-			,
-			new eui.State ("disabled",
-				[
-				])
-			,
-			new eui.State ("upAndSelected",
-				[
-					new eui.SetProperty("_Image1","source","btn_check_or_fold_selected_png")
-				])
-			,
-			new eui.State ("downAndSelected",
-				[
-				])
-			,
-			new eui.State ("disabledAndSelected",
-				[
-				])
-		];
-	}
-	var _proto = AutonCheckOrFoldButtonSkin.prototype;
-
-	_proto._Image1_i = function () {
-		var t = new eui.Image();
-		this._Image1 = t;
-		t.percentHeight = 100;
-		t.source = "btn_check_or_fold_unselect_png";
-		t.percentWidth = 100;
-		t.x = 0;
-		t.y = 0;
-		return t;
-	};
-	return AutonCheckOrFoldButtonSkin;
-})(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/PlayGameButton/AutoCheckButtonSkin.exml'] = window.AutoCheckButtonSkin = (function (_super) {
-	__extends(AutoCheckButtonSkin, _super);
-	function AutoCheckButtonSkin() {
-		_super.call(this);
-		this.skinParts = [];
-		
-		this.height = 126;
-		this.width = 122;
-		this.elementsContent = [this._Image1_i()];
-		this.states = [
-			new eui.State ("up",
-				[
-				])
-			,
-			new eui.State ("down",
-				[
-				])
-			,
-			new eui.State ("disabled",
-				[
-				])
-			,
-			new eui.State ("upAndSelected",
-				[
-					new eui.SetProperty("_Image1","source","btn_check_auto_selected_png")
-				])
-			,
-			new eui.State ("downAndSelected",
-				[
-				])
-			,
-			new eui.State ("disabledAndSelected",
-				[
-				])
-		];
-	}
-	var _proto = AutoCheckButtonSkin.prototype;
-
-	_proto._Image1_i = function () {
-		var t = new eui.Image();
-		this._Image1 = t;
-		t.percentHeight = 100;
-		t.source = "btn_check_auto_unselect_png";
-		t.percentWidth = 100;
-		t.x = 0;
-		t.y = 0;
-		return t;
-	};
-	return AutoCheckButtonSkin;
 })(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/PlayGameButton/CallButtonSkin.exml'] = window.CallButtonSkin = (function (_super) {
 	__extends(CallButtonSkin, _super);
 	function CallButtonSkin() {
@@ -972,6 +874,104 @@ window.skins=window.skins||{};
 		return t;
 	};
 	return ShortcutRaiseButtonSkin;
+})(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/PlayGameButton/AutonCheckOrFoldButtonSkin.exml'] = window.AutonCheckOrFoldButtonSkin = (function (_super) {
+	__extends(AutonCheckOrFoldButtonSkin, _super);
+	function AutonCheckOrFoldButtonSkin() {
+		_super.call(this);
+		this.skinParts = [];
+		
+		this.height = 126;
+		this.width = 122;
+		this.elementsContent = [this._Image1_i()];
+		this.states = [
+			new eui.State ("up",
+				[
+				])
+			,
+			new eui.State ("down",
+				[
+				])
+			,
+			new eui.State ("disabled",
+				[
+				])
+			,
+			new eui.State ("upAndSelected",
+				[
+					new eui.SetProperty("_Image1","source","btn_check_or_fold_selected_png")
+				])
+			,
+			new eui.State ("downAndSelected",
+				[
+				])
+			,
+			new eui.State ("disabledAndSelected",
+				[
+				])
+		];
+	}
+	var _proto = AutonCheckOrFoldButtonSkin.prototype;
+
+	_proto._Image1_i = function () {
+		var t = new eui.Image();
+		this._Image1 = t;
+		t.percentHeight = 100;
+		t.source = "btn_check_or_fold_unselect_png";
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	return AutonCheckOrFoldButtonSkin;
+})(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/PlayGameButton/AutoCheckButtonSkin.exml'] = window.AutoCheckButtonSkin = (function (_super) {
+	__extends(AutoCheckButtonSkin, _super);
+	function AutoCheckButtonSkin() {
+		_super.call(this);
+		this.skinParts = [];
+		
+		this.height = 126;
+		this.width = 122;
+		this.elementsContent = [this._Image1_i()];
+		this.states = [
+			new eui.State ("up",
+				[
+				])
+			,
+			new eui.State ("down",
+				[
+				])
+			,
+			new eui.State ("disabled",
+				[
+				])
+			,
+			new eui.State ("upAndSelected",
+				[
+					new eui.SetProperty("_Image1","source","btn_check_auto_selected_png")
+				])
+			,
+			new eui.State ("downAndSelected",
+				[
+				])
+			,
+			new eui.State ("disabledAndSelected",
+				[
+				])
+		];
+	}
+	var _proto = AutoCheckButtonSkin.prototype;
+
+	_proto._Image1_i = function () {
+		var t = new eui.Image();
+		this._Image1 = t;
+		t.percentHeight = 100;
+		t.source = "btn_check_auto_unselect_png";
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	return AutoCheckButtonSkin;
 })(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/PlayGameButton/PlayGameButtonGroupSkin.exml'] = window.PlayGameButtonGroupSkin = (function (_super) {
 	__extends(PlayGameButtonGroupSkin, _super);
 	var PlayGameButtonGroupSkin$Skin1 = 	(function (_super) {
@@ -1157,50 +1157,14 @@ window.skins=window.skins||{};
 
 	function PlayGameButtonGroupSkin() {
 		_super.call(this);
-		this.skinParts = ["autoCheckOrFoldButton","autoCheckButton","autoGroup","foldButton","checkButton","callButton","raiseButton","allInButton","quickRaiseButton","firstShortcutButton","secondShortcutButton","thirdShortcutButton","fourthShortcutButton","shortcutGroup","switchGroup"];
+		this.skinParts = ["foldButton","checkButton","callButton","raiseButton","allInButton","quickRaiseButton","firstShortcutButton","secondShortcutButton","thirdShortcutButton","fourthShortcutButton","shortcutGroup","switchGroup","autoCheckOrFoldButton","autoCheckButton","autoGroup"];
 		
 		this.height = 320;
 		this.width = 750;
-		this.elementsContent = [this.autoGroup_i(),this.switchGroup_i()];
+		this.elementsContent = [this.switchGroup_i(),this.autoGroup_i()];
 	}
 	var _proto = PlayGameButtonGroupSkin.prototype;
 
-	_proto.autoGroup_i = function () {
-		var t = new eui.Group();
-		this.autoGroup = t;
-		t.height = 320;
-		t.horizontalCenter = 0;
-		t.verticalCenter = 0;
-		t.width = 750;
-		t.elementsContent = [this.autoCheckOrFoldButton_i(),this.autoCheckButton_i()];
-		return t;
-	};
-	_proto.autoCheckOrFoldButton_i = function () {
-		var t = new eui.CheckBox();
-		this.autoCheckOrFoldButton = t;
-		t.height = 126;
-		t.label = "CheckBox";
-		t.scaleX = 1;
-		t.scaleY = 1;
-		t.skinName = "AutonCheckOrFoldButtonSkin";
-		t.width = 122;
-		t.x = 120;
-		t.y = 170;
-		return t;
-	};
-	_proto.autoCheckButton_i = function () {
-		var t = new eui.CheckBox();
-		this.autoCheckButton = t;
-		t.height = 126;
-		t.label = "CheckBox";
-		t.scaleX = 1;
-		t.scaleY = 1;
-		t.skinName = "AutoCheckButtonSkin";
-		t.width = 122;
-		t.x = 508;
-		t.y = 170;
-		return t;
-	};
 	_proto.switchGroup_i = function () {
 		var t = new eui.Group();
 		this.switchGroup = t;
@@ -1355,6 +1319,42 @@ window.skins=window.skins||{};
 		t.width = 84;
 		t.x = 505;
 		t.y = -1;
+		return t;
+	};
+	_proto.autoGroup_i = function () {
+		var t = new eui.Group();
+		this.autoGroup = t;
+		t.height = 320;
+		t.horizontalCenter = 0;
+		t.verticalCenter = 0;
+		t.width = 750;
+		t.elementsContent = [this.autoCheckOrFoldButton_i(),this.autoCheckButton_i()];
+		return t;
+	};
+	_proto.autoCheckOrFoldButton_i = function () {
+		var t = new eui.CheckBox();
+		this.autoCheckOrFoldButton = t;
+		t.height = 126;
+		t.label = "CheckBox";
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.skinName = "AutonCheckOrFoldButtonSkin";
+		t.width = 122;
+		t.x = 120;
+		t.y = 170;
+		return t;
+	};
+	_proto.autoCheckButton_i = function () {
+		var t = new eui.CheckBox();
+		this.autoCheckButton = t;
+		t.height = 126;
+		t.label = "CheckBox";
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.skinName = "AutoCheckButtonSkin";
+		t.width = 122;
+		t.x = 508;
+		t.y = 170;
 		return t;
 	};
 	return PlayGameButtonGroupSkin;
@@ -6563,7 +6563,7 @@ window.skins=window.skins||{};
 	};
 	_proto._ArrayCollection1_i = function () {
 		var t = new eui.ArrayCollection();
-		t.source = [this._Object1_i(),this._Object2_i(),this._Object3_i(),this._Object4_i()];
+		t.source = [this._Object1_i(),this._Object2_i(),this._Object3_i(),this._Object4_i(),this._Object5_i()];
 		return t;
 	};
 	_proto._Object1_i = function () {
@@ -6574,17 +6574,23 @@ window.skins=window.skins||{};
 	};
 	_proto._Object2_i = function () {
 		var t = {};
+		t.item = "设置";
+		t.showArrow = "true";
+		return t;
+	};
+	_proto._Object3_i = function () {
+		var t = {};
 		t.item = "补充带入";
 		t.showArrow = "";
 		return t;
 	};
-	_proto._Object3_i = function () {
+	_proto._Object4_i = function () {
 		var t = {};
 		t.item = "站起围观";
 		t.showArrow = "";
 		return t;
 	};
-	_proto._Object4_i = function () {
+	_proto._Object5_i = function () {
 		var t = {};
 		t.item = "退出牌局";
 		t.showArrow = "";
@@ -8661,6 +8667,237 @@ window.skins=window.skins||{};
 		return t;
 	};
 	return SeatViewSkin;
+})(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/Settings/CardTypeRadioButtonSkin.exml'] = window.CardTypeRadioButtonSkin = (function (_super) {
+	__extends(CardTypeRadioButtonSkin, _super);
+	function CardTypeRadioButtonSkin() {
+		_super.call(this);
+		this.skinParts = ["iconDisplay","labelDisplay"];
+		
+		this.height = 120;
+		this.width = 241;
+		this.elementsContent = [this.iconDisplay_i(),this._Group1_i()];
+		this.states = [
+			new eui.State ("up",
+				[
+				])
+			,
+			new eui.State ("down",
+				[
+				])
+			,
+			new eui.State ("disabled",
+				[
+				])
+			,
+			new eui.State ("upAndSelected",
+				[
+					new eui.SetProperty("_Image1","source","icon_card_type_selected_png"),
+					new eui.SetProperty("labelDisplay","textColor",0xffffff)
+				])
+			,
+			new eui.State ("downAndSelected",
+				[
+					new eui.SetProperty("_Image1","source","icon_card_type_selected_png"),
+					new eui.SetProperty("labelDisplay","textColor",0xffffff)
+				])
+			,
+			new eui.State ("disabledAndSelected",
+				[
+				])
+		];
+	}
+	var _proto = CardTypeRadioButtonSkin.prototype;
+
+	_proto.iconDisplay_i = function () {
+		var t = new eui.Image();
+		this.iconDisplay = t;
+		t.height = 85;
+		t.source = "image_card_type_simple_png";
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto._Group1_i = function () {
+		var t = new eui.Group();
+		t.bottom = 0;
+		t.height = 35;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.layout = this._HorizontalLayout1_i();
+		t.elementsContent = [this._Image1_i(),this.labelDisplay_i()];
+		return t;
+	};
+	_proto._HorizontalLayout1_i = function () {
+		var t = new eui.HorizontalLayout();
+		t.horizontalAlign = "center";
+		t.verticalAlign = "middle";
+		return t;
+	};
+	_proto._Image1_i = function () {
+		var t = new eui.Image();
+		this._Image1 = t;
+		t.height = 20;
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "icon_card_type_unselect_png";
+		t.width = 20;
+		t.x = 111;
+		t.y = 9;
+		return t;
+	};
+	_proto.labelDisplay_i = function () {
+		var t = new eui.Label();
+		this.labelDisplay = t;
+		t.size = 24;
+		t.text = "Label";
+		t.textColor = 0x9ea1a0;
+		t.x = 110;
+		t.y = 14;
+		return t;
+	};
+	return CardTypeRadioButtonSkin;
+})(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/Settings/SettingsSkin.exml'] = window.SettingsSkin = (function (_super) {
+	__extends(SettingsSkin, _super);
+	function SettingsSkin() {
+		_super.call(this);
+		this.skinParts = ["background","simpleRadioButton","fourColorRadioButton","classicRadioButton","saveButton","group"];
+		
+		this.height = 1334;
+		this.width = 750;
+		this.elementsContent = [this.background_i(),this.group_i()];
+	}
+	var _proto = SettingsSkin.prototype;
+
+	_proto.background_i = function () {
+		var t = new eui.Rect();
+		this.background = t;
+		t.fillAlpha = 0.3;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto.group_i = function () {
+		var t = new eui.Group();
+		this.group = t;
+		t.height = 484;
+		t.horizontalCenter = 0;
+		t.verticalCenter = 0;
+		t.width = 682;
+		t.elementsContent = [this._Rect1_i(),this._Label1_i(),this._Group2_i(),this.saveButton_i()];
+		return t;
+	};
+	_proto._Rect1_i = function () {
+		var t = new eui.Rect();
+		t.ellipseHeight = 20;
+		t.ellipseWidth = 20;
+		t.fillColor = 0x1b1e2d;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto._Label1_i = function () {
+		var t = new eui.Label();
+		t.bold = true;
+		t.horizontalCenter = 0;
+		t.text = "设置";
+		t.y = 20;
+		return t;
+	};
+	_proto._Group2_i = function () {
+		var t = new eui.Group();
+		t.height = 372;
+		t.horizontalCenter = 0;
+		t.verticalCenter = 10;
+		t.width = 622;
+		t.elementsContent = [this._Rect2_i(),this._Group1_i()];
+		return t;
+	};
+	_proto._Rect2_i = function () {
+		var t = new eui.Rect();
+		t.ellipseHeight = 20;
+		t.ellipseWidth = 20;
+		t.fillColor = 0x32374c;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto._Group1_i = function () {
+		var t = new eui.Group();
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		t.layout = this._TileLayout1_i();
+		t.elementsContent = [this.simpleRadioButton_i(),this.fourColorRadioButton_i(),this.classicRadioButton_i()];
+		return t;
+	};
+	_proto._TileLayout1_i = function () {
+		var t = new eui.TileLayout();
+		t.horizontalAlign = "left";
+		t.horizontalGap = 50;
+		t.orientation = "columns";
+		t.paddingLeft = 40;
+		t.paddingRight = 40;
+		t.paddingTop = 40;
+		t.requestedRowCount = 2;
+		t.verticalAlign = "contentJustify";
+		t.verticalGap = 20;
+		return t;
+	};
+	_proto.simpleRadioButton_i = function () {
+		var t = new eui.RadioButton();
+		this.simpleRadioButton = t;
+		t.icon = "image_card_type_simple_png";
+		t.label = "简约";
+		t.selected = true;
+		t.skinName = "CardTypeRadioButtonSkin";
+		t.value = "simple";
+		t.x = 106;
+		t.y = 48;
+		return t;
+	};
+	_proto.fourColorRadioButton_i = function () {
+		var t = new eui.RadioButton();
+		this.fourColorRadioButton = t;
+		t.icon = "image_card_type_four_color_png";
+		t.label = "四色";
+		t.skinName = "CardTypeRadioButtonSkin";
+		t.value = "four_color";
+		t.x = 116;
+		t.y = 58;
+		return t;
+	};
+	_proto.classicRadioButton_i = function () {
+		var t = new eui.RadioButton();
+		this.classicRadioButton = t;
+		t.icon = "image_card_type_classics_png";
+		t.label = "经典";
+		t.skinName = "CardTypeRadioButtonSkin";
+		t.value = "classic";
+		t.x = 126;
+		t.y = 68;
+		return t;
+	};
+	_proto.saveButton_i = function () {
+		var t = new eui.Button();
+		this.saveButton = t;
+		t.bottom = 60;
+		t.height = 60;
+		t.horizontalCenter = 0;
+		t.label = "保存";
+		t.skinName = "ChatSendButtonSkin";
+		t.width = 120;
+		return t;
+	};
+	return SettingsSkin;
 })(eui.Skin);generateEUI.paths['resource/eui_skins/LaunchSkins/InputPhoneNumberSkin.exml'] = window.InputPhoneNumberSkin = (function (_super) {
 	__extends(InputPhoneNumberSkin, _super);
 	var InputPhoneNumberSkin$Skin25 = 	(function (_super) {

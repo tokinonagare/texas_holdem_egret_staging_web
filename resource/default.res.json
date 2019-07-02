@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "description_json,gameEui_json,bg_bottom_bar_png,icon_microphone_png,image_default_avatar_png,icon_talk_png,bg_chat_textinput_png,poker_json,icon_raise_progress_selector_png,image_raise_slider_track_png,icon_raise_slider_arrow_png,image_raise_slider_dashboard_png,image_loading_track_png,image_loading_thumb_png,image_loading_shadow_png,btn_phone_login_png,btn_start_game_png,btn_next_step_png,bg_login_input_png,btn_login_confirm_png,icon_loading_circle_png,icon_loading_spade_png,bg_custom_alert_png,btn_game_dropdown_png,btn_room_start_game_png,uiclick_mp3,btn_login_by_visitor_png,coin_particle_json,coin_particle_png,btn_selector_all_in_png,icon_slider_progress_png,icon_side_pot_png,icon_player_chip_png,icon_player_all_in_png,icon_player_call_png,icon_player_check_png,icon_player_fold_png,icon_player_raise_png,icon_sit_down_png,icon_menu_arrow_png,image_card_pattern_png,btn_game_record@2x_png,btn_add_friend_png,icon_buy_in_chip_png,image_buy_in_track_png,image_buy_in_thumb_png,btn_close_keyboard_png,icon_numeric_delete_png,btn_quick_raise_png,img_next_page@2x_png,img_previous_page@2x_png,reviewboard_thumb_png,track_sb_png,icon_hand_notes@2x_png,img_triangle_arrow@2x_png,btn_all_in_disabled_png,btn_all_in_png,btn_call_disabled_png,btn_call_png,btn_check_auto_selected_png,btn_check_auto_unselect_png,btn_check_disabled_png,btn_check_or_fold_selected_png,btn_check_or_fold_unselect_png,btn_check_png,btn_fold_disabled_png,btn_fold_png,btn_raise_confirm_png,btn_raise_disabled_png,btn_raise_png,bg_shortcut_raise_png,bg_shortcut_raise_disabled_png,btn_slider_all_in_png,icon_message_alarm_png,fire_particle_png,fire_particle_json,card_type_fnt,card_type_png,image_border_count_down_png,image_logo_on_table_png,icon_message_off_png,icon_message_on_png,icon_message_record_tab_selected_png,icon_message_record_tab_unselect_png,icon_phrase_tab_selected_png,icon_phrase_tab_unselect_png,icon_sticker_tab_unselect_png,icon_sticker_tab_selected_png,sticker_drink_json,sticker_drink_png,icon_sticker_drink_png,sticker_puchi_json,sticker_puchi_png,icon_sticker_puchi_png,sticker_cry_png,icon_sticker_cry_png,sticker_cry_json,sticker_angry_json,sticker_angry_png,icon_sticker_angry_png,sticker_smirk_json,sticker_smirk_png,icon_sticker_smirk_png,icon_sticker_titter_png,sticker_titter_png,sticker_titter_json,props_tomato_json,props_tomato_png,icon_props_tomato_png,btn_score_input_delete_png,props_flower_png,props_flower_json,icon_props_flower_png,props_heart_png,props_heart_json,icon_props_heart_png,you_win_json,you_win_png,tie_png,tie_json,props_tea_png,props_tea_json,icon_props_tea_png,icon_props_water_png,props_water_png,props_water_json,btn_buy_in_confirm_png,btn_buy_in_reject_png,btn_buy_in_apply_png,bg_buy_in_application_png,btn_club_application_reject_png,btn_club_application_agree_png,enter_room_json,enter_room_png,icon_chat_big_microphone_png,icon_audio_small_left_png,icon_audio_big_right_png,icon_audio_middle_right_png,icon_audio_big_left_png,icon_audio_middle_left_png,icon_audio_small_right_png,addchips_96_mp3,all_in_fire_96_mp3,allin_96_mp3,bet_96_mp3,btn_click_96_mp3,check_96_mp3,chiptoplayers_96_mp3,chiptopool_96_mp3,fapai_96_mp3,fapai3_96_mp3,fold_96_mp3,g_alarm_96_mp3,movechips_96_mp3,notice_96_mp3,props_flower_96_mp3,props_heart_96_mp3,throw_props_96_mp3,user_enter_96_mp3,won_coin_96_mp3,icon_audio_microphone_png,btn_audio_microphone_down_png,icon_record_cancelable_png,icon_coin_png,icon_room_clock_png,icon_room_chip_png,disconnection_animation_png,disconnection_animation_json,icon_room_coin_png,icon_coin_buy_in_thumb_png,bg_coin_buy_in_track_png,icon_coin_side_pot_png,icon_player_coin_png,bg_main_pot_png,icon_props_price_tomato_png,icon_props_price_flower_png,icon_props_price_heart_png,icon_props_price_water_png,icon_props_price_tea_png,bg_game_jpg,icon_detail_ip_png,icon_detail_phone_png,icon_detail_location_png",
+			"keys": "description_json,gameEui_json,bg_bottom_bar_png,icon_microphone_png,image_default_avatar_png,icon_talk_png,bg_chat_textinput_png,icon_raise_progress_selector_png,image_raise_slider_track_png,icon_raise_slider_arrow_png,image_raise_slider_dashboard_png,image_loading_track_png,image_loading_thumb_png,image_loading_shadow_png,btn_phone_login_png,btn_start_game_png,btn_next_step_png,bg_login_input_png,btn_login_confirm_png,icon_loading_circle_png,icon_loading_spade_png,bg_custom_alert_png,btn_game_dropdown_png,btn_room_start_game_png,uiclick_mp3,btn_login_by_visitor_png,coin_particle_json,coin_particle_png,btn_selector_all_in_png,icon_slider_progress_png,icon_side_pot_png,icon_player_chip_png,icon_player_all_in_png,icon_player_call_png,icon_player_check_png,icon_player_fold_png,icon_player_raise_png,icon_sit_down_png,icon_menu_arrow_png,image_card_pattern_png,btn_game_record@2x_png,btn_add_friend_png,icon_buy_in_chip_png,image_buy_in_track_png,image_buy_in_thumb_png,btn_close_keyboard_png,icon_numeric_delete_png,btn_quick_raise_png,img_next_page@2x_png,img_previous_page@2x_png,reviewboard_thumb_png,track_sb_png,icon_hand_notes@2x_png,img_triangle_arrow@2x_png,btn_all_in_disabled_png,btn_all_in_png,btn_call_disabled_png,btn_call_png,btn_check_auto_selected_png,btn_check_auto_unselect_png,btn_check_disabled_png,btn_check_or_fold_selected_png,btn_check_or_fold_unselect_png,btn_check_png,btn_fold_disabled_png,btn_fold_png,btn_raise_confirm_png,btn_raise_disabled_png,btn_raise_png,bg_shortcut_raise_png,bg_shortcut_raise_disabled_png,btn_slider_all_in_png,icon_message_alarm_png,fire_particle_png,fire_particle_json,card_type_fnt,card_type_png,image_border_count_down_png,image_logo_on_table_png,icon_message_off_png,icon_message_on_png,icon_message_record_tab_selected_png,icon_message_record_tab_unselect_png,icon_phrase_tab_selected_png,icon_phrase_tab_unselect_png,icon_sticker_tab_unselect_png,icon_sticker_tab_selected_png,sticker_drink_json,sticker_drink_png,icon_sticker_drink_png,sticker_puchi_json,sticker_puchi_png,icon_sticker_puchi_png,sticker_cry_png,icon_sticker_cry_png,sticker_cry_json,sticker_angry_json,sticker_angry_png,icon_sticker_angry_png,sticker_smirk_json,sticker_smirk_png,icon_sticker_smirk_png,icon_sticker_titter_png,sticker_titter_png,sticker_titter_json,props_tomato_json,props_tomato_png,icon_props_tomato_png,btn_score_input_delete_png,props_flower_png,props_flower_json,icon_props_flower_png,props_heart_png,props_heart_json,icon_props_heart_png,you_win_json,you_win_png,tie_png,tie_json,props_tea_png,props_tea_json,icon_props_tea_png,icon_props_water_png,props_water_png,props_water_json,btn_buy_in_confirm_png,btn_buy_in_reject_png,btn_buy_in_apply_png,bg_buy_in_application_png,btn_club_application_reject_png,btn_club_application_agree_png,enter_room_json,enter_room_png,icon_chat_big_microphone_png,icon_audio_small_left_png,icon_audio_big_right_png,icon_audio_middle_right_png,icon_audio_big_left_png,icon_audio_middle_left_png,icon_audio_small_right_png,addchips_96_mp3,all_in_fire_96_mp3,allin_96_mp3,bet_96_mp3,btn_click_96_mp3,check_96_mp3,chiptoplayers_96_mp3,chiptopool_96_mp3,fapai_96_mp3,fapai3_96_mp3,fold_96_mp3,g_alarm_96_mp3,movechips_96_mp3,notice_96_mp3,props_flower_96_mp3,props_heart_96_mp3,throw_props_96_mp3,user_enter_96_mp3,won_coin_96_mp3,icon_audio_microphone_png,btn_audio_microphone_down_png,icon_record_cancelable_png,icon_coin_png,icon_room_clock_png,icon_room_chip_png,disconnection_animation_png,disconnection_animation_json,icon_room_coin_png,icon_coin_buy_in_thumb_png,bg_coin_buy_in_track_png,icon_coin_side_pot_png,icon_player_coin_png,bg_main_pot_png,icon_props_price_tomato_png,icon_props_price_flower_png,icon_props_price_heart_png,icon_props_price_water_png,icon_props_price_tea_png,bg_game_jpg,icon_detail_ip_png,icon_detail_phone_png,icon_detail_location_png,icon_card_type_selected_png,icon_card_type_unselect_png,image_card_type_classics_png,image_card_type_simple_png,image_card_type_four_color_png,poker_simple_json,poker_four_color_json,poker_classic_json,poker_back_png",
 			"name": "preload"
 		},
 		{
@@ -44,12 +44,6 @@
 			"url": "assets/Common/bg_chat_textinput.png",
 			"type": "image",
 			"name": "bg_chat_textinput_png"
-		},
-		{
-			"url": "assets/Poker/poker.json",
-			"type": "sheet",
-			"name": "poker_json",
-			"subkeys": "poker_2c_png,poker_2d_png,poker_2h_png,poker_2s_png,poker_3c_png,poker_3d_png,poker_3h_png,poker_3s_png,poker_4c_png,poker_4d_png,poker_4h_png,poker_4s_png,poker_5c_png,poker_5d_png,poker_5h_png,poker_5s_png,poker_6c_png,poker_6d_png,poker_6h_png,poker_6s_png,poker_7c_png,poker_7d_png,poker_7h_png,poker_7s_png,poker_8c_png,poker_8d_png,poker_8h_png,poker_8s_png,poker_9c_png,poker_9d_png,poker_9h_png,poker_9s_png,poker_ac_png,poker_ad_png,poker_ah_png,poker_as_png,poker_back_png,poker_jc_png,poker_jd_png,poker_jh_png,poker_js_png,poker_kc_png,poker_kd_png,poker_kh_png,poker_ks_png,poker_qc_png,poker_qd_png,poker_qh_png,poker_qs_png,poker_tc_png,poker_td_png,poker_th_png,poker_ts_png"
 		},
 		{
 			"url": "assets/Game/icon_raise_progress_selector.png",
@@ -917,24 +911,72 @@
 			"name": "icon_props_price_tea_png"
 		},
 		{
-			"name": "bg_game_jpg",
+			"url": "assets/Game/bg_game.jpg",
 			"type": "image",
-			"url": "assets/Game/bg_game.jpg"
+			"name": "bg_game_jpg"
 		},
 		{
-			"name": "icon_detail_ip_png",
+			"url": "assets/Game/detail/icon_detail_ip.png",
 			"type": "image",
-			"url": "assets/Game/detail/icon_detail_ip.png"
+			"name": "icon_detail_ip_png"
 		},
 		{
-			"name": "icon_detail_phone_png",
+			"url": "assets/Game/detail/icon_detail_phone.png",
 			"type": "image",
-			"url": "assets/Game/detail/icon_detail_phone.png"
+			"name": "icon_detail_phone_png"
 		},
 		{
-			"name": "icon_detail_location_png",
+			"url": "assets/Game/detail/icon_detail_location.png",
 			"type": "image",
-			"url": "assets/Game/detail/icon_detail_location.png"
+			"name": "icon_detail_location_png"
+		},
+		{
+			"url": "assets/Game/settings/icon_card_type_selected.png",
+			"type": "image",
+			"name": "icon_card_type_selected_png"
+		},
+		{
+			"url": "assets/Game/settings/icon_card_type_unselect.png",
+			"type": "image",
+			"name": "icon_card_type_unselect_png"
+		},
+		{
+			"url": "assets/Game/settings/image_card_type_classics.png",
+			"type": "image",
+			"name": "image_card_type_classics_png"
+		},
+		{
+			"url": "assets/Game/settings/image_card_type_simple.png",
+			"type": "image",
+			"name": "image_card_type_simple_png"
+		},
+		{
+			"url": "assets/Game/settings/image_card_type_four_color.png",
+			"type": "image",
+			"name": "image_card_type_four_color_png"
+		},
+		{
+			"name": "poker_simple_json",
+			"type": "sheet",
+			"url": "assets/Poker/poker_simple.json",
+			"subkeys": "poker_2c_simple_png,poker_2d_simple_png,poker_2h_simple_png,poker_2s_simple_png,poker_3c_simple_png,poker_3d_simple_png,poker_3h_simple_png,poker_3s_simple_png,poker_4c_simple_png,poker_4d_simple_png,poker_4h_simple_png,poker_4s_simple_png,poker_5c_simple_png,poker_5d_simple_png,poker_5h_simple_png,poker_5s_simple_png,poker_6c_simple_png,poker_6d_simple_png,poker_6h_simple_png,poker_6s_simple_png,poker_7c_simple_png,poker_7d_simple_png,poker_7h_simple_png,poker_7s_simple_png,poker_8c_simple_png,poker_8d_simple_png,poker_8h_simple_png,poker_8s_simple_png,poker_9c_simple_png,poker_9d_simple_png,poker_9h_simple_png,poker_9s_simple_png,poker_ac_simple_png,poker_ad_simple_png,poker_ah_simple_png,poker_as_simple_png,poker_back_simple_png,poker_jc_simple_png,poker_jd_simple_png,poker_jh_simple_png,poker_js_simple_png,poker_kc_simple_png,poker_kd_simple_png,poker_kh_simple_png,poker_ks_simple_png,poker_qc_simple_png,poker_qd_simple_png,poker_qh_simple_png,poker_qs_simple_png,poker_tc_simple_png,poker_td_simple_png,poker_th_simple_png,poker_ts_simple_png"
+		},
+		{
+			"name": "poker_four_color_json",
+			"type": "sheet",
+			"url": "assets/Poker/poker_four_color.json",
+			"subkeys": "poker_2c_four_color_png,poker_2d_four_color_png,poker_2h_four_color_png,poker_2s_four_color_png,poker_3c_four_color_png,poker_3d_four_color_png,poker_3h_four_color_png,poker_3s_four_color_png,poker_4c_four_color_png,poker_4d_four_color_png,poker_4h_four_color_png,poker_4s_four_color_png,poker_5c_four_color_png,poker_5d_four_color_png,poker_5h_four_color_png,poker_5s_four_color_png,poker_6c_four_color_png,poker_6d_four_color_png,poker_6h_four_color_png,poker_6s_four_color_png,poker_7c_four_color_png,poker_7d_four_color_png,poker_7h_four_color_png,poker_7s_four_color_png,poker_8c_four_color_png,poker_8d_four_color_png,poker_8h_four_color_png,poker_8s_four_color_png,poker_9c_four_color_png,poker_9d_four_color_png,poker_9h_four_color_png,poker_9s_four_color_png,poker_ac_four_color_png,poker_ad_four_color_png,poker_ah_four_color_png,poker_as_four_color_png,poker_back_four_color_png,poker_jc_four_color_png,poker_jd_four_color_png,poker_jh_four_color_png,poker_js_four_color_png,poker_kc_four_color_png,poker_kd_four_color_png,poker_kh_four_color_png,poker_ks_four_color_png,poker_qc_four_color_png,poker_qd_four_color_png,poker_qh_four_color_png,poker_qs_four_color_png,poker_tc_four_color_png,poker_td_four_color_png,poker_th_four_color_png,poker_ts_four_color_png"
+		},
+		{
+			"name": "poker_classic_json",
+			"type": "sheet",
+			"url": "assets/Poker/poker_classic.json",
+			"subkeys": "poker_2c_classic_png,poker_2d_classic_png,poker_2h_classic_png,poker_2s_classic_png,poker_3c_classic_png,poker_3d_classic_png,poker_3h_classic_png,poker_3s_classic_png,poker_4c_classic_png,poker_4d_classic_png,poker_4h_classic_png,poker_4s_classic_png,poker_5c_classic_png,poker_5d_classic_png,poker_5h_classic_png,poker_5s_classic_png,poker_6c_classic_png,poker_6d_classic_png,poker_6h_classic_png,poker_6s_classic_png,poker_7c_classic_png,poker_7d_classic_png,poker_7h_classic_png,poker_7s_classic_png,poker_8c_classic_png,poker_8d_classic_png,poker_8h_classic_png,poker_8s_classic_png,poker_9c_classic_png,poker_9d_classic_png,poker_9h_classic_png,poker_9s_classic_png,poker_ac_classic_png,poker_ad_classic_png,poker_ah_classic_png,poker_as_classic_png,poker_back_classic_png,poker_jc_classic_png,poker_jd_classic_png,poker_jh_classic_png,poker_js_classic_png,poker_kc_classic_png,poker_kd_classic_png,poker_kh_classic_png,poker_ks_classic_png,poker_qc_classic_png,poker_qd_classic_png,poker_qh_classic_png,poker_qs_classic_png,poker_tc_classic_png,poker_td_classic_png,poker_th_classic_png,poker_ts_classic_png"
+		},
+		{
+			"name": "poker_back_png",
+			"type": "image",
+			"url": "assets/Poker/poker_back.png"
 		}
 	]
 }
