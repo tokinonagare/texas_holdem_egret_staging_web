@@ -6574,7 +6574,7 @@ window.skins=window.skins||{};
 	};
 	_proto._Object2_i = function () {
 		var t = {};
-		t.item = "设置";
+		t.item = "更换纸牌";
 		t.showArrow = "true";
 		return t;
 	};
@@ -8805,7 +8805,7 @@ window.skins=window.skins||{};
 		var t = new eui.Label();
 		t.bold = true;
 		t.horizontalCenter = 0;
-		t.text = "设置";
+		t.text = "更换纸牌";
 		t.y = 20;
 		return t;
 	};
