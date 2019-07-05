@@ -8762,7 +8762,7 @@ window.skins=window.skins||{};
 	__extends(SettingsSkin, _super);
 	function SettingsSkin() {
 		_super.call(this);
-		this.skinParts = ["background","simpleRadioButton","fourColorRadioButton","classicRadioButton","saveButton","group"];
+		this.skinParts = ["background","simpleRadioButton","fourColorRadioButton","classicRadioButton","fourColor2RadioButton","saveButton","group"];
 		
 		this.height = 1334;
 		this.width = 750;
@@ -8836,7 +8836,7 @@ window.skins=window.skins||{};
 		t.x = 0;
 		t.y = 0;
 		t.layout = this._TileLayout1_i();
-		t.elementsContent = [this.simpleRadioButton_i(),this.fourColorRadioButton_i(),this.classicRadioButton_i()];
+		t.elementsContent = [this.simpleRadioButton_i(),this.fourColorRadioButton_i(),this.classicRadioButton_i(),this.fourColor2RadioButton_i()];
 		return t;
 	};
 	_proto._TileLayout1_i = function () {
@@ -8868,7 +8868,7 @@ window.skins=window.skins||{};
 		var t = new eui.RadioButton();
 		this.fourColorRadioButton = t;
 		t.icon = "image_card_type_four_color_png";
-		t.label = "四色";
+		t.label = "四色1";
 		t.skinName = "CardTypeRadioButtonSkin";
 		t.value = "four_color";
 		t.x = 116;
@@ -8884,6 +8884,17 @@ window.skins=window.skins||{};
 		t.value = "classic";
 		t.x = 126;
 		t.y = 68;
+		return t;
+	};
+	_proto.fourColor2RadioButton_i = function () {
+		var t = new eui.RadioButton();
+		this.fourColor2RadioButton = t;
+		t.icon = "image_card_type_four_color_2_png";
+		t.label = "四色2";
+		t.skinName = "CardTypeRadioButtonSkin";
+		t.value = "four_color_2";
+		t.x = 116;
+		t.y = 58;
 		return t;
 	};
 	_proto.saveButton_i = function () {
