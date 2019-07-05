@@ -1,0 +1,11 @@
+{"file":"props.png","frames":{
+"icon_props_flower_png":{"x":52,"y":116,"w":37,"h":38,"offX":2,"offY":2,"sourceW":40,"sourceH":40},
+"icon_props_heart_png":{"x":0,"y":174,"w":30,"h":26,"offX":5,"offY":7,"sourceW":40,"sourceH":40},
+"icon_props_price_flower_png":{"x":0,"y":116,"w":51,"h":58,"offX":0,"offY":0,"sourceW":52,"sourceH":58},
+"icon_props_price_heart_png":{"x":52,"y":58,"w":51,"h":58,"offX":0,"offY":0,"sourceW":52,"sourceH":58},
+"icon_props_price_tea_png":{"x":0,"y":58,"w":51,"h":58,"offX":0,"offY":0,"sourceW":52,"sourceH":58},
+"icon_props_price_tomato_png":{"x":52,"y":0,"w":51,"h":58,"offX":0,"offY":0,"sourceW":52,"sourceH":58},
+"icon_props_price_water_png":{"x":0,"y":0,"w":51,"h":58,"offX":0,"offY":0,"sourceW":52,"sourceH":58},
+"icon_props_tea_png":{"x":52,"y":154,"w":40,"h":34,"offX":0,"offY":5,"sourceW":40,"sourceH":40},
+"icon_props_tomato_png":{"x":92,"y":116,"w":35,"h":39,"offX":3,"offY":1,"sourceW":40,"sourceH":40},
+"icon_props_water_png":{"x":92,"y":155,"w":31,"h":37,"offX":5,"offY":2,"sourceW":40,"sourceH":40}}}

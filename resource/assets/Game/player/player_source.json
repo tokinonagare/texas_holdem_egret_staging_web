@@ -1,0 +1,8 @@
+{"file":"player_source.png","frames":{
+"icon_player_all_in_png":{"x":0,"y":76,"w":39,"h":23,"offX":0,"offY":0,"sourceW":39,"sourceH":23},
+"icon_player_call_png":{"x":78,"y":73,"w":39,"h":23,"offX":0,"offY":0,"sourceW":39,"sourceH":23},
+"icon_player_check_png":{"x":39,"y":73,"w":39,"h":23,"offX":0,"offY":0,"sourceW":39,"sourceH":23},
+"icon_player_fold_png":{"x":0,"y":53,"w":39,"h":23,"offX":0,"offY":0,"sourceW":39,"sourceH":23},
+"icon_player_raise_png":{"x":53,"y":50,"w":39,"h":23,"offX":0,"offY":0,"sourceW":39,"sourceH":23},
+"image_border_count_down_png":{"x":0,"y":0,"w":53,"h":53,"offX":0,"offY":0,"sourceW":53,"sourceH":53},
+"image_default_avatar_png":{"x":53,"y":0,"w":50,"h":50,"offX":0,"offY":0,"sourceW":50,"sourceH":50}}}

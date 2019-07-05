@@ -1,0 +1,12 @@
+{"file":"buy_in_source.png","frames":{
+"bg_buy_in_application_png":{"x":0,"y":0,"w":271,"h":205,"offX":0,"offY":0,"sourceW":272,"sourceH":205},
+"bg_coin_buy_in_track_png":{"x":100,"y":205,"w":238,"h":5,"offX":0,"offY":0,"sourceW":238,"sourceH":5},
+"btn_buy_in_apply_png":{"x":271,"y":0,"w":50,"h":50,"offX":0,"offY":0,"sourceW":50,"sourceH":50},
+"btn_buy_in_confirm_png":{"x":0,"y":205,"w":50,"h":50,"offX":0,"offY":0,"sourceW":50,"sourceH":50},
+"btn_buy_in_reject_png":{"x":50,"y":205,"w":50,"h":50,"offX":0,"offY":0,"sourceW":50,"sourceH":50},
+"btn_score_input_delete_png":{"x":301,"y":50,"w":16,"h":16,"offX":0,"offY":0,"sourceW":16,"sourceH":16},
+"icon_buy_in_chip_png":{"x":271,"y":80,"w":18,"h":18,"offX":0,"offY":0,"sourceW":18,"sourceH":18},
+"icon_coin_buy_in_thumb_png":{"x":271,"y":50,"w":30,"h":30,"offX":0,"offY":0,"sourceW":30,"sourceH":30},
+"icon_coin_png":{"x":100,"y":215,"w":21,"h":20,"offX":0,"offY":0,"sourceW":21,"sourceH":21},
+"image_buy_in_thumb_png":{"x":321,"y":0,"w":24,"h":25,"offX":0,"offY":0,"sourceW":24,"sourceH":25},
+"image_buy_in_track_png":{"x":100,"y":210,"w":238,"h":5,"offX":0,"offY":0,"sourceW":238,"sourceH":5}}}

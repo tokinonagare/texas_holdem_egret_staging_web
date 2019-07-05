@@ -1,0 +1,5 @@
+{"file":"common_source.png","frames":{
+"bg_chat_textinput_png":{"x":0,"y":189,"w":350,"h":33,"offX":0,"offY":0,"sourceW":350,"sourceH":33},
+"bg_custom_alert_png":{"x":0,"y":0,"w":333,"h":189,"offX":0,"offY":0,"sourceW":333,"sourceH":189},
+"icon_loading_circle_png":{"x":333,"y":0,"w":53,"h":54,"offX":0,"offY":0,"sourceW":53,"sourceH":54},
+"icon_loading_spade_png":{"x":386,"y":0,"w":21,"h":22,"offX":0,"offY":0,"sourceW":22,"sourceH":22}}}

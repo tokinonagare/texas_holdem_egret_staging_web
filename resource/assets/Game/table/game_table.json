@@ -1,0 +1,13 @@
+{"file":"game_table.png","frames":{
+"btn_game_dropdown_png":{"x":197,"y":0,"w":34,"h":34,"offX":0,"offY":0,"sourceW":34,"sourceH":35},
+"btn_game_record@2x_png":{"x":231,"y":33,"w":25,"h":28,"offX":0,"offY":0,"sourceW":25,"sourceH":28},
+"btn_room_start_game_png":{"x":0,"y":0,"w":197,"h":62,"offX":0,"offY":0,"sourceW":197,"sourceH":62},
+"btn_start_room_png":{"x":84,"y":62,"w":115,"h":43,"offX":0,"offY":0,"sourceW":116,"sourceH":44},
+"icon_hand_notes@2x_png":{"x":199,"y":35,"w":29,"h":28,"offX":0,"offY":0,"sourceW":29,"sourceH":28},
+"icon_menu_arrow_png":{"x":229,"y":73,"w":8,"h":13,"offX":0,"offY":0,"sourceW":8,"sourceH":14},
+"icon_microphone_png":{"x":231,"y":0,"w":22,"h":32,"offX":0,"offY":0,"sourceW":22,"sourceH":33},
+"icon_room_clock_png":{"x":241,"y":61,"w":11,"h":12,"offX":1,"offY":0,"sourceW":12,"sourceH":12},
+"icon_room_coin_png":{"x":229,"y":61,"w":12,"h":12,"offX":0,"offY":0,"sourceW":12,"sourceH":12},
+"icon_sit_down_png":{"x":199,"y":88,"w":28,"h":24,"offX":0,"offY":0,"sourceW":28,"sourceH":24},
+"icon_talk_png":{"x":199,"y":63,"w":30,"h":25,"offX":0,"offY":0,"sourceW":30,"sourceH":25},
+"image_logo_on_table_png":{"x":0,"y":62,"w":84,"h":112,"offX":0,"offY":0,"sourceW":84,"sourceH":113}}}

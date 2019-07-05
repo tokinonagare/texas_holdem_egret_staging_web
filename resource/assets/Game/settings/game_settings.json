@@ -1,0 +1,7 @@
+{"file":"game_settings.png","frames":{
+"icon_card_type_selected_png":{"x":241,"y":58,"w":15,"h":15,"offX":0,"offY":0,"sourceW":15,"sourceH":15},
+"icon_card_type_unselect_png":{"x":241,"y":43,"w":15,"h":15,"offX":0,"offY":0,"sourceW":15,"sourceH":15},
+"image_card_type_classics_png":{"x":122,"y":0,"w":121,"h":42,"offX":0,"offY":0,"sourceW":121,"sourceH":43},
+"image_card_type_four_color_2_png":{"x":0,"y":0,"w":122,"h":42,"offX":0,"offY":0,"sourceW":122,"sourceH":43},
+"image_card_type_four_color_png":{"x":121,"y":43,"w":120,"h":42,"offX":0,"offY":0,"sourceW":121,"sourceH":43},
+"image_card_type_simple_png":{"x":0,"y":43,"w":120,"h":42,"offX":0,"offY":0,"sourceW":121,"sourceH":43}}}

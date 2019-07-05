@@ -1,0 +1,6 @@
+{"file":"game_sources.png","frames":{
+"icon_coin_side_pot_png":{"x":0,"y":0,"w":24,"h":19,"offX":0,"offY":0,"sourceW":24,"sourceH":20},
+"icon_player_chip_png":{"x":40,"y":0,"w":13,"h":13,"offX":0,"offY":0,"sourceW":13,"sourceH":13},
+"icon_player_coin_png":{"x":40,"y":13,"w":12,"h":13,"offX":0,"offY":0,"sourceW":12,"sourceH":13},
+"icon_room_chip_png":{"x":52,"y":13,"w":12,"h":12,"offX":0,"offY":0,"sourceW":12,"sourceH":12},
+"icon_side_pot_png":{"x":24,"y":0,"w":15,"h":22,"offX":0,"offY":0,"sourceW":16,"sourceH":22}}}
