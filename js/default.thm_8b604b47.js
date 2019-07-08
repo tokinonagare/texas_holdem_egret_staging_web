@@ -2113,11 +2113,11 @@ window.skins=window.skins||{};
 
 	function GameSkin() {
 		_super.call(this);
-		this.skinParts = ["icon","mainPotLabel","blindImage","blindLabel","countdownLabel","countdownGroup","settlementMethodLabel","creatorLabel","houseNumberLabel","roomInfoGroup","communityCardList","startGameButton","cardTypeLabel","potsList","startRoomButton","playGameButtonGroup","promptLabel","winningCardLabel","group","raiseSelector","messageAlarm","quickRaiser","reviewboardButton","menuButton","debugView","leaderboardButton","chatButton","microphoneButton","cardPattern"];
+		this.skinParts = ["icon","mainPotLabel","blindImage","blindLabel","countdownLabel","countdownGroup","settlementMethodLabel","creatorLabel","houseNumberLabel","roomInfoGroup","communityCardList","startGameButton","cardTypeLabel","potsList","startRoomButton","playGameButtonGroup","promptLabel","winningCardLabel","group","raiseSelector","messageAlarm","quickRaiser","reviewboardButton","menuButton","debugView","leaderboardButton","chatButton","microphoneButton"];
 		
 		this.height = 1334;
 		this.width = 750;
-		this.elementsContent = [this._Image1_i(),this.icon_i(),this.group_i(),this.raiseSelector_i(),this.messageAlarm_i(),this.quickRaiser_i(),this.reviewboardButton_i(),this.menuButton_i(),this.debugView_i(),this.leaderboardButton_i(),this.chatButton_i(),this.microphoneButton_i(),this.cardPattern_i()];
+		this.elementsContent = [this._Image1_i(),this.icon_i(),this.group_i(),this.raiseSelector_i(),this.messageAlarm_i(),this.quickRaiser_i(),this.reviewboardButton_i(),this.menuButton_i(),this.debugView_i(),this.leaderboardButton_i(),this.chatButton_i(),this.microphoneButton_i()];
 	}
 	var _proto = GameSkin.prototype;
 
@@ -2546,16 +2546,6 @@ window.skins=window.skins||{};
 		t.right = 44;
 		t.visible = false;
 		t.skinName = GameSkin$Skin14;
-		return t;
-	};
-	_proto.cardPattern_i = function () {
-		var t = new CardPattern();
-		this.cardPattern = t;
-		t.height = 1334;
-		t.visible = false;
-		t.width = 750;
-		t.x = 0;
-		t.y = 0;
 		return t;
 	};
 	return GameSkin;
@@ -5102,16 +5092,17 @@ window.skins=window.skins||{};
 	__extends(CardPatternSkin, _super);
 	function CardPatternSkin() {
 		_super.call(this);
-		this.skinParts = ["patternImage"];
+		this.skinParts = ["background","patternImage"];
 		
 		this.height = 1334;
 		this.width = 750;
-		this.elementsContent = [this._Rect1_i(),this.patternImage_i()];
+		this.elementsContent = [this.background_i(),this.patternImage_i()];
 	}
 	var _proto = CardPatternSkin.prototype;
 
-	_proto._Rect1_i = function () {
+	_proto.background_i = function () {
 		var t = new eui.Rect();
+		this.background = t;
 		t.fillAlpha = 0;
 		t.percentHeight = 100;
 		t.percentWidth = 100;
