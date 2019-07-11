@@ -415,48 +415,6 @@ window.skins=window.skins||{};
 		return t;
 	};
 	return LoadingComponentSkin;
-})(eui.Skin);generateEUI.paths['resource/eui_skins/Components/LoadingProgress.exml'] = window.LoadingProgress = (function (_super) {
-	__extends(LoadingProgress, _super);
-	function LoadingProgress() {
-		_super.call(this);
-		this.skinParts = ["track_pb_png","thumb"];
-		
-		this.height = 132;
-		this.width = 112;
-		this.elementsContent = [this._Image1_i(),this.track_pb_png_i(),this.thumb_i()];
-	}
-	var _proto = LoadingProgress.prototype;
-
-	_proto._Image1_i = function () {
-		var t = new eui.Image();
-		t.height = 112;
-		t.source = "image_loading_shadow_png";
-		t.width = 112;
-		t.x = 0;
-		t.y = 20;
-		return t;
-	};
-	_proto.track_pb_png_i = function () {
-		var t = new eui.Image();
-		this.track_pb_png = t;
-		t.height = 112;
-		t.source = "image_loading_track_png";
-		t.width = 112;
-		t.x = 0;
-		t.y = 0;
-		return t;
-	};
-	_proto.thumb_i = function () {
-		var t = new eui.Image();
-		this.thumb = t;
-		t.height = 112;
-		t.source = "image_loading_thumb_png";
-		t.width = 112;
-		t.x = 0;
-		t.y = 0;
-		return t;
-	};
-	return LoadingProgress;
 })(eui.Skin);generateEUI.paths['resource/eui_skins/Components/LoginTextInputSkin.exml'] = window.LoginTextInputSkin = (function (_super) {
 	__extends(LoginTextInputSkin, _super);
 	function LoginTextInputSkin() {
@@ -6910,13 +6868,13 @@ window.skins=window.skins||{};
 	__extends(PlayerDetailSkin, _super);
 	function PlayerDetailSkin() {
 		_super.call(this);
-		this.skinParts = ["background","coinBalanceLabel","coinGroup","avatarImage","nicknameLabel","bioLabel","statisticList","distanceList","noLocationLabel","viewStack","propsList","locationLabel","group"];
+		this.skinParts = ["background","coinBalanceLabel","coinGroup","avatarImage","nicknameLabel","bioLabel","tabBar","statisticList","distanceList","noLocationLabel","viewStack","propsList","locationLabel","group"];
 		
 		this.height = 1334;
 		this.width = 750;
 		this.elementsContent = [this.background_i(),this.group_i()];
 		
-		eui.Binding.$bindProperties(this, ["viewStack"],[0],this._TabBar1,"dataProvider");
+		eui.Binding.$bindProperties(this, ["viewStack"],[0],this.tabBar,"dataProvider");
 	}
 	var _proto = PlayerDetailSkin.prototype;
 
@@ -6937,7 +6895,7 @@ window.skins=window.skins||{};
 		t.horizontalCenter = 0;
 		t.verticalCenter = 0;
 		t.width = 690;
-		t.elementsContent = [this._Rect1_i(),this.coinGroup_i(),this.avatarImage_i(),this.nicknameLabel_i(),this.bioLabel_i(),this._TabBar1_i(),this._Group3_i(),this._Group4_i(),this._Group6_i()];
+		t.elementsContent = [this._Rect1_i(),this.coinGroup_i(),this.avatarImage_i(),this.nicknameLabel_i(),this.bioLabel_i(),this.tabBar_i(),this._Group3_i(),this._Group4_i(),this._Group6_i()];
 		return t;
 	};
 	_proto._Rect1_i = function () {
@@ -7027,9 +6985,9 @@ window.skins=window.skins||{};
 		t.y = 140;
 		return t;
 	};
-	_proto._TabBar1_i = function () {
+	_proto.tabBar_i = function () {
 		var t = new eui.TabBar();
-		this._TabBar1 = t;
+		this.tabBar = t;
 		t.height = 70;
 		t.horizontalCenter = 0;
 		t.itemRendererSkinName = PlayerDetailTabBar;
@@ -7257,7 +7215,7 @@ window.skins=window.skins||{};
 		this.noLocationLabel = t;
 		t.horizontalCenter = 0;
 		t.size = 25;
-		t.text = "暂无该玩家定位信息";
+		t.text = "暂无玩家定位信息";
 		t.textColor = 0xFFFFFF;
 		t.verticalCenter = 0;
 		return t;
@@ -9494,11 +9452,11 @@ window.skins=window.skins||{};
 	__extends(LoadingSkin, _super);
 	function LoadingSkin() {
 		_super.call(this);
-		this.skinParts = ["loadingLabel","progressBar"];
+		this.skinParts = [];
 		
 		this.height = 1334;
 		this.width = 750;
-		this.elementsContent = [this._Image1_i(),this.loadingLabel_i(),this.progressBar_i()];
+		this.elementsContent = [this._Image1_i()];
 	}
 	var _proto = LoadingSkin.prototype;
 
@@ -9509,33 +9467,6 @@ window.skins=window.skins||{};
 		t.source = "bg_loading_jpg";
 		t.percentWidth = 100;
 		t.y = 0;
-		return t;
-	};
-	_proto.loadingLabel_i = function () {
-		var t = new eui.Label();
-		this.loadingLabel = t;
-		t.horizontalCenter = 0;
-		t.text = "游戏加载中... 0%";
-		t.textAlign = "center";
-		t.verticalAlign = "middle";
-		t.visible = false;
-		t.percentWidth = 100;
-		t.y = 973;
-		return t;
-	};
-	_proto.progressBar_i = function () {
-		var t = new eui.ProgressBar();
-		this.progressBar = t;
-		t.direction = "btt";
-		t.height = 132;
-		t.horizontalCenter = 0;
-		t.maximum = 100;
-		t.minimum = 0;
-		t.skinName = "LoadingProgress";
-		t.value = 0;
-		t.visible = false;
-		t.width = 112;
-		t.y = 820;
 		return t;
 	};
 	return LoadingSkin;
