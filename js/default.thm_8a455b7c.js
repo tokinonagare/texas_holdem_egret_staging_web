@@ -150,12 +150,12 @@ window.skins=window.skins||{};
 	__extends(DisconnectViewSkin, _super);
 	function DisconnectViewSkin() {
 		_super.call(this);
-		this.skinParts = ["flutterAnimation","animationGroup","promptLabel","group","timerLabel"];
+		this.skinParts = ["flutterAnimation","animationGroup","promptLabel","group","timerLabel","domainLabel"];
 		
 		this.height = 1334;
 		this.width = 750;
 		this.flutterAnimation_i();
-		this.elementsContent = [this._Rect1_i(),this.group_i(),this.timerLabel_i()];
+		this.elementsContent = [this._Rect1_i(),this.group_i(),this.timerLabel_i(),this.domainLabel_i()];
 		
 		eui.Binding.$bindProperties(this, ["hostComponent.ghostImage"],[0],this._TweenItem1,"target");
 		eui.Binding.$bindProperties(this, [0],[],this._Object1,"y");
@@ -268,6 +268,16 @@ window.skins=window.skins||{};
 		t.bottom = 40;
 		t.right = 40;
 		t.text = "0";
+		return t;
+	};
+	_proto.domainLabel_i = function () {
+		var t = new eui.Label();
+		this.domainLabel = t;
+		t.horizontalCenter = -70;
+		t.size = 16;
+		t.text = "0";
+		t.textColor = 0x93cafa;
+		t.verticalCenter = 50;
 		return t;
 	};
 	return DisconnectViewSkin;
