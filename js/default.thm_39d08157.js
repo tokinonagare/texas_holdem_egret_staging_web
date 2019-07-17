@@ -6884,9 +6884,51 @@ window.skins=window.skins||{};
 	return NumericKeyboardSkin;
 })(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/PlayerDetail/PlayerDetailSkin.exml'] = window.PlayerDetailSkin = (function (_super) {
 	__extends(PlayerDetailSkin, _super);
+	var PlayerDetailSkin$Skin25 = 	(function (_super) {
+		__extends(PlayerDetailSkin$Skin25, _super);
+		function PlayerDetailSkin$Skin25() {
+			_super.call(this);
+			this.skinParts = ["labelDisplay"];
+			
+			this.elementsContent = [this._Image1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_Image1","source","btn_block_selected_png")
+					])
+				,
+				new eui.State ("disabled",
+					[
+					])
+			];
+		}
+		var _proto = PlayerDetailSkin$Skin25.prototype;
+
+		_proto._Image1_i = function () {
+			var t = new eui.Image();
+			this._Image1 = t;
+			t.percentHeight = 100;
+			t.source = "btn_block_unselect_png";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		return PlayerDetailSkin$Skin25;
+	})(eui.Skin);
+
 	function PlayerDetailSkin() {
 		_super.call(this);
-		this.skinParts = ["background","coinBalanceLabel","coinGroup","avatarImage","nicknameLabel","bioLabel","tabBar","statisticList","distanceList","noLocationLabel","viewStack","propsList","locationLabel","group"];
+		this.skinParts = ["background","coinBalanceLabel","coinGroup","avatarImage","nicknameLabel","bioLabel","blockCheckBox","tabBar","statisticList","distanceList","noLocationLabel","viewStack","propsList","locationLabel","group"];
 		
 		this.height = 1334;
 		this.width = 750;
@@ -6913,7 +6955,7 @@ window.skins=window.skins||{};
 		t.horizontalCenter = 0;
 		t.verticalCenter = 0;
 		t.width = 690;
-		t.elementsContent = [this._Rect1_i(),this.coinGroup_i(),this.avatarImage_i(),this.nicknameLabel_i(),this.bioLabel_i(),this.tabBar_i(),this._Group3_i(),this._Group4_i(),this._Group6_i()];
+		t.elementsContent = [this._Rect1_i(),this.coinGroup_i(),this.avatarImage_i(),this.nicknameLabel_i(),this.bioLabel_i(),this.blockCheckBox_i(),this.tabBar_i(),this._Group3_i(),this._Group4_i(),this._Group6_i()];
 		return t;
 	};
 	_proto._Rect1_i = function () {
@@ -6936,9 +6978,8 @@ window.skins=window.skins||{};
 		t.anchorOffsetX = 0;
 		t.anchorOffsetY = 0;
 		t.height = 40;
-		t.width = 400;
 		t.x = 230;
-		t.y = 85;
+		t.y = 140;
 		t.layout = this._HorizontalLayout1_i();
 		t.elementsContent = [this._Image1_i(),this.coinBalanceLabel_i()];
 		return t;
@@ -6994,13 +7035,25 @@ window.skins=window.skins||{};
 	_proto.bioLabel_i = function () {
 		var t = new eui.Label();
 		this.bioLabel = t;
+		t.anchorOffsetX = 0;
 		t.height = 44;
 		t.size = 22;
 		t.text = "签名:";
 		t.textColor = 0xb8c2c0;
-		t.width = 400;
+		t.width = 275;
 		t.x = 230;
-		t.y = 140;
+		t.y = 80;
+		return t;
+	};
+	_proto.blockCheckBox_i = function () {
+		var t = new eui.CheckBox();
+		this.blockCheckBox = t;
+		t.height = 60;
+		t.label = "";
+		t.right = 20;
+		t.top = 83;
+		t.width = 160;
+		t.skinName = PlayerDetailSkin$Skin25;
 		return t;
 	};
 	_proto.tabBar_i = function () {
@@ -8878,9 +8931,9 @@ window.skins=window.skins||{};
 	return SettingsSkin;
 })(eui.Skin);generateEUI.paths['resource/eui_skins/LaunchSkins/InputPhoneNumberSkin.exml'] = window.InputPhoneNumberSkin = (function (_super) {
 	__extends(InputPhoneNumberSkin, _super);
-	var InputPhoneNumberSkin$Skin25 = 	(function (_super) {
-		__extends(InputPhoneNumberSkin$Skin25, _super);
-		function InputPhoneNumberSkin$Skin25() {
+	var InputPhoneNumberSkin$Skin26 = 	(function (_super) {
+		__extends(InputPhoneNumberSkin$Skin26, _super);
+		function InputPhoneNumberSkin$Skin26() {
 			_super.call(this);
 			this.skinParts = ["labelDisplay"];
 			
@@ -8901,7 +8954,7 @@ window.skins=window.skins||{};
 					])
 			];
 		}
-		var _proto = InputPhoneNumberSkin$Skin25.prototype;
+		var _proto = InputPhoneNumberSkin$Skin26.prototype;
 
 		_proto._Image1_i = function () {
 			var t = new eui.Image();
@@ -8920,7 +8973,7 @@ window.skins=window.skins||{};
 			t.verticalCenter = 0;
 			return t;
 		};
-		return InputPhoneNumberSkin$Skin25;
+		return InputPhoneNumberSkin$Skin26;
 	})(eui.Skin);
 
 	function InputPhoneNumberSkin() {
@@ -8998,7 +9051,7 @@ window.skins=window.skins||{};
 		t.label = "";
 		t.x = 158;
 		t.y = 250;
-		t.skinName = InputPhoneNumberSkin$Skin25;
+		t.skinName = InputPhoneNumberSkin$Skin26;
 		return t;
 	};
 	return InputPhoneNumberSkin;
@@ -9152,9 +9205,9 @@ window.skins=window.skins||{};
 	return TimerButtonSkin;
 })(eui.Skin);generateEUI.paths['resource/eui_skins/LaunchSkins/InputVerificationCodeSkin.exml'] = window.InputVerificationCodeSkin = (function (_super) {
 	__extends(InputVerificationCodeSkin, _super);
-	var InputVerificationCodeSkin$Skin26 = 	(function (_super) {
-		__extends(InputVerificationCodeSkin$Skin26, _super);
-		function InputVerificationCodeSkin$Skin26() {
+	var InputVerificationCodeSkin$Skin27 = 	(function (_super) {
+		__extends(InputVerificationCodeSkin$Skin27, _super);
+		function InputVerificationCodeSkin$Skin27() {
 			_super.call(this);
 			this.skinParts = ["labelDisplay"];
 			
@@ -9175,7 +9228,7 @@ window.skins=window.skins||{};
 					])
 			];
 		}
-		var _proto = InputVerificationCodeSkin$Skin26.prototype;
+		var _proto = InputVerificationCodeSkin$Skin27.prototype;
 
 		_proto._Image1_i = function () {
 			var t = new eui.Image();
@@ -9194,7 +9247,7 @@ window.skins=window.skins||{};
 			t.verticalCenter = 0;
 			return t;
 		};
-		return InputVerificationCodeSkin$Skin26;
+		return InputVerificationCodeSkin$Skin27;
 	})(eui.Skin);
 
 	function InputVerificationCodeSkin() {
@@ -9254,7 +9307,7 @@ window.skins=window.skins||{};
 		t.label = "";
 		t.x = 158;
 		t.y = 290;
-		t.skinName = InputVerificationCodeSkin$Skin26;
+		t.skinName = InputVerificationCodeSkin$Skin27;
 		return t;
 	};
 	_proto._Label2_i = function () {
@@ -9311,51 +9364,6 @@ window.skins=window.skins||{};
 	return InputVerificationCodeSkin;
 })(eui.Skin);generateEUI.paths['resource/eui_skins/LaunchSkins/LaunchSkin.exml'] = window.LaunchSkin = (function (_super) {
 	__extends(LaunchSkin, _super);
-	var LaunchSkin$Skin27 = 	(function (_super) {
-		__extends(LaunchSkin$Skin27, _super);
-		function LaunchSkin$Skin27() {
-			_super.call(this);
-			this.skinParts = ["labelDisplay"];
-			
-			this.elementsContent = [this._Image1_i(),this.labelDisplay_i()];
-			this.states = [
-				new eui.State ("up",
-					[
-					])
-				,
-				new eui.State ("down",
-					[
-						new eui.SetProperty("_Image1","percentWidth",90),
-						new eui.SetProperty("_Image1","percentHeight",90)
-					])
-				,
-				new eui.State ("disabled",
-					[
-					])
-			];
-		}
-		var _proto = LaunchSkin$Skin27.prototype;
-
-		_proto._Image1_i = function () {
-			var t = new eui.Image();
-			this._Image1 = t;
-			t.percentHeight = 100;
-			t.horizontalCenter = 0;
-			t.source = "btn_phone_login_png";
-			t.verticalCenter = 0;
-			t.percentWidth = 100;
-			return t;
-		};
-		_proto.labelDisplay_i = function () {
-			var t = new eui.Label();
-			this.labelDisplay = t;
-			t.horizontalCenter = 0;
-			t.verticalCenter = 0;
-			return t;
-		};
-		return LaunchSkin$Skin27;
-	})(eui.Skin);
-
 	var LaunchSkin$Skin28 = 	(function (_super) {
 		__extends(LaunchSkin$Skin28, _super);
 		function LaunchSkin$Skin28() {
@@ -9386,7 +9394,7 @@ window.skins=window.skins||{};
 			this._Image1 = t;
 			t.percentHeight = 100;
 			t.horizontalCenter = 0;
-			t.source = "btn_login_by_visitor_png";
+			t.source = "btn_phone_login_png";
 			t.verticalCenter = 0;
 			t.percentWidth = 100;
 			return t;
@@ -9399,6 +9407,51 @@ window.skins=window.skins||{};
 			return t;
 		};
 		return LaunchSkin$Skin28;
+	})(eui.Skin);
+
+	var LaunchSkin$Skin29 = 	(function (_super) {
+		__extends(LaunchSkin$Skin29, _super);
+		function LaunchSkin$Skin29() {
+			_super.call(this);
+			this.skinParts = ["labelDisplay"];
+			
+			this.elementsContent = [this._Image1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_Image1","percentWidth",90),
+						new eui.SetProperty("_Image1","percentHeight",90)
+					])
+				,
+				new eui.State ("disabled",
+					[
+					])
+			];
+		}
+		var _proto = LaunchSkin$Skin29.prototype;
+
+		_proto._Image1_i = function () {
+			var t = new eui.Image();
+			this._Image1 = t;
+			t.percentHeight = 100;
+			t.horizontalCenter = 0;
+			t.source = "btn_login_by_visitor_png";
+			t.verticalCenter = 0;
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		return LaunchSkin$Skin29;
 	})(eui.Skin);
 
 	function LaunchSkin() {
@@ -9441,7 +9494,7 @@ window.skins=window.skins||{};
 		t.scaleY = 1;
 		t.x = 93;
 		t.y = 277.0000000000001;
-		t.skinName = LaunchSkin$Skin27;
+		t.skinName = LaunchSkin$Skin28;
 		return t;
 	};
 	_proto.visitorButton_i = function () {
@@ -9453,7 +9506,7 @@ window.skins=window.skins||{};
 		t.scaleY = 1;
 		t.x = 93;
 		t.y = 125.29999999999995;
-		t.skinName = LaunchSkin$Skin28;
+		t.skinName = LaunchSkin$Skin29;
 		return t;
 	};
 	_proto.loadingGroup_i = function () {
