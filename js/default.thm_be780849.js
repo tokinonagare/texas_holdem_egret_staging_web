@@ -2140,6 +2140,8 @@ window.skins=window.skins||{};
 		t.scaleX = 1;
 		t.scaleY = 1;
 		t.size = 28;
+		t.stroke = 2;
+		t.strokeColor = 0x003a20;
 		t.text = "底池: 0";
 		t.textAlign = "center";
 		t.textColor = 0x8de9cc;
@@ -8975,23 +8977,102 @@ window.skins=window.skins||{};
 
 	function TreasureChestSkin() {
 		_super.call(this);
-		this.skinParts = ["treasureButton","timerLabel"];
+		this.skinParts = ["shakeAnimation","treasureButton","timerLabel"];
 		
 		this.height = 85;
 		this.width = 83;
-		this.elementsContent = [this.treasureButton_i(),this._Group1_i()];
+		this.shakeAnimation_i();
+		this.elementsContent = [this.treasureButton_i(),this._Group1_i(),this._Group2_i()];
+		
+		eui.Binding.$bindProperties(this, ["treasureButton"],[0],this._TweenItem1,"target");
+		eui.Binding.$bindProperties(this, [-10],[],this._Object1,"rotation");
+		eui.Binding.$bindProperties(this, [10],[],this._Object2,"rotation");
+		eui.Binding.$bindProperties(this, [-10],[],this._Object3,"rotation");
+		eui.Binding.$bindProperties(this, [0],[],this._Object4,"rotation");
+		eui.Binding.$bindProperties(this, [0],[],this._Object5,"rotation");
 	}
 	var _proto = TreasureChestSkin.prototype;
 
+	_proto.shakeAnimation_i = function () {
+		var t = new egret.tween.TweenGroup();
+		this.shakeAnimation = t;
+		t.items = [this._TweenItem1_i()];
+		return t;
+	};
+	_proto._TweenItem1_i = function () {
+		var t = new egret.tween.TweenItem();
+		this._TweenItem1 = t;
+		t.paths = [this._To1_i(),this._To2_i(),this._To3_i(),this._To4_i(),this._Wait1_i(),this._Set1_i()];
+		return t;
+	};
+	_proto._To1_i = function () {
+		var t = new egret.tween.To();
+		t.duration = 150;
+		t.props = this._Object1_i();
+		return t;
+	};
+	_proto._Object1_i = function () {
+		var t = {};
+		this._Object1 = t;
+		return t;
+	};
+	_proto._To2_i = function () {
+		var t = new egret.tween.To();
+		t.duration = 150;
+		t.props = this._Object2_i();
+		return t;
+	};
+	_proto._Object2_i = function () {
+		var t = {};
+		this._Object2 = t;
+		return t;
+	};
+	_proto._To3_i = function () {
+		var t = new egret.tween.To();
+		t.duration = 150;
+		t.props = this._Object3_i();
+		return t;
+	};
+	_proto._Object3_i = function () {
+		var t = {};
+		this._Object3 = t;
+		return t;
+	};
+	_proto._To4_i = function () {
+		var t = new egret.tween.To();
+		t.duration = 300;
+		t.props = this._Object4_i();
+		return t;
+	};
+	_proto._Object4_i = function () {
+		var t = {};
+		this._Object4 = t;
+		return t;
+	};
+	_proto._Wait1_i = function () {
+		var t = new egret.tween.Wait();
+		t.duration = 250;
+		return t;
+	};
+	_proto._Set1_i = function () {
+		var t = new egret.tween.Set();
+		t.props = this._Object5_i();
+		return t;
+	};
+	_proto._Object5_i = function () {
+		var t = {};
+		this._Object5 = t;
+		return t;
+	};
 	_proto.treasureButton_i = function () {
 		var t = new eui.Button();
 		this.treasureButton = t;
 		t.height = 73;
+		t.horizontalCenter = 0;
 		t.label = "";
 		t.touchEnabled = true;
+		t.verticalCenter = 0;
 		t.width = 84;
-		t.x = 0;
-		t.y = 0;
 		t.skinName = TreasureChestSkin$Skin26;
 		return t;
 	};
@@ -9024,6 +9105,22 @@ window.skins=window.skins||{};
 		t.size = 18;
 		t.text = "00:00";
 		t.verticalCenter = 0;
+		return t;
+	};
+	_proto._Group2_i = function () {
+		var t = new eui.Group();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 32;
+		t.width = 71;
+		t.x = 6;
+		t.y = 11;
+		t.layout = this._HorizontalLayout1_i();
+		return t;
+	};
+	_proto._HorizontalLayout1_i = function () {
+		var t = new eui.HorizontalLayout();
+		t.gap = 2;
 		return t;
 	};
 	return TreasureChestSkin;
