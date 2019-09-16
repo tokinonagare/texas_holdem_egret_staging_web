@@ -7339,7 +7339,7 @@ window.skins=window.skins||{};
 		t.width = 660;
 		t.x = 15;
 		t.y = 800;
-		t.elementsContent = [this._Rect3_i(),this._Scroller3_i()];
+		t.elementsContent = [this._Rect3_i(),this._Scroller3_i(),this._Image2_i(),this._Image3_i()];
 		return t;
 	};
 	_proto._Rect3_i = function () {
@@ -7380,6 +7380,28 @@ window.skins=window.skins||{};
 		t.verticalAlign = "middle";
 		return t;
 	};
+	_proto._Image2_i = function () {
+		var t = new eui.Image();
+		t.height = 42;
+		t.left = 10;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "icon_props_arrow_left_png";
+		t.verticalCenter = 0;
+		t.width = 28;
+		return t;
+	};
+	_proto._Image3_i = function () {
+		var t = new eui.Image();
+		t.height = 42;
+		t.right = 10;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "icon_props_arrow_right_png";
+		t.verticalCenter = 0;
+		t.width = 28;
+		return t;
+	};
 	_proto._Group6_i = function () {
 		var t = new eui.Group();
 		t.height = 50;
@@ -7402,7 +7424,7 @@ window.skins=window.skins||{};
 		t.x = 147;
 		t.y = 33;
 		t.layout = this._HorizontalLayout3_i();
-		t.elementsContent = [this._Image2_i(),this.locationLabel_i()];
+		t.elementsContent = [this._Image4_i(),this.locationLabel_i()];
 		return t;
 	};
 	_proto._HorizontalLayout3_i = function () {
@@ -7411,7 +7433,7 @@ window.skins=window.skins||{};
 		t.verticalAlign = "middle";
 		return t;
 	};
-	_proto._Image2_i = function () {
+	_proto._Image4_i = function () {
 		var t = new eui.Image();
 		t.height = 24;
 		t.scaleX = 1;
@@ -8018,7 +8040,7 @@ window.skins=window.skins||{};
 	__extends(ReportViewSkin, _super);
 	function ReportViewSkin() {
 		_super.call(this);
-		this.skinParts = ["background","confirmButton","cbx1","cbx2","cbx3","cbx4","cbx5","contentInput"];
+		this.skinParts = ["background","confirmButton","cbx1","cbx2","cbx3","cbx4","cbx0","cbx6","cbx7","cbx5","contentInput"];
 		
 		this.height = 1334;
 		this.width = 750;
@@ -8101,7 +8123,7 @@ window.skins=window.skins||{};
 		t.width = 562;
 		t.y = 36;
 		t.layout = this._TileLayout1_i();
-		t.elementsContent = [this.cbx1_i(),this.cbx2_i(),this.cbx3_i(),this.cbx4_i(),this.cbx5_i()];
+		t.elementsContent = [this.cbx1_i(),this.cbx2_i(),this.cbx3_i(),this.cbx4_i(),this.cbx0_i(),this.cbx6_i(),this.cbx7_i(),this.cbx5_i()];
 		return t;
 	};
 	_proto._TileLayout1_i = function () {
@@ -8149,6 +8171,36 @@ window.skins=window.skins||{};
 		t.skinName = "ReportCheckBoxSkin";
 		t.x = 67;
 		t.y = 103;
+		return t;
+	};
+	_proto.cbx0_i = function () {
+		var t = new eui.CheckBox();
+		this.cbx0 = t;
+		t.label = "消极游戏";
+		t.name = "tag";
+		t.skinName = "ReportCheckBoxSkin";
+		t.x = 77;
+		t.y = 113;
+		return t;
+	};
+	_proto.cbx6_i = function () {
+		var t = new eui.CheckBox();
+		this.cbx6 = t;
+		t.label = "涉嫌广告";
+		t.name = "tag";
+		t.skinName = "ReportCheckBoxSkin";
+		t.x = 87;
+		t.y = 123;
+		return t;
+	};
+	_proto.cbx7_i = function () {
+		var t = new eui.CheckBox();
+		this.cbx7 = t;
+		t.label = "诈骗信息";
+		t.name = "tag";
+		t.skinName = "ReportCheckBoxSkin";
+		t.x = 97;
+		t.y = 133;
 		return t;
 	};
 	_proto.cbx5_i = function () {
