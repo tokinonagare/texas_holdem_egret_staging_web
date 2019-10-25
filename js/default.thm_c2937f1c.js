@@ -7422,6 +7422,7 @@ window.skins=window.skins||{};
 	_proto._Group5_i = function () {
 		var t = new eui.Group();
 		t.height = 50;
+		t.visible = false;
 		t.x = 147;
 		t.y = 33;
 		t.layout = this._HorizontalLayout3_i();
