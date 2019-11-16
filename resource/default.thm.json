@@ -89,6 +89,7 @@
 		"resource/eui_skins/GameSkins/View/SeatViewSkin.exml",
 		"resource/eui_skins/GameSkins/View/Settings/CardTypeRadioButtonSkin.exml",
 		"resource/eui_skins/GameSkins/View/Settings/SettingsSkin.exml",
+		"resource/eui_skins/GameSkins/View/SoundSetting/SoundSettingSkin.exml",
 		"resource/eui_skins/GameSkins/View/Treasure/TreasureChestSkin.exml",
 		"resource/eui_skins/LaunchSkins/InputPhoneNumberSkin.exml",
 		"resource/eui_skins/LaunchSkins/InputPinSkin.exml",

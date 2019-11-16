@@ -6532,7 +6532,7 @@ window.skins=window.skins||{};
 	};
 	_proto._ArrayCollection1_i = function () {
 		var t = new eui.ArrayCollection();
-		t.source = [this._Object1_i(),this._Object2_i(),this._Object3_i(),this._Object4_i(),this._Object5_i()];
+		t.source = [this._Object1_i(),this._Object2_i(),this._Object3_i(),this._Object4_i(),this._Object5_i(),this._Object6_i()];
 		return t;
 	};
 	_proto._Object1_i = function () {
@@ -6549,17 +6549,23 @@ window.skins=window.skins||{};
 	};
 	_proto._Object3_i = function () {
 		var t = {};
+		t.item = "音效设置";
+		t.showArrow = "true";
+		return t;
+	};
+	_proto._Object4_i = function () {
+		var t = {};
 		t.item = "补充带入";
 		t.showArrow = "";
 		return t;
 	};
-	_proto._Object4_i = function () {
+	_proto._Object5_i = function () {
 		var t = {};
 		t.item = "站起围观";
 		t.showArrow = "";
 		return t;
 	};
-	_proto._Object5_i = function () {
+	_proto._Object6_i = function () {
 		var t = {};
 		t.item = "退出牌局";
 		t.showArrow = "";
@@ -9352,11 +9358,343 @@ window.skins=window.skins||{};
 		return t;
 	};
 	return SettingsSkin;
+})(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/SoundSetting/SoundSettingSkin.exml'] = window.SoundSettingSkin = (function (_super) {
+	__extends(SoundSettingSkin, _super);
+	var SoundSettingSkin$Skin27 = 	(function (_super) {
+		__extends(SoundSettingSkin$Skin27, _super);
+		function SoundSettingSkin$Skin27() {
+			_super.call(this);
+			this.skinParts = ["labelDisplay"];
+			
+			this.elementsContent = [this._Image1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_Image1","source","switch_on_png")
+					])
+				,
+				new eui.State ("disabled",
+					[
+					])
+			];
+		}
+		var _proto = SoundSettingSkin$Skin27.prototype;
+
+		_proto._Image1_i = function () {
+			var t = new eui.Image();
+			this._Image1 = t;
+			t.percentHeight = 100;
+			t.source = "switch_off_png";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		return SoundSettingSkin$Skin27;
+	})(eui.Skin);
+
+	var SoundSettingSkin$Skin28 = 	(function (_super) {
+		__extends(SoundSettingSkin$Skin28, _super);
+		function SoundSettingSkin$Skin28() {
+			_super.call(this);
+			this.skinParts = ["labelDisplay"];
+			
+			this.elementsContent = [this._Image1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_Image1","source","switch_on_png")
+					])
+				,
+				new eui.State ("disabled",
+					[
+					])
+			];
+		}
+		var _proto = SoundSettingSkin$Skin28.prototype;
+
+		_proto._Image1_i = function () {
+			var t = new eui.Image();
+			this._Image1 = t;
+			t.percentHeight = 100;
+			t.source = "switch_off_png";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		return SoundSettingSkin$Skin28;
+	})(eui.Skin);
+
+	var SoundSettingSkin$Skin29 = 	(function (_super) {
+		__extends(SoundSettingSkin$Skin29, _super);
+		function SoundSettingSkin$Skin29() {
+			_super.call(this);
+			this.skinParts = ["labelDisplay"];
+			
+			this.elementsContent = [this._Image1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_Image1","source","switch_on_png")
+					])
+				,
+				new eui.State ("disabled",
+					[
+					])
+			];
+		}
+		var _proto = SoundSettingSkin$Skin29.prototype;
+
+		_proto._Image1_i = function () {
+			var t = new eui.Image();
+			this._Image1 = t;
+			t.percentHeight = 100;
+			t.source = "switch_off_png";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		return SoundSettingSkin$Skin29;
+	})(eui.Skin);
+
+	function SoundSettingSkin() {
+		_super.call(this);
+		this.skinParts = ["background","effectSwitch","audioSwitch","vibrateSwitch","saveButton","group"];
+		
+		this.height = 1334;
+		this.width = 750;
+		this.elementsContent = [this.background_i(),this.group_i()];
+	}
+	var _proto = SoundSettingSkin.prototype;
+
+	_proto.background_i = function () {
+		var t = new eui.Rect();
+		this.background = t;
+		t.fillAlpha = 0.3;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto.group_i = function () {
+		var t = new eui.Group();
+		this.group = t;
+		t.height = 456;
+		t.horizontalCenter = 0;
+		t.verticalCenter = 0;
+		t.width = 682;
+		t.elementsContent = [this._Rect1_i(),this._Label1_i(),this._Group5_i(),this.saveButton_i()];
+		return t;
+	};
+	_proto._Rect1_i = function () {
+		var t = new eui.Rect();
+		t.ellipseHeight = 20;
+		t.ellipseWidth = 20;
+		t.fillColor = 0x1B1E2D;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto._Label1_i = function () {
+		var t = new eui.Label();
+		t.bold = true;
+		t.horizontalCenter = 0;
+		t.text = "音效设置";
+		t.y = 20;
+		return t;
+	};
+	_proto._Group5_i = function () {
+		var t = new eui.Group();
+		t.height = 336;
+		t.horizontalCenter = 0;
+		t.verticalCenter = 10;
+		t.width = 622;
+		t.elementsContent = [this._Rect2_i(),this._Group4_i()];
+		return t;
+	};
+	_proto._Rect2_i = function () {
+		var t = new eui.Rect();
+		t.ellipseHeight = 20;
+		t.ellipseWidth = 20;
+		t.fillColor = 0x32374C;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto._Group4_i = function () {
+		var t = new eui.Group();
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		t.layout = this._TileLayout1_i();
+		t.elementsContent = [this._Group1_i(),this._Group2_i(),this._Group3_i()];
+		return t;
+	};
+	_proto._TileLayout1_i = function () {
+		var t = new eui.TileLayout();
+		t.horizontalGap = 40;
+		t.orientation = "columns";
+		t.paddingLeft = 40;
+		t.paddingRight = 40;
+		t.paddingTop = 40;
+		t.requestedRowCount = 2;
+		t.verticalGap = 50;
+		return t;
+	};
+	_proto._Group1_i = function () {
+		var t = new eui.Group();
+		t.height = 61;
+		t.width = 250;
+		t.x = 160;
+		t.y = 7;
+		t.layout = this._HorizontalLayout1_i();
+		t.elementsContent = [this._Label2_i(),this.effectSwitch_i()];
+		return t;
+	};
+	_proto._HorizontalLayout1_i = function () {
+		var t = new eui.HorizontalLayout();
+		t.gap = 30;
+		t.horizontalAlign = "center";
+		t.verticalAlign = "middle";
+		return t;
+	};
+	_proto._Label2_i = function () {
+		var t = new eui.Label();
+		t.text = "游戏音效";
+		t.x = 72;
+		t.y = 107;
+		return t;
+	};
+	_proto.effectSwitch_i = function () {
+		var t = new eui.ToggleSwitch();
+		this.effectSwitch = t;
+		t.label = "";
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.selected = false;
+		t.x = 0;
+		t.y = 0;
+		t.skinName = SoundSettingSkin$Skin27;
+		return t;
+	};
+	_proto._Group2_i = function () {
+		var t = new eui.Group();
+		t.height = 61;
+		t.width = 250;
+		t.x = 170;
+		t.y = 17;
+		t.layout = this._HorizontalLayout2_i();
+		t.elementsContent = [this._Label3_i(),this.audioSwitch_i()];
+		return t;
+	};
+	_proto._HorizontalLayout2_i = function () {
+		var t = new eui.HorizontalLayout();
+		t.gap = 30;
+		t.horizontalAlign = "center";
+		t.verticalAlign = "middle";
+		return t;
+	};
+	_proto._Label3_i = function () {
+		var t = new eui.Label();
+		t.text = "玩家语音";
+		t.x = 72;
+		t.y = 107;
+		return t;
+	};
+	_proto.audioSwitch_i = function () {
+		var t = new eui.ToggleSwitch();
+		this.audioSwitch = t;
+		t.label = "";
+		t.x = 0;
+		t.y = 0;
+		t.skinName = SoundSettingSkin$Skin28;
+		return t;
+	};
+	_proto._Group3_i = function () {
+		var t = new eui.Group();
+		t.height = 61;
+		t.width = 250;
+		t.x = 180;
+		t.y = 27;
+		t.layout = this._HorizontalLayout3_i();
+		t.elementsContent = [this._Label4_i(),this.vibrateSwitch_i()];
+		return t;
+	};
+	_proto._HorizontalLayout3_i = function () {
+		var t = new eui.HorizontalLayout();
+		t.gap = 30;
+		t.horizontalAlign = "center";
+		t.verticalAlign = "middle";
+		return t;
+	};
+	_proto._Label4_i = function () {
+		var t = new eui.Label();
+		t.text = "游戏震动";
+		t.x = 72;
+		t.y = 107;
+		return t;
+	};
+	_proto.vibrateSwitch_i = function () {
+		var t = new eui.ToggleSwitch();
+		this.vibrateSwitch = t;
+		t.label = "";
+		t.x = 0;
+		t.y = 0;
+		t.skinName = SoundSettingSkin$Skin29;
+		return t;
+	};
+	_proto.saveButton_i = function () {
+		var t = new eui.Button();
+		this.saveButton = t;
+		t.bottom = 60;
+		t.height = 60;
+		t.horizontalCenter = 0;
+		t.label = "确定";
+		t.skinName = "ChatSendButtonSkin";
+		t.width = 120;
+		return t;
+	};
+	return SoundSettingSkin;
 })(eui.Skin);generateEUI.paths['resource/eui_skins/GameSkins/View/Treasure/TreasureChestSkin.exml'] = window.TreasureChestSkin = (function (_super) {
 	__extends(TreasureChestSkin, _super);
-	var TreasureChestSkin$Skin27 = 	(function (_super) {
-		__extends(TreasureChestSkin$Skin27, _super);
-		function TreasureChestSkin$Skin27() {
+	var TreasureChestSkin$Skin30 = 	(function (_super) {
+		__extends(TreasureChestSkin$Skin30, _super);
+		function TreasureChestSkin$Skin30() {
 			_super.call(this);
 			this.skinParts = ["labelDisplay"];
 			
@@ -9377,7 +9715,7 @@ window.skins=window.skins||{};
 					])
 			];
 		}
-		var _proto = TreasureChestSkin$Skin27.prototype;
+		var _proto = TreasureChestSkin$Skin30.prototype;
 
 		_proto._Image1_i = function () {
 			var t = new eui.Image();
@@ -9394,7 +9732,7 @@ window.skins=window.skins||{};
 			t.verticalCenter = 0;
 			return t;
 		};
-		return TreasureChestSkin$Skin27;
+		return TreasureChestSkin$Skin30;
 	})(eui.Skin);
 
 	function TreasureChestSkin() {
@@ -9495,7 +9833,7 @@ window.skins=window.skins||{};
 		t.touchEnabled = true;
 		t.verticalCenter = 0;
 		t.width = 84;
-		t.skinName = TreasureChestSkin$Skin27;
+		t.skinName = TreasureChestSkin$Skin30;
 		return t;
 	};
 	_proto._Group1_i = function () {
@@ -9548,9 +9886,9 @@ window.skins=window.skins||{};
 	return TreasureChestSkin;
 })(eui.Skin);generateEUI.paths['resource/eui_skins/LaunchSkins/InputPhoneNumberSkin.exml'] = window.InputPhoneNumberSkin = (function (_super) {
 	__extends(InputPhoneNumberSkin, _super);
-	var InputPhoneNumberSkin$Skin28 = 	(function (_super) {
-		__extends(InputPhoneNumberSkin$Skin28, _super);
-		function InputPhoneNumberSkin$Skin28() {
+	var InputPhoneNumberSkin$Skin31 = 	(function (_super) {
+		__extends(InputPhoneNumberSkin$Skin31, _super);
+		function InputPhoneNumberSkin$Skin31() {
 			_super.call(this);
 			this.skinParts = ["labelDisplay"];
 			
@@ -9571,7 +9909,7 @@ window.skins=window.skins||{};
 					])
 			];
 		}
-		var _proto = InputPhoneNumberSkin$Skin28.prototype;
+		var _proto = InputPhoneNumberSkin$Skin31.prototype;
 
 		_proto._Image1_i = function () {
 			var t = new eui.Image();
@@ -9590,7 +9928,7 @@ window.skins=window.skins||{};
 			t.verticalCenter = 0;
 			return t;
 		};
-		return InputPhoneNumberSkin$Skin28;
+		return InputPhoneNumberSkin$Skin31;
 	})(eui.Skin);
 
 	function InputPhoneNumberSkin() {
@@ -9668,7 +10006,7 @@ window.skins=window.skins||{};
 		t.label = "";
 		t.x = 158;
 		t.y = 250;
-		t.skinName = InputPhoneNumberSkin$Skin28;
+		t.skinName = InputPhoneNumberSkin$Skin31;
 		return t;
 	};
 	return InputPhoneNumberSkin;
@@ -9822,9 +10160,9 @@ window.skins=window.skins||{};
 	return TimerButtonSkin;
 })(eui.Skin);generateEUI.paths['resource/eui_skins/LaunchSkins/InputVerificationCodeSkin.exml'] = window.InputVerificationCodeSkin = (function (_super) {
 	__extends(InputVerificationCodeSkin, _super);
-	var InputVerificationCodeSkin$Skin29 = 	(function (_super) {
-		__extends(InputVerificationCodeSkin$Skin29, _super);
-		function InputVerificationCodeSkin$Skin29() {
+	var InputVerificationCodeSkin$Skin32 = 	(function (_super) {
+		__extends(InputVerificationCodeSkin$Skin32, _super);
+		function InputVerificationCodeSkin$Skin32() {
 			_super.call(this);
 			this.skinParts = ["labelDisplay"];
 			
@@ -9845,7 +10183,7 @@ window.skins=window.skins||{};
 					])
 			];
 		}
-		var _proto = InputVerificationCodeSkin$Skin29.prototype;
+		var _proto = InputVerificationCodeSkin$Skin32.prototype;
 
 		_proto._Image1_i = function () {
 			var t = new eui.Image();
@@ -9864,7 +10202,7 @@ window.skins=window.skins||{};
 			t.verticalCenter = 0;
 			return t;
 		};
-		return InputVerificationCodeSkin$Skin29;
+		return InputVerificationCodeSkin$Skin32;
 	})(eui.Skin);
 
 	function InputVerificationCodeSkin() {
@@ -9924,7 +10262,7 @@ window.skins=window.skins||{};
 		t.label = "";
 		t.x = 158;
 		t.y = 290;
-		t.skinName = InputVerificationCodeSkin$Skin29;
+		t.skinName = InputVerificationCodeSkin$Skin32;
 		return t;
 	};
 	_proto._Label2_i = function () {
@@ -9981,9 +10319,9 @@ window.skins=window.skins||{};
 	return InputVerificationCodeSkin;
 })(eui.Skin);generateEUI.paths['resource/eui_skins/LaunchSkins/LaunchSkin.exml'] = window.LaunchSkin = (function (_super) {
 	__extends(LaunchSkin, _super);
-	var LaunchSkin$Skin30 = 	(function (_super) {
-		__extends(LaunchSkin$Skin30, _super);
-		function LaunchSkin$Skin30() {
+	var LaunchSkin$Skin33 = 	(function (_super) {
+		__extends(LaunchSkin$Skin33, _super);
+		function LaunchSkin$Skin33() {
 			_super.call(this);
 			this.skinParts = ["labelDisplay"];
 			
@@ -10004,7 +10342,7 @@ window.skins=window.skins||{};
 					])
 			];
 		}
-		var _proto = LaunchSkin$Skin30.prototype;
+		var _proto = LaunchSkin$Skin33.prototype;
 
 		_proto._Image1_i = function () {
 			var t = new eui.Image();
@@ -10023,12 +10361,12 @@ window.skins=window.skins||{};
 			t.verticalCenter = 0;
 			return t;
 		};
-		return LaunchSkin$Skin30;
+		return LaunchSkin$Skin33;
 	})(eui.Skin);
 
-	var LaunchSkin$Skin31 = 	(function (_super) {
-		__extends(LaunchSkin$Skin31, _super);
-		function LaunchSkin$Skin31() {
+	var LaunchSkin$Skin34 = 	(function (_super) {
+		__extends(LaunchSkin$Skin34, _super);
+		function LaunchSkin$Skin34() {
 			_super.call(this);
 			this.skinParts = ["labelDisplay"];
 			
@@ -10049,7 +10387,7 @@ window.skins=window.skins||{};
 					])
 			];
 		}
-		var _proto = LaunchSkin$Skin31.prototype;
+		var _proto = LaunchSkin$Skin34.prototype;
 
 		_proto._Image1_i = function () {
 			var t = new eui.Image();
@@ -10068,7 +10406,7 @@ window.skins=window.skins||{};
 			t.verticalCenter = 0;
 			return t;
 		};
-		return LaunchSkin$Skin31;
+		return LaunchSkin$Skin34;
 	})(eui.Skin);
 
 	function LaunchSkin() {
@@ -10112,7 +10450,7 @@ window.skins=window.skins||{};
 		t.scaleY = 1;
 		t.x = 93;
 		t.y = 277.0000000000001;
-		t.skinName = LaunchSkin$Skin30;
+		t.skinName = LaunchSkin$Skin33;
 		return t;
 	};
 	_proto.visitorButton_i = function () {
@@ -10124,7 +10462,7 @@ window.skins=window.skins||{};
 		t.scaleY = 1;
 		t.x = 93;
 		t.y = 125.29999999999995;
-		t.skinName = LaunchSkin$Skin31;
+		t.skinName = LaunchSkin$Skin34;
 		return t;
 	};
 	_proto.loadingGroup_i = function () {
