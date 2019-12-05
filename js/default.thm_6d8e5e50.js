@@ -10435,6 +10435,7 @@ window.skins=window.skins||{};
 		t.anchorOffsetY = 0;
 		t.height = 415.15;
 		t.horizontalCenter = 0;
+		t.visible = false;
 		t.width = 487.88;
 		t.y = 718;
 		t.elementsContent = [this.loginButton_i(),this.visitorButton_i()];
