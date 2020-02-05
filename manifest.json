@@ -11,10 +11,12 @@
 		"js/particle.min_27fe451d.js",
 		"js/centrifuge.min_ee1de359.js",
 		"js/uuid.min_56860d1c.js",
-		"js/decimal.min_857aef33.js"
+		"js/decimal.min_857aef33.js",
+		"js/crypto-js.min_862d13a1.js",
+		"js/base64.min_f4f76962.js"
 	],
 	"game": [
 		"js/default.thm_6d8e5e50.js",
-		"js/main.min_e2782894.js"
+		"js/main.min_ab76556f.js"
 	]
 }
