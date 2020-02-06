@@ -281,6 +281,39 @@ window.skins=window.skins||{};
 		return t;
 	};
 	return DisconnectViewSkin;
+})(eui.Skin);generateEUI.paths['resource/eui_skins/Components/LoadingCircleSkin.exml'] = window.LoadingCircleSkin = (function (_super) {
+	__extends(LoadingCircleSkin, _super);
+	function LoadingCircleSkin() {
+		_super.call(this);
+		this.skinParts = ["group"];
+		
+		this.height = 1334;
+		this.width = 750;
+		this.elementsContent = [this._Rect1_i(),this.group_i()];
+	}
+	var _proto = LoadingCircleSkin.prototype;
+
+	_proto._Rect1_i = function () {
+		var t = new eui.Rect();
+		t.fillAlpha = 0;
+		t.fillColor = 0x000000;
+		t.percentHeight = 100;
+		t.left = 0;
+		t.strokeAlpha = 0.5;
+		t.top = 0;
+		t.percentWidth = 100;
+		return t;
+	};
+	_proto.group_i = function () {
+		var t = new eui.Group();
+		this.group = t;
+		t.height = 80;
+		t.horizontalCenter = 0;
+		t.verticalCenter = 50;
+		t.width = 80;
+		return t;
+	};
+	return LoadingCircleSkin;
 })(eui.Skin);generateEUI.paths['resource/eui_skins/Components/LoadingComponentSkin.exml'] = window.LoadingComponentSkin = (function (_super) {
 	__extends(LoadingComponentSkin, _super);
 	function LoadingComponentSkin() {
