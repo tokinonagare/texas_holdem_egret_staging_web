@@ -285,11 +285,11 @@ window.skins=window.skins||{};
 	__extends(LoadingCircleSkin, _super);
 	function LoadingCircleSkin() {
 		_super.call(this);
-		this.skinParts = ["group"];
+		this.skinParts = ["proxyLabel","group"];
 		
 		this.height = 1334;
 		this.width = 750;
-		this.elementsContent = [this._Rect1_i(),this.group_i()];
+		this.elementsContent = [this._Rect1_i(),this.proxyLabel_i(),this.group_i()];
 	}
 	var _proto = LoadingCircleSkin.prototype;
 
@@ -298,10 +298,20 @@ window.skins=window.skins||{};
 		t.fillAlpha = 0.1;
 		t.fillColor = 0x000000;
 		t.percentHeight = 100;
-		t.left = 0;
+		t.horizontalCenter = 0;
 		t.strokeAlpha = 0.5;
-		t.top = 0;
+		t.verticalCenter = 0;
 		t.percentWidth = 100;
+		return t;
+	};
+	_proto.proxyLabel_i = function () {
+		var t = new eui.Label();
+		this.proxyLabel = t;
+		t.alpha = 0.5;
+		t.horizontalCenter = 0;
+		t.size = 24;
+		t.text = "3.cn";
+		t.verticalCenter = 50;
 		return t;
 	};
 	_proto.group_i = function () {
@@ -309,8 +319,8 @@ window.skins=window.skins||{};
 		this.group = t;
 		t.height = 40;
 		t.horizontalCenter = 0;
+		t.verticalCenter = 100;
 		t.width = 40;
-		t.y = 730;
 		t.elementsContent = [this._Rect2_i()];
 		return t;
 	};
