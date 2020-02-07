@@ -295,7 +295,7 @@ window.skins=window.skins||{};
 
 	_proto._Rect1_i = function () {
 		var t = new eui.Rect();
-		t.fillAlpha = 0;
+		t.fillAlpha = 0.1;
 		t.fillColor = 0x000000;
 		t.percentHeight = 100;
 		t.left = 0;
@@ -307,10 +307,22 @@ window.skins=window.skins||{};
 	_proto.group_i = function () {
 		var t = new eui.Group();
 		this.group = t;
-		t.height = 80;
+		t.height = 40;
 		t.horizontalCenter = 0;
-		t.verticalCenter = 50;
-		t.width = 80;
+		t.width = 40;
+		t.y = 730;
+		t.elementsContent = [this._Rect2_i()];
+		return t;
+	};
+	_proto._Rect2_i = function () {
+		var t = new eui.Rect();
+		t.ellipseHeight = 20;
+		t.ellipseWidth = 20;
+		t.fillAlpha = 0.3;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
 		return t;
 	};
 	return LoadingCircleSkin;
