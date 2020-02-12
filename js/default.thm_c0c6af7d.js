@@ -2136,11 +2136,11 @@ window.skins=window.skins||{};
 
 	function GameSkin() {
 		_super.call(this);
-		this.skinParts = ["icon","mainPotLabel","blindImage","blindLabel","countdownLabel","countdownGroup","settlementMethodLabel","creatorLabel","houseNumberLabel","roomInfoGroup","communityCardList","startGameButton","cardTypeLabel","potsList","startRoomButton","playGameButtonGroup","promptLabel","winningCardLabel","group","raiseSelector","messageAlarm","quickRaiser","reviewboardButton","menuButton","debugView","leaderboardButton","chatButton","microphoneButton","versionLabel"];
+		this.skinParts = ["icon","mainPotLabel","blindImage","blindLabel","countdownLabel","countdownGroup","settlementMethodLabel","creatorLabel","houseNumberLabel","roomInfoGroup","communityCardList","startGameButton","cardTypeLabel","potsList","startRoomButton","playGameButtonGroup","promptLabel","winningCardLabel","group","raiseSelector","messageAlarm","quickRaiser","reviewboardButton","menuButton","debugView","leaderboardButton","chatButton","microphoneButton","proxyLabel","versionLabel"];
 		
 		this.height = 1334;
 		this.width = 750;
-		this.elementsContent = [this._Image1_i(),this.icon_i(),this.group_i(),this.raiseSelector_i(),this.messageAlarm_i(),this.quickRaiser_i(),this.reviewboardButton_i(),this.menuButton_i(),this.debugView_i(),this.leaderboardButton_i(),this.chatButton_i(),this.microphoneButton_i(),this.versionLabel_i()];
+		this.elementsContent = [this._Image1_i(),this.icon_i(),this.group_i(),this.raiseSelector_i(),this.messageAlarm_i(),this.quickRaiser_i(),this.reviewboardButton_i(),this.menuButton_i(),this.debugView_i(),this.leaderboardButton_i(),this.chatButton_i(),this.microphoneButton_i(),this.proxyLabel_i(),this.versionLabel_i()];
 	}
 	var _proto = GameSkin.prototype;
 
@@ -2377,6 +2377,7 @@ window.skins=window.skins||{};
 		t.anchorOffsetX = 0;
 		t.height = 130;
 		t.horizontalCenter = 0;
+		t.itemRenderer = CommunityCardItemRenderer;
 		t.itemRendererSkinName = CardItemSkin;
 		t.width = 435;
 		t.y = 590;
@@ -2568,6 +2569,16 @@ window.skins=window.skins||{};
 		t.right = 44;
 		t.visible = false;
 		t.skinName = GameSkin$Skin14;
+		return t;
+	};
+	_proto.proxyLabel_i = function () {
+		var t = new eui.Label();
+		this.proxyLabel = t;
+		t.alpha = 0.3;
+		t.bottom = 20;
+		t.right = 20;
+		t.size = 18;
+		t.text = "21";
 		return t;
 	};
 	_proto.versionLabel_i = function () {
