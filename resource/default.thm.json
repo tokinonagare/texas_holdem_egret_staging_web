@@ -56,6 +56,7 @@
 		"resource/eui_skins/GameSkins/View/Chat/StickerItemSkin.exml",
 		"resource/eui_skins/GameSkins/View/Chat/TalkingViewSkin.exml",
 		"resource/eui_skins/GameSkins/View/Chat/TextVoiceCheckBoxSkin.exml",
+		"resource/eui_skins/GameSkins/View/ChipTipsViewSkin.exml",
 		"resource/eui_skins/GameSkins/View/InsuranceView/CountdownProgressSkin.exml",
 		"resource/eui_skins/GameSkins/View/InsuranceView/InsuranceSkin.exml",
 		"resource/eui_skins/GameSkins/View/Leaderboard/LeaderboardListItemSkin.exml",
